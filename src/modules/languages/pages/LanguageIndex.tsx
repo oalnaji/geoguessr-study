@@ -11,7 +11,7 @@ export function LanguageIndex() {
 
   const sections = [
     ...groups.map((g) => ({ title: g.name, langs: languages.filter((l) => l.groups[0] === g.id) })),
-    { title: 'Other European languages', langs: languages.filter((l) => l.groups.length === 0) },
+    { title: 'Other languages', langs: languages.filter((l) => l.groups.length === 0) },
   ]
     .map((s) => ({ ...s, langs: s.langs.filter(match) }))
     .filter((s) => s.langs.length)

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router'
 import {
   Bullets, cardClass, Chip, LetterGrid, linkCardClass, Native, OnThisPage, PageHeader, Prose, SampleText, Section, Sources,
 } from '../../../components/ui'
-import { languageById, languageName, latinIndex, scriptById, scriptSamples } from '../../../content'
+import { languageName, languagesInScript, letterIndex, scriptById, scriptSamples } from '../../../content'
 import type { ScriptId } from '../../../content/types'
 import { NotFound } from '../../../pages/NotFound'
 
@@ -12,10 +12,16 @@ export function ScriptPage() {
   if (!script) return <NotFound />
 
   const samples = scriptSamples(script)
+  const index = letterIndex(script.id)
+  // Languages with a page in the app, plus any others the script lists by name only.
+  const inApp = languagesInScript(script.id)
+  const matches = (listed: string, appName: string) =>
+    listed.toLowerCase().startsWith(appName.toLowerCase()) || appName.toLowerCase().startsWith(listed.toLowerCase())
+  const others = script.languages.filter((l) => !inApp.some((a) => a.id === l.id || matches(l.name, a.name)))
   const nav = [
     { id: 'recognise', label: 'Recognise' },
     { id: 'letters', label: 'Letters' },
-    ...(script.id === 'latin' ? [{ id: 'index', label: 'Special letters' }] : []),
+    ...(index.length ? [{ id: 'index', label: 'Letters by language' }] : []),
     { id: 'sample', label: 'Sample' },
     { id: 'history', label: 'Why?' },
   ]
@@ -44,11 +50,10 @@ export function ScriptPage() {
       <Section title="Where it's used">
         <p className="leading-relaxed">{script.whereUsed}</p>
         <div className="flex flex-wrap gap-2">
-          {script.languages.map((l) => (
-            <Chip key={l.name} to={l.id && languageById.has(l.id) ? `/languages/${l.id}` : undefined} tone={l.id ? 'teal' : 'neutral'}>
-              {l.name}
-            </Chip>
+          {inApp.map((l) => (
+            <Chip key={l.id} to={`/languages/${l.id}`} tone="teal">{l.name}</Chip>
           ))}
+          {others.map((l) => <Chip key={l.name}>{l.name}</Chip>)}
         </div>
       </Section>
 
@@ -85,14 +90,14 @@ export function ScriptPage() {
         ))}
       </div>
 
-      {script.id === 'latin' && (
+      {index.length > 0 && (
         <Section
           id="index"
-          title="Special letters index"
-          note="Every letter beyond a–z used by the languages in the app, from the most distinctive (used by one language) to the most common. Highlighted letters belong to a single language."
+          title="Letters by language"
+          note={`Letters that only some of the ${inApp.length} languages written in ${script.name} use${script.id === 'latin' ? ' (beyond a–z)' : ''}, from the most distinctive to the most common. Highlighted letters belong to a single language.`}
         >
           <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-            {latinIndex.map((e) => (
+            {index.map((e) => (
               <li
                 key={e.char}
                 className={`flex items-center gap-3 rounded-lg border p-2 ${
@@ -101,7 +106,7 @@ export function ScriptPage() {
                     : 'border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900'
                 }`}
               >
-                <span className="w-10 text-center text-3xl">{e.char}</span>
+                <Native script={script.id} className="w-10 text-center text-3xl">{e.char}</Native>
                 <span className="flex flex-wrap gap-1">
                   {e.langs.map((id) => (
                     <Link key={id} to={`/languages/${id}`} className="text-sm text-teal-700 underline dark:text-teal-400">

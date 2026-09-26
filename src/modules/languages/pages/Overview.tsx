@@ -33,7 +33,7 @@ export function Overview() {
         ))}
       </ul>
       <p className="text-sm text-slate-500">
-        Languages so far cover Europe. Indian scripts' languages come next, then Cyrillic, then the rest of the world.
+        Covers every language in the study plan: Europe, the Cyrillic world, the Middle East, South and Southeast Asia, East Asia, Africa, the Andes and Polynesia.
       </p>
     </div>
   )

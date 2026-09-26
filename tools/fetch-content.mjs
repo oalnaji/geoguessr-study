@@ -12,6 +12,7 @@ import { mkdir, writeFile } from 'node:fs/promises'
 const OUT = new URL('../src/content/generated/', import.meta.url)
 
 // id → where to find it in each source. `wikidata` is the ISO 639-3 code (Wikidata P220).
+// `cldr: null` / `udhr: null` mean the source has nothing usable; the language file supplies it instead.
 const languages = {
   en: { cldr: 'en', udhr: 'eng', wikidata: 'eng' },
   fr: { cldr: 'fr', udhr: 'fra', wikidata: 'fra' },
@@ -54,6 +55,82 @@ const languages = {
   br: { cldr: 'br', udhr: 'bre', wikidata: 'bre' },
   se: { cldr: 'se', udhr: 'sme', wikidata: 'sme' },
   el: { cldr: 'el', udhr: 'ell_monotonic', wikidata: 'ell' },
+  // Latin script, outside Europe
+  vi: { cldr: 'vi', udhr: 'vie', wikidata: 'vie' },
+  id: { cldr: 'id', udhr: 'ind', wikidata: 'ind' },
+  ms: { cldr: 'ms', udhr: 'mly_latn', wikidata: 'msa' },
+  fil: { cldr: 'fil', udhr: 'tgl', wikidata: 'tgl' },
+  ceb: { cldr: 'ceb', udhr: 'ceb', wikidata: 'ceb' },
+  sw: { cldr: 'sw', udhr: 'swh', wikidata: 'swa' },
+  zu: { cldr: 'zu', udhr: 'zul', wikidata: 'zul' },
+  xh: { cldr: 'xh', udhr: 'xho', wikidata: 'xho' },
+  st: { cldr: 'st', udhr: 'sot', wikidata: 'sot' },
+  tn: { cldr: 'tn', udhr: 'tsn', wikidata: 'tsn' },
+  yo: { cldr: 'yo', udhr: 'yor', wikidata: 'yor' },
+  ig: { cldr: 'ig', udhr: 'ibo', wikidata: 'ibo' },
+  ha: { cldr: 'ha', udhr: 'hau_NG', wikidata: 'hau' },
+  wo: { cldr: 'wo', udhr: 'wol', wikidata: 'wol' },
+  mg: { cldr: 'mg', udhr: 'plt', wikidata: 'mlg' },
+  rw: { cldr: 'rw', udhr: 'kin', wikidata: 'kin' },
+  qu: { cldr: 'qu', udhr: 'quz', wikidata: 'que' },
+  gn: { cldr: 'gn', udhr: 'gug', wikidata: 'grn' },
+  ay: { cldr: null, udhr: 'ayr', wikidata: 'aym' },
+  mi: { cldr: 'mi', udhr: 'mri', wikidata: 'mri' },
+  haw: { cldr: 'haw', udhr: 'haw', wikidata: 'haw' },
+  sm: { cldr: null, udhr: 'smo', wikidata: 'smo' },
+  to: { cldr: 'to', udhr: 'ton', wikidata: 'ton' },
+  kl: { cldr: 'kl', udhr: 'kal', wikidata: 'kal' },
+  az: { cldr: 'az', udhr: 'azj_latn', wikidata: 'aze' },
+  uz: { cldr: 'uz', udhr: 'uzn_latn', wikidata: 'uzb' },
+  tk: { cldr: 'tk', udhr: 'tuk_latn', wikidata: 'tuk' },
+  // Cyrillic
+  ru: { cldr: 'ru', udhr: 'rus', wikidata: 'rus' },
+  uk: { cldr: 'uk', udhr: 'ukr', wikidata: 'ukr' },
+  be: { cldr: 'be', udhr: 'bel', wikidata: 'bel' },
+  bg: { cldr: 'bg', udhr: 'bul', wikidata: 'bul' },
+  kk: { cldr: 'kk', udhr: 'kaz', wikidata: 'kaz' },
+  ky: { cldr: 'ky', udhr: 'kir', wikidata: 'kir' },
+  mn: { cldr: 'mn', udhr: 'khk', wikidata: 'mon' },
+  // Arabic, Hebrew and other scripts of the Middle East, Caucasus and Africa
+  ar: { cldr: 'ar', udhr: 'arb', wikidata: 'ara' },
+  fa: { cldr: 'fa', udhr: 'pes_1', wikidata: 'fas' },
+  ur: { cldr: 'ur', udhr: 'urd', wikidata: 'urd' },
+  ps: { cldr: 'ps', udhr: 'pbu', wikidata: 'pus' },
+  ckb: { cldr: 'ckb', udhr: 'ckb', wikidata: 'ckb' },
+  ug: { cldr: 'ug', udhr: 'uig_arab', wikidata: 'uig' },
+  he: { cldr: 'he', udhr: 'heb', wikidata: 'heb' },
+  yi: { cldr: 'yi', udhr: 'ydd', wikidata: 'yid' },
+  hy: { cldr: 'hy', udhr: 'hye', wikidata: 'hye' },
+  ka: { cldr: 'ka', udhr: 'kat', wikidata: 'kat' },
+  dv: { cldr: 'dv', udhr: 'div', wikidata: 'div' },
+  am: { cldr: 'am', udhr: 'amh', wikidata: 'amh' },
+  ti: { cldr: 'ti', udhr: 'tir', wikidata: 'tir' },
+  zgh: { cldr: 'zgh', udhr: 'tzm_tfng', wikidata: 'zgh' },
+  // South Asia
+  hi: { cldr: 'hi', udhr: 'hin', wikidata: 'hin' },
+  mr: { cldr: 'mr', udhr: 'mar', wikidata: 'mar' },
+  ne: { cldr: 'ne', udhr: 'nep', wikidata: 'nep' },
+  bn: { cldr: 'bn', udhr: 'ben', wikidata: 'ben' },
+  as: { cldr: 'as', udhr: null, wikidata: 'asm' },
+  pa: { cldr: 'pa', udhr: 'pan', wikidata: 'pan' },
+  gu: { cldr: 'gu', udhr: 'guj', wikidata: 'guj' },
+  or: { cldr: 'or', udhr: null, wikidata: 'ori' },
+  ta: { cldr: 'ta', udhr: 'tam', wikidata: 'tam' },
+  te: { cldr: 'te', udhr: 'tel', wikidata: 'tel' },
+  kn: { cldr: 'kn', udhr: 'kan', wikidata: 'kan' },
+  ml: { cldr: 'ml', udhr: 'mal', wikidata: 'mal' },
+  si: { cldr: 'si', udhr: 'sin', wikidata: 'sin' },
+  bo: { cldr: 'bo', udhr: 'bod', wikidata: 'bod' },
+  dz: { cldr: 'dz', udhr: 'dzo', wikidata: 'dzo' },
+  // Southeast and East Asia (no CLDR letter list for CJK: thousands of characters)
+  th: { cldr: 'th', udhr: 'tha', wikidata: 'tha' },
+  lo: { cldr: 'lo', udhr: 'lao', wikidata: 'lao' },
+  km: { cldr: 'km', udhr: 'khm', wikidata: 'khm' },
+  my: { cldr: 'my', udhr: 'mya', wikidata: 'mya' },
+  ko: { cldr: null, udhr: 'kor', wikidata: 'kor' },
+  ja: { cldr: null, udhr: 'jpn', wikidata: 'jpn' },
+  zh: { cldr: null, udhr: 'cmn_hans', udhrAlt: 'cmn_hant', wikidata: 'cmn' },
+  yue: { cldr: null, udhr: 'yue', wikidata: 'yue' },
 }
 
 // Sample text for script pages (UDHR file per script).
@@ -145,6 +222,8 @@ async function speakers() {
       year: r.time ? Number(r.time.value.slice(0, 4)) : null,
       source: r.item.value,
     }
+    // Skip projections dated in the future (Wikidata has some).
+    if (entry.year && entry.year > new Date().getFullYear()) continue
     const cur = byCode[code]?.[kind]
     // Keep the most recent figure of each kind.
     if (!cur || (entry.year ?? 0) > (cur.year ?? 0)) (byCode[code] ??= {})[kind] = entry
@@ -161,10 +240,11 @@ async function main() {
   const letters = {}
   const samples = {}
   for (const [id, l] of Object.entries(languages)) {
-    letters[id] = await cldr(l.cldr)
+    if (l.cldr) letters[id] = await cldr(l.cldr)
     if (l.cldrCyrl) letters[`${id}-cyrl`] = await cldr(l.cldrCyrl)
-    samples[id] = await udhrArticle1(l.udhr)
+    if (l.udhr) samples[id] = await udhrArticle1(l.udhr)
     if (l.udhrCyrl) samples[`${id}-cyrl`] = await udhrArticle1(l.udhrCyrl)
+    if (l.udhrAlt) samples[`${id}-alt`] = await udhrArticle1(l.udhrAlt)
     process.stdout.write(`${id} `)
   }
   const scriptText = {}

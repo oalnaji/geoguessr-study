@@ -1,4 +1,4 @@
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 import {
   Bullets, cardClass, Chip, LetterGrid, Native, OnThisPage, PageHeader, Prose, SampleText, Section, Sources,
 } from '../../../components/ui'
@@ -41,7 +41,7 @@ function Stats({ lang }: { lang: Language }) {
     s.speakers && { label: 'Speakers', ...figure(s.speakers) },
     { label: 'Official in', value: `${s.officialCountries.length} ${s.officialCountries.length === 1 ? 'country' : 'countries'}` },
     s.regionalCountries.length > 0 && { label: 'Regional or minority in', value: `${s.regionalCountries.length} more` },
-    { label: 'Letters', value: String(s.letterCount), detail: s.uniqueLetterCount ? `${s.uniqueLetterCount} unique in this app` : 'CLDR inventory' },
+    s.letterCount > 0 && { label: 'Letters', value: String(s.letterCount), detail: s.uniqueLetterCount ? `${s.uniqueLetterCount} unique in this app` : 'CLDR inventory' },
     s.orthographyYear && { label: 'Current spelling since', value: String(s.orthographyYear) },
     { label: 'On signs in', value: `${s.geoguessrCountries.length} GeoGuessr ${s.geoguessrCountries.length === 1 ? 'country' : 'countries'}` },
   ].filter(Boolean) as { label: string; value: string; detail?: string; href?: string }[]
@@ -77,14 +77,28 @@ function Regions({ lang }: { lang: Language }) {
 }
 
 function Alphabet({ lang }: { lang: Language }) {
-  const unique = new Set(uniqueLetters(lang))
-  const scriptsToShow = lang.altScript ? [lang.script, lang.altScript] : [lang.script]
+  const scriptsToShow = (lang.altScript ? [lang.script, lang.altScript] : [lang.script]).filter((sc) => lettersOf(lang, sc).length)
+  if (!scriptsToShow.length) {
+    return (
+      <p className="text-slate-600 dark:text-slate-400">
+        This language uses thousands of characters rather than an alphabet. See the{' '}
+        <Link to={`/languages/scripts/${lang.script}`} className="text-teal-700 underline dark:text-teal-400">
+          {scriptById.get(lang.script)?.name} script page
+        </Link>{' '}
+        for the key characters and how to recognise it.
+      </p>
+    )
+  }
   return (
     <div className="space-y-4">
       {scriptsToShow.map((sc) => (
         <div key={sc} className="space-y-2">
           {scriptsToShow.length > 1 && <h3 className="font-medium">{scriptById.get(sc)?.name}</h3>}
-          <LetterGrid script={sc} highlight={unique} letters={lettersOf(lang, sc).map((c) => ({ char: c, roman: '' }))} />
+          <LetterGrid
+            script={sc}
+            highlight={new Set(uniqueLetters(lang, sc))}
+            letters={lettersOf(lang, sc).map((c) => ({ char: c, roman: '' }))}
+          />
         </div>
       ))}
     </div>
@@ -163,7 +177,7 @@ export function LanguagePage() {
         )}
       </Section>
 
-      <Section id="alphabet" title="Alphabet" note="From Unicode CLDR. Highlighted letters are used by no other language in the app.">
+      <Section id="alphabet" title="Alphabet" note="From Unicode CLDR. Highlighted letters are used by no other language in the app that shares this script.">
         <Alphabet lang={lang} />
       </Section>
 

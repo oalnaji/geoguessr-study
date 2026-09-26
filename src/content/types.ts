@@ -100,6 +100,10 @@ export interface Language {
   signWords: Partial<Record<SignWordKey, string>>
   /** Sign words in the alternate script */
   signWordsAlt?: Partial<Record<SignWordKey, string>>
+  /** Space-separated letters, for languages CLDR has no inventory for */
+  lettersOverride?: string
+  /** Sample text for languages the UDHR project lacks (e.g. place names) */
+  sampleOverride?: string
   /** Elements that place names are built from (-by, Nagy-, Llan-…) */
   placeNameParts?: PlaceNamePart[]
   orthography?: { year: number; note: string }

@@ -71,7 +71,7 @@ export const sr: Language = {
   script: 'latin',
   altScript: 'cyrillic',
   family: ['Indo-European', 'Balto-Slavic', 'Slavic', 'South Slavic', 'Western South Slavic', 'Serbo-Croatian'],
-  groups: ['ex-yugoslav'],
+  groups: ['ex-yugoslav', 'cyrillic'],
   confusedWith: ['hr', 'bs', 'cnr', 'mk'],
   giveaways: [
     { sign: 'Cyrillic + Latin together', tip: 'Serbia is the only country where signs routinely show the same text in both scripts.' },
@@ -184,7 +184,7 @@ export const mk: Language = {
   nativeName: 'македонски',
   script: 'cyrillic',
   family: ['Indo-European', 'Balto-Slavic', 'Slavic', 'South Slavic', 'Eastern South Slavic'],
-  groups: ['ex-yugoslav'],
+  groups: ['ex-yugoslav', 'cyrillic'],
   confusedWith: ['bg', 'sr'],
   giveaways: [
     { sign: 'ѓ ќ', tip: 'Found only in Macedonian (Serbian has ђ ћ in their place).' },

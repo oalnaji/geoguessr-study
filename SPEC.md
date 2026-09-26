@@ -318,9 +318,9 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **0: Setup** ✅ | Repo, Vite/React/TS scaffold, PWA, deploy pipeline to free hosting |
 | **1: MVP** | ✅ Scripts reference (all 29 scripts in §5.1). *Still to do:* flashcards (character ↔ sound) + progress saved locally |
 | **2: Europe** | ✅ 43 European language pages and 9 groups. *Still to do:* "identify the language" quiz, country-level maps. Scope: all European language pages and groups (Central Europe first, then Ex-Yugoslav, Baltic + Finnic, Nordic, Iberian, Other Romance, West Germanic, Celtic), "identify the language" quiz, country-level maps |
-| **3: Indian scripts** | Devanagari, Bengali–Assamese, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala, with state-level region maps |
-| **4: Cyrillic** | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
-| **5: Everything else** | Remaining languages in §5, all quiz modes including map quizzes |
+| **3: Indian scripts** ✅ | Devanagari, Bengali–Assamese, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala, with state-level region maps |
+| **4: Cyrillic** ✅ | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
+| **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
 | **7: Vegetation** | Trees first, then crops and biomes (§12.5) |
 | **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |

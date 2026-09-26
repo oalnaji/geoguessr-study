@@ -53,7 +53,8 @@ describe('languages', () => {
 
   it('have CLDR letters and a UDHR sample', () => {
     for (const l of languages) {
-      expect(lettersOf(l).length, l.id).toBeGreaterThan(15)
+      // Chinese, Japanese and Korean use thousands of characters, so no letter list.
+      if (!['han', 'japanese', 'hangul'].includes(l.script)) expect(lettersOf(l).length, l.id).toBeGreaterThan(15)
       expect(languageSamples(l).length, l.id).toBeGreaterThan(0)
     }
   })
@@ -83,6 +84,17 @@ describe('derived letter data', () => {
     expect(u('pl')).toContain('ł')
     expect(u('is')).toContain('þ')
     expect(u('ro')).toEqual(expect.arrayContaining(['ș', 'ț']))
+  })
+
+  it('finds giveaway letters within non-Latin scripts too', () => {
+    const u = (id: string) => uniqueLetters(languageById.get(id)!)
+    expect(u('uk')).toEqual(expect.arrayContaining(['ї', 'є', 'ґ']))
+    expect(u('be')).toContain('ў')
+    expect(lettersOf(languageById.get('uk')!)).not.toContain('ʼ')
+    expect(u('kk')).toEqual(expect.arrayContaining(['ә', 'ұ']))
+    expect(u('as')).toEqual(expect.arrayContaining(['ৰ', 'ৱ']))
+    // A script used by one language has no "unique" letters to highlight.
+    expect(u('th')).toEqual([])
   })
 
   it('indexes shared letters under every language that uses them', () => {
@@ -119,8 +131,10 @@ describe('vocabulary and word finder', () => {
       for (const k of Object.keys(parseWords(spec))) expect(signWordKeys, `${id}: ${k}`).toContain(k)
     }
     for (const l of languages) {
-      expect(l.signWords.east, `${l.id} east`).toBeTruthy()
-      expect(l.placeNameParts!.length, `${l.id} place-name parts`).toBeGreaterThan(0)
+      // Words are left out where unsure, but every language needs something for the word finder.
+      const words = Object.keys(l.signWords).length + (l.placeNameParts?.length ?? 0)
+      expect(words, `${l.id} words`).toBeGreaterThanOrEqual(2)
+      if (l.script === 'latin') expect(Object.keys(l.signWords).length, `${l.id} Latin words`).toBeGreaterThanOrEqual(4)
     }
   })
 
@@ -129,6 +143,7 @@ describe('vocabulary and word finder', () => {
     expect(top('vej')).toMatchObject({ lang: 'da', meaning: 'Road' })
     expect(top('kobing')).toMatchObject({ lang: 'da', kind: 'place-name part' })
     expect(top('Nagy')).toMatchObject({ lang: 'hu' })
+    expect(searchWords('timur').map((e) => e.lang)).toEqual(expect.arrayContaining(['id', 'ms']))
     expect(searchWords('sor').some((e) => e.lang === 'no' && e.meaning === 'South')).toBe(true)
     expect(searchWords('улица').map((e) => e.lang)).toEqual(expect.arrayContaining(['sr', 'mk']))
   })

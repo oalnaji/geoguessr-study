@@ -166,5 +166,285 @@
  "el": {
   "text": "Όλοι οι άνθρωποι γεννιούνται ελεύθεροι και ίσοι στην αξιοπρέπεια και τα δικαιώματα. Είναι προικισμένοι με λογική και συνείδηση, και οφείλουν να συμπεριφέρονται μεταξύ τους με πνεύμα αδελφοσύνης.",
   "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ell_monotonic.xml"
+ },
+ "vi": {
+  "text": "Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền. Mọi con người đều được tạo hoá ban cho lý trí và lương tâm và cần phải đối xử với nhau trong tình bằng hữu.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_vie.xml"
+ },
+ "id": {
+  "text": "Semua orang dilahirkan merdeka dan mempunyai martabat dan hak-hak yang sama. Mereka dikaruniai akal dan hati nurani dan hendaknya bergaul satu sama lain dalam semangat persaudaraan.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ind.xml"
+ },
+ "ms": {
+  "text": "Semua manusia dilahirkan bebas dan samarata dari segi kemuliaan dan hak-hak. Mereka mempunyai pemikiran dan perasaan hati dan hendaklah bertindak di antara satu sama lain dengan semangat persaudaraan.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_mly_latn.xml"
+ },
+ "fil": {
+  "text": "Ang lahat ng tao'y isinilang na malaya at pantay-pantay sa karangalan at mga karapatan. Sila'y pinagkalooban ng katwiran at budhi at dapat magpalagayan ang isa't isa sa diwa ng pagkakapatiran.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tgl.xml"
+ },
+ "ceb": {
+  "text": "Ang tanang katawhan gipakatawo nga may kagawasan ug managsama sa kabililhon. Sila gigasahan sa salabutan ug tanlag og mag-ilhanay isip managsoon sa usa'g-usa diha sa diwa sa ospiritu.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ceb.xml"
+ },
+ "sw": {
+  "text": "Watu wote wamezaliwa huru, hadhi na haki zao ni sawa. Wote wamejaliwa akili na dhamiri, hivyo yapasa watendeane kindugu.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_swh.xml"
+ },
+ "zu": {
+  "text": "Bonke abantu bazalwa bekhululekile belingana ngesithunzi nangamalungelo. Bahlanganiswe wumcabango nangunembeza futhi kufanele baphathane ngomoya wobunye.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_zul.xml"
+ },
+ "xh": {
+  "text": "Bonke abantu bazalwa bekhululekile belingana ngesidima nangokweemfanelo. Bonke abantu banesiphiwo sesazela nesizathu sokwenza isenzo ongathanda ukuba senziwe kumzalwane wakho.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_xho.xml"
+ },
+ "st": {
+  "text": "Batho bohle ba tswetswe ba lokolohile mme ba lekana ka botho le ditokelo. Ba tswetswe le monahano le letswalo mme ba tlamehile ho phedisana le ba bang ka moya wa boena.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_sot.xml"
+ },
+ "tn": {
+  "text": "Batho botlhe ba tsetswe ba gololosegile le go lekalekana ka seriti le ditshwanelo. Ba abetswe go akanya le maikutlo, mme ba tshwanetse go direlana ka mowa wa bokaulengwe.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tsn.xml"
+ },
+ "yo": {
+  "text": "Gbogbo ènìyàn ni a bí ní òmìnira; iyì àti ẹ̀tọ́ kọ̀ọ̀kan sì dọ́gba. Wọ́n ní ẹ̀bùn ti làákàyè àti ti ẹ̀rí‐ọkàn, ó sì yẹ kí wọn ó máa hùwà sí ara wọn gẹ́gẹ́ bí ọmọ ìyá.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_yor.xml"
+ },
+ "ig": {
+  "text": "A mụrụ mmadụ nile n'ohere nakwa nha anya ugwu na ikike. E nyere ha uche na mmụọ ime ihe ziri ezi nke na ha kwesiri ịkpaso ibe ha agwa n'obi nwanne na nwanne.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ibo.xml"
+ },
+ "ha": {
+  "text": "Su dai ’yan-adam, ana haifuwarsu ne duka ’yantattu, kuma kowannensu na da mutunci da hakkoki daidai da na kowa. Suna da hankali da tunani, saboda haka duk abin da za su aikata wa juna, ya kamata su yi shi a cikin ’yan-uwanci.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_hau_NG.xml"
+ },
+ "wo": {
+  "text": "Doomi aadama yépp danuy juddu, yam ci tawfeex ci sag ak sañ-sañ. Nekk na it ku xam dëgg te ànd na ak xelam, te war naa jëflante ak nawleen, te teg ko ci wàllu mbokk.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_wol.xml"
+ },
+ "mg": {
+  "text": "Teraka afaka sy mitovy zo sy fahamendrehana ny olombelona rehetra. Samy manan-tsaina sy fieritreretana ka tokony hifampitondra am- pirahalahiana.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_plt.xml"
+ },
+ "rw": {
+  "text": "Abantu bose bavuka aliko bakwiye agaciro no kwubahwa kimwe. Bose bavukana ubwenge n'umutima, bagomba kugilirana kivandimwe.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kin.xml"
+ },
+ "qu": {
+  "text": "Llapa runan kay pachapi paqarin qispisqa, \"libre\" flisqa, allin kausaypi, chaninchasqa kausaypi kananpaq, yuyayniyoq, yachayniyoq runa kasqanman jina. Llapa runamasinwantaqmi wauqentin jina munanakunan.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_quz.xml"
+ },
+ "gn": {
+  "text": "Mayma yvypóra ou ko yvy ári iñapytlʼyre ha eteĩcha dignidad ha derecho jeguerekópe; ha ikatu rupi oikuaa añetéva ha añeteʼyva, iporãva ha ivaíva, tekotevẽ pehenguéicha oiko oñondivekuéra.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_gug.xml"
+ },
+ "ay": {
+  "text": "Taqpach jaqejh khuskat uñjatatäpjhewa munañapansa, lurañapansa, amuyasiñapansa, ukatwa jilani sullkanípjhaspas ukham uñjasipjhañapawa.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ayr.xml"
+ },
+ "mi": {
+  "text": "Ko te katoa o nga tangata i te whanaungatanga mai e watea ana i nga here katoa; e tauriterite ana hoki nga mana me nga tika. E whakawhiwhia ana hoki ki a ratou te ngakau whai whakaaro me te hinengaro mohio ki te tika me te he, a e tika ana kia meinga te mahi a tetahi ki tetahi me ma roto atu i te wairua o te noho tahi, ano he teina he tuakana i ringa i te whakaaro kotahi.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_mri.xml"
+ },
+ "haw": {
+  "text": "Hānau kū’oko’a ‘ia nā kānaka apau loa, a ua kau like ka hanohano a me nā pono kīvila ma luna o kākou pākahi. Ua ku’u mai ka no’ono’o pono a me ka ‘ike pono ma luna o kākou, no laila, e aloha kākou kekahi i kekahi.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_haw.xml"
+ },
+ "sm": {
+  "text": "O tagata soifua uma ua saoloto lo latou fananau mai, ma e tutusa o latou tulaga aloaia faapea a latou aia tatau. Ua faaeeina atu i a latou le mafaufau lelei ma le loto fuatiaifo ma e tatau ona faatino le agaga faauso i le va o le tasi i le isi,",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_smo.xml"
+ },
+ "to": {
+  "text": "Ko e kotoa ‘o ha’a tangata ‘oku fanau’i mai ‘oku tau’ataina pea tatau ‘i he ngeia mo e ngaahi totonu. Na’e fakanaunau’i kinautolu ‘aki ‘a e ‘atamai mo e konisenisi pea ‘oku totonu ke nau feohi ‘i he laumalie ‘o e nofo fakatautehina.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ton.xml"
+ },
+ "kl": {
+  "text": "Inuit tamarmik inunngorput nammineersinnaassuseqarlutik assigiimmillu ataqqinassuseqarlutillu pisinnaatitaaffeqarlutik. Solaqassusermik tarnillu nalunngissusianik pilersugaapput, imminnullu iliorfigeqatigiittariaqaraluarput qatanngutigiittut peqatigiinnerup anersaavani.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kal.xml"
+ },
+ "az": {
+  "text": "Bütün insanlar ləyaqət və hüquqlarına görə azad və bərabər doğulurlar. Onların şüurları və vicdanları var və bir-birlərinə münasibətdə qardaşlıq ruhunda davranmalıdırlar.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_azj_latn.xml"
+ },
+ "uz": {
+  "text": "Barcha odamlar erkin, qadr‐qimmat va huquqlarda teng boʻlib tugʻiladilar. Ular aql va vijdon sohibidirlar va bir‐birlariga birodarlarcha muomala qilishlari zarur.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_uzn_latn.xml"
+ },
+ "tk": {
+  "text": "Adamlaryň hemmesi azat dogulýarlar we öz mertebesi hem‐de hukuklary boýunça ilkibaşdan deňdirler. Olara ozal‐başdan aň, ynsap berlendir we biri‐birine özara doganlyk ruhunda çemeleşmek olaryň ýaraşygydyr.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tuk_latn.xml"
+ },
+ "ru": {
+  "text": "Все люди рождаются свободными и равными в своем достоинстве и правах. Они наделены разумом и совестью и должны поступать в отношении друг друга в духе братства.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_rus.xml"
+ },
+ "uk": {
+  "text": "Всі люди народжуються вільними і рівними у своїй гідності та правах. Вони наділені розумом і совістю і повинні діяти у відношенні один до одного в дусі братерства.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ukr.xml"
+ },
+ "be": {
+  "text": "Усе людзі нараджаюцца свабоднымі і роўнымі ў сваёй годнасці і правах. Яны надзелены розумам і сумленнем і павінны ставіцца адзін да аднаго ў духу брацтва.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_bel.xml"
+ },
+ "bg": {
+  "text": "Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_bul.xml"
+ },
+ "kk": {
+  "text": "Барлық адамдар тумысынан азат және қадір‐қасиеті мен кұқықтары тең болып дүниеге келеді. Адамдарға ақыл‐парасат, ар‐ождан берілген, сондықтан олар бір‐бірімен туыстық, бауырмалдық қарым‐қатынас жасаулары тиіс.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kaz.xml"
+ },
+ "ky": {
+  "text": "Бардык адамдар өз беделинде жана укуктарында эркин жана тең укуктуу болуп жаралат. Алардын аң‐сезими менен абийири бар жана бири‐бирине бир туугандык мамилекылууга тийиш.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kir.xml"
+ },
+ "mn": {
+  "text": "Хүн бүр төрж мэндлэхэд эрх чөлөөтэй, адилхан нэр төртэй, ижил эрхтэй байдаг. Оюун ухаан, нандин чанар заяасан хүн гэгч өөр хоорондоо ахан дүүгийн үзэл санаагаар харьцах учиртай.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_khk.xml"
+ },
+ "ar": {
+  "text": "يولد جميع الناس أحرارًا متساوين في الكرامة والحقوق. وقد وهبوا عقلاً وضميرًا وعليهم أن يعامل بعضهم بعضًا بروح الإخاء.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_arb.xml"
+ },
+ "fa": {
+  "text": "تمام افراد بشر آزاد بدنیا میایند و از لحاظ حیثیت و حقوق با هم برابرند. همه دارای عقل و وجدان میباشند و باید نسبت بیکدیگر با روح برادری رفتار کنند.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_pes_1.xml"
+ },
+ "ur": {
+  "text": "تمام انسان آزاد اور حقوق و عزت کے اعتبار سے برابر پیدا ہوئے ہیں۔ انہیں ضمیر اور عقل ودیعت ہوئی ہے۔ اس لئے انہیں ایک دوسرے کے ساتھ بھائی چارے کا سلوک کرنا چاہیئے۔",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_urd.xml"
+ },
+ "ps": {
+  "text": "د بشر ټول افراد ازاد نړۍ ته راځي او د حيثيت او د حقوقو له پلوه سره برابر دي۔ ټول د عقل او وجدان خاوندان دي او بايد يو له بل سره د ورورۍ په روحيه سره چلنند کړي۔",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_pbu.xml"
+ },
+ "ckb": {
+  "text": "Hemû mirov azad û di weqar û mafan de wekhev tên dinyayê. Ew xwedî hiş û şuûr in û divê li hember hev bi zihniyeteke bratiyê bilivin.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ckb.xml"
+ },
+ "ug": {
+  "text": "ھەممە ئادەم زانىدىنلا ئەركىن، ئىززەت-ھۆرمەت ۋە ھوقۇقتا باپباراۋەر بولۇپ تۇغۇلغان. ئۇلار ئەقىلغە ۋە ۋىجدانغا ئىگە ھەمدە بىر-بىرىگە قېرىنداشلىق مۇناسىۋىتىگە خاس روھ بىلەن موئامىلە قىلىشى كېرەك.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_uig_arab.xml"
+ },
+ "he": {
+  "text": "כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם. כולם חוננו בתבונה ובמצפון, לפיכך חובה עליהם לנהוג איש ברעהו ברוח של אחוה.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_heb.xml"
+ },
+ "yi": {
+  "text": "יעדער מענטש װערט געבױרן פֿרײַ און גלײַך אין כּבֿוד און רעכט. יעדער װערט באַשאָנקן מיט פֿאַרשטאַנד און געװיסן; יעדער זאָל זיך פֿירן מיט אַ צװײטן אין אַ געמיט פֿון ברודערשאַפֿט.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ydd.xml"
+ },
+ "hy": {
+  "text": "Բոլոր մարդիկ ծնվում են ազատ ու հավասար իրենց արժանապատվությամբ ու իրավունքներով։ Նրանք ունեն բանականություն ու խիղճ և միմյանց պետք է եղբայրաբար վերաբերվեն։",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_hye.xml"
+ },
+ "ka": {
+  "text": "ყოველი ადამიანი იბადება თავისუფალი და თანასწორი თავისი ღირსებითა და უფლებებით. მათ მინიჭებული აქვთ გონება და სინდისი და ერთმანეთის მიმართ უნდა ექცეოდნენ ძმობის სულისკვეთებით.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kat.xml"
+ },
+ "dv": {
+  "text": "ހުރިހާ އިންސާނުންވެސް ދުނިޔެއަށް އުފަންވަނީ، މިނިވަންކަމުގައި، ހަމަހަމަ ޙައްޤުތަކަކާއެކު، ހަމަހަމަ ދަރަޖައެއްގައި ކަމޭހިތެވިގެންވާ ބައެއްގެ ގޮތުގައެވެ. ހެޔޮ ވިސްނުމާއި، ހެޔޮބުއްދީގެ ބާރު އެމީހުންނަށް ލިބިގެންވެއެވެ. އަދި އެކަކު އަނެކަކާމެދު އެމީހުން މުޢާމަލާތް ކުރަންވާނީ، އުޚުއްވަތްތެރިކަމުގެ ރޫޙެއްގައެވެ.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_div.xml"
+ },
+ "am": {
+  "text": "የሰው፡ልጅ፡ሁሉ፡ሲወለድ፡ነጻና፡በክብርና፡በመብትም፡እኩልነት፡ያለው፡ነው።፡የተፈጥሮ፡ማስተዋልና፡ሕሊና፡ስላለው፡አንዱ፡ሌላውን፡በወንድማማችነት፡መንፈስ፡መመልከት፡ይገባዋል።",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_amh.xml"
+ },
+ "ti": {
+  "text": "ብመንፅር ክብርን መሰልን ኩሎም ሰባት እንትውለዱ ነፃን ማዕሪን እዮም፡፡ ምስትውዓልን ሕልናን ዝተዓደሎም ብምዃኖም ንሕድሕዶም ብሕውነታዊ መንፈስ ክተሓላለዩ ኦለዎም፡፡",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tir.xml"
+ },
+ "zgh": {
+  "text": "ⵉⵎⴷⴰⵏⴻⵏ, ⴰⴽⴽⴻⵏ ⵎⴰ ⵍⵍⴰⵏ ⵜⵜⵍⴰⵍⴻⵏ ⴷ ⵉⵍⴻⵍⵍⵉⵢⴻⵏ ⵎⵙⴰⵡⴰⵏ ⴷⵉ ⵍⵃⵡⴻⵕⵎⴰ ⴷ ⵢⵉⵣⴻⵔⴼⴰⵏ-ⵖⵓⵔ ⵙⴻⵏ ⵜⴰⵎⵙⴰⴽⵡⵉⵜ ⴷ ⵍⴰⵇⵓⴻⵍ ⵓ ⵢⴻⵙⵙⴻⴼⴽ ⴰⴷ-ⵜⵉⵍⵉ ⵜⴻⴳⵎⴰⵜⵜ ⴳⴰⵔ ⴰⵙⴻⵏ.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tzm_tfng.xml"
+ },
+ "hi": {
+  "text": "सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । उन्हें बुद्धि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_hin.xml"
+ },
+ "mr": {
+  "text": "सर्व मानवी व्यक्ति जन्मतःच स्वतंत्र आहेत व त्यांना समान प्रतिष्ठा व समान अधिकार आहेत. त्यांना विचारशक्ति व सदसविद्वेकबुद्धि लाभलेली आहे. व त्यांनी एकमेकांशी बंधुत्याच्या भावनेने आचरण करावे.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_mar.xml"
+ },
+ "ne": {
+  "text": "सबै व्यक्ति हरू जन्मजात स्वतन्त्र हुन ती सबैको समान अधिकार र महत्व छ। निजहरूमा विचार शक्ति र सद्धिचार भएकोले निजहरूले आपसमा भातृत्वको भावना बाट व्यवहार गर्नु पर्छ।",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_nep.xml"
+ },
+ "bn": {
+  "text": "সমস্ত মানুষ স্বাধীনভাবে সমান মর্যাদা এবং অধিকার নিয়ে জন্মগ্রহণ করে। তাঁদের বিবেক এবং বুদ্ধি আছে; সুতরাং সকলেরই একে অপরের প্রতি ভ্রাতৃত্বসুলভ মনোভাব নিয়ে আচরণ করা উচিত।",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_ben.xml"
+ },
+ "pa": {
+  "text": "ਸਾਰਾ ਮਨੁੱਖੀ ਪਰਿਵਾਰ ਆਪਣੀ ਮਹਿਮਾ, ਸ਼ਾਨ ਅਤੇ ਹੱਕਾਂ ਦੇ ਪੱਖੋਂ ਜਨਮ ਤੋਂ ਹੀ ਆਜ਼ਾਦ ਹੈ ਅਤੇ ਸੁਤੇ ਸਿੱਧ ਸਾਰੇ ਲੋਕ ਬਰਾਬਰ ਹਨ । ਉਨ੍ਹਾਂ ਸਭਨਾ ਨੂੰ ਤਰਕ ਅਤੇ ਜ਼ਮੀਰ ਦੀ ਸੌਗਾਤ ਮਿਲੀ ਹੋਈ ਹੈ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਭਰਾਤਰੀਭਾਵ ਦੀ ਭਾਵਨਾ ਰਖਦਿਆਂ ਆਪਸ ਵਿਚ ਵਿਚਰਣਾ ਚਾਹੀਦਾ ਹੈ ।",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_pan.xml"
+ },
+ "gu": {
+  "text": "પ્રતિષ્ઠા અને અધિકારોની દૃષ્ટિએ સર્વ માનવો જન્મથી સ્વતંત્ર અને સમાન હોય છે. તેમનામાં વિચારશક્તિ અને અંતઃકરણ હોય છે અને તેમણે પરસ્પર બંધુત્વની ભાવનાથી વર્તવું જોઇએ.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_guj.xml"
+ },
+ "ta": {
+  "text": "மனிதப் பிறிவியினர் சகலரும் சுதந்திரமாகவே பிறக்கின்றனர்; அவர்கள் மதிப்பிலும், உரிமைகளிலும் சமமானவர்கள், அவர்கள் நியாயத்தையும் மனச்சாட்சியையும் இயற்பண்பாகப் பெற்றவர்கள். அவர்கள் ஒருவருடனொருவர் சகோதர உணர்வுப் பாங்கில் நடந்துகொள்ளல் வேண்டும்.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tam.xml"
+ },
+ "te": {
+  "text": "ప్రతిపత్తిస్వత్వముల విషయమున మానవులెల్లరును జన్మతః స్వతంత్రులును సమానులును నగుదురు. వారు వివేచన-అంతఃకరణ సంపన్నులగుటచే పరస్పరము భ్రాతృభావముతో వర్తింపవలయును.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tel.xml"
+ },
+ "kn": {
+  "text": "ಎಲ್ಲಾ ಮಾನವರೂ ಸ್ವತಂತ್ರರಾಗಿಯೇ ಜನಿಸಿದ್ದಾರೆ. ಹಾಗೂ ಘನತೆ ಮತ್ತು ಹಕ್ಕುಗಳಲ್ಲಿ ಸಮಾನರಾಗಿದ್ದಾರೆ. ವಿವೇಕ ಮತ್ತು ಅಂತಃಕರಣಗಳನ್ನು ಪಡೆದವರಾದ್ದರಿಂದ ಅವರು ಪರಸ್ಪರ ಸಹೋದರ ಭಾವದಿಂದ ವರ್ತಿಸಬೇಕು.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kan.xml"
+ },
+ "ml": {
+  "text": "മനുഷ്യരെല്ലാവരും തുല്യാവകാശങ്ങളോടും അന്തസ്സോടും സ്വാതന്ത്ര്യത്തോടുംകൂടി ജനിച്ചിട്ടുള്ളവരാണ്‌. അന്യോന്യം ഭ്രാതൃഭാവത്തോടെ പെരുമാറുവാനാണ്‌ മനുഷ്യന്നു വിവേകബുദ്ധിയും മനസ്സാക്ഷിയും സിദ്ധമായിരിക്കുന്നത്‌.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_mal.xml"
+ },
+ "si": {
+  "text": "සියලු මනුෂ්‍යයෝ නිදහස්ව උපත ලබා ඇත. ගරුත්වයෙන් හා අයිතිවාසිකම්වලින් සමාන වෙති. යුක්ති අයුක්ති පිළිබඳ හැඟීමෙන් හා හෘදය සාක්ෂියෙන් යුත් ඔවුන්, ඔවුනොවුන්ට සැළකිය යුත්තේ සහෝදරත්වය පිළිබඳ හැඟීමෙනි.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_sin.xml"
+ },
+ "bo": {
+  "text": "འགྲོ་བ་མིའི་རིགས་རྒྱུད་ཡོངས་ལ་སྐྱེས་ཙམ་ཉིད་ནས་ཆེ་མཐོངས་དང༌། ཐོབ་ཐངགི་རང་དབང་འདྲ་མཉམ་དུ་ཡོད་ལ། ཁོང་ཚོར་རང་བྱུང་གི་བློ་རྩལ་དང་བསམ་ཚུལ་བཟང་པོ་འདོན་པའི་འོས་བབས་ཀྱང་ཡོད། དེ་བཞིན་ཕན་ཚུན་གཅིག་གིས་གཅིག་ལ་བུ་སྤུན་གྱི་འདུ་ཤེས་འཛིན་པའི་བྱ་སྤྱོད་ཀྱང་ལག་ལེན་བསྟར་དགོས་པ་ཡིན༎",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_bod.xml"
+ },
+ "dz": {
+  "text": "འགྲོ་བ་མི་ཚུ་ག་ར་དལ་དབང་གི་ཐོག་ལས་སྐྱེས་ཏེ་ཡོདཔ་ལས་ ག་ར་ལུ་བརྩི་མཐོང་དང་ཐོབ་དབང་འདྲ་མཉམ་སྦེ་ཡོད། མི་ཚུ་ག་ར་སྨྲ་ཤེས་དོན་གོ་བའི་མཚན་ཉིད་དང་ལྡནམ་ལས་ ག་ར་གིས་ལཱ་ག་ཅི་ར་འབད་རུང་ གཅིག་གིས་གཅིག་ལུ་སྤུན་ཆའི་འདུ་ཤེས་བསྐྱེད་ཐོག་ལས་ལཱ་འབད་དགོ།",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_dzo.xml"
+ },
+ "th": {
+  "text": "มนุษย์ทั้งหลายเกิดมามีอิสระและเสมอภาคกันในเกียรติศักด[เกียรติศักดิ์]และสิทธิ ต่างมีเหตุผลและมโนธรรม และควรปฏิบัติต่อกันด้วยเจตนารมณ์แห่งภราดรภาพ",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_tha.xml"
+ },
+ "lo": {
+  "text": "ມະນຸດເກີດມາມີສິດເສລີພາບ ແລະ ສະເໝີໜ້າກັນໃນທາງກຽດຕິສັກ ແລະ ທາງສິດດ້ວຍມະນຸດມີສະຕິສຳປັດຊັນຍະ(ຮູ້ດີຮູ້ຊົ່ວ)ແລະມີມະໂນທຳຈື່ງຕ້ອງປະພຶດຕົນຕໍ່ກັນໃນທາງພີ່ນ້ອງ.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_lao.xml"
+ },
+ "km": {
+  "text": "មនុស្សទាំងអស់ កើតមកមានសេរីភាព និងសមភាព ក្នុងផ្នែកសេចក្ដីថ្លៃថ្នូរនិងសិទ្ធិ។ មនុស្ស មានវិចារណញ្ញាណនិងសតិសម្បជញ្ញៈជាប់ពីកំណើត ហើយគប្បីប្រព្រឹត្ដចំពោះគ្នាទៅវិញទៅមកក្នុងស្មារតីភាតរភាពជាបងប្អូន។",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_khm.xml"
+ },
+ "my": {
+  "text": "လူတိုင်းသည် တူညီ လွတ်လပ်သော ဂုဏ်သိက္ခာဖြင့် လည်းကောင်း၊ တူညီလွတ်လပ်သော အခွင့်အရေးများဖြင့် လည်းကောင်း၊ မွေးဖွားလာသူများ ဖြစ်သည်။ ထိုသူတို့၌ ပိုင်းခြား ဝေဖန်တတ်သော ဉာဏ်နှင့် ကျင့်ဝတ် သိတတ်သော စိတ်တို့ရှိကြ၍ ထိုသူတို့သည် အချင်းချင်း မေတ္တာထား၍ ဆက်ဆံကျင့်သုံးသင့်၏။",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_mya.xml"
+ },
+ "ko": {
+  "text": "모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다. 인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다.",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_kor.xml"
+ },
+ "ja": {
+  "text": "すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_jpn.xml"
+ },
+ "zh": {
+  "text": "人人生而自由，在尊严和权利上一律平等。他们赋有理性和良心，并应以兄弟关系的精神相对待。",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_cmn_hans.xml"
+ },
+ "zh-alt": {
+  "text": "人人生而自由，在尊嚴和權利上一律平等。他們賦有理性和良心，並應以兄弟關係的精神相對待。",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_cmn_hant.xml"
+ },
+ "yue": {
+  "text": "人人生而平等，喺尊严同埋权利上一律平等。佢哋有理性同埋良心，而且应当以兄弟关系嘅精神相对待。",
+  "source": "https://github.com/eric-muller/udhr/blob/master/data/udhr/udhr_yue.xml"
  }
 }

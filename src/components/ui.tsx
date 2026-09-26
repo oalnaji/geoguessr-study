@@ -11,7 +11,9 @@ export const linkCardClass = `${cardClass} hover:border-teal-600 dark:hover:bord
 export function Native({ script, children, className = '' }: { script: ScriptId; children: ReactNode; className?: string }) {
   const rtl = script === 'arabic' || script === 'hebrew' || script === 'thaana'
   const vertical = script === 'mongolian'
-  useEffect(() => loadScriptFont(script), [script])
+  useEffect(() => {
+    loadScriptFont(script)
+  }, [script])
   return (
     <span
       lang={scriptLang[script]}

@@ -3,14 +3,23 @@ import lettersJson from './generated/letters.json'
 import speakersJson from './generated/speakers.json'
 import udhrLanguagesJson from './generated/udhr-languages.json'
 import udhrScriptsJson from './generated/udhr-scripts.json'
+import * as africa from './languages/africa'
+import * as americasPacific from './languages/americas-pacific'
 import * as baltic from './languages/baltic-finnic'
 import * as celtic from './languages/celtic'
 import * as central from './languages/central-europe'
+import * as cyrillic from './languages/cyrillic'
+import * as eastAsia from './languages/east-asia'
 import * as yugo from './languages/ex-yugoslav'
 import * as iberian from './languages/iberian'
+import * as mainlandSea from './languages/mainland-sea'
+import * as maritimeSea from './languages/maritime-sea'
+import * as middleEast from './languages/middle-east'
 import * as nordic from './languages/nordic'
 import * as europe from './languages/other-europe'
 import * as romance from './languages/other-romance'
+import * as southAsia from './languages/south-asia'
+import * as turkicLangs from './languages/turkic'
 import * as germanic from './languages/west-germanic'
 import { extraWords, extraWordsAlt, placeNameParts } from './languages/vocab'
 import { scriptList } from './scripts'
@@ -50,20 +59,21 @@ const withVocab = (lang: Language): Language => ({
 export const languages: Language[] = [
   ...central.languages, ...yugo.languages, ...baltic.languages, ...nordic.languages,
   ...iberian.languages, ...romance.languages, ...germanic.languages, ...celtic.languages, ...europe.languages,
+  ...turkicLangs.languages, ...cyrillic.languages, ...maritimeSea.languages, ...mainlandSea.languages,
+  ...middleEast.languages, ...southAsia.languages, ...eastAsia.languages, ...africa.languages, ...americasPacific.languages,
 ].map(withVocab).sort((a, b) => a.name.localeCompare(b.name))
 export const languageById = new Map(languages.map((l) => [l.id, l]))
 
 export const groups: Group[] = [
   central.centralEurope, yugo.exYugoslav, baltic.balticFinnic, nordic.nordic, iberian.iberian,
-  romance.otherRomance, germanic.westGermanic, celtic.celtic, europe.turkic,
+  romance.otherRomance, germanic.westGermanic, celtic.celtic, europe.turkic, cyrillic.cyrillicGroup,
+  maritimeSea.maritimeSea, mainlandSea.mainlandSea, southAsia.northIndic, southAsia.southIndic, southAsia.himalayan,
+  middleEast.arabicScript, middleEast.hebrewScript, middleEast.caucasus, eastAsia.eastAsian,
+  africa.bantu, africa.westAfrican, africa.hornOfAfrica, americasPacific.polynesian, americasPacific.andean,
 ]
 export const groupById = new Map(groups.map((g) => [g.id, g]))
 
-/** Names for languages referenced before they have their own page. */
-const pendingNames: Record<string, string> = {
-  bg: 'Bulgarian', ru: 'Russian', uk: 'Ukrainian', be: 'Belarusian', az: 'Azerbaijani',
-}
-export const languageName = (id: string) => languageById.get(id)?.name ?? pendingNames[id] ?? id
+export const languageName = (id: string) => languageById.get(id)?.name ?? id
 
 export { countries }
 
@@ -71,41 +81,64 @@ export { countries }
 
 const BASIC_LATIN = new Set('abcdefghijklmnopqrstuvwxyz')
 
-/** CLDR letter inventory for a language in a given script. Serbian/Montenegrin Latin is the default key. */
+/**
+ * False for punctuation CLDR includes in some inventories. The Ukrainian apostrophe (U+02BC) is
+ * classed as a letter by Unicode, so it is excluded by name; the ʻokina (U+02BB) is a real letter.
+ */
+const isLetterEntry = (c: string) => c !== 'ʼ' && /[\p{L}\p{M}]/u.test(c)
+
+/** Letter inventory for a language in a given script: CLDR, or the language file's override. */
 export function lettersOf(lang: Language, script: ScriptId = lang.script): string[] {
-  if (script === 'cyrillic' && lang.altScript === 'cyrillic') return letterSets[`${lang.id}-cyrl`]?.main ?? []
+  if (script !== lang.script && script === lang.altScript) return (letterSets[`${lang.id}-cyrl`]?.main ?? []).filter(isLetterEntry)
+  if (lang.lettersOverride) return lang.lettersOverride.split(/\s+/)
   // CLDR lists Hungarian long consonants (ccs, ggy, ddzs) as entries; they are spellings, not letters.
-  const main = (letterSets[lang.id]?.main ?? []).filter((c) => !(c.length >= 3 && c[0] === c[1]))
+  const main = (letterSets[lang.id]?.main ?? []).filter((c) => !(c.length >= 3 && c[0] === c[1]) && isLetterEntry(c))
   // Montenegrin shares Serbian's CLDR data; add its two extra letters.
   return lang.id === 'cnr' ? [...main, 'ś', 'ź'] : main
 }
 
 const isSingle = (s: string) => [...s.normalize('NFC')].length === 1
 
-/** Letters beyond basic a–z for Latin-script languages, or all letters for other scripts. */
-export function specialLetters(lang: Language): string[] {
-  const all = lettersOf(lang).filter(isSingle)
-  return lang.script === 'latin' ? all.filter((c) => !BASIC_LATIN.has(c)) : all
+/** Languages written in a script, as main or second script. */
+export const languagesInScript = (script: ScriptId) =>
+  languages.filter((l) => l.script === script || l.altScript === script)
+
+/**
+ * Letters that distinguish languages sharing a script, and who uses each: every letter not used by
+ * all of them (and, for Latin, beyond a–z). Most distinctive first. Empty for single-language scripts.
+ */
+export function letterIndex(script: ScriptId): { char: string; langs: string[] }[] {
+  const langs = languagesInScript(script).filter((l) => lettersOf(l, script).length)
+  if (langs.length < 2) return []
+  const map = new Map<string, string[]>()
+  for (const lang of langs) {
+    for (const c of new Set(lettersOf(lang, script).filter(isSingle))) map.set(c, [...(map.get(c) ?? []), lang.id])
+  }
+  return [...map.entries()]
+    .filter(([c, users]) => users.length < langs.length && !(script === 'latin' && BASIC_LATIN.has(c)))
+    .map(([char, users]) => ({ char, langs: users }))
+    .sort((a, b) => a.langs.length - b.langs.length || a.char.localeCompare(b.char))
+}
+
+const indexCache = new Map<ScriptId, Map<string, string[]>>()
+const usage = (script: ScriptId) => {
+  if (!indexCache.has(script)) indexCache.set(script, new Map(letterIndex(script).map((e) => [e.char, e.langs])))
+  return indexCache.get(script)!
 }
 
 /** Every non-basic Latin letter and the languages that use it. */
-export const latinIndex: { char: string; langs: string[] }[] = (() => {
-  const map = new Map<string, string[]>()
-  for (const lang of languages) {
-    if (lang.script !== 'latin') continue
-    for (const c of specialLetters(lang)) map.set(c, [...(map.get(c) ?? []), lang.id])
-  }
-  return [...map.entries()]
-    .map(([char, langs]) => ({ char, langs }))
-    .sort((a, b) => a.langs.length - b.langs.length || a.char.localeCompare(b.char))
-})()
+export const latinIndex = letterIndex('latin')
 
-const latinUsage = new Map(latinIndex.map((e) => [e.char, e.langs]))
+/** Letters beyond basic a–z for Latin-script languages, or all letters for other scripts. */
+export function specialLetters(lang: Language, script: ScriptId = lang.script): string[] {
+  const all = lettersOf(lang, script).filter(isSingle)
+  return script === 'latin' ? all.filter((c) => !BASIC_LATIN.has(c)) : all
+}
 
-/** Latin letters used by this language and no other language in the app. */
-export function uniqueLetters(lang: Language): string[] {
-  if (lang.script !== 'latin') return []
-  return specialLetters(lang).filter((c) => latinUsage.get(c)?.length === 1)
+/** Letters used by this language and no other language in the app with the same script. */
+export function uniqueLetters(lang: Language, script: ScriptId = lang.script): string[] {
+  const u = usage(script)
+  return [...new Set(lettersOf(lang, script).filter(isSingle))].filter((c) => u.get(c)?.length === 1)
 }
 
 // ---- Samples ---------------------------------------------------------------------------------
@@ -114,6 +147,9 @@ export function languageSamples(lang: Language): (Sample & { script: ScriptId })
   const out: (Sample & { script: ScriptId })[] = []
   if (udhrLanguages[lang.id]) out.push({ ...udhrLanguages[lang.id], script: lang.script })
   if (lang.altScript && udhrLanguages[`${lang.id}-cyrl`]) out.push({ ...udhrLanguages[`${lang.id}-cyrl`], script: lang.altScript })
+  // Chinese: Traditional-character version.
+  if (udhrLanguages[`${lang.id}-alt`]) out.push({ ...udhrLanguages[`${lang.id}-alt`], script: lang.script })
+  if (!out.length && lang.sampleOverride) out.push({ text: lang.sampleOverride, source: '', script: lang.script })
   return out
 }
 

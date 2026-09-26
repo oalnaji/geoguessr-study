@@ -1,17 +1,26 @@
 import { Link, useParams } from 'react-router'
 import { Bullets, cardClass, Chip, Native, OnThisPage, PageHeader, Prose, Section } from '../../../components/ui'
-import { groupById, languageById, languageSamples, specialLetters } from '../../../content'
-import { signWordLabels, wordCategories, type Language } from '../../../content/types'
+import { groupById, languageById, languageSamples, lettersOf, scriptById } from '../../../content'
+import { signWordLabels, wordCategories, type Language, type ScriptId } from '../../../content/types'
 import { NotFound } from '../../../pages/NotFound'
 
-/** Which special letters each Latin-script member uses. Most distinctive letters first. */
+const BASIC_LATIN = new Set('abcdefghijklmnopqrstuvwxyz')
+
+/**
+ * Letter comparison for the script most members share: rows are letters that some but not all of
+ * them use (for Latin, only letters beyond a–z). Most distinctive letters first.
+ */
 function letterMatrix(members: Language[]) {
-  const latin = members.filter((m) => m.script === 'latin')
-  const uses = new Map(latin.map((m) => [m.id, new Set(specialLetters(m))]))
-  const letters = [...new Set(latin.flatMap((m) => [...uses.get(m.id)!]))]
-  const count = (c: string) => latin.filter((m) => uses.get(m.id)!.has(c)).length
+  const scriptsUsed = members.flatMap((m) => (m.altScript ? [m.script, m.altScript] : [m.script]))
+  const script = scriptsUsed.sort((a, b) => scriptsUsed.filter((x) => x === b).length - scriptsUsed.filter((x) => x === a).length)[0] as ScriptId
+  const cols = members.filter((m) => (m.script === script || m.altScript === script) && lettersOf(m, script).length)
+  const single = (c: string) => [...c.normalize('NFC')].length === 1
+  const uses = new Map(cols.map((m) => [m.id, new Set(lettersOf(m, script).filter(single))]))
+  const count = (c: string) => cols.filter((m) => uses.get(m.id)!.has(c)).length
+  const letters = cols.length < 2 ? [] : [...new Set(cols.flatMap((m) => [...uses.get(m.id)!]))]
+    .filter((c) => count(c) < cols.length && !(script === 'latin' && BASIC_LATIN.has(c)))
   letters.sort((a, b) => count(a) - count(b) || a.localeCompare(b))
-  return { latin, letters, has: (id: string, c: string) => uses.get(id)!.has(c) }
+  return { script, cols, letters, has: (id: string, c: string) => uses.get(id)!.has(c) }
 }
 
 export function GroupPage() {
@@ -67,14 +76,14 @@ export function GroupPage() {
         <Section
           id="letters"
           title="Letter comparison"
-          note="Special letters used by each Latin-script language in the group (from Unicode CLDR). Letters used by just one member come first."
+          note={`${scriptById.get(matrix.script)?.name} letters that only some members use (from Unicode CLDR). Letters used by just one member come first.`}
         >
           <div className={`${cardClass} overflow-x-auto !p-0`}>
             <table className="w-full text-center">
               <thead>
                 <tr className="border-b border-slate-200 dark:border-slate-800">
                   <th className="sticky left-0 bg-white px-2 py-2 dark:bg-slate-900" />
-                  {matrix.latin.map((m) => (
+                  {matrix.cols.map((m) => (
                     <th key={m.id} className="px-2 py-2 text-sm font-medium">
                       <Link to={`/languages/${m.id}`} className="hover:underline">{m.name}</Link>
                     </th>
@@ -84,8 +93,8 @@ export function GroupPage() {
               <tbody>
                 {matrix.letters.map((c) => (
                   <tr key={c} className="border-b border-slate-100 last:border-0 dark:border-slate-800">
-                    <th className="sticky left-0 bg-white px-3 py-1 text-xl dark:bg-slate-900">{c}</th>
-                    {matrix.latin.map((m) => (
+                    <th className="sticky left-0 bg-white px-3 py-1 text-xl dark:bg-slate-900"><Native script={matrix.script}>{c}</Native></th>
+                    {matrix.cols.map((m) => (
                       <td key={m.id} className="px-2 py-1">
                         {matrix.has(m.id, c) ? <span className="font-bold text-teal-700 dark:text-teal-400">✓</span> : <span className="text-slate-300 dark:text-slate-700">·</span>}
                       </td>

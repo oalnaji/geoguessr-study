@@ -3,17 +3,21 @@ import type { Group, Language } from '../types'
 export const turkic: Group = {
   id: 'turkic-latin',
   name: 'Turkic (Latin)',
-  members: ['tr'],
+  members: ['tr', 'az', 'uz', 'tk'],
   intro: [
-    'Turkish, Azerbaijani, Uzbek and Turkmen are Turkic languages that now use Latin script. They are related to each other but not to the languages around them. Only Turkish is covered so far; Azerbaijani, Uzbek and Turkmen come in a later phase.',
-    'Turkish letters ı (dotless i), ş and ğ are the key clues in Europe.',
+    'Turkish, Azerbaijani, Uzbek and Turkmen are Turkic languages that now use Latin script. Turkey switched in 1928; the others moved from Cyrillic to Latin after the USSR broke up in 1991. Each designed its own alphabet, so a few letters give each away.',
   ],
   checklist: [
-    { look: 'ı (dotless i) or ğ', then: 'Turkish (or Azerbaijani)' },
-    { look: 'ş ç ö ü together', then: 'Turkish' },
-    { look: 'ə', then: 'Azerbaijani (coming later)' },
+    { look: 'ə (upside-down e)', then: 'Azerbaijani' },
+    { look: 'oʻ gʻ (letter + apostrophe mark), sh/ch digraphs', then: 'Uzbek' },
+    { look: 'ý ň ž ä', then: 'Turkmen' },
+    { look: 'ı ğ ş ç ö ü with none of the above', then: 'Turkish' },
   ],
-  traps: ['Romanian ș has a comma below; Turkish ş has a cedilla. On signs they can look identical, so use the other letters (ı, ğ vs ă, ț).'],
+  traps: [
+    'Romanian ș has a comma below; Turkish ş has a cedilla. On signs they can look identical, so use the other letters (ı, ğ vs ă, ț).',
+    'Azerbaijani also uses ı ğ ş ç ö ü like Turkish; the ə is the tell.',
+    'Uzbekistan still uses Cyrillic on many signs.',
+  ],
 }
 
 export const tr: Language = {
