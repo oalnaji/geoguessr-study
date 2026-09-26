@@ -206,11 +206,11 @@ For each region the data records:
 - **Multiple choice** or **type the answer**
 - Modes:
   - *Identify the script* ✅ (shows a random snippet of real text; the user picks the script **and** a place it is seen from searchable, scrollable lists; Indian scripts are answered at state level; Latin is excluded)
-  - *Identify the language* (a sample from a chosen group, e.g. only Central European languages)
-  - *Spot the giveaway* (tap the letter that proves which language it is)
-  - *Sign words* (which language's word for "street" is this?)
-  - *Where is it spoken?* (see a language or sign, then tap the country or region on a map)
-  - *Region → language* (e.g. "Which language is on signs in Vojvodina besides Serbian?")
+  - *Identify the language* ✅ (a sample from a chosen group, e.g. only Central European languages)
+  - *Spot the giveaway* ✅ (tap the letter that proves which language it is)
+  - *Sign words* ✅ (which language's word for "street" is this?)
+  - *Where is it spoken?* ✅ (tap the country or region on a map). Only places where the language is **common on street signs** count. Countries are one piece, except countries with more than one official language on signs, which are split into regions (India by state, Spain, Belgium, Switzerland, Canada, Italy, Finland, Norway, UK, Iraq, Bosnia, Serbia, Romania, Slovakia, China, Cyprus). Built by `npm run build-map` from Natural Earth and geoBoundaries (CC BY 4.0).
+  - *Region → language* ✅ (e.g. "Which language is on signs in Vojvodina besides Serbian?")
 - Timed mode (optional) to mimic GeoGuessr pressure
 - End-of-quiz summary showing mistakes, with links back to the relevant language/group pages
 

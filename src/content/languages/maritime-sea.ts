@@ -104,8 +104,7 @@ export const fil: Language = {
     { sign: 'Maligayang pagdating', tip: '"Welcome", on town entry arches.' },
   ],
   regions: [
-    { country: 'PH', status: 'official', signage: 'sometimes', note: 'English dominates road signs; Filipino appears on local and government signs.' },
-    { country: 'PH', area: 'Manila and southern Luzon (Tagalog region)', status: 'official', signage: 'common' },
+    { country: 'PH', status: 'official', signage: 'common', note: 'English dominates road signs; Filipino is common on local, government and shop signs, especially in the Tagalog region around Manila.' },
   ],
   signWords: {},
   orthography: { year: 1987, note: 'The modern 28-letter alphabet (adding c, f, j, ñ, q, v, x, z and ng) was adopted in 1987.' },

@@ -1,15 +1,14 @@
 import { Link } from 'react-router'
-import { cardClass, linkCardClass, PageHeader } from '../../../components/ui'
+import { linkCardClass, PageHeader } from '../../../components/ui'
 
 const quizzes = [
-  {
-    to: 'script',
-    title: 'Identify the script',
-    blurb: 'See a snippet of real text. Name the writing system and a place you would see it.',
-  },
+  { to: 'script', title: 'Identify the script', blurb: 'See a snippet of real text. Name the writing system and a place you would see it.' },
+  { to: 'language', title: 'Identify the language', blurb: 'Read a snippet and pick the language. Narrow it to one look-alike group to practise the hard ones.' },
+  { to: 'giveaway', title: 'Spot the giveaway', blurb: 'Tap the letter that proves which language a snippet is in.' },
+  { to: 'sign-words', title: 'Sign words', blurb: 'A word from a sign and its meaning: which language is it?' },
+  { to: 'map', title: 'Where is it on signs?', blurb: 'Tap the country or region on a world map where a language is common on street signs.' },
+  { to: 'region', title: 'Region → language', blurb: 'Besides the national language, which language is on signs in Catalonia, Vojvodina, Kerala…?' },
 ]
-
-const planned = ['Identify the language (Latin look-alikes)', 'Spot the giveaway letter', 'Sign words', 'Where is it spoken? (map)']
 
 export function QuizzesIndex() {
   return (
@@ -24,13 +23,10 @@ export function QuizzesIndex() {
             </Link>
           </li>
         ))}
-        {planned.map((t) => (
-          <li key={t} className={`${cardClass} border-dashed opacity-60`}>
-            <h2 className="font-semibold">{t}</h2>
-            <p className="text-sm text-slate-500">Coming later.</p>
-          </li>
-        ))}
       </ul>
+      <p className="text-sm text-slate-500">
+        Every quiz has Skip and "I know this one", which leaves an item out of future rounds on this device.
+      </p>
     </div>
   )
 }

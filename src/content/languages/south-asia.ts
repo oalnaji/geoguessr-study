@@ -308,7 +308,7 @@ export const ta: Language = {
   ],
   regions: [
     { country: 'IN', area: 'Tamil Nadu (Chennai), Puducherry', status: 'official', signage: 'common' },
-    { country: 'LK', area: 'Northern and Eastern provinces (Jaffna, Trincomalee)', status: 'official', signage: 'common', note: 'Official across Sri Lanka; on trilingual signs everywhere.' },
+    { country: 'LK', status: 'official', signage: 'common', note: 'On trilingual Sinhala–Tamil–English signs across the country; the main language in the north and east.' },
     { country: 'SG', status: 'official', signage: 'sometimes', note: 'One of Singapore\'s four official languages.' },
     { country: 'MY', status: 'minority', signage: 'rare' },
   ],

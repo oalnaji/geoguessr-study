@@ -7,7 +7,7 @@ export function Overview() {
     { to: 'scripts', title: 'Scripts', count: `${scripts.length} writing systems`, blurb: 'Letter charts, how to recognise each script, look-alikes and history.' },
     { to: 'groups', title: 'Language Groups', count: `${groups.length} groups`, blurb: 'Look-alike languages side by side, with a checklist for telling them apart.' },
     { to: 'all', title: 'All Languages', count: `${languages.length} languages`, blurb: 'Stats, where each is spoken, giveaway letters, common words and history.' },
-    { to: 'quizzes', title: 'Quizzes', count: 'Identify the script', blurb: 'See real text, name the script and where you would see it.' },
+    { to: 'quizzes', title: 'Quizzes', count: '6 quizzes', blurb: 'Scripts, languages, giveaway letters, sign words, regions, and a map of where each language is on signs.' },
     { to: 'words', title: 'Word Finder', count: `${wordIndex.length} words and name parts`, blurb: 'Type a word from a sign (vej, utca, -købing) to find the language.' },
   ]
   return (
