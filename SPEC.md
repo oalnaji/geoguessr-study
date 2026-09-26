@@ -134,9 +134,9 @@ Each language page has:
 1a. **Stats**: a panel of key numbers, each with its source and the year of the figure:
    - Native (L1) speakers
    - Total speakers (L1 + L2)
-   - World rank by total speakers
+   - World rank by total speakers *(not built yet: needs a consistent worldwide source)*
    - Number of countries where it's official, and where it's a recognised regional/minority language
-   - Largest speaker populations by country (top 5, with a small bar chart)
+   - Largest speaker populations by country (top 5, with a small bar chart) *(not built yet: needs per-country data)*
    - Letters in the alphabet (and how many are unique to this language)
    - Year the current script/orthography was adopted
    - GeoGuessr coverage: how many covered countries use it on signs
@@ -222,7 +222,16 @@ For each region the data records:
 ## 7. Technical design
 
 ### 7.1 Content as data
-All content lives in versioned data files, separate from UI code, so adding a language or a meta means adding a file:
+All content lives in versioned data files, separate from UI code, so adding a language or a meta means adding a file.
+
+**As built:** hand-written content is TypeScript (`src/content/scripts/*.ts`, `src/content/languages/<group>.ts`) so the compiler and `content.test.ts` catch broken links between languages, groups, scripts and countries. Reference data is downloaded by `npm run fetch-content` (`tools/fetch-content.mjs`) into `src/content/generated/` and committed:
+- `letters.json`: letter inventories from Unicode CLDR
+- `udhr-languages.json`, `udhr-scripts.json`: Article 1 of the UDHR (the standard sample sentence) from the Unicode UDHR project
+- `speakers.json`: speaker numbers from Wikidata (P1098), with year and source item
+
+The Indic letter charts are generated from the shared Unicode layout of the Indic blocks rather than typed by hand.
+
+Original sketch:
 
 ```
 src/content/
@@ -306,18 +315,17 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 
 | Phase | Scope |
 |---|---|
-| **0: Setup** | Repo, Vite/React/TS scaffold, PWA, deploy pipeline to free hosting |
-| **1: MVP** | Scripts reference (major non-Latin scripts) + flashcards (character ↔ sound) + progress saved locally |
-| **2: Europe** | All European language pages and groups (Central Europe first, then Ex-Yugoslav, Baltic + Finnic, Nordic, Iberian, Other Romance, West Germanic, Celtic), "identify the language" quiz, country-level maps |
+| **0: Setup** ✅ | Repo, Vite/React/TS scaffold, PWA, deploy pipeline to free hosting |
+| **1: MVP** | ✅ Scripts reference (all 29 scripts in §5.1). *Still to do:* flashcards (character ↔ sound) + progress saved locally |
+| **2: Europe** | ✅ 43 European language pages and 9 groups. *Still to do:* "identify the language" quiz, country-level maps. Scope: all European language pages and groups (Central Europe first, then Ex-Yugoslav, Baltic + Finnic, Nordic, Iberian, Other Romance, West Germanic, Celtic), "identify the language" quiz, country-level maps |
 | **3: Indian scripts** | Devanagari, Bengali–Assamese, Gurmukhi, Gujarati, Odia, Tamil, Telugu, Kannada, Malayalam, Sinhala, with state-level region maps |
 | **4: Cyrillic** | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
 | **5: Everything else** | Remaining languages in §5, all quiz modes including map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
 | **7: Vegetation** | Trees first, then crops and biomes (§12.5) |
-| **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, Vegetation & Crops, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
+| **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
-- This spec and the source code live only on the local machine until they're pushed somewhere.
 - If the site is hosted on GitHub Pages or Cloudflare Pages, the **website itself is public**: anyone with the URL can view it. It contains only study content, nothing personal.
 - The GitHub repository is **public** (decided), so the code and content can be seen by anyone. It contains no personal data. Any sync token (§7.3) is stored only in the browser, never in the repo.
 - Study progress stays in each device's browser and is never uploaded unless the optional sync in §7.3 is added.

@@ -1,0 +1,369 @@
+{
+ "en": {
+  "l2": {
+   "value": 753359540,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q1860"
+  },
+  "l1": {
+   "value": 379007140,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q1860"
+  }
+ },
+ "fr": {
+  "l1": {
+   "value": 77200000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q150"
+  },
+  "l2": {
+   "value": 208157220,
+   "year": 2016,
+   "source": "http://www.wikidata.org/entity/Q150"
+  }
+ },
+ "es": {
+  "l1": {
+   "value": 485000000,
+   "year": 2023,
+   "source": "http://www.wikidata.org/entity/Q1321"
+  },
+  "l2": {
+   "value": 89500000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q1321"
+  }
+ },
+ "pt": {
+  "l1": {
+   "value": 221000000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q5146"
+  },
+  "l2": {
+   "value": 6300000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q5146"
+  }
+ },
+ "ca": {
+  "l1": {
+   "value": 4873396,
+   "year": 2021,
+   "source": "http://www.wikidata.org/entity/Q7026"
+  },
+  "l2": {
+   "value": 5100000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q7026"
+  }
+ },
+ "gl": {
+  "unspecified": {
+   "value": 2400000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9307"
+  }
+ },
+ "eu": {
+  "unspecified": {
+   "value": 750000,
+   "year": 2016,
+   "source": "http://www.wikidata.org/entity/Q8752"
+  }
+ },
+ "it": {
+  "l1": {
+   "value": 64800000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q652"
+  },
+  "l2": {
+   "value": 3026000,
+   "year": 2009,
+   "source": "http://www.wikidata.org/entity/Q652"
+  }
+ },
+ "ro": {
+  "l1": {
+   "value": 24300000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q7913"
+  }
+ },
+ "de": {
+  "l1": {
+   "value": 76540740,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q188"
+  },
+  "l2": {
+   "value": 58452300,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q188"
+  }
+ },
+ "nl": {
+  "l1": {
+   "value": 23100000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q7411"
+  }
+ },
+ "af": {
+  "l2": {
+   "value": 10300000,
+   "year": 2002,
+   "source": "http://www.wikidata.org/entity/Q14196"
+  },
+  "unspecified": {
+   "value": 7200000,
+   "year": 2016,
+   "source": "http://www.wikidata.org/entity/Q14196"
+  }
+ },
+ "lb": {
+  "l1": {
+   "value": 303000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9051"
+  },
+  "l2": {
+   "value": 79000,
+   "year": 2016,
+   "source": "http://www.wikidata.org/entity/Q9051"
+  }
+ },
+ "da": {
+  "unspecified": {
+   "value": 5621380,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9035"
+  }
+ },
+ "no": {
+  "unspecified": {
+   "value": 5200000,
+   "year": 2015,
+   "source": "http://www.wikidata.org/entity/Q9043"
+  }
+ },
+ "sv": {
+  "l1": {
+   "value": 9244250,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9027"
+  },
+  "l2": {
+   "value": 3118000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9027"
+  }
+ },
+ "is": {
+  "l1": {
+   "value": 358000,
+   "year": 2013,
+   "source": "http://www.wikidata.org/entity/Q294"
+  },
+  "unspecified": {
+   "value": 321040,
+   "year": 2015,
+   "source": "http://www.wikidata.org/entity/Q294"
+  }
+ },
+ "fo": {
+  "unspecified": {
+   "value": 69150,
+   "year": 2015,
+   "source": "http://www.wikidata.org/entity/Q25258"
+  }
+ },
+ "fi": {
+  "l1": {
+   "value": 5413380,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q1412"
+  }
+ },
+ "et": {
+  "unspecified": {
+   "value": 1251770,
+   "year": 2022,
+   "source": "http://www.wikidata.org/entity/Q9072"
+  }
+ },
+ "lv": {
+  "unspecified": {
+   "value": 1500000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9078"
+  }
+ },
+ "lt": {
+  "unspecified": {
+   "value": 4000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9083"
+  }
+ },
+ "pl": {
+  "l1": {
+   "value": 39700000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q809"
+  },
+  "unspecified": {
+   "value": 40200000,
+   "year": 2007,
+   "source": "http://www.wikidata.org/entity/Q809"
+  },
+  "l2": {
+   "value": 454000,
+   "year": 2013,
+   "source": "http://www.wikidata.org/entity/Q809"
+  }
+ },
+ "cs": {
+  "l1": {
+   "value": 10700000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q9056"
+  }
+ },
+ "sk": {
+  "unspecified": {
+   "value": 6000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9058"
+  }
+ },
+ "sl": {
+  "unspecified": {
+   "value": 2400000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9063"
+  }
+ },
+ "hr": {
+  "unspecified": {
+   "value": 7000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q6654"
+  }
+ },
+ "sr": {
+  "unspecified": {
+   "value": 9000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9299"
+  }
+ },
+ "bs": {
+  "unspecified": {
+   "value": 3500000,
+   "year": 2008,
+   "source": "http://www.wikidata.org/entity/Q9303"
+  }
+ },
+ "cnr": {
+  "unspecified": {
+   "value": 232600,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q8821"
+  }
+ },
+ "mk": {
+  "unspecified": {
+   "value": 2000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q9296"
+  }
+ },
+ "sq": {
+  "unspecified": {
+   "value": 6200000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q8748"
+  }
+ },
+ "hu": {
+  "l1": {
+   "value": 12600000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q9067"
+  }
+ },
+ "mt": {
+  "l1": {
+   "value": 570000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9166"
+  },
+  "unspecified": {
+   "value": 403000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9166"
+  }
+ },
+ "tr": {
+  "l1": {
+   "value": 82231620,
+   "year": 2021,
+   "source": "http://www.wikidata.org/entity/Q256"
+  },
+  "l2": {
+   "value": 5870300,
+   "year": 2021,
+   "source": "http://www.wikidata.org/entity/Q256"
+  }
+ },
+ "ga": {
+  "l2": {
+   "value": 1030000,
+   "year": 2012,
+   "source": "http://www.wikidata.org/entity/Q9142"
+  },
+  "l1": {
+   "value": 141000,
+   "year": 2019,
+   "source": "http://www.wikidata.org/entity/Q9142"
+  }
+ },
+ "cy": {
+  "unspecified": {
+   "value": 562016,
+   "year": 2011,
+   "source": "http://www.wikidata.org/entity/Q9309"
+  }
+ },
+ "gd": {
+  "unspecified": {
+   "value": 57000,
+   "year": 2011,
+   "source": "http://www.wikidata.org/entity/Q9314"
+  }
+ },
+ "br": {
+  "unspecified": {
+   "value": 107000,
+   "year": 2025,
+   "source": "http://www.wikidata.org/entity/Q12107"
+  }
+ },
+ "se": {
+  "unspecified": {
+   "value": 20000,
+   "year": 2013,
+   "source": "http://www.wikidata.org/entity/Q33947"
+  }
+ },
+ "el": {
+  "unspecified": {
+   "value": 15000000,
+   "year": null,
+   "source": "http://www.wikidata.org/entity/Q36510"
+  }
+ }
+}
