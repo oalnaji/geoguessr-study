@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router'
 
 const nav = [
@@ -34,7 +34,9 @@ export function Layout() {
       </header>
 
       <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-6 pb-24 sm:pb-6">
-        <Outlet />
+        <Suspense fallback={<p className="text-slate-500">Loading…</p>}>
+          <Outlet />
+        </Suspense>
       </main>
 
       {/* Bottom tab bar on phones, for one-handed use */}

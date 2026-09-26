@@ -1,4 +1,4 @@
-import { LanguagesModule } from './languages/LanguagesModule'
+import { LanguagesModule } from './languages'
 import type { MetaModule } from './types'
 
 export const modules: MetaModule[] = [

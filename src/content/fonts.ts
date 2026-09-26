@@ -1,36 +1,46 @@
 import type { ScriptId } from './types'
 
-// Noto fonts (loaded from Google Fonts in index.html, cached for offline use) make sure every
-// script renders on every device. System fonts come first where they are reliably present.
-const noto = (family: string) => `'${family}', system-ui, sans-serif`
+// Common scripts (CJK, Arabic, Hebrew, Thai, the major Indic scripts…) ship with Windows, macOS,
+// iOS and Android, so they use system fonts. Rarer scripts that some devices lack get a Noto web
+// font, loaded on demand the first time the script is shown (never render-blocking).
+const webFonts: Partial<Record<ScriptId, string>> = {
+  armenian: 'Noto Sans Armenian',
+  georgian: 'Noto Sans Georgian',
+  thaana: 'Noto Sans Thaana',
+  ethiopic: 'Noto Sans Ethiopic',
+  tifinagh: 'Noto Sans Tifinagh',
+  gurmukhi: 'Noto Sans Gurmukhi',
+  odia: 'Noto Sans Oriya',
+  sinhala: 'Noto Sans Sinhala',
+  tibetan: 'Noto Serif Tibetan',
+  lao: 'Noto Sans Lao',
+  khmer: 'Noto Sans Khmer',
+  myanmar: 'Noto Sans Myanmar',
+  mongolian: 'Noto Sans Mongolian',
+}
 
-export const scriptFont: Partial<Record<ScriptId, string>> = {
-  armenian: noto('Noto Sans Armenian'),
-  georgian: noto('Noto Sans Georgian'),
-  hebrew: noto('Noto Sans Hebrew'),
-  arabic: noto('Noto Naskh Arabic'),
-  thaana: noto('Noto Sans Thaana'),
-  ethiopic: noto('Noto Sans Ethiopic'),
-  tifinagh: noto('Noto Sans Tifinagh'),
-  devanagari: noto('Noto Sans Devanagari'),
-  bengali: noto('Noto Sans Bengali'),
-  gurmukhi: noto('Noto Sans Gurmukhi'),
-  gujarati: noto('Noto Sans Gujarati'),
-  odia: noto('Noto Sans Oriya'),
-  tamil: noto('Noto Sans Tamil'),
-  telugu: noto('Noto Sans Telugu'),
-  kannada: noto('Noto Sans Kannada'),
-  malayalam: noto('Noto Sans Malayalam'),
-  sinhala: noto('Noto Sans Sinhala'),
-  tibetan: noto('Noto Serif Tibetan'),
-  thai: noto('Noto Sans Thai'),
-  lao: noto('Noto Sans Lao'),
-  khmer: noto('Noto Sans Khmer'),
-  myanmar: noto('Noto Sans Myanmar'),
-  hangul: noto('Noto Sans KR'),
-  japanese: noto('Noto Sans JP'),
-  han: noto('Noto Sans SC'),
-  mongolian: noto('Noto Sans Mongolian'),
+const systemFonts: Partial<Record<ScriptId, string>> = {
+  hangul: "'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif",
+  japanese: "'Yu Gothic', 'Hiragino Sans', 'Noto Sans JP', sans-serif",
+  han: "'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif",
+}
+
+export function scriptFont(script: ScriptId): string | undefined {
+  const web = webFonts[script]
+  return web ? `'${web}', system-ui, sans-serif` : systemFonts[script]
+}
+
+const requested = new Set<string>()
+
+/** Adds the Google Fonts stylesheet for a script's web font, once. Cached offline by the service worker. */
+export function loadScriptFont(script: ScriptId) {
+  const family = webFonts[script]
+  if (!family || requested.has(family) || typeof document === 'undefined') return
+  requested.add(family)
+  const link = document.createElement('link')
+  link.rel = 'stylesheet'
+  link.href = `https://fonts.googleapis.com/css2?family=${family.replace(/ /g, '+')}&display=swap`
+  document.head.appendChild(link)
 }
 
 export const scriptLang: Partial<Record<ScriptId, string>> = {

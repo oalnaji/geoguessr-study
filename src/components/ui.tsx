@@ -1,6 +1,6 @@
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { Link } from 'react-router'
-import { scriptFont, scriptLang } from '../content/fonts'
+import { loadScriptFont, scriptFont, scriptLang } from '../content/fonts'
 import type { Letter, ScriptId } from '../content/types'
 
 export const cardClass =
@@ -11,13 +11,14 @@ export const linkCardClass = `${cardClass} hover:border-teal-600 dark:hover:bord
 export function Native({ script, children, className = '' }: { script: ScriptId; children: ReactNode; className?: string }) {
   const rtl = script === 'arabic' || script === 'hebrew' || script === 'thaana'
   const vertical = script === 'mongolian'
+  useEffect(() => loadScriptFont(script), [script])
   return (
     <span
       lang={scriptLang[script]}
       dir={rtl ? 'rtl' : undefined}
       className={className}
       style={{
-        fontFamily: scriptFont[script],
+        fontFamily: scriptFont(script),
         ...(vertical ? { writingMode: 'vertical-lr' as const } : {}),
       }}
     >
