@@ -6,6 +6,7 @@ import { LanguagePage } from './pages/LanguagePage'
 import { Overview } from './pages/Overview'
 import { ScriptPage } from './pages/ScriptPage'
 import { ScriptsIndex } from './pages/ScriptsIndex'
+import { WordFinder } from './pages/WordFinder'
 
 export function LanguagesModule() {
   return (
@@ -16,6 +17,7 @@ export function LanguagesModule() {
       <Route path="groups" element={<GroupsIndex />} />
       <Route path="groups/:id" element={<GroupPage />} />
       <Route path="all" element={<LanguageIndex />} />
+      <Route path="words" element={<WordFinder />} />
       <Route path=":id" element={<LanguagePage />} />
     </Routes>
   )

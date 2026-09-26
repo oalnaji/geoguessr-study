@@ -1,17 +1,18 @@
 import { Link } from 'react-router'
 import { cardClass, linkCardClass } from '../../../components/ui'
-import { groups, languages, scripts } from '../../../content'
+import { groups, languages, scripts, wordIndex } from '../../../content'
 
 export function Overview() {
   const cards = [
     { to: 'scripts', title: 'Scripts', count: `${scripts.length} writing systems`, blurb: 'Letter charts, how to recognise each script, look-alikes and history.' },
     { to: 'groups', title: 'Language Groups', count: `${groups.length} groups`, blurb: 'Look-alike languages side by side, with a checklist for telling them apart.' },
-    { to: 'all', title: 'All Languages', count: `${languages.length} languages`, blurb: 'Stats, where each is spoken, giveaway letters, sign words and history.' },
+    { to: 'all', title: 'All Languages', count: `${languages.length} languages`, blurb: 'Stats, where each is spoken, giveaway letters, common words and history.' },
+    { to: 'words', title: 'Word Finder', count: `${wordIndex.length} words and name parts`, blurb: 'Type a word from a sign (vej, utca, -købing) to find the language.' },
   ]
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Languages &amp; Scripts</h1>
-      <ul className="grid gap-3 sm:grid-cols-3">
+      <ul className="grid gap-3 sm:grid-cols-2">
         {cards.map((c) => (
           <li key={c.to}>
             <Link to={c.to} className={`${linkCardClass} h-full`}>

@@ -38,7 +38,7 @@ export const da: Language = {
     { sign: 'vej', tip: 'Road in Danish (Norwegian: vei/veg). Very common in street names.' },
     { sign: 'gade', tip: 'Street (Norwegian: gate, Swedish: gata).' },
     { sign: 'soft d/g spellings', tip: 'Danish keeps b d g where Norwegian has p t k: "bog" vs "bok" (book), "gade" vs "gate".' },
-    { sign: '-by, -rup, -havn', tip: 'Common Danish place-name endings (Tønder, Esbjerg, Kastrup, København).' },
+    { sign: '-by, -rup, -havn', tip: 'Common Danish place-name endings (Rødby, Kastrup, København).' },
   ],
   regions: [
     { country: 'DK', status: 'official', signage: 'common' },

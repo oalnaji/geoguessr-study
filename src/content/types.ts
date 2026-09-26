@@ -57,16 +57,31 @@ export interface Region {
   note?: string
 }
 
-export const signWordKeys = [
-  'street', 'road', 'square', 'exit', 'centre', 'church', 'school', 'pharmacy', 'bakery',
-  'police', 'hospital', 'station', 'bridge', 'forSale',
+/** Common words, grouped the way they are shown on pages. */
+export const wordCategories = [
+  { title: 'Streets & roads', keys: ['street', 'road', 'square', 'bridge', 'exit', 'centre'] },
+  { title: 'Directions', keys: ['north', 'south', 'east', 'west'] },
+  { title: 'Places & nature', keys: ['town', 'village', 'river', 'lake', 'mountain', 'island'] },
+  { title: 'In place names', keys: ['new', 'old', 'big', 'small', 'saint'] },
+  { title: 'Buildings & services', keys: ['church', 'school', 'pharmacy', 'bakery', 'police', 'hospital', 'station', 'forSale'] },
 ] as const
-export type SignWordKey = (typeof signWordKeys)[number]
+
+export type SignWordKey = (typeof wordCategories)[number]['keys'][number]
+export const signWordKeys: SignWordKey[] = wordCategories.flatMap((c) => [...c.keys])
 
 export const signWordLabels: Record<SignWordKey, string> = {
   street: 'Street', road: 'Road', square: 'Square', exit: 'Exit', centre: 'Town centre',
   church: 'Church', school: 'School', pharmacy: 'Pharmacy', bakery: 'Bakery', police: 'Police',
   hospital: 'Hospital', station: 'Station', bridge: 'Bridge', forSale: 'For sale',
+  north: 'North', south: 'South', east: 'East', west: 'West',
+  town: 'Town, city', village: 'Village', river: 'River', lake: 'Lake', mountain: 'Mountain', island: 'Island',
+  new: 'New', old: 'Old', big: 'Big, great', small: 'Small, little', saint: 'Saint',
+}
+
+export interface PlaceNamePart {
+  part: string
+  meaning: string
+  example?: string
 }
 
 export interface Language {
@@ -85,6 +100,8 @@ export interface Language {
   signWords: Partial<Record<SignWordKey, string>>
   /** Sign words in the alternate script */
   signWordsAlt?: Partial<Record<SignWordKey, string>>
+  /** Elements that place names are built from (-by, Nagy-, Llan-…) */
+  placeNameParts?: PlaceNamePart[]
   orthography?: { year: number; note: string }
   history: string[]
   /** "Language & place": why it is spoken where it is (SPEC §5.4 6b) */

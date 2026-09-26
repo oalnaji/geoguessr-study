@@ -12,8 +12,9 @@ import * as nordic from './languages/nordic'
 import * as europe from './languages/other-europe'
 import * as romance from './languages/other-romance'
 import * as germanic from './languages/west-germanic'
+import { extraWords, extraWordsAlt, placeNameParts } from './languages/vocab'
 import { scriptList } from './scripts'
-import type { Group, Language, Script, ScriptId } from './types'
+import { signWordLabels, type Group, type Language, type Script, type ScriptId, type SignWordKey } from './types'
 
 type LetterSets = Record<string, { main: string[]; auxiliary: string[] }>
 type Figure = { value: number; year: number | null; source: string }
@@ -28,10 +29,28 @@ const udhrScripts = udhrScriptsJson as Record<string, Sample>
 export const scripts = scriptList
 export const scriptById = new Map<ScriptId, Script>(scripts.map((s) => [s.id, s]))
 
+/** "north=sever; south=jih" → { north: 'sever', south: 'jih' } */
+export function parseWords(spec: string | undefined): Partial<Record<SignWordKey, string>> {
+  if (!spec) return {}
+  return Object.fromEntries(
+    spec.split(';').map((pair) => pair.trim()).filter(Boolean).map((pair) => {
+      const i = pair.indexOf('=')
+      return [pair.slice(0, i).trim(), pair.slice(i + 1).trim()]
+    }),
+  )
+}
+
+const withVocab = (lang: Language): Language => ({
+  ...lang,
+  signWords: { ...lang.signWords, ...parseWords(extraWords[lang.id]) },
+  signWordsAlt: lang.signWordsAlt && { ...lang.signWordsAlt, ...parseWords(extraWordsAlt[lang.id]) },
+  placeNameParts: (placeNameParts[lang.id] ?? []).map(([part, meaning, example]) => ({ part, meaning, example })),
+})
+
 export const languages: Language[] = [
   ...central.languages, ...yugo.languages, ...baltic.languages, ...nordic.languages,
   ...iberian.languages, ...romance.languages, ...germanic.languages, ...celtic.languages, ...europe.languages,
-].sort((a, b) => a.name.localeCompare(b.name))
+].map(withVocab).sort((a, b) => a.name.localeCompare(b.name))
 export const languageById = new Map(languages.map((l) => [l.id, l]))
 
 export const groups: Group[] = [
@@ -143,4 +162,51 @@ export function statsOf(lang: Language): LanguageStats {
       lang.regions.filter((r) => r.signage !== 'rare' && countries[r.country]?.coverage === 'yes').map((r) => r.country),
     ),
   }
+}
+
+// ---- Word finder -----------------------------------------------------------------------------
+
+export interface WordEntry {
+  /** As written, e.g. "vej" or "-købing" */
+  text: string
+  meaning: string
+  lang: string
+  script: ScriptId
+  kind: 'word' | 'place-name part'
+  example?: string
+}
+
+/** Lowercase and strip accents, so "vej" also finds "véj" and "sor" finds "sør". */
+export const foldForSearch = (s: string) =>
+  s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').replace(/ø/g, 'o').replace(/æ/g, 'ae').replace(/ß/g, 'ss')
+    .replace(/đ/g, 'd').replace(/ł/g, 'l').replace(/ħ/g, 'h').replace(/ŧ/g, 't').replace(/ŋ/g, 'n').replace(/þ/g, 'th').replace(/ð/g, 'd')
+
+export const wordIndex: WordEntry[] = languages.flatMap((lang) => [
+  ...Object.entries(lang.signWords).map(([key, text]) => ({
+    text: text!, meaning: signWordLabels[key as SignWordKey], lang: lang.id, script: lang.script, kind: 'word' as const,
+  })),
+  ...Object.entries(lang.signWordsAlt ?? {}).map(([key, text]) => ({
+    text: text!, meaning: signWordLabels[key as SignWordKey], lang: lang.id, script: lang.altScript!, kind: 'word' as const,
+  })),
+  ...(lang.placeNameParts ?? []).map((p) => ({
+    text: p.part, meaning: p.meaning, lang: lang.id, script: lang.script, kind: 'place-name part' as const, example: p.example,
+  })),
+])
+
+/** Entries whose word (or any " / "-separated variant) starts with or contains the query. Exact and prefix matches first. */
+export function searchWords(query: string): WordEntry[] {
+  const q = foldForSearch(query.trim()).replace(/^-|-$/g, '')
+  if (!q) return []
+  const score = (e: WordEntry) => {
+    const variants = e.text.split(/\s*\/\s*|\s*\(\s*|\s*\)\s*/).map((v) => foldForSearch(v).replace(/^-|-$/g, '')).filter(Boolean)
+    if (variants.some((v) => v === q)) return 0
+    if (variants.some((v) => v.startsWith(q))) return 1
+    if (variants.some((v) => v.includes(q))) return 2
+    return -1
+  }
+  return wordIndex
+    .map((e) => ({ e, s: score(e) }))
+    .filter((x) => x.s >= 0)
+    .sort((a, b) => a.s - b.s || a.e.text.localeCompare(b.e.text))
+    .map((x) => x.e)
 }

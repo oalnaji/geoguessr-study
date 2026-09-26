@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router'
 import { Bullets, cardClass, Chip, Native, OnThisPage, PageHeader, Prose, Section } from '../../../components/ui'
 import { groupById, languageById, languageSamples, specialLetters } from '../../../content'
-import { signWordKeys, signWordLabels, type Language } from '../../../content/types'
+import { signWordLabels, wordCategories, type Language } from '../../../content/types'
 import { NotFound } from '../../../pages/NotFound'
 
 /** Which special letters each Latin-script member uses. Most distinctive letters first. */
@@ -21,7 +21,9 @@ export function GroupPage() {
 
   const members = group.members.map((m) => languageById.get(m)!).filter(Boolean)
   const matrix = letterMatrix(members)
-  const shownKeys = signWordKeys.filter((k) => members.filter((m) => m.signWords[k]).length >= 2)
+  const categories = wordCategories
+    .map((c) => ({ title: c.title, keys: c.keys.filter((k) => members.filter((m) => m.signWords[k]).length >= 2) }))
+    .filter((c) => c.keys.length)
 
   return (
     <article className="space-y-8">
@@ -96,7 +98,7 @@ export function GroupPage() {
         </Section>
       )}
 
-      <Section id="words" title="Common sign words side by side">
+      <Section id="words" title="Common words side by side">
         <div className={`${cardClass} overflow-x-auto !p-0`}>
           <table className="w-full text-left text-sm">
             <thead>
@@ -106,16 +108,23 @@ export function GroupPage() {
               </tr>
             </thead>
             <tbody>
-              {shownKeys.map((k) => (
-                <tr key={k} className="border-b border-slate-100 last:border-0 dark:border-slate-800">
-                  <th className="sticky left-0 bg-white px-3 py-2 font-normal text-slate-500 dark:bg-slate-900">{signWordLabels[k]}</th>
-                  {members.map((m) => (
-                    <td key={m.id} className="whitespace-nowrap px-3 py-2">
-                      {m.signWords[k] ? <Native script={m.script}>{m.signWords[k]}</Native> : <span className="text-slate-400">–</span>}
-                    </td>
-                  ))}
-                </tr>
-              ))}
+              {categories.map((cat) => [
+                <tr key={cat.title} className="bg-slate-50 dark:bg-slate-800/50">
+                  <th colSpan={members.length + 1} className="sticky left-0 px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    {cat.title}
+                  </th>
+                </tr>,
+                ...cat.keys.map((k) => (
+                  <tr key={k} className="border-b border-slate-100 last:border-0 dark:border-slate-800">
+                    <th className="sticky left-0 bg-white px-3 py-2 font-normal text-slate-500 dark:bg-slate-900">{signWordLabels[k]}</th>
+                    {members.map((m) => (
+                      <td key={m.id} className="whitespace-nowrap px-3 py-2">
+                        {m.signWords[k] ? <Native script={m.script}>{m.signWords[k]}</Native> : <span className="text-slate-400">–</span>}
+                      </td>
+                    ))}
+                  </tr>
+                )),
+              ])}
             </tbody>
           </table>
         </div>

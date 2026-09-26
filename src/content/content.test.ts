@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import {
+  foldForSearch, parseWords, searchWords,
   countries, groupById, groups, languageById, languageName, languageSamples, languages, latinIndex,
   lettersOf, scriptById, scriptSamples, scripts, statsOf, uniqueLetters,
 } from '.'
+import { extraWords, extraWordsAlt } from './languages/vocab'
 import { signWordKeys } from './types'
 
 describe('scripts', () => {
@@ -107,5 +109,32 @@ describe('stats', () => {
     const fr = statsOf(languageById.get('fr')!)
     expect(fr.officialCountries).toEqual(expect.arrayContaining(['FR', 'MC', 'SN']))
     expect(fr.geoguessrCountries).toEqual(expect.arrayContaining(['FR', 'BE', 'CH', 'CA']))
+  })
+})
+
+describe('vocabulary and word finder', () => {
+  it('only uses known word keys, and every language gets directions and place-name parts', () => {
+    for (const [id, spec] of Object.entries({ ...extraWords, ...extraWordsAlt })) {
+      expect(languageById.has(id), id).toBe(true)
+      for (const k of Object.keys(parseWords(spec))) expect(signWordKeys, `${id}: ${k}`).toContain(k)
+    }
+    for (const l of languages) {
+      expect(l.signWords.east, `${l.id} east`).toBeTruthy()
+      expect(l.placeNameParts!.length, `${l.id} place-name parts`).toBeGreaterThan(0)
+    }
+  })
+
+  it('finds the language from a word seen on a sign', () => {
+    const top = (q: string) => searchWords(q)[0]
+    expect(top('vej')).toMatchObject({ lang: 'da', meaning: 'Road' })
+    expect(top('kobing')).toMatchObject({ lang: 'da', kind: 'place-name part' })
+    expect(top('Nagy')).toMatchObject({ lang: 'hu' })
+    expect(searchWords('sor').some((e) => e.lang === 'no' && e.meaning === 'South')).toBe(true)
+    expect(searchWords('улица').map((e) => e.lang)).toEqual(expect.arrayContaining(['sr', 'mk']))
+  })
+
+  it('ignores accents and case', () => {
+    expect(foldForSearch('Straße')).toBe('strasse')
+    expect(foldForSearch('ŘEKA')).toBe('reka')
   })
 })

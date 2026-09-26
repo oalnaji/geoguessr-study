@@ -5,7 +5,7 @@ import {
 import {
   countries, groupById, languageById, languageName, languageSamples, lettersOf, scriptById, statsOf, uniqueLetters,
 } from '../../../content'
-import { signWordKeys, signWordLabels, type Language, type RegionStatus } from '../../../content/types'
+import { signWordLabels, wordCategories, type Language, type RegionStatus } from '../../../content/types'
 import { NotFound } from '../../../pages/NotFound'
 
 const fmt = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 })
@@ -104,7 +104,8 @@ export function LanguagePage() {
     { id: 'where', label: 'Where' },
     { id: 'spot', label: 'Spot it' },
     { id: 'alphabet', label: 'Letters' },
-    { id: 'signs', label: 'Sign words' },
+    { id: 'signs', label: 'Words' },
+    { id: 'places', label: 'Place names' },
     { id: 'history', label: 'Why?' },
   ]
 
@@ -166,25 +167,52 @@ export function LanguagePage() {
         <Alphabet lang={lang} />
       </Section>
 
-      <Section id="signs" title="Common words on signs">
-        <div className={`${cardClass} !p-0`}>
-          <table className="w-full text-left">
-            <tbody>
-              {signWordKeys.filter((k) => lang.signWords[k]).map((k) => (
-                <tr key={k} className="border-b border-slate-100 last:border-0 dark:border-slate-800">
-                  <th className="w-1/3 px-3 py-2 text-sm font-normal text-slate-500">{signWordLabels[k]}</th>
-                  <td className="px-3 py-2 font-medium">
-                    <Native script={lang.script}>{lang.signWords[k]}</Native>
-                    {lang.signWordsAlt?.[k] && lang.altScript && (
-                      <Native script={lang.altScript} className="ml-2 text-slate-500">{lang.signWordsAlt[k]}</Native>
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <Section id="signs" title="Common words" note="Words you often see on signs and in place names.">
+        <div className="grid gap-3 sm:grid-cols-2">
+          {wordCategories.map((cat) => {
+            const keys = cat.keys.filter((k) => lang.signWords[k])
+            if (!keys.length) return null
+            return (
+              <div key={cat.title} className={`${cardClass} !p-0`}>
+                <h3 className="border-b border-slate-100 px-3 py-2 text-sm font-semibold dark:border-slate-800">{cat.title}</h3>
+                <table className="w-full text-left">
+                  <tbody>
+                    {keys.map((k) => (
+                      <tr key={k} className="border-b border-slate-100 last:border-0 dark:border-slate-800">
+                        <th className="w-2/5 px-3 py-1.5 text-sm font-normal text-slate-500">{signWordLabels[k]}</th>
+                        <td className="px-3 py-1.5 font-medium">
+                          <Native script={lang.script}>{lang.signWords[k]}</Native>
+                          {lang.signWordsAlt?.[k] && lang.altScript && (
+                            <Native script={lang.altScript} className="ml-2 text-slate-500">{lang.signWordsAlt[k]}</Native>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )
+          })}
         </div>
       </Section>
+
+      {lang.placeNameParts && lang.placeNameParts.length > 0 && (
+        <Section id="places" title="Place-name clues" note="Pieces that town and village names are built from. Spot one on a sign and you have a strong hint.">
+          <ul className="grid gap-2 sm:grid-cols-2">
+            {lang.placeNameParts.map((p) => (
+              <li key={p.part} className={`${cardClass} !p-3`}>
+                <Native script={lang.script} className="text-lg font-semibold">{p.part}</Native>
+                <span className="text-slate-600 dark:text-slate-400"> = {p.meaning}</span>
+                {p.example && (
+                  <span className="block text-sm text-slate-500">
+                    e.g. <Native script={lang.script}>{p.example}</Native>
+                  </span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       <Section title="Sample text" note="Article 1 of the Universal Declaration of Human Rights, the same sentence on every language page.">
         {samples.map((s) => <SampleText key={s.text} text={s.text} script={s.script} source={s.source} />)}
