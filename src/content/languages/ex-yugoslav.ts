@@ -14,7 +14,7 @@ export const exYugoslav: Group = {
     { look: 'Cyrillic with ђ or ћ', then: 'Serbian (or Montenegrin)' },
     { look: 'Latin, no ć or đ, only č š ž', then: 'Slovene' },
     { look: 'Latin with ś or ź', then: 'Montenegrin' },
-    { look: 'ekavian forms: reka, mleko, bolnica, "centar"', then: 'Serbian' },
+    { look: 'ekavian forms: reka, mleko, lepo, dete (where Croatian has rijeka, mlijeko, lijepo, dijete)', then: 'Serbian' },
     { look: 'ijekavian forms (rijeka, mlijeko) and words like "ljekarna", "kolodvor", "tvornica"', then: 'Croatian' },
     { look: 'ijekavian plus "apoteka", "stanica", and mosques', then: 'Bosnian (or Montenegrin)' },
   ],
