@@ -23,6 +23,13 @@ describe('script quiz', () => {
     for (const q of round) expect(q.snippet.trim().length, q.script.id).toBeGreaterThan(0)
   })
 
+  it('leaves out scripts marked as known, and shortens the round when few are left', () => {
+    const known = new Set(quizScripts.map((s) => s.id).filter((id) => id !== 'thai' && id !== 'lao'))
+    const round = makeRound(seeded(2), 10, known)
+    expect(round.map((q) => q.script.id).sort()).toEqual(['lao', 'thai'])
+    expect(makeRound(seeded(2), 10, new Set(quizScripts.map((s) => s.id)))).toHaveLength(0)
+  })
+
   it('takes 3–5 words from spaced scripts', () => {
     const text = 'один два три четыре пять шесть семь восемь девять десять'
     for (let i = 0; i < 20; i++) {

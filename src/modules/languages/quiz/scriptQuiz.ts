@@ -52,8 +52,9 @@ export function snippet(text: string, scriptId: ScriptId, rng: Rng): string {
   return words.slice(start, start + len).join(' ')
 }
 
-export function makeRound(rng: Rng = Math.random, length = ROUND_LENGTH): ScriptQuestion[] {
-  return shuffle(quizScripts, rng)
+/** A round of different scripts, leaving out any the player marked as known. May be shorter than `length`. */
+export function makeRound(rng: Rng = Math.random, length = ROUND_LENGTH, known: ReadonlySet<string> = new Set()): ScriptQuestion[] {
+  return shuffle(quizScripts.filter((s) => !known.has(s.id)), rng)
     .slice(0, length)
     .map((script) => {
       const samples = scriptSamples(script)
@@ -66,4 +67,26 @@ export function grade(q: ScriptQuestion, a: ScriptAnswer) {
   const scriptCorrect = a.script === q.script.id
   const locationCorrect = a.location !== null && scriptLocations[q.script.id]!.includes(a.location)
   return { scriptCorrect, locationCorrect, points: Number(scriptCorrect) + Number(locationCorrect) }
+}
+
+// ---- Scripts the player has marked as known (per device) ---------------------------------------
+
+const KNOWN_KEY = 'quiz.script.known'
+
+export function loadKnown(): Set<string> {
+  try {
+    const v = JSON.parse(localStorage.getItem(KNOWN_KEY) ?? '[]')
+    return new Set(Array.isArray(v) ? v.filter((x) => typeof x === 'string') : [])
+  } catch {
+    return new Set()
+  }
+}
+
+export function saveKnown(known: ReadonlySet<string>) {
+  try {
+    if (known.size) localStorage.setItem(KNOWN_KEY, JSON.stringify([...known]))
+    else localStorage.removeItem(KNOWN_KEY)
+  } catch {
+    // Storage unavailable (private mode): the choice lasts for this session only.
+  }
 }
