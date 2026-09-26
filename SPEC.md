@@ -205,7 +205,7 @@ For each region the data records:
 ### 6.2 Quizzes
 - **Multiple choice** or **type the answer**
 - Modes:
-  - *Identify the script* (shows a random text sample)
+  - *Identify the script* ✅ (shows a random snippet of real text; the user picks the script **and** a place it is seen from searchable, scrollable lists; Indian scripts are answered at state level; Latin is excluded)
   - *Identify the language* (a sample from a chosen group, e.g. only Central European languages)
   - *Spot the giveaway* (tap the letter that proves which language it is)
   - *Sign words* (which language's word for "street" is this?)

@@ -7,6 +7,7 @@ export function Overview() {
     { to: 'scripts', title: 'Scripts', count: `${scripts.length} writing systems`, blurb: 'Letter charts, how to recognise each script, look-alikes and history.' },
     { to: 'groups', title: 'Language Groups', count: `${groups.length} groups`, blurb: 'Look-alike languages side by side, with a checklist for telling them apart.' },
     { to: 'all', title: 'All Languages', count: `${languages.length} languages`, blurb: 'Stats, where each is spoken, giveaway letters, common words and history.' },
+    { to: 'quizzes', title: 'Quizzes', count: 'Identify the script', blurb: 'See real text, name the script and where you would see it.' },
     { to: 'words', title: 'Word Finder', count: `${wordIndex.length} words and name parts`, blurb: 'Type a word from a sign (vej, utca, -købing) to find the language.' },
   ]
   return (
@@ -23,8 +24,8 @@ export function Overview() {
           </li>
         ))}
       </ul>
-      <ul className="grid gap-3 sm:grid-cols-2">
-        {['Flashcards', 'Quizzes'].map((t) => (
+      <ul className="grid gap-3">
+        {['Flashcards'].map((t) => (
           <li key={t} className={`${cardClass} border-dashed opacity-70`}>
             <h2 className="font-semibold">{t}</h2>
             <p className="text-sm text-slate-600 dark:text-slate-400">Coming next.</p>

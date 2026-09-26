@@ -4,6 +4,8 @@ import { GroupsIndex } from './pages/GroupsIndex'
 import { LanguageIndex } from './pages/LanguageIndex'
 import { LanguagePage } from './pages/LanguagePage'
 import { Overview } from './pages/Overview'
+import { QuizzesIndex } from './pages/QuizzesIndex'
+import { ScriptQuiz } from './pages/ScriptQuiz'
 import { ScriptPage } from './pages/ScriptPage'
 import { ScriptsIndex } from './pages/ScriptsIndex'
 import { WordFinder } from './pages/WordFinder'
@@ -18,6 +20,8 @@ export function LanguagesModule() {
       <Route path="groups/:id" element={<GroupPage />} />
       <Route path="all" element={<LanguageIndex />} />
       <Route path="words" element={<WordFinder />} />
+      <Route path="quizzes" element={<QuizzesIndex />} />
+      <Route path="quizzes/script" element={<ScriptQuiz />} />
       <Route path=":id" element={<LanguagePage />} />
     </Routes>
   )
