@@ -1,15 +1,16 @@
-// Builds the world map used by the "Where is it seen?" quiz. Run with: npm run build-map
-// Output (committed): src/content/generated/map.topo.json
+// Builds the world maps. Run with: npm run build-map
+// Output (committed): src/content/generated/map.topo.json and map-veg.topo.json
 //
-// Countries come from Natural Earth (1:50m). Countries with more than one official language on
-// signs are split into first-level regions from geoBoundaries (gbOpen, CC BY 4.0), so the quiz can
-// tell e.g. Catalonia from the rest of Spain. Every feature has { id, name, country }:
+// Countries come from Natural Earth (1:50m); some are split into first-level regions from
+// geoBoundaries (gbOpen, CC BY 4.0). Two maps with different splits:
+//   - languages: countries with more than one official language on signs (e.g. Catalonia vs Spain)
+//   - vegetation: large countries, so plants can be placed precisely (e.g. Brazilian states) Every feature has { id, name, country }:
 // id is an ISO 3166-1 alpha-2 code for whole countries, or an ISO 3166-2 code for regions.
 
 import mapshaper from 'mapshaper'
 import { writeFile } from 'node:fs/promises'
 
-const OUT = new URL('../src/content/generated/map.topo.json', import.meta.url)
+const OUT_DIR = new URL('../src/content/generated/', import.meta.url)
 const NE = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson'
 const gb = (iso3, level = 'ADM1') =>
   `https://github.com/wmgeolab/geoBoundaries/raw/main/releaseData/gbOpen/${iso3}/${level}/geoBoundaries-${iso3}-${level}_simplified.geojson`
@@ -41,8 +42,24 @@ const chinaName = (n) => {
   return key && { code: china[key], name: key === 'Guangzhou' ? 'Guangdong' : key }
 }
 
-// Countries split into regions: ISO2 → how to read the geoBoundaries file.
-const split = {
+const chile = {
+  'Antofagasta': 'CL-AN', 'Arica y Parinacota': 'CL-AP', 'Atacama': 'CL-AT', 'Aysén': 'CL-AI', 'Coquimbo': 'CL-CO',
+  'La Araucanía': 'CL-AR', 'Los Lagos': 'CL-LL', 'Los Ríos': 'CL-LR', 'Magallanes': 'CL-MA', 'Ñuble': 'CL-NB',
+  'Tarapacá': 'CL-TA', 'Valparaíso': 'CL-VS', 'Bío-Bío': 'CL-BI', "Libertador Bernardo O'Higgins": 'CL-LI', 'Maule': 'CL-ML',
+  'Metropolitana de Santiago': 'CL-RM',
+}
+// The Chile file's names are UTF-8 read as Latin-1; undo that, then match "Región de X".
+const chileName = (n) => {
+  const fixed = Buffer.from(n, 'latin1').toString('utf8').replace(/^Región (de |del )?/, '')
+  const key = Object.keys(chile).find((k) => fixed.startsWith(k))
+  return key && { code: chile[key], name: key }
+}
+const southAfrica = { EC: 'ZA-EC', FS: 'ZA-FS', GT: 'ZA-GP', KZ: 'ZA-KZN', LI: 'ZA-LP', MP: 'ZA-MP', NW: 'ZA-NW', NC: 'ZA-NC', WC: 'ZA-WC' }
+// US territories are separate countries in Natural Earth.
+const usTerritories = new Set(['US-PR', 'US-AS', 'US-GU', 'US-VI', 'US-MP', 'US-UM'])
+
+// How to read each country's geoBoundaries file: ISO2 → { iso3, code(props), name?(props) }.
+const sources = {
   IN: { iso3: 'IND', code: (p) => p.shapeISO },
   ES: { iso3: 'ESP', code: (p) => spain[p.shapeName] },
   BE: { iso3: 'BEL', code: (p) => `BE-${p.shapeISO}`, name: (p) => ({ BRU: 'Brussels', VLG: 'Flanders', WAL: 'Wallonia' })[p.shapeISO] },
@@ -59,6 +76,27 @@ const split = {
   IQ: { iso3: 'IRQ', code: (p) => p.shapeISO },
   BA: { iso3: 'BIH', code: (p) => p.shapeISO.replace('*', '') },
   NO: { iso3: 'NOR', code: (p) => p.shapeISO },
+  BR: { iso3: 'BRA', code: (p) => p.shapeISO },
+  MX: { iso3: 'MEX', code: (p) => (p.shapeName === 'Distrito Federal' ? 'MX-CMX' : p.shapeISO), name: (p) => (p.shapeName === 'Distrito Federal' ? 'Mexico City' : p.shapeName) },
+  US: { iso3: 'USA', code: (p) => { const c = p.shapeISO.replace('SU-', 'US-'); return usTerritories.has(c) ? null : c } },
+  // geoBoundaries merges Entre Ríos into Buenos Aires, so Argentina comes from Natural Earth's admin-1 layer.
+  AR: { naturalEarth: true, code: (p) => p.iso_3166_2, name: (p) => p.name },
+  CL: { iso3: 'CHL', code: (p) => chileName(p.shapeName)?.code, name: (p) => chileName(p.shapeName)?.name },
+  CO: { iso3: 'COL', code: (p) => p.shapeISO },
+  PE: { iso3: 'PER', code: (p) => p.shapeISO.replace('*', '') },
+  AU: { iso3: 'AUS', code: (p) => (p.shapeISO?.startsWith('AU-') ? p.shapeISO : null) },
+  RU: { iso3: 'RUS', code: (p) => p.shapeISO },
+  ID: { iso3: 'IDN', code: (p) => p.shapeISO },
+  ZA: { iso3: 'ZAF', code: (p) => southAfrica[p.shapeISO] },
+  TR: { iso3: 'TUR', code: (p) => p.shapeISO },
+  MY: { iso3: 'MYS', code: (p) => p.shapeISO },
+}
+
+const maps = {
+  // Countries with more than one official language on signs.
+  'map.topo.json': ['IN', 'ES', 'BE', 'CH', 'CA', 'IT', 'CN', 'FI', 'RO', 'SK', 'RS', 'GB', 'IQ', 'BA', 'NO'],
+  // Large countries whose vegetation differs a lot from region to region.
+  'map-veg.topo.json': ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR'],
 }
 
 // Natural Earth units without an ISO code that we keep, and ones we drop.
@@ -70,28 +108,36 @@ async function json(url) {
   return res.json()
 }
 
-async function main() {
+let admin1
+/** Natural Earth 1:10m states and provinces for one country (large download, fetched once). */
+async function neAdmin1(iso2) {
+  admin1 ??= await json('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson')
+  return { features: admin1.features.filter((f) => f.properties.iso_a2 === iso2) }
+}
+
+async function build(file, splitList, ne) {
+  const split = new Set(splitList)
   const features = []
-  const ne = await json(NE)
   for (const f of ne.features) {
     const p = f.properties
     let props
     if (p.ISO_A2_EH === '-99') props = neFallback[p.NAME]
-    else if (p.ISO_A2_EH !== 'AQ' && !split[p.ISO_A2_EH]) props = { id: p.ISO_A2_EH, name: p.NAME_LONG || p.NAME, country: p.ISO_A2_EH }
+    else if (p.ISO_A2_EH !== 'AQ' && !split.has(p.ISO_A2_EH)) props = { id: p.ISO_A2_EH, name: p.NAME_LONG || p.NAME, country: p.ISO_A2_EH }
     if (props) features.push({ type: 'Feature', properties: props, geometry: f.geometry })
   }
   // Cyprus is split too (Greek south, Turkish north), using Natural Earth's own units.
   const cy = features.find((f) => f.properties.id === 'CY')
   if (cy) cy.properties = { id: 'CY', name: 'Cyprus (Republic)', country: 'CY' }
 
-  for (const [iso2, s] of Object.entries(split)) {
-    const fc = await json(gb(s.iso3, s.level))
+  for (const iso2 of splitList) {
+    const src = sources[iso2]
+    const fc = src.naturalEarth ? await neAdmin1(iso2) : await json(gb(src.iso3, src.level))
     let n = 0
     for (const f of fc.features) {
       const p = f.properties
-      const code = s.code(p)
+      const code = src.code(p)
       if (!code) continue
-      features.push({ type: 'Feature', properties: { id: code, name: s.name?.(p) ?? p.shapeName, country: iso2 }, geometry: f.geometry })
+      features.push({ type: 'Feature', properties: { id: code, name: src.name?.(p) ?? p.shapeName, country: iso2 }, geometry: f.geometry })
       n++
     }
     process.stdout.write(`${iso2}:${n} `)
@@ -103,8 +149,13 @@ async function main() {
     { 'in.json': input },
   )
   const topo = out['out.json']
-  await writeFile(OUT, topo)
-  console.log(`\n${features.length} features, ${(topo.length / 1024).toFixed(0)} KB`)
+  await writeFile(new URL(file, OUT_DIR), topo)
+  console.log(`\n${file}: ${features.length} features, ${(topo.length / 1024).toFixed(0)} KB`)
+}
+
+async function main() {
+  const ne = await json(NE)
+  for (const [file, splitList] of Object.entries(maps)) await build(file, splitList, ne)
 }
 
 main().catch((e) => {

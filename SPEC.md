@@ -214,7 +214,17 @@ For each region the data records:
 - Timed mode (optional) to mimic GeoGuessr pressure
 - End-of-quiz summary showing mistakes, with links back to the relevant language/group pages
 
-### 6.3 Progress
+### 6.3 Memory aids (metaphors & mnemonics) ✅
+Every item should come with a **memorable hook**, not only facts: a metaphor, a picture, a rhyme or a silly association that makes it stick. Hooks are short (one or two lines) and appear in an amber **"💡 Remember it"** box on the item's page, and again in quiz feedback after an answer.
+- **Scripts**: shape metaphors, e.g. Devanagari "is washing hung on a line: every letter hangs from one long bar"; Georgian "looks like bubbles rising in a glass of mineral water"
+- **Languages**: the one giveaway turned into a picture, e.g. Hungarian `ő` and `ű` are "letters that saw a ghost (double accent = double shock)"
+- **Groups**: how to tell the look-alikes apart in one line
+- **Plants**: shape and place, e.g. saguaro "the cartoon cactus with its arms up. Only Arizona and Sonora"; baobab "the upside-down tree"
+- **Forests & biomes**: a picture of the landscape, e.g. birch forest "the white army of the north"; caatinga "white forest: grey and dead-looking in the dry season, green overnight after rain"
+- Stored as data (`src/content/mnemonics.ts` for languages, scripts and groups; `src/content/vegetation/remember.ts` and the `remember` field for plants and forests). A test checks that every plant has one.
+- Future modules follow the same rule: each explainer gets a hook.
+
+### 6.4 Progress
 - Mastery per script, language, and group (percentage of cards in "mature" state)
 - Weakest items list ("you confuse Slovak and Czech 40% of the time"), backed by a confusion matrix
 - Export/import progress as a JSON file
@@ -322,7 +332,7 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **4: Cyrillic** ✅ | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
 | **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
-| **7: Vegetation** | ✅ 27 trees & plants and 13 crops (plus oil palm, olive and mango as crops), photo and map quizzes. *Still to do:* biomes, flashcards |
+| **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands; maps and quizzes down to state/province in 17 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
 | **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
@@ -375,7 +385,20 @@ A collection of explainers about **why** a country looks the way it does from th
 
 Each explainer has: the observation (what you see), the explanation (history, economics, climate, engineering), the countries or regions it applies to, and exceptions or look-alikes.
 
-### 12.5 Vegetation & Crops ✅ trees and crops built (biomes still to do)
+### 12.5 Vegetation & Crops ✅ trees, cacti, crops and forests built
+
+#### Regional precision (as built)
+Large countries are split into states and provinces on the vegetation map, so a plant is shown (and quizzed) **only where it actually grows**, not over the whole country. Split countries (`VEG_SPLIT`): Brazil, Mexico, USA, Canada, Argentina, Chile, Colombia, Peru, Australia, China, India, Russia, Indonesia, Malaysia, South Africa, Spain, Turkey.
+- `npm run build-map` writes a second map, `map-veg.topo.json` (geoBoundaries ADM1, CC BY 4.0; Argentina from Natural Earth admin-1, because geoBoundaries merges Entre Ríos into Buenos Aires).
+- `src/content/vegetation/regions.ts` lists the regions (ISO 3166-2 codes) where each plant is a useful clue. A bare country code means the whole country. Tests require regions for every split clue country.
+- The light data layer uses GBIF observations **per state/province** (GADM level 1) where available, and national FAO production for crops.
+- The *Where does it grow?* quiz is graded by region: coffee in Minas Gerais is right, in Rio Grande do Sul it is wrong.
+
+#### Cacti & desert plants (as built)
+Cacti are strong regional clues, so they have their own group: saguaro (Arizona/Sonora only), cardón (Baja California), organ pipe, candelabra cactus (central Mexico), mandacaru (Brazil's northeast, Caatinga), Andean cardón (Argentina/Bolivia/Chile highlands), candelabra euphorbia (Africa: the cactus look-alike that is not a cactus), agave, Joshua tree (Mojave), prickly pear. Each page gives the look-alikes to tell apart.
+
+#### Forests & biomes (as built)
+14 pages: taiga, birch forest, temperate broadleaf, Mediterranean woodland, tropical rainforest, Atlantic Forest, cerrado, caatinga, savanna, steppe, tundra, temperate rainforest, eucalyptus woodland, pampas. Each has a **latitude range** in words, **latitude bands** drawn as dashed lines on its map, the regions where it is found, why it grows there (climate, latitude, soil, fire), how it looks on Street View, and a memory hook.
 
 #### Trees (built first)
 Each tree (or tree group, where species look alike from the road) gets a page with:

@@ -153,6 +153,7 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   CU: { name: 'Cuba', coverage: 'partial' },
   DO: { name: 'Dominican Republic', coverage: 'yes' },
   SY: { name: 'Syria', coverage: 'none' },
+  GA: { name: 'Gabon', coverage: 'none' },
   WS: { name: 'Samoa', coverage: 'partial' },
   TO: { name: 'Tonga', coverage: 'partial' },
   AS: { name: 'American Samoa', coverage: 'yes' },

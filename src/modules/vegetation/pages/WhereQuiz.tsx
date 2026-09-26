@@ -4,7 +4,7 @@ import { useMapFeatures, type MapFeature } from '../../../components/mapData'
 import { cardClass } from '../../../components/ui'
 import { WorldMap } from '../../../components/WorldMap'
 import { countries } from '../../../content/countries'
-import { plantById, plantData } from '../../../content/vegetation'
+import { inTarget, plantById, plantData } from '../../../content/vegetation'
 import { QuizShell } from '../../../quiz/QuizShell'
 import { useQuiz } from '../../../quiz/useQuiz'
 import { gradeWhere, makeWhereRound, vegetationQuizCrumbs, type PlantScope, type WhereQuestion } from '../quiz/questions'
@@ -14,7 +14,7 @@ const countryList = (codes: string[]) => codes.map((c) => countries[c]?.name ?? 
 
 export function WhereQuiz() {
   const [scope, setScope] = useState<PlantScope>('')
-  const { features, error } = useMapFeatures()
+  const { features, error } = useMapFeatures('vegetation')
   const quiz = useQuiz<WhereQuestion, MapFeature | null>({
     id: 'plant-where',
     make: (known) => makeWhereRound(scope, known),
@@ -40,13 +40,14 @@ export function WhereQuiz() {
         <>
           {a && <p className="text-sm text-slate-600 dark:text-slate-400">You picked: {a.label}</p>}
           <p className="text-sm">
-            <Link to={`/vegetation/${q.plant.id}`} className="text-teal-700 underline dark:text-teal-400">{q.plant.name}</Link>. {what(q)}: {countryList(q.answers)}
+            <Link to={`/vegetation/${q.plant.id}`} className="text-teal-700 underline dark:text-teal-400">{q.plant.name}</Link>. {what(q)}: {countryList(q.countries)}
+            {q.target.regions.length > 0 && ' (in large countries, only the highlighted regions)'}
           </p>
         </>
       )}
       review={(q, a) => (
         <p className="text-sm">
-          <Link to={`/vegetation/${q.plant.id}`} className="font-semibold text-teal-700 underline dark:text-teal-400">{q.plant.name}</Link>: {countryList(q.answers)}
+          <Link to={`/vegetation/${q.plant.id}`} className="font-semibold text-teal-700 underline dark:text-teal-400">{q.plant.name}</Link>: {countryList(q.countries)}
           <span className="text-slate-500"> · you picked {a?.label ?? '—'}</span>
         </p>
       )}
@@ -61,8 +62,8 @@ export function WhereQuiz() {
               <p className="text-2xl font-bold">{q.plant.name}</p>
               <p className="text-sm text-slate-600 dark:text-slate-400">
                 {q.kind === 'producer'
-                  ? 'Tap one of the 10 biggest producing countries.'
-                  : 'Tap a country where seeing it is a useful GeoGuessr clue.'}
+                  ? 'Tap a region in one of the 10 biggest producing countries.'
+                  : 'Tap a country or region where seeing it is a useful GeoGuessr clue.'}
               </p>
             </div>
           </div>
@@ -75,7 +76,7 @@ export function WhereQuiz() {
               selected={quiz.answer?.id ?? null}
               onSelect={quiz.setAnswer}
               reveal={quiz.checked}
-              isCorrect={(f) => q.answers.includes(f.country)}
+              isCorrect={(f) => inTarget(q.target, f)}
             />
           ) : (
             <p className={`${cardClass} text-center text-slate-500`}>Loading map…</p>

@@ -194,6 +194,7 @@ export function ScriptQuiz() {
             </p>
             <p className="text-sm text-slate-600 dark:text-slate-400">Seen in: {scriptLocations[q.script.id]!.join(' · ')}</p>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Tip: {q.script.recognise[0]}</p>
+            {q.script.remember?.[0] && <p className="mt-1 text-sm text-amber-800 dark:text-amber-300">💡 {q.script.remember[0]}</p>}
           </div>
           <div className="flex flex-wrap gap-2">
             <button onClick={next} className={buttonClass}>

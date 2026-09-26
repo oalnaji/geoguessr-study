@@ -69,6 +69,7 @@ export function GiveawayQuiz() {
         <p className="text-sm">
           It's <Link to={`/languages/${q.lang.id}`} className="text-teal-700 underline dark:text-teal-400">{q.lang.name}</Link>.
           Letters only {q.lang.name} uses: <Native script={q.script} className="text-lg font-semibold">{giveawayList(q)}</Native>
+          {q.lang.remember?.[0] && <span className="mt-1 block text-amber-800 dark:text-amber-300">💡 {q.lang.remember[0]}</span>}
         </p>
       )}
       review={(q) => (

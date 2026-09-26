@@ -4,6 +4,7 @@ export const trees: Plant[] = [
   // ---- Palms ------------------------------------------------------------------------------------
   {
     id: 'coconut-palm',
+    group: 'Palms',
     name: 'Coconut palm',
     scientific: 'Cocos nucifera',
     wikipedia: 'Coconut',
@@ -37,6 +38,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'oil-palm',
+    group: 'Palms',
     name: 'Oil palm',
     scientific: 'Elaeis guineensis',
     wikipedia: 'Elaeis guineensis',
@@ -71,6 +73,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'date-palm',
+    group: 'Palms',
     name: 'Date palm',
     scientific: 'Phoenix dactylifera',
     wikipedia: 'Date palm',
@@ -102,6 +105,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'royal-palm',
+    group: 'Palms',
     name: 'Royal palm',
     scientific: 'Roystonea regia',
     wikipedia: 'Roystonea regia',
@@ -129,6 +133,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'babassu',
+    group: 'Palms',
     name: 'Babassu palm',
     scientific: 'Attalea speciosa',
     wikipedia: 'Attalea speciosa',
@@ -155,6 +160,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'carnauba',
+    group: 'Palms',
     name: 'Carnaúba palm',
     scientific: 'Copernicia prunifera',
     wikipedia: 'Copernicia prunifera',
@@ -182,6 +188,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'acai',
+    group: 'Palms',
     name: 'Açaí palm',
     scientific: 'Euterpe oleracea',
     wikipedia: 'Euterpe oleracea',
@@ -209,6 +216,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'buriti',
+    group: 'Palms',
     name: 'Buriti palm',
     scientific: 'Mauritia flexuosa',
     wikipedia: 'Mauritia flexuosa',
@@ -236,6 +244,7 @@ export const trees: Plant[] = [
   // ---- Broadleaf and conifer trees ---------------------------------------------------------------
   {
     id: 'eucalyptus',
+    group: 'Broadleaf trees',
     photoSearch: 'eucalyptus plantation',
     name: 'Eucalyptus',
     scientific: 'Eucalyptus',
@@ -270,6 +279,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'scots-pine',
+    group: 'Conifers',
     name: 'Scots pine',
     scientific: 'Pinus sylvestris',
     wikipedia: 'Pinus sylvestris',
@@ -297,6 +307,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'norway-spruce',
+    group: 'Conifers',
     photoSearch: 'Picea abies forest',
     name: 'Norway spruce',
     scientific: 'Picea abies',
@@ -330,6 +341,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'radiata-pine',
+    group: 'Conifers',
     photoSearch: 'Pinus radiata plantation',
     name: 'Monterey (radiata) pine',
     scientific: 'Pinus radiata',
@@ -357,6 +369,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'larch',
+    group: 'Conifers',
     photoSearch: 'larch forest autumn',
     name: 'Larch',
     scientific: 'Larix',
@@ -386,6 +399,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'birch',
+    group: 'Broadleaf trees',
     name: 'Silver birch',
     scientific: 'Betula pendula',
     wikipedia: 'Betula pendula',
@@ -411,6 +425,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'lombardy-poplar',
+    group: 'Broadleaf trees',
     photoSearch: 'Lombardy poplars row',
     name: 'Lombardy poplar',
     scientific: 'Populus nigra',
@@ -438,6 +453,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'italian-cypress',
+    group: 'Conifers',
     photoSearch: 'cypress avenue Tuscany',
     name: 'Italian cypress',
     scientific: 'Cupressus sempervirens',
@@ -465,6 +481,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'stone-pine',
+    group: 'Conifers',
     name: 'Stone pine (umbrella pine)',
     scientific: 'Pinus pinea',
     wikipedia: 'Pinus pinea',
@@ -487,6 +504,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'araucaria',
+    group: 'Conifers',
     photoSearch: 'Araucaria angustifolia forest',
     name: 'Paraná pine (araucária)',
     scientific: 'Araucaria angustifolia',
@@ -514,6 +532,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'olive',
+    group: 'Broadleaf trees',
     photoSearch: 'olive grove',
     name: 'Olive tree',
     scientific: 'Olea europaea',
@@ -549,6 +568,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'umbrella-thorn',
+    group: 'Broadleaf trees',
     name: 'Umbrella thorn acacia',
     scientific: 'Vachellia tortilis',
     wikipedia: 'Vachellia tortilis',
@@ -574,6 +594,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'baobab',
+    group: 'Broadleaf trees',
     name: 'Baobab',
     scientific: 'Adansonia digitata',
     wikipedia: 'Adansonia digitata',
@@ -602,6 +623,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'jacaranda',
+    group: 'Broadleaf trees',
     photoSearch: 'jacaranda street',
     name: 'Jacaranda',
     scientific: 'Jacaranda mimosifolia',
@@ -626,6 +648,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'mango',
+    group: 'Broadleaf trees',
     photoSearch: 'mango tree',
     name: 'Mango tree',
     scientific: 'Mangifera indica',
@@ -649,6 +672,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'bamboo',
+    group: 'Other',
     name: 'Bamboo',
     scientific: 'Bambusoideae',
     wikipedia: 'Bamboo',
@@ -669,6 +693,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'saguaro',
+    group: 'Cacti & desert plants',
     name: 'Saguaro cactus',
     scientific: 'Carnegiea gigantea',
     wikipedia: 'Saguaro',
@@ -689,6 +714,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'prickly-pear',
+    group: 'Cacti & desert plants',
     photoSearch: 'prickly pear hedge',
     name: 'Prickly pear',
     scientific: 'Opuntia',
@@ -713,6 +739,7 @@ export const trees: Plant[] = [
   },
   {
     id: 'mangrove',
+    group: 'Other',
     name: 'Mangroves',
     scientific: 'Rhizophora',
     wikipedia: 'Mangrove',

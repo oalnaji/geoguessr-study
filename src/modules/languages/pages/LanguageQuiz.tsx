@@ -35,7 +35,9 @@ export function LanguageQuiz() {
           <p className="text-sm">
             It's <Link to={`/languages/${q.lang.id}`} className="text-teal-700 underline dark:text-teal-400">{q.lang.name}</Link>.
           </p>
-          {q.lang.giveaways[0] && (
+          {q.lang.remember?.[0] ? (
+            <p className="mt-1 text-sm text-amber-800 dark:text-amber-300">💡 {q.lang.remember[0]}</p>
+          ) : q.lang.giveaways[0] && (
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               Tip: <span className="font-semibold">{q.lang.giveaways[0].sign}</span>: {q.lang.giveaways[0].tip}
             </p>

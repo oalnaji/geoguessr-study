@@ -1,7 +1,7 @@
 import { select } from 'd3-selection'
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { MAP_HEIGHT as H, MAP_WIDTH as W, type MapFeature } from './mapData'
+import { MAP_HEIGHT as H, MAP_WIDTH as W, type MapFeature, type MapLine } from './mapData'
 import { PickList } from './PickList'
 
 const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shadow dark:bg-slate-800/90'
@@ -12,7 +12,7 @@ const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shado
  * zooms to the answer. Without `onSelect` it is a read-only map shaded by `colorOf`.
  */
 export function WorldMap({
-  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf,
+  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf, lines = [],
 }: {
   features: MapFeature[]
   selected?: string | null
@@ -21,6 +21,8 @@ export function WorldMap({
   isCorrect?: (f: MapFeature) => boolean
   /** Fill colour for read-only shaded maps; undefined leaves the default grey */
   colorOf?: (f: MapFeature) => string | undefined
+  /** Extra lines drawn over the map, e.g. parallels of latitude */
+  lines?: MapLine[]
 }) {
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
@@ -98,6 +100,12 @@ export function WorldMap({
               >
                 <title>{f.label}</title>
               </path>
+            ))}
+            {lines.map((l) => (
+              <g key={l.label} className="pointer-events-none">
+                <path d={l.d} fill="none" className="stroke-amber-600 dark:stroke-amber-400" strokeWidth={1.2} strokeDasharray="5 4" vectorEffect="non-scaling-stroke" />
+                <text x={l.x + 2} y={l.y - 3} className="fill-amber-700 text-[11px] font-semibold dark:fill-amber-300">{l.label}</text>
+              </g>
             ))}
           </g>
         </svg>

@@ -43,6 +43,8 @@ export interface Script {
   history: string[]
   facts: string[]
   sources: string[]
+  /** Memory hooks: metaphors and mnemonics (from mnemonics.ts) */
+  remember?: string[]
 }
 
 export type RegionStatus = 'official' | 'co-official' | 'regional' | 'minority' | 'diaspora'
@@ -113,6 +115,8 @@ export interface Language {
   connections: string[]
   facts: string[]
   sources: string[]
+  /** Memory hooks: metaphors and mnemonics (from mnemonics.ts) */
+  remember?: string[]
 }
 
 export interface Group {
@@ -124,4 +128,6 @@ export interface Group {
   /** Ordered checks: look for X → it's Y */
   checklist: { look: string; then: string }[]
   traps: string[]
+  /** Memory hooks: metaphors and mnemonics (from mnemonics.ts) */
+  remember?: string[]
 }

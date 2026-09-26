@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router'
 import {
-  Bullets, cardClass, Chip, LetterGrid, linkCardClass, Native, OnThisPage, PageHeader, Prose, SampleText, Section, Sources,
+  Bullets, cardClass, Chip, LetterGrid, linkCardClass, Native, OnThisPage, PageHeader, Prose, RememberBox, SampleText, Section, Sources,
 } from '../../../components/ui'
 import { languageName, languagesInScript, letterIndex, scriptById, scriptSamples } from '../../../content'
 import type { ScriptId } from '../../../content/types'
@@ -59,6 +59,7 @@ export function ScriptPage() {
 
       <Section id="recognise" title="How to recognise it">
         <Bullets items={script.recognise} />
+        <RememberBox items={script.remember} />
       </Section>
 
       {script.lookalikes.length > 0 && (

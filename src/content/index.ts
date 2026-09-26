@@ -22,6 +22,7 @@ import * as southAsia from './languages/south-asia'
 import * as turkicLangs from './languages/turkic'
 import * as germanic from './languages/west-germanic'
 import { extraWords, extraWordsAlt, placeNameParts } from './languages/vocab'
+import { groupRemember, languageRemember, scriptRemember } from './mnemonics'
 import { scriptList } from './scripts'
 import { signWordLabels, type Group, type Language, type Script, type ScriptId, type SignWordKey } from './types'
 
@@ -35,7 +36,7 @@ const speakers = speakersJson as Speakers
 const udhrLanguages = udhrLanguagesJson as Record<string, Sample>
 const udhrScripts = udhrScriptsJson as Record<string, Sample>
 
-export const scripts = scriptList
+export const scripts: Script[] = scriptList.map((s) => ({ ...s, remember: scriptRemember[s.id] }))
 export const scriptById = new Map<ScriptId, Script>(scripts.map((s) => [s.id, s]))
 
 /** "north=sever; south=jih" → { north: 'sever', south: 'jih' } */
@@ -54,6 +55,7 @@ const withVocab = (lang: Language): Language => ({
   signWords: { ...lang.signWords, ...parseWords(extraWords[lang.id]) },
   signWordsAlt: lang.signWordsAlt && { ...lang.signWordsAlt, ...parseWords(extraWordsAlt[lang.id]) },
   placeNameParts: (placeNameParts[lang.id] ?? []).map(([part, meaning, example]) => ({ part, meaning, example })),
+  remember: languageRemember[lang.id],
 })
 
 export const languages: Language[] = [
@@ -64,13 +66,14 @@ export const languages: Language[] = [
 ].map(withVocab).sort((a, b) => a.name.localeCompare(b.name))
 export const languageById = new Map(languages.map((l) => [l.id, l]))
 
-export const groups: Group[] = [
+const groupList: Group[] = [
   central.centralEurope, yugo.exYugoslav, baltic.balticFinnic, nordic.nordic, iberian.iberian,
   romance.otherRomance, germanic.westGermanic, celtic.celtic, europe.turkic, cyrillic.cyrillicGroup,
   maritimeSea.maritimeSea, mainlandSea.mainlandSea, southAsia.northIndic, southAsia.southIndic, southAsia.himalayan,
   middleEast.arabicScript, middleEast.hebrewScript, middleEast.caucasus, eastAsia.eastAsian,
   africa.bantu, africa.westAfrican, africa.hornOfAfrica, americasPacific.polynesian, americasPacific.andean,
 ]
+export const groups: Group[] = groupList.map((g) => ({ ...g, remember: groupRemember[g.id] }))
 export const groupById = new Map(groups.map((g) => [g.id, g]))
 
 export const languageName = (id: string) => languageById.get(id)?.name ?? id

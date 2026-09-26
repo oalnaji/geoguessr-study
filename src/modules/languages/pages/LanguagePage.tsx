@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router'
 import {
-  Bullets, cardClass, Chip, LetterGrid, Native, OnThisPage, PageHeader, Prose, SampleText, Section, Sources,
+  Bullets, cardClass, Chip, LetterGrid, Native, OnThisPage, PageHeader, Prose, RememberBox, SampleText, Section, Sources,
 } from '../../../components/ui'
 import {
   countries, groupById, languageById, languageName, languageSamples, lettersOf, scriptById, statsOf, uniqueLetters,
@@ -153,6 +153,7 @@ export function LanguagePage() {
       </Section>
 
       <Section id="spot" title="How to spot it">
+        <RememberBox items={lang.remember} />
         {unique.length > 0 && (
           <p>
             Letters no other language in the app uses:{' '}

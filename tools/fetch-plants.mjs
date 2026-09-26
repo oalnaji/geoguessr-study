@@ -12,6 +12,8 @@
 
 import { readFile, writeFile } from 'node:fs/promises'
 import { crops } from '../src/content/vegetation/crops.ts'
+import { desertPlants } from '../src/content/vegetation/desert.ts'
+import { forests } from '../src/content/vegetation/forests.ts'
 import { trees } from '../src/content/vegetation/trees.ts'
 
 const OUT = new URL('../src/content/generated/plants.json', import.meta.url)
@@ -123,12 +125,63 @@ async function inaturalist(name, n = 5) {
 
 // ---- GBIF and production -------------------------------------------------------------------------
 
-async function gbifRecorded(name) {
+/** Human observations per country, and per state/province in countries split on the vegetation map. */
+async function gbifRecorded(name, regionMatcher) {
   const m = await get(`https://api.gbif.org/v1/species/match?name=${encodeURIComponent(name)}`)
-  if (!m.usageKey || m.matchType === 'NONE') return undefined
-  const r = await get(`https://api.gbif.org/v1/occurrence/search?taxonKey=${m.usageKey}&basisOfRecord=HUMAN_OBSERVATION&limit=0&facet=country&facetLimit=300`)
-  return Object.fromEntries((r.facets?.[0]?.counts ?? []).map((c) => [c.name, c.count]))
+  if (!m.usageKey || m.matchType === 'NONE') return {}
+  const base = `https://api.gbif.org/v1/occurrence/search?taxonKey=${m.usageKey}&basisOfRecord=HUMAN_OBSERVATION&limit=0`
+  const r = await get(`${base}&facet=country&facetLimit=300`)
+  const recorded = Object.fromEntries((r.facets?.[0]?.counts ?? []).map((c) => [c.name, c.count]))
+  const g = await get(`${base}&facet=gadmLevel1Gid&facetLimit=2000`)
+  const recordedRegions = {}
+  for (const c of g.facets?.[0]?.counts ?? []) {
+    const id = await regionMatcher(c.name)
+    if (id) recordedRegions[id] = (recordedRegions[id] ?? 0) + c.count
+  }
+  return { recorded, recordedRegions }
 }
+
+// GADM level-1 ids (e.g. "BRA.9_1") → vegetation-map region ids (e.g. "BR-GO"), matched by name.
+const fold = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
+  .replace(/\b(state|province|provincia|region|oblast|krai|kray|republic|of|the|autonomous|okrug|district|territory|special|capital|departamento|estado)\b/g, '')
+  .replace(/[^a-z]/g, '')
+
+// GADM names that differ from the map's (local-language names, renamings, typos in the map source).
+const regionAliases = {
+  'Jawa Barat': 'ID-JB', 'Jawa Tengah': 'ID-JT', 'Jawa Timur': 'ID-JI', 'Sulawesi Utara': 'ID-SA', 'Sulawesi Tengah': 'ID-ST',
+  'Sulawesi Selatan': 'ID-SN', 'Sulawesi Barat': 'ID-SR', 'Sulawesi Tenggara': 'ID-SG', 'Sumatera Barat': 'ID-SB',
+  'Sumatera Utara': 'ID-SU', 'Sumatera Selatan': 'ID-SS', 'Nusa Tenggara Timur': 'ID-NT', 'Nusa Tenggara Barat': 'ID-NB',
+  'Kalimantan Timur': 'ID-KI', 'Kalimantan Barat': 'ID-KB', 'Kalimantan Utara': 'ID-KU', 'Kalimantan Selatan': 'ID-KS',
+  'Kalimantan Tengah': 'ID-KT', 'Rio de Janeiro': 'BR-RJ', 'Rio Grande do Norte': 'BR-RN', 'Northern Cape': 'ZA-NC',
+  'Distrito Federal': 'MX-CMX', 'Altay': 'RU-ALT', 'Gorno-Altay': 'RU-AL', 'Nizhegorod': 'RU-NIZ',
+  'City of St. Petersburg': 'RU-SPE', "Primor'ye": 'RU-PRI', 'Yevrey': 'RU-YEV',
+}
+
+async function makeRegionMatcher() {
+  const topo = JSON.parse(await readFile(new URL('../src/content/generated/map-veg.topo.json', import.meta.url), 'utf8'))
+  const feats = Object.values(topo.objects)[0].geometries.map((g) => g.properties).filter((p) => p.id !== p.country)
+  const table = await isoTable()
+  const cache = new Map()
+  return async (gid) => {
+    if (cache.has(gid)) return cache.get(gid)
+    const iso2 = table[gid.split('.')[0]]
+    let id = null
+    if (feats.some((f) => f.country === iso2)) {
+      const info = await get(`https://api.gbif.org/v1/geocode/gadm/${gid}`).catch(() => null)
+      const names = info ? [info.name, ...(info.variantName ?? [])].map(fold).filter(Boolean) : []
+      const inCountry = feats.filter((f) => f.country === iso2)
+      const alias = info && regionAliases[info.name]
+      const hit = (alias && inCountry.find((f) => f.id === alias))
+        ?? inCountry.find((f) => names.includes(fold(f.name)))
+        ?? inCountry.find((f) => names.some((n) => n.length > 3 && (fold(f.name).includes(n) || n.includes(fold(f.name)))))
+      id = hit?.id ?? null
+      if (!hit && info) unmatched.add(`${iso2}:${info.name}`)
+    }
+    cache.set(gid, id)
+    return id
+  }
+}
+const unmatched = new Set()
 
 let iso3to2
 async function isoTable() {
@@ -154,24 +207,26 @@ async function owidProduction(slug) {
 
 async function main() {
   const picks = JSON.parse(await readFile(PICKS, 'utf8').catch(() => '{}'))
+  const regionMatcher = await makeRegionMatcher()
   const out = {}
-  for (const plant of [...trees, ...crops]) {
+  for (const plant of [...trees, ...desertPlants, ...crops, ...forests]) {
     const photos = []
     const lead = await wikipediaLead(plant.wikipedia).catch((e) => console.warn(`\n${plant.id} wikipedia: ${e.message}`))
     if (lead) photos.push(lead)
     if (plant.commonsCategory) photos.push(...(await commonsCategory(plant.commonsCategory).catch(() => [])))
-    photos.push(...(await inaturalist(plant.scientific).catch((e) => (console.warn(`\n${plant.id} inat: ${e.message}`), []))))
+    if (plant.scientific) photos.push(...(await inaturalist(plant.scientific).catch((e) => (console.warn(`\n${plant.id} inat: ${e.message}`), []))))
     if (plant.photoSearch) photos.push(...(await commonsSearch(plant.photoSearch).catch(() => [])))
     const unique = photos.filter((p, i) => photos.findIndex((q) => q.source === p.source) === i)
     const chosen = picks[plant.id]
     const entry = { photos: chosen ? chosen.map((src) => unique.find((p) => p.source === src)).filter(Boolean) : unique }
     if (chosen && entry.photos.length < chosen.length) console.warn(`\n${plant.id}: ${chosen.length - entry.photos.length} picked photo(s) no longer available`)
-    if (plant.section === 'tree') entry.recorded = await gbifRecorded(plant.scientific).catch(() => undefined)
+    if (plant.section === 'tree' && plant.scientific) Object.assign(entry, await gbifRecorded(plant.scientific, regionMatcher).catch(() => ({})))
     if (plant.production && 'owid' in plant.production) entry.production = await owidProduction(plant.production.owid)
     out[plant.id] = entry
     process.stdout.write(`${plant.id}(${entry.photos.length}) `)
   }
   await writeFile(OUT, JSON.stringify(out, null, 1) + '\n')
+  if (unmatched.size) console.log(`\nGBIF regions not matched to the map: ${[...unmatched].join(', ')}`)
   console.log('\ndone')
 }
 

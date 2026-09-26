@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router'
-import { Bullets, cardClass, Chip, Native, OnThisPage, PageHeader, Prose, Section } from '../../../components/ui'
+import { Bullets, cardClass, Chip, Native, OnThisPage, PageHeader, Prose, RememberBox, Section } from '../../../components/ui'
 import { groupById, languageById, languageSamples, lettersOf, scriptById } from '../../../content'
 import { signWordLabels, wordCategories, type Language, type ScriptId } from '../../../content/types'
 import { NotFound } from '../../../pages/NotFound'
@@ -57,6 +57,7 @@ export function GroupPage() {
 
       <Section title="Why they look alike">
         <Prose paragraphs={group.intro} />
+        <RememberBox items={group.remember} />
       </Section>
 
       <Section id="checklist" title="How to tell them apart" note="Work down the list; the first match wins.">

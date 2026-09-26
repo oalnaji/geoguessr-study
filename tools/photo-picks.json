@@ -265,5 +265,141 @@
   "https://commons.wikimedia.org/wiki/File:Rubber_tapped.JPG",
   "https://www.inaturalist.org/photos/37255270",
   "https://www.inaturalist.org/photos/60706943"
+ ],
+ "cardon": [
+  "https://commons.wikimedia.org/wiki/File:Pachycereus_pringlei_(5782057703).jpg",
+  "https://commons.wikimedia.org/wiki/File:Pachycereus_pringlei_(5782005811).jpg",
+  "https://commons.wikimedia.org/wiki/File:Pachycereus_pringlei_(5770743060).jpg",
+  "https://commons.wikimedia.org/wiki/File:Pachycereus_pringlei_(5770200441).jpg",
+  "https://www.inaturalist.org/photos/14294258"
+ ],
+ "candelabra-cactus": [
+  "https://commons.wikimedia.org/wiki/File:Pachycereus_weberi_(5741010770).jpg",
+  "https://www.inaturalist.org/photos/6171046",
+  "https://www.inaturalist.org/photos/9538362",
+  "https://www.inaturalist.org/photos/24445537",
+  "https://www.inaturalist.org/photos/2497662"
+ ],
+ "mandacaru": [
+  "https://www.inaturalist.org/photos/217934310",
+  "https://commons.wikimedia.org/wiki/File:Mandacaru_(%C3%A1rvore).jpg",
+  "https://www.inaturalist.org/photos/52479771",
+  "https://commons.wikimedia.org/wiki/File:Bl%C3%BChender_Cereus_jamacaru_(S%C3%A4ulenkaktus).jpg",
+  "https://commons.wikimedia.org/wiki/File:O_mandacaru_e_o_sol.jpg"
+ ],
+ "candelabra-euphorbia": [
+  "https://commons.wikimedia.org/wiki/File:Euphorbia_ingens_(habitus),_crop.jpg",
+  "https://www.inaturalist.org/photos/323573340",
+  "https://www.inaturalist.org/photos/22352578",
+  "https://www.inaturalist.org/photos/272082224"
+ ],
+ "agave": [
+  "https://commons.wikimedia.org/wiki/File:Agave_tequilana_(Jay8085).jpg",
+  "https://commons.wikimedia.org/wiki/File:Campos_de_agave.jpg",
+  "https://www.inaturalist.org/photos/62400218",
+  "https://www.inaturalist.org/photos/12465625",
+  "https://www.inaturalist.org/photos/29374264",
+  "https://www.inaturalist.org/photos/67027119"
+ ],
+ "joshua-tree": [
+  "https://commons.wikimedia.org/wiki/File:Joshua_Tree_01.jpg",
+  "https://www.inaturalist.org/photos/18708210",
+  "https://www.inaturalist.org/photos/862",
+  "https://www.inaturalist.org/photos/82014710",
+  "https://www.inaturalist.org/photos/183035323"
+ ],
+ "taiga": [
+  "https://commons.wikimedia.org/wiki/File:Ergaki,_Siberian_pine_forest,_Spruce_forest,_Taiga_wilderness,_Sayan_Mountains,_Siberia,_Russia.jpg",
+  "https://commons.wikimedia.org/wiki/File:Ergaki,_Taiga_in_Siberia,_Dark_coniferous_forest,_Sayan_Mountains,_Russia.jpg",
+  "https://commons.wikimedia.org/wiki/File:Jack_London_Lake_by_bartosh.jpg",
+  "https://commons.wikimedia.org/wiki/File:Forest,_Taiga,_Krasnoyarsk_Sea,_Russia.jpg",
+  "https://commons.wikimedia.org/wiki/File:Forest,_Siberian_taiga,_Krasnoyarsk_Sea,_Russia.jpg"
+ ],
+ "birch-forest": [
+  "https://commons.wikimedia.org/wiki/File:Betula_pendula_Finland.jpg",
+  "https://commons.wikimedia.org/wiki/File:Birch_forest_-_panoramio_(1).jpg",
+  "https://commons.wikimedia.org/wiki/File:Road_in_birch_forest_-_panoramio.jpg",
+  "https://commons.wikimedia.org/wiki/File:Birch_forest_and_winter_-_panoramio.jpg"
+ ],
+ "temperate-broadleaf": [
+  "https://commons.wikimedia.org/wiki/File:Primeval_beech_forest,_Bad%C3%ADnsky_prales.jpg",
+  "https://commons.wikimedia.org/wiki/File:Beech_forest_Molla,_Sweden_-_2021.jpg",
+  "https://commons.wikimedia.org/wiki/File:Beech_forest_M%C3%A1tra_in_winter.jpg",
+  "https://commons.wikimedia.org/wiki/File:M%C3%B8ns_Klint_beech_trees_in_gorge_2015-04-01-4864.jpg"
+ ],
+ "mediterranean-woodland": [
+  "https://commons.wikimedia.org/wiki/File:Maquis_and_garrigue_in_Corsica3.jpg",
+  "https://commons.wikimedia.org/wiki/File:Maquis_and_garrigue_in_Corsica2.jpg",
+  "https://commons.wikimedia.org/wiki/File:Maquis_and_garrigue_in_Corsica4.jpg",
+  "https://commons.wikimedia.org/wiki/File:Maquis_and_garrigue_in_Corsica5.jpg"
+ ],
+ "tropical-rainforest": [
+  "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+  "https://commons.wikimedia.org/wiki/File:Floresta_amazonica.JPG",
+  "https://commons.wikimedia.org/wiki/File:Flona_Jamari.jpg",
+  "https://commons.wikimedia.org/wiki/File:Fires_and_Deforestation_on_the_Amazon_Frontier,_Rondonia,_Brazil_-_August_12,_2007.jpg"
+ ],
+ "atlantic-forest": [
+  "https://commons.wikimedia.org/wiki/File:Mata_atlantica_Paulista,_com_vista_da_Serra_do_Mar.jpg",
+  "https://commons.wikimedia.org/wiki/File:Mata_atlantica_43.jpg",
+  "https://commons.wikimedia.org/wiki/File:Serra_do_Mar_-_Mata_Atl%C3%A2ntica.jpg",
+  "https://commons.wikimedia.org/wiki/File:Serra_do_Mar,_Mata_Atl%C3%A2ntica,_rio_e_ferrovia.jpg",
+  "https://commons.wikimedia.org/wiki/File:Vista_%C3%81rea_do_Parque_Nacional_Do_Igua%C3%A7u_-_Brasil.jpg"
+ ],
+ "caatinga": [
+  "https://commons.wikimedia.org/wiki/File:Um_mundo_chamado_Sert%C3%A3o.jpg",
+  "https://commons.wikimedia.org/wiki/File:Caatinga_-_S%C3%ADtio_Gravat%C3%A1_dos_Velez,_Queimadas_-_PB_.2.jpg",
+  "https://commons.wikimedia.org/wiki/File:Road_through_the_caatinga_-_Estrada_cruzando_a_caatinga_no_sert%C3%A3o_da_Bahia.jpg",
+  "https://commons.wikimedia.org/wiki/File:CAATINGA_SERT%C3%83O.JPG"
+ ],
+ "savanna": [
+  "https://commons.wikimedia.org/wiki/File:Acacia_Kenya_Savannah.jpg",
+  "https://commons.wikimedia.org/wiki/File:Elephant_under_acacia_tree,_Mara_North_Conservancy,_Kenya.jpg",
+  "https://commons.wikimedia.org/wiki/File:Tarangire-Natpark800600.jpg",
+  "https://commons.wikimedia.org/wiki/File:Safari_vehicle_parked_under_acacia_tree_on_savanna,_Maasai_Mara,_Kenya.jpg",
+  "https://commons.wikimedia.org/wiki/File:Savanna_towards_the_south-east_from_the_south-west_of_Taita_Hills_Game_Lodge_within_the_Taita_Hills_Wildlife_Sanctuary_in_Kenya.jpg"
+ ],
+ "tundra": [
+  "https://commons.wikimedia.org/wiki/File:Greenland_scoresby-sydkapp2_hg.jpg",
+  "https://commons.wikimedia.org/wiki/File:Tundra_landscape_with_mountains_and_small_pond,_Ivvavik_National_Park,_YT.jpg",
+  "https://commons.wikimedia.org/wiki/File:Tundra_landscape_looking_south_toward_British_Mountains_near_Engigstciak,_Ivvavik_National_Park,_YT.jpg",
+  "https://commons.wikimedia.org/wiki/File:Mountain_and_tundra_landscape_in_Ivvavik_National_Park,_YT.jpg"
+ ],
+ "temperate-rainforest": [
+  "https://commons.wikimedia.org/wiki/File:Windy_Bay_forest.jpg",
+  "https://commons.wikimedia.org/wiki/File:Chilo%C3%A9_National_Park_banner_Valdivian_temperate_rainforest.jpg",
+  "https://commons.wikimedia.org/wiki/File:Parque_londres_5.jpg"
+ ],
+ "eucalyptus-woodland": [
+  "https://commons.wikimedia.org/wiki/File:Woodland,_Nadgigomar_Nature_Reserve.jpg",
+  "https://commons.wikimedia.org/wiki/File:Bushland_Tamala_park.jpg",
+  "https://commons.wikimedia.org/wiki/File:Eucalyptus_luehmanniana_woodland.jpg"
+ ],
+ "organ-pipe": [
+  "https://www.inaturalist.org/photos/34661",
+  "https://commons.wikimedia.org/wiki/File:Organ_pipe_cactus.jpg",
+  "https://www.inaturalist.org/photos/85349568",
+  "https://www.inaturalist.org/photos/9517187"
+ ],
+ "andean-cardon": [
+  "https://commons.wikimedia.org/wiki/File:Los_Cardones_National_Park_04.jpg",
+  "https://commons.wikimedia.org/wiki/File:Los_Cardones_National_Park_05.jpg",
+  "https://commons.wikimedia.org/wiki/File:Los_Cardones_National_Park_06.jpg",
+  "https://www.inaturalist.org/photos/5498640",
+  "https://www.inaturalist.org/photos/64452912"
+ ],
+ "cerrado": [
+  "https://commons.wikimedia.org/wiki/File:Cerrado_-_Parque_Nacional_Chapada_dos_veadeiros.jpg",
+  "https://commons.wikimedia.org/wiki/File:Cerrado_-_Parque_Nacional_Chapada_dos_veadeiros_2.jpg",
+  "https://commons.wikimedia.org/wiki/File:Atras_morro_Frota_Pirenopolis_01.jpg",
+  "https://commons.wikimedia.org/wiki/File:Augusto_Miranda_Cachoeira_Abade_Pirenopolis_GO_(40864643221).jpg"
+ ],
+ "steppe": [
+  "https://commons.wikimedia.org/wiki/File:Mongolian_nature_steppe(36).jpg",
+  "https://commons.wikimedia.org/wiki/File:Mongolian_nature_steppe(38).jpg",
+  "https://commons.wikimedia.org/wiki/File:Mongolian_nature_steppe_house.jpg"
+ ],
+ "pampas": [
+  "https://commons.wikimedia.org/wiki/File:SerraGeralI.jpg"
  ]
 }

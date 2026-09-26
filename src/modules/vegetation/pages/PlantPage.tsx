@@ -1,10 +1,10 @@
 import { Link, useParams } from 'react-router'
 import { PhotoGallery } from '../../../components/PhotoGallery'
-import { Bullets, cardClass, Chip, OnThisPage, PageHeader, Prose, Section, Sources } from '../../../components/ui'
+import { Bullets, cardClass, Chip, OnThisPage, PageHeader, Prose, RememberBox, Section, Sources } from '../../../components/ui'
 import { countries } from '../../../content/countries'
-import { plantById, plantData, shadingOf } from '../../../content/vegetation'
+import { clueTarget, plantById, plantData } from '../../../content/vegetation'
 import { NotFound } from '../../../pages/NotFound'
-import { ShadedMap } from '../ShadedMap'
+import { PlantMap } from '../ShadedMap'
 
 export function PlantPage() {
   const { id } = useParams()
@@ -12,17 +12,22 @@ export function PlantPage() {
   if (!plant) return <NotFound />
 
   const photos = plantData(plant.id).photos
-  const shading = shadingOf(plant)
+  const target = clueTarget(plant)
+  const regionNames = target.regions.length
+    ? `${target.regions.length} state${target.regions.length === 1 ? '' : 's'}/province${target.regions.length === 1 ? '' : 's'} highlighted on the map`
+    : null
+  const isForest = plant.section === 'forest'
 
   return (
     <article className="space-y-8">
       <PageHeader
         crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }]}
         title={plant.name}
-        subtitle={<em>{plant.scientific}</em>}
+        subtitle={plant.scientific ? <em>{plant.scientific}</em> : plant.latitude}
       >
         <div className="flex flex-wrap gap-2">
           <Chip tone="teal">{plant.kind}</Chip>
+          {plant.latitude && plant.scientific && <Chip>{plant.latitude}</Chip>}
           {plant.section === 'crop' || plant.alsoCrop ? <Chip>Crop</Chip> : null}
         </div>
       </PageHeader>
@@ -40,6 +45,7 @@ export function PlantPage() {
 
       <Section id="recognise" title="How to recognise it">
         <Bullets items={plant.recognise} />
+        <RememberBox items={plant.remember} />
       </Section>
 
       {plant.lookalikes.length > 0 && (
@@ -74,19 +80,26 @@ export function PlantPage() {
       <Section id="where" title="Where it grows">
         <dl className="space-y-2">
           <div>
-            <dt className="text-sm font-semibold text-slate-500">Native range</dt>
+            <dt className="text-sm font-semibold text-slate-500">{isForest ? 'Where it is found' : 'Native range'}</dt>
             <dd>{plant.nativeRange}</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold text-slate-500">{plant.section === 'crop' || plant.alsoCrop ? 'Grown in' : 'Planted or naturalised in'}</dt>
+            <dt className="text-sm font-semibold text-slate-500">{isForest ? 'Today' : plant.section === 'crop' || plant.alsoCrop ? 'Grown in' : 'Planted or naturalised in'}</dt>
             <dd>{plant.grownIn}</dd>
           </div>
+          {plant.latitude && (
+            <div>
+              <dt className="text-sm font-semibold text-slate-500">Latitude</dt>
+              <dd>{plant.latitude}</dd>
+            </div>
+          )}
         </dl>
-        {shading && <ShadedMap shading={shading} />}
+        <PlantMap plant={plant} />
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm text-slate-500">A useful GeoGuessr clue in:</span>
           {plant.clueCountries.map((c) => <Chip key={c} tone="teal">{countries[c]?.name ?? c}</Chip>)}
         </div>
+        {regionNames && <p className="text-xs text-slate-500">In large countries only the right regions count: {regionNames}.</p>}
       </Section>
 
       <Section id="why" title="Why there? The science">

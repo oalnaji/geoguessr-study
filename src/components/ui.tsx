@@ -164,3 +164,16 @@ export function OnThisPage({ items }: { items: { id: string; label: string }[] }
     </nav>
   )
 }
+
+/** "Remember it" box: memory hooks (metaphors and mnemonics) for the thing on the page. */
+export function RememberBox({ items }: { items?: string[] }) {
+  if (!items?.length) return null
+  return (
+    <aside className="rounded-xl border border-amber-300 bg-amber-50 p-4 dark:border-amber-700/60 dark:bg-amber-950/40">
+      <h3 className="mb-1 text-sm font-semibold uppercase tracking-wide text-amber-800 dark:text-amber-300">💡 Remember it</h3>
+      <ul className="space-y-1 leading-relaxed text-amber-950 dark:text-amber-100">
+        {items.map((t) => <li key={t}>{t}</li>)}
+      </ul>
+    </aside>
+  )
+}

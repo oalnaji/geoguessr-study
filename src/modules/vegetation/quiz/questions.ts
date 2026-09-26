@@ -1,10 +1,13 @@
-import { cropList, plantData, plants, topProducers, treeList, type Photo, type Plant } from '../../../content/vegetation'
+import {
+  clueTarget, cropList, forestList, inTarget, placeTarget, plantData, plants, topProducers, treeList, type Photo, type PlaceTarget, type Plant,
+} from '../../../content/vegetation'
 import { pick, ROUND_LENGTH, shuffle, type Grade, type Rng } from '../../../quiz/engine'
 
 export const vegetationQuizCrumbs = [{ to: '/vegetation', label: 'Vegetation & Crops' }, { to: '/vegetation/quizzes', label: 'Quizzes' }]
 
-export type PlantScope = '' | 'tree' | 'crop'
-export const plantsInScope = (scope: PlantScope) => (scope === 'tree' ? treeList : scope === 'crop' ? cropList : plants)
+export type PlantScope = '' | 'tree' | 'crop' | 'forest'
+export const plantsInScope = (scope: PlantScope) =>
+  scope === 'tree' ? treeList : scope === 'crop' ? cropList : scope === 'forest' ? forestList : plants
 
 export const plantOptions = (scope: PlantScope) =>
   [...plantsInScope(scope)].sort((a, b) => a.name.localeCompare(b.name)).map((p) => ({ value: p.id, label: p.name }))
@@ -26,16 +29,23 @@ export const gradePhoto = (q: PhotoQuestion, a: string | null): Grade => ({ poin
 export interface WhereQuestion {
   key: string
   plant: Plant
-  /** Countries that count as correct */
-  answers: string[]
+  /** Countries and regions that count as correct */
+  target: PlaceTarget
+  /** Country list for the feedback text */
+  countries: string[]
   /** How the answer set was chosen, shown in the prompt */
   kind: 'clue' | 'producer'
 }
 
-/** Crops: the top 10 producers. Trees: the countries where the tree is a useful GeoGuessr clue. */
-export function whereAnswers(plant: Plant): Pick<WhereQuestion, 'answers' | 'kind'> {
+/**
+ * Crops: the top 10 producers. Trees and forests: where it is a useful GeoGuessr clue. In large
+ * countries only the plant's regions count (see content/vegetation/regions.ts).
+ */
+export function whereAnswers(plant: Plant): Pick<WhereQuestion, 'target' | 'countries' | 'kind'> {
   const producers = plant.section === 'crop' ? topProducers(plant, 10) : []
-  return producers.length ? { answers: producers, kind: 'producer' } : { answers: plant.clueCountries, kind: 'clue' }
+  return producers.length
+    ? { target: placeTarget(plant, producers), countries: producers, kind: 'producer' }
+    : { target: clueTarget(plant), countries: plant.clueCountries, kind: 'clue' }
 }
 
 export function makeWhereRound(scope: PlantScope, known: ReadonlySet<string>, rng: Rng = Math.random): WhereQuestion[] {
@@ -44,5 +54,5 @@ export function makeWhereRound(scope: PlantScope, known: ReadonlySet<string>, rn
     .map((plant) => ({ key: plant.id, plant, ...whereAnswers(plant) }))
 }
 
-export const gradeWhere = (q: WhereQuestion, a: { country: string } | null): Grade =>
-  ({ points: Number(a !== null && q.answers.includes(a.country)), max: 1 })
+export const gradeWhere = (q: WhereQuestion, a: { id: string; country: string } | null): Grade =>
+  ({ points: Number(a !== null && inTarget(q.target, a)), max: 1 })

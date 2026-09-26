@@ -26,7 +26,7 @@ export function PhotoQuiz() {
 
   return (
     <QuizShell
-      title="Name the plant"
+      title="Name the plant or forest"
       crumbs={vegetationQuizCrumbs}
       quiz={quiz}
       filter={<ScopeFilter value={scope} onChange={changeScope} />}
@@ -38,6 +38,7 @@ export function PhotoQuiz() {
             It's <Link to={`/vegetation/${q.plant.id}`} className="text-teal-700 underline dark:text-teal-400">{q.plant.name}</Link>.
           </p>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">Tip: {q.plant.recognise[0]}</p>
+          {q.plant.remember?.[0] && <p className="mt-1 text-sm text-amber-800 dark:text-amber-300">💡 {q.plant.remember[0]}</p>}
         </>
       )}
       review={(q, a) => (
@@ -58,7 +59,7 @@ export function PhotoQuiz() {
           </figure>
           <PickList
             key={`${quiz.round[0]?.key}-${quiz.index}`}
-            label="Which plant is this?"
+            label="Which is this?"
             options={plantOptions(scope)}
             value={quiz.answer}
             onChange={quiz.setAnswer}
