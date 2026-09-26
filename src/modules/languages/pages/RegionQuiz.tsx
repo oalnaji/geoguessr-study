@@ -2,9 +2,9 @@ import { Link } from 'react-router'
 import { PickList } from '../../../components/PickList'
 import { cardClass } from '../../../components/ui'
 import { languageName } from '../../../content'
-import { countryName, gradeRegion, languageOptions, makeRegionRound, type RegionQuestion } from '../quiz/questions'
-import { QuizShell } from '../quiz/QuizShell'
-import { useQuiz } from '../quiz/useQuiz'
+import { countryName, gradeRegion, languageOptions, makeRegionRound, type RegionQuestion, languageQuizCrumbs } from '../quiz/questions'
+import { QuizShell } from '../../../quiz/QuizShell'
+import { useQuiz } from '../../../quiz/useQuiz'
 
 /** Area names without notes that would give the answer away ("(Sámi administrative area)", "Hindi belt:"). */
 const areaLabel = (area: string) => area.replace(/\s*\(.*?\)/g, '').replace(/^Hindi belt:\s*/, '').trim()
@@ -24,6 +24,7 @@ export function RegionQuiz() {
   return (
     <QuizShell
       title="Region → language"
+      crumbs={languageQuizCrumbs}
       quiz={quiz}
       canCheck={quiz.answer !== null}
       knownLabel={(key) => {

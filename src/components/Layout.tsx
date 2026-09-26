@@ -4,6 +4,7 @@ import { NavLink, Outlet, useLocation } from 'react-router'
 const nav = [
   { to: '/', label: 'Home', end: true },
   { to: '/languages', label: 'Languages', end: false },
+  { to: '/vegetation', label: 'Plants', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 

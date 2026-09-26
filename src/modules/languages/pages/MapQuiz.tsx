@@ -4,9 +4,10 @@ import { cardClass, Native } from '../../../components/ui'
 import { useMapFeatures, type MapFeature } from '../../../components/mapData'
 import { WorldMap } from '../../../components/WorldMap'
 import { groupById, languageName } from '../../../content'
-import { countryName, gradeMap, isInTarget, makeMapRound, mapLanguages, type MapQuestion } from '../quiz/questions'
-import { GroupFilter, QuizShell } from '../quiz/QuizShell'
-import { useQuiz } from '../quiz/useQuiz'
+import { countryName, gradeMap, isInTarget, makeMapRound, mapLanguages, type MapQuestion, languageQuizCrumbs } from '../quiz/questions'
+import { QuizShell } from '../../../quiz/QuizShell'
+import { GroupFilter } from '../quiz/GroupFilter'
+import { useQuiz } from '../../../quiz/useQuiz'
 
 const hasMapLanguages = (groupId: string) => groupById.get(groupId)!.members.some((id) => mapLanguages.some((l) => l.id === id))
 
@@ -34,6 +35,7 @@ export function MapQuiz() {
   return (
     <QuizShell
       title="Where is it on signs?"
+      crumbs={languageQuizCrumbs}
       quiz={quiz}
       filter={<GroupFilter value={group} onChange={changeGroup} only={hasMapLanguages} />}
       canCheck={quiz.answer !== null}

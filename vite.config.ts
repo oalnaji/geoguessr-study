@@ -33,8 +33,18 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,png,woff2,json}'],
-        // Cache Google Fonts after first use so every script still renders offline.
+        // Plant photos and Google Fonts are cached after first use, so they still work offline.
         runtimeCaching: [
+          {
+            // Plant photos from Wikimedia and iNaturalist, kept for offline use once viewed.
+            urlPattern: /^https:\/\/(upload\.wikimedia\.org|inaturalist-open-data\.s3\.amazonaws\.com|static\.inaturalist\.org)\//,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'plant-photos',
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 180, purgeOnQuotaError: true },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
             handler: 'StaleWhileRevalidate',

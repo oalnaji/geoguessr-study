@@ -3,9 +3,10 @@ import { Link } from 'react-router'
 import { PickList } from '../../../components/PickList'
 import { cardClass, Native } from '../../../components/ui'
 import { languageName } from '../../../content'
-import { gradeSignWord, languageOptions, makeSignWordRound, type SignWordQuestion } from '../quiz/questions'
-import { GroupFilter, QuizShell } from '../quiz/QuizShell'
-import { useQuiz } from '../quiz/useQuiz'
+import { gradeSignWord, languageOptions, makeSignWordRound, type SignWordQuestion, languageQuizCrumbs } from '../quiz/questions'
+import { QuizShell } from '../../../quiz/QuizShell'
+import { GroupFilter } from '../quiz/GroupFilter'
+import { useQuiz } from '../../../quiz/useQuiz'
 
 const answerLinks = (q: SignWordQuestion) =>
   q.answers.map((id, i) => (
@@ -32,6 +33,7 @@ export function SignWordQuiz() {
   return (
     <QuizShell
       title="Sign words"
+      crumbs={languageQuizCrumbs}
       quiz={quiz}
       filter={<GroupFilter value={group} onChange={changeGroup} />}
       canCheck={quiz.answer !== null}

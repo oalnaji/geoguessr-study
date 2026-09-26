@@ -3,9 +3,10 @@ import { Link } from 'react-router'
 import { PickList } from '../../../components/PickList'
 import { cardClass, Native } from '../../../components/ui'
 import { languageName } from '../../../content'
-import { gradeLanguage, languageOptions, makeLanguageRound, type LanguageQuestion } from '../quiz/questions'
-import { GroupFilter, QuizShell } from '../quiz/QuizShell'
-import { useQuiz } from '../quiz/useQuiz'
+import { gradeLanguage, languageOptions, makeLanguageRound, type LanguageQuestion, languageQuizCrumbs } from '../quiz/questions'
+import { QuizShell } from '../../../quiz/QuizShell'
+import { GroupFilter } from '../quiz/GroupFilter'
+import { useQuiz } from '../../../quiz/useQuiz'
 
 export function LanguageQuiz() {
   const [group, setGroup] = useState('')
@@ -24,6 +25,7 @@ export function LanguageQuiz() {
   return (
     <QuizShell
       title="Identify the language"
+      crumbs={languageQuizCrumbs}
       quiz={quiz}
       filter={<GroupFilter value={group} onChange={changeGroup} />}
       canCheck={quiz.answer !== null}

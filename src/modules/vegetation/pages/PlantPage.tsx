@@ -1,0 +1,118 @@
+import { Link, useParams } from 'react-router'
+import { PhotoGallery } from '../../../components/PhotoGallery'
+import { Bullets, cardClass, Chip, OnThisPage, PageHeader, Prose, Section, Sources } from '../../../components/ui'
+import { countries } from '../../../content/countries'
+import { plantById, plantData, shadingOf } from '../../../content/vegetation'
+import { NotFound } from '../../../pages/NotFound'
+import { ShadedMap } from '../ShadedMap'
+
+export function PlantPage() {
+  const { id } = useParams()
+  const plant = plantById.get(id ?? '')
+  if (!plant) return <NotFound />
+
+  const photos = plantData(plant.id).photos
+  const shading = shadingOf(plant)
+
+  return (
+    <article className="space-y-8">
+      <PageHeader
+        crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }]}
+        title={plant.name}
+        subtitle={<em>{plant.scientific}</em>}
+      >
+        <div className="flex flex-wrap gap-2">
+          <Chip tone="teal">{plant.kind}</Chip>
+          {plant.section === 'crop' || plant.alsoCrop ? <Chip>Crop</Chip> : null}
+        </div>
+      </PageHeader>
+
+      <PhotoGallery photos={photos} alt={plant.name} />
+
+      <OnThisPage
+        items={[
+          { id: 'recognise', label: 'Recognise' },
+          { id: 'where', label: 'Where' },
+          { id: 'why', label: 'Why there?' },
+          { id: 'tips', label: 'GeoGuessr tips' },
+        ]}
+      />
+
+      <Section id="recognise" title="How to recognise it">
+        <Bullets items={plant.recognise} />
+      </Section>
+
+      {plant.lookalikes.length > 0 && (
+        <Section title="Don't confuse it with">
+          <ul className="space-y-2">
+            {plant.lookalikes.map((l) => {
+              const other = l.id ? plantById.get(l.id) : undefined
+              const thumb = other && plantData(other.id).photos[0]
+              const body = (
+                <>
+                  {thumb && <img src={thumb.url} alt="" loading="lazy" className="h-16 w-20 shrink-0 rounded-md object-cover" />}
+                  <span>
+                    <span className="font-semibold">{l.name}</span>
+                    <span className="block text-sm text-slate-600 dark:text-slate-400">{l.tell}</span>
+                  </span>
+                </>
+              )
+              return (
+                <li key={l.name}>
+                  {other ? (
+                    <Link to={`/vegetation/${other.id}`} className={`${cardClass} flex gap-3 !p-3 hover:border-teal-600`}>{body}</Link>
+                  ) : (
+                    <div className={`${cardClass} flex gap-3 !p-3`}>{body}</div>
+                  )}
+                </li>
+              )
+            })}
+          </ul>
+        </Section>
+      )}
+
+      <Section id="where" title="Where it grows">
+        <dl className="space-y-2">
+          <div>
+            <dt className="text-sm font-semibold text-slate-500">Native range</dt>
+            <dd>{plant.nativeRange}</dd>
+          </div>
+          <div>
+            <dt className="text-sm font-semibold text-slate-500">{plant.section === 'crop' || plant.alsoCrop ? 'Grown in' : 'Planted or naturalised in'}</dt>
+            <dd>{plant.grownIn}</dd>
+          </div>
+        </dl>
+        {shading && <ShadedMap shading={shading} />}
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-sm text-slate-500">A useful GeoGuessr clue in:</span>
+          {plant.clueCountries.map((c) => <Chip key={c} tone="teal">{countries[c]?.name ?? c}</Chip>)}
+        </div>
+      </Section>
+
+      <Section id="why" title="Why there? The science">
+        <Prose paragraphs={plant.science} />
+      </Section>
+
+      <Section title="Why there? The history">
+        <Prose paragraphs={plant.history} />
+      </Section>
+
+      <Section id="tips" title="GeoGuessr tips">
+        <Bullets items={plant.tips} />
+      </Section>
+
+      {plant.facts && plant.facts.length > 0 && (
+        <Section title="Interesting facts">
+          <Bullets items={plant.facts} />
+        </Section>
+      )}
+
+      <Section title="Sources">
+        <Sources urls={plant.sources} />
+        <p className="text-xs text-slate-500">
+          Photos: Wikimedia Commons and iNaturalist (credited under each photo). Occurrences: GBIF. Production: FAO via Our World in Data.
+        </p>
+      </Section>
+    </article>
+  )
+}

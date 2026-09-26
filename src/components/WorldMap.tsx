@@ -7,17 +7,20 @@ import { PickList } from './PickList'
 const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shadow dark:bg-slate-800/90'
 
 /**
- * A tappable world map with pinch/scroll zoom, plus a searchable list for places too small to tap.
- * After `reveal`, correct places turn green and a wrong pick red, and the map zooms to the answer.
+ * A world map with pinch/scroll zoom. With `onSelect` it is tappable, with a searchable list for
+ * places too small to tap; after `reveal`, correct places turn green, a wrong pick red, and the map
+ * zooms to the answer. Without `onSelect` it is a read-only map shaded by `colorOf`.
  */
 export function WorldMap({
-  features, selected, onSelect, reveal, isCorrect,
+  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf,
 }: {
   features: MapFeature[]
-  selected: string | null
-  onSelect: (f: MapFeature) => void
-  reveal: boolean
-  isCorrect: (f: MapFeature) => boolean
+  selected?: string | null
+  onSelect?: (f: MapFeature) => void
+  reveal?: boolean
+  isCorrect?: (f: MapFeature) => boolean
+  /** Fill colour for read-only shaded maps; undefined leaves the default grey */
+  colorOf?: (f: MapFeature) => string | undefined
 }) {
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
@@ -79,7 +82,7 @@ export function WorldMap({
   return (
     <div className="space-y-2">
       <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-sky-50 dark:border-slate-800 dark:bg-slate-900">
-        <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full cursor-pointer select-none" style={{ touchAction: 'none' }}>
+        <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} className={`block h-auto w-full select-none ${onSelect ? 'cursor-pointer' : 'cursor-grab'}`} style={{ touchAction: 'none' }}>
           <g ref={gRef}>
             {features.map((f) => (
               <path
@@ -88,7 +91,8 @@ export function WorldMap({
                 className={`${fillClass(f)} stroke-white dark:stroke-slate-900`}
                 strokeWidth={0.6}
                 vectorEffect="non-scaling-stroke"
-                onClick={() => !reveal && onSelect(f)}
+                style={colorOf?.(f) ? { fill: colorOf(f) } : undefined}
+                onClick={() => !reveal && onSelect?.(f)}
                 onPointerEnter={() => setHover(f.id)}
                 onPointerLeave={() => setHover((h) => (h === f.id ? null : h))}
               >
@@ -104,14 +108,16 @@ export function WorldMap({
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm">
-        <span className="text-slate-600 dark:text-slate-400">{label ?? 'Tap a country or region. Pinch or scroll to zoom.'}</span>
-        {!reveal && (
+        <span className="text-slate-600 dark:text-slate-400">
+          {label ?? (onSelect ? 'Tap a country or region. Pinch or scroll to zoom.' : 'Pinch or scroll to zoom.')}
+        </span>
+        {!reveal && onSelect && (
           <button type="button" onClick={() => setShowList((s) => !s)} className="text-teal-700 underline dark:text-teal-400">
             {showList ? 'Hide list' : "Can't find it? Choose from a list"}
           </button>
         )}
       </div>
-      {showList && !reveal && (
+      {showList && !reveal && onSelect && (
         <PickList label="Place" options={options} value={selected} onChange={(id) => onSelect(byId.get(id)!)} />
       )}
       <p className="text-xs text-slate-400">

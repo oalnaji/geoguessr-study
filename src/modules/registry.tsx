@@ -1,4 +1,5 @@
 import { LanguagesModule } from './languages'
+import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
 
 export const modules: MetaModule[] = [
@@ -15,7 +16,8 @@ export const modules: MetaModule[] = [
     title: 'Vegetation & Crops',
     description: 'Which trees and crops grow where, and why.',
     path: 'vegetation',
-    status: 'next',
+    status: 'active',
+    element: <VegetationModule />,
   },
   {
     id: 'world-maps',

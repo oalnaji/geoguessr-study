@@ -1,39 +1,20 @@
 import type { ReactNode } from 'react'
-import { cardClass, PageHeader } from '../../../components/ui'
-import { groups } from '../../../content'
+import { cardClass, PageHeader } from '../components/ui'
 import type { QuizState } from './useQuiz'
 
 export const buttonClass = 'rounded-lg bg-teal-700 px-5 py-3 font-semibold text-white disabled:opacity-40'
 export const secondaryClass =
   'rounded-lg border border-slate-300 px-4 py-3 font-medium text-slate-700 hover:border-teal-600 dark:border-slate-700 dark:text-slate-300'
 
-const crumbs = [{ to: '/languages', label: 'Languages' }, { to: '/languages/quizzes', label: 'Quizzes' }]
-
-/** Group filter shown above a quiz. Changing it starts a new round. */
-export function GroupFilter({ value, onChange, only }: { value: string; onChange: (v: string) => void; only?: (groupId: string) => boolean }) {
-  return (
-    <label className="flex flex-wrap items-center gap-2 text-sm">
-      <span className="text-slate-500">Languages:</span>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="rounded-lg border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900"
-      >
-        <option value="">All languages</option>
-        {groups.filter((g) => !only || only(g.id)).map((g) => <option key={g.id} value={g.id}>{g.name}</option>)}
-      </select>
-    </label>
-  )
-}
-
 /**
  * Frame shared by every quiz: header with progress, the question, feedback after checking, the
  * Check / Skip / "I know this one" buttons, and the end-of-round summary.
  */
 export function QuizShell<Q extends { key: string }, A>({
-  title, quiz, filter, children, canCheck, feedback, review, knownLabel, emptyText,
+  title, crumbs, quiz, filter, children, canCheck, feedback, review, knownLabel, emptyText,
 }: {
   title: string
+  crumbs: { to: string; label: string }[]
   quiz: QuizState<Q, A>
   filter?: ReactNode
   /** The question and answer area for quiz.q */

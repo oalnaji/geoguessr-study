@@ -2,9 +2,10 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { cardClass, Native } from '../../../components/ui'
 import { groupById, languageName, uniqueLetters } from '../../../content'
-import { giveawayLanguages, gradeGiveaway, makeGiveawayRound, type GiveawayQuestion } from '../quiz/questions'
-import { GroupFilter, QuizShell } from '../quiz/QuizShell'
-import { useQuiz } from '../quiz/useQuiz'
+import { giveawayLanguages, gradeGiveaway, makeGiveawayRound, type GiveawayQuestion, languageQuizCrumbs } from '../quiz/questions'
+import { QuizShell } from '../../../quiz/QuizShell'
+import { GroupFilter } from '../quiz/GroupFilter'
+import { useQuiz } from '../../../quiz/useQuiz'
 
 const hasGiveawayLanguages = (groupId: string) =>
   groupById.get(groupId)!.members.some((id) => giveawayLanguages.some((l) => l.id === id))
@@ -59,6 +60,7 @@ export function GiveawayQuiz() {
   return (
     <QuizShell
       title="Spot the giveaway"
+      crumbs={languageQuizCrumbs}
       quiz={quiz}
       filter={<GroupFilter value={group} onChange={changeGroup} only={hasGiveawayLanguages} />}
       canCheck={quiz.answer !== null}

@@ -322,7 +322,7 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **4: Cyrillic** ✅ | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
 | **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
-| **7: Vegetation** | Trees first, then crops and biomes (§12.5) |
+| **7: Vegetation** | ✅ 27 trees & plants and 13 crops (plus oil palm, olive and mango as crops), photo and map quizzes. *Still to do:* biomes, flashcards |
 | **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
@@ -375,7 +375,7 @@ A collection of explainers about **why** a country looks the way it does from th
 
 Each explainer has: the observation (what you see), the explanation (history, economics, climate, engineering), the countries or regions it applies to, and exceptions or look-alikes.
 
-### 12.5 Vegetation & Crops (next module after Languages)
+### 12.5 Vegetation & Crops ✅ trees and crops built (biomes still to do)
 
 #### Trees (built first)
 Each tree (or tree group, where species look alike from the road) gets a page with:
@@ -403,6 +403,8 @@ Tree pages link to the climate map (§12.1) and to regions (§12.2), and share t
 - **History**: Wikipedia plus the sources it cites; each page records its sources (as in §7.4)
 
 ### 12.6 Images (all modules)
+
+**As built:** `npm run fetch-plants` (`tools/fetch-plants.mjs`) collects candidate photos (Wikipedia lead image via Commons, a Commons category or search, iNaturalist taxon photos with open licences). Photos were reviewed by hand; `tools/photo-picks.json` lists the chosen photos per plant, in order, best road-view photo first. Only URLs and credits are stored; the service worker caches viewed photos (`plant-photos`, 300 entries). Where it grows: GBIF human observations per country (trees) and FAO production via Our World in Data charts (crops); tea, cotton, pineapple, rubber and olive use a hand-written producer ranking.
 The app **links to existing photos online** rather than generating or bundling them. Generated images would be inaccurate for identification, and bundling thousands of photos would bloat the app.
 
 - **Main source: Wikimedia Commons.** It explicitly allows images to be loaded directly from its servers, has a huge plant and landscape collection, and every image has a clear free licence. The app stores only the file name and attribution, and requests a thumbnail at the right size (small on phones, larger on laptops).

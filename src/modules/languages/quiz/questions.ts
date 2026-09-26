@@ -1,8 +1,10 @@
 import { countries, groupById, languageById, languageSamples, languages, uniqueLetters } from '../../../content'
 import { mapRegions, regionKey } from '../../../content/mapRegions'
 import { signWordLabels, type Language, type ScriptId, type SignWordKey } from '../../../content/types'
-import { graphemes, pick, randInt, ROUND_LENGTH, shuffle, type Grade, type Rng } from './engine'
+import { graphemes, pick, randInt, ROUND_LENGTH, shuffle, type Grade, type Rng } from '../../../quiz/engine'
 import { snippet } from './scriptQuiz'
+
+export const languageQuizCrumbs = [{ to: '/languages', label: 'Languages' }, { to: '/languages/quizzes', label: 'Quizzes' }]
 
 /** Languages in scope for a group filter ('' = all). */
 export const languagesInScope = (groupId: string) =>
