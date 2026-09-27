@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router'
 import { PhotoGallery } from '../../../components/PhotoGallery'
 import { Bullets, cardClass, Chip, PageHeader, RememberBox, Section } from '../../../components/ui'
-import { countryName, formatNumber, markersOf, plantsIn, regionById, regionFacts, studyByCountry } from '../../../content/regions'
+import { countryName, featuresIn, formatNumber, markersOf, plantsIn, regionById, regionFacts, studyByCountry } from '../../../content/regions'
 import { usPlates, usShields } from '../../../content/regions/usRoadside'
 import { plantData } from '../../../content/vegetation'
 import { NotFound } from '../../../pages/NotFound'
@@ -23,6 +23,7 @@ export function RegionPage() {
   const prev = study.regions[(i - 1 + study.regions.length) % study.regions.length]
   const next = study.regions[(i + 1) % study.regions.length]
   const markers = markersOf(region.id)
+  const features = featuresIn(region.id)
   const shield = usShields[region.id]
   const plate = usPlates[region.id]
   const density = facts.population && facts.areaKm2 ? Math.round(facts.population / facts.areaKm2) : undefined
@@ -67,6 +68,21 @@ export function RegionPage() {
       {markers.length > 0 && (
         <Section title="Notable markers" note={<>Poles, bollards, signs, roads and buildings that point here. Based on PlonkIt; <PlonkItLink slug={study.plonkit}>see the full guide</PlonkItLink></>}>
           <Bullets items={markers} />
+        </Section>
+      )}
+
+      {features.length > 0 && (
+        <Section title="Features found here" note={<>From the country's <Link to={`/regions/${study.country}?tab=features`} className="text-teal-700 underline dark:text-teal-400">Notable features</Link> tab, where each one has a map.</>}>
+          <ul className="space-y-1.5 text-sm">
+            {features.map((f) => (
+              <li key={f.id}>
+                <span className="font-semibold">{f.title}</span>
+                {f.notable && <span className="ml-1 text-amber-600">★</span>}
+                <span className="text-slate-600 dark:text-slate-400"> · {f.text}</span>
+                <span className="text-slate-500"> ({f.regions.length === 1 ? 'only here' : `${f.regions.length} regions`})</span>
+              </li>
+            ))}
+          </ul>
         </Section>
       )}
 

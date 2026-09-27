@@ -1,4 +1,4 @@
-import { allRegions, countryOf, maskName, regionFacts, studyByCountry, type StudyRegion } from '../../../content/regions'
+import { allFeatures, allRegions, countryOf, maskName, regionFacts, studyByCountry, type CountryFeature, type StudyRegion } from '../../../content/regions'
 import type { Photo } from '../../../content/vegetation/types'
 import { pick, ROUND_LENGTH, shuffle, type Grade, type Rng } from '../../../quiz/engine'
 
@@ -88,3 +88,24 @@ export function makeClueRound(scope: CountryScope, known: ReadonlySet<string>, r
 }
 
 export const gradeClue = (q: ClueQuestion, a: { id: string } | null): Grade => ({ points: Number(a?.id === q.region.id), max: 1 })
+
+// ---- Where is this feature found? ---------------------------------------------------------------
+
+export interface FeatureQuestion {
+  key: string
+  feature: CountryFeature
+  country: string
+}
+
+/** Features limited to part of the country (a feature found everywhere is no test). */
+export function makeFeatureRound(scope: CountryScope, known: ReadonlySet<string>, rng: Rng = Math.random): FeatureQuestion[] {
+  const pool = allFeatures.filter((f) => {
+    const country = f.regions[0].split('-')[0]
+    const total = studyByCountry.get(country)?.regions.length ?? 0
+    return (!scope || country === scope) && !known.has(f.id) && f.regions.length < total * 0.6
+  })
+  return shuffle(pool, rng).slice(0, ROUND_LENGTH).map((feature) => ({ key: feature.id, feature, country: feature.regions[0].split('-')[0] }))
+}
+
+export const gradeFeature = (q: FeatureQuestion, a: { id: string } | null): Grade =>
+  ({ points: Number(a !== null && q.feature.regions.includes(a.id)), max: 1 })

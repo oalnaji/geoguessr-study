@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { gradeFind, makeClueRound, makeFindRound, makeNameRound } from '../../modules/regions/quiz/questions'
 import vegMap from '../generated/map-veg.topo.json'
-import { allRegions, countryOf, countryStudies, maskName, markersOf, plantsIn, regionById, regionFacts } from '.'
+import { plantById } from '../vegetation'
+import { allFeatures, allRegions, countryOf, countryStudies, featureCategories, featuresIn, featuresOf, maskName, markersOf, plantsIn, regionById, regionFacts } from '.'
 import { regionMarkers } from './markers'
 import { usPlates, usShields } from './usRoadside'
 
@@ -82,6 +83,35 @@ describe('markers, shields and plates', () => {
   it('notes the 2025 merger for merged Vietnamese provinces', () => {
     expect(regionById.get('VN-57')!.note).toMatch(/Hồ Chí Minh City/)
     expect(regionById.get('VN-HN')!.note).toBeUndefined()
+  })
+})
+
+describe('country features', () => {
+  it('have unique ids, valid regions in their own country, and existing plant links', () => {
+    expect(new Set(allFeatures.map((f) => f.id)).size).toBe(allFeatures.length)
+    for (const s of countryStudies) {
+      const list = featuresOf(s.country)
+      expect(list.length, s.country).toBeGreaterThanOrEqual(15)
+      for (const f of list) {
+        expect(f.regions.length, f.id).toBeGreaterThan(0)
+        expect(featureCategories, f.id).toContain(f.category)
+        expect(f.text.length, f.id).toBeGreaterThan(3)
+        for (const r of f.regions) expect(regionById.get(r) && countryOf(regionById.get(r)!), `${f.id}: ${r}`).toBe(s.country)
+        if (f.plant) expect(plantById.has(f.plant), `${f.id}: ${f.plant}`).toBe(true)
+      }
+    }
+  })
+
+  it('never name their own regions in the title (so they can be quizzed)', () => {
+    for (const f of allFeatures) {
+      for (const r of f.regions) expect(f.title, f.id).not.toContain(regionById.get(r)!.name)
+    }
+  })
+
+  it('are listed on the regions they cover', () => {
+    expect(featuresIn('MX-OAX').map((f) => f.id)).toContain('mx-three-line')
+    expect(featuresIn('ID-SU').map((f) => f.id)).toContain('id-uneven-insulators')
+    expect(featuresIn('MX-JAL').map((f) => f.id)).toContain('mx-blue-agave')
   })
 })
 

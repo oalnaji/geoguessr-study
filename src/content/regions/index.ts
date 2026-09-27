@@ -6,6 +6,9 @@ import { australia } from './australia'
 import { brazil } from './brazil'
 import { canada } from './canada'
 import { indonesia } from './indonesia'
+import featurePhotosJson from '../generated/feature-photos.json'
+import { countryFeatures } from './features'
+import type { CountryFeature } from './featureTypes'
 import { regionMarkers } from './markers'
 import { mexico } from './mexico'
 import { philippines } from './philippines'
@@ -15,6 +18,8 @@ import { usa } from './usa'
 import { vietnam } from './vietnam'
 
 export type { CountryStudy, RegionFacts, RegionGroup, StudyRegion } from './types'
+export type { CountryFeature, FeatureCategory } from './featureTypes'
+export { featureCategories } from './featureTypes'
 
 /** Countries in the Regions module, in study order. */
 export const countryStudies: CountryStudy[] = [brazil, mexico, usa, canada, indonesia, australia, russia, argentina, vietnam, philippines]
@@ -52,5 +57,17 @@ export function maskName(text: string, r: StudyRegion): string {
 
 /** Notable region-specific markers (see markers.ts); empty when there are none. */
 export const markersOf = (id: string): string[] => regionMarkers[id] ?? []
+
+/** Notable features of a country, by area (see features.ts). */
+export const featuresOf = (country: string): CountryFeature[] => countryFeatures[country] ?? []
+export const allFeatures: CountryFeature[] = Object.values(countryFeatures).flat()
+export const featureById = new Map(allFeatures.map((f) => [f.id, f]))
+
+/** Features whose area includes this region. */
+export const featuresIn = (regionId: string): CountryFeature[] => allFeatures.filter((f) => f.regions.includes(regionId))
+
+const featurePhotos = featurePhotosJson as unknown as Record<string, RegionFacts['photos']>
+/** Hand-picked photos of a feature (Wikimedia Commons); empty for most pole and sign features. */
+export const featurePhotosOf = (id: string): RegionFacts['photos'] => featurePhotos[id] ?? []
 
 export const formatNumber = (n?: number) => (n === undefined ? '—' : n.toLocaleString('en-US'))

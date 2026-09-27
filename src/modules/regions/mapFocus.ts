@@ -1,6 +1,13 @@
 import { useMemo } from 'react'
 import { boundsOf, MAP_WIDTH, projectBox, useMapFeatures, type MapBounds, type MapFeature } from '../../components/mapData'
-import { countryName, countryOf, regionById, studyByCountry, type StudyRegion } from '../../content/regions'
+import { countryName, countryOf, featurePhotosOf, regionById, studyByCountry, type CountryFeature, type StudyRegion } from '../../content/regions'
+import { plantData } from '../../content/vegetation'
+
+/** Photos for a feature: its own hand-picked ones, else the linked plant's. */
+export function featureImages(f: CountryFeature) {
+  const own = featurePhotosOf(f.id)
+  return own.length ? own : f.plant ? plantData(f.plant).photos.slice(0, 2) : []
+}
 
 const HIGHLIGHT = '#0f766e'
 export const SAME_COUNTRY = '#c2e9e1'

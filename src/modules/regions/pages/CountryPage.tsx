@@ -4,13 +4,18 @@ import { countryName, regionFacts, studyByCountry } from '../../../content/regio
 import { NotFound } from '../../../pages/NotFound'
 import { GROUP_COLORS } from '../mapFocus'
 import { CountryMap } from '../maps'
+import { CountryFeatures } from '../CountryFeatures'
 import { UsPlates, UsShields } from '../UsRoadside'
 
-const usTabs = [
+const baseTabs = [
   { id: '', label: 'Regions' },
+  { id: 'features', label: 'Notable features' },
+]
+const usTabs = [
+  ...baseTabs,
   { id: 'shields', label: 'Highway shields' },
   { id: 'plates', label: 'Licence plates' },
-] as const
+]
 
 /** Link to the PlonkIt guide the markers are based on. */
 export function PlonkItLink({ slug, children }: { slug?: string; children?: string }) {
@@ -28,15 +33,15 @@ export function CountryPage() {
   const study = studyByCountry.get(country ?? '')
   if (!study) return <NotFound />
 
-  const tabs = study.country === 'US' ? usTabs : null
-  const tab = tabs ? (searchParams.get('tab') ?? '') : ''
+  const tabs = study.country === 'US' ? usTabs : baseTabs
+  const tab = searchParams.get('tab') ?? ''
 
   return (
     <article className="space-y-8">
       <PageHeader crumbs={[{ to: '/regions', label: 'Regions' }]} title={countryName(study.country)} subtitle={`${study.regions.length} ${study.unit}`}>
         <PlonkItLink slug={study.plonkit} />
       </PageHeader>
-      {tabs && (
+      {(
         <nav className="flex flex-wrap gap-2 border-b border-slate-200 pb-2 dark:border-slate-800">
           {tabs.map((t) => (
             <button
@@ -50,6 +55,7 @@ export function CountryPage() {
           ))}
         </nav>
       )}
+      {tab === 'features' && <CountryFeatures country={study.country} />}
       {tab === 'shields' && <UsShields />}
       {tab === 'plates' && <UsPlates />}
       {tab === '' && <CountryOverview study={study} />}
