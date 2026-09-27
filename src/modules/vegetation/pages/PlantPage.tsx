@@ -5,6 +5,7 @@ import { countries } from '../../../content/countries'
 import { clueTarget, plantById, plantData } from '../../../content/vegetation'
 import { NotFound } from '../../../pages/NotFound'
 import { PlantMap } from '../ShadedMap'
+import { tabOf } from '../sections'
 
 export function PlantPage() {
   const { id } = useParams()
@@ -22,7 +23,7 @@ export function PlantPage() {
   return (
     <article className="space-y-8">
       <PageHeader
-        crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }]}
+        crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }, tabOf(plant)]}
         title={plant.name}
         subtitle={plant.scientific ? <em>{plant.scientific}</em> : plant.latitude}
       >

@@ -18,7 +18,7 @@ export function SoilMap() {
 
   return (
     <article className="space-y-8">
-      <PageHeader crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }]} title="Soil colours" subtitle="What colour the ground is, where, and why." />
+      <PageHeader crumbs={[{ to: '/vegetation', label: 'Vegetation & Crops' }, { to: '/vegetation?tab=soils', label: 'Soils' }]} title="Soil colours" subtitle="What colour the ground is, where, and why." />
 
       <Section title="Why soil has a colour">
         <ul className="list-disc space-y-1.5 pl-5 leading-relaxed">
