@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const canada: CountryStudy = {
   country: 'CA',
   unit: 'provinces and territories',
+  plonkit: 'canada',
   quizGroups: true,
   intro: 'Canada has 10 provinces and 3 northern territories. Almost everyone lives in a thin strip near the US border; coverage further north is sparse. Language on signs and the landscape (Atlantic coast, forest, prairie, Rockies, Pacific rainforest) are the main clues.',
   tips: [

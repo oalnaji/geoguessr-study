@@ -407,6 +407,7 @@ export const soilRegions: Record<string, string[]> = {
     'IN-KL', 'IN-KA', 'IN-TN', 'IN-GA', 'IN-OR', 'IN-JH', 'IN-CT', 'IN-AP', 'IN-TG',
     'MY',
     'ID-KB', 'ID-KT', 'ID-KS', 'ID-KI', 'ID-KU', 'ID-SG', 'ID-ST', 'ID-RI', 'ID-JA', 'ID-SS', 'ID-LA', 'ID-BE', 'ID-BB',
+    'VN-28', 'VN-30', 'VN-33', 'VN-72', 'VN-35', 'VN-58',
   ],
   'red-desert-soil': ['AU-NT', 'AU-WA', 'AU-SA', 'AU-QLD', 'AU-NSW', 'ZA-NC', 'ZA-NW'],
   'red-clay-southeast-us': ['US-GA', 'US-AL', 'US-SC', 'US-NC', 'US-VA', 'US-TN', 'US-MS'],

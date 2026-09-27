@@ -6,15 +6,18 @@ import { australia } from './australia'
 import { brazil } from './brazil'
 import { canada } from './canada'
 import { indonesia } from './indonesia'
+import { regionMarkers } from './markers'
 import { mexico } from './mexico'
+import { philippines } from './philippines'
 import { russia } from './russia'
 import type { CountryStudy, RegionFacts, StudyRegion } from './types'
 import { usa } from './usa'
+import { vietnam } from './vietnam'
 
 export type { CountryStudy, RegionFacts, RegionGroup, StudyRegion } from './types'
 
 /** Countries in the Regions module, in study order. */
-export const countryStudies: CountryStudy[] = [brazil, mexico, usa, canada, indonesia, australia, russia, argentina]
+export const countryStudies: CountryStudy[] = [brazil, mexico, usa, canada, indonesia, australia, russia, argentina, vietnam, philippines]
 export const studyByCountry = new Map(countryStudies.map((s) => [s.country, s]))
 
 export const allRegions: StudyRegion[] = countryStudies.flatMap((s) => s.regions)
@@ -46,5 +49,8 @@ export function maskName(text: string, r: StudyRegion): string {
     .sort((a, b) => b.length - a.length)
   return words.reduce((t, w) => t.split(w).join('▢▢▢'), text)
 }
+
+/** Notable region-specific markers (see markers.ts); empty when there are none. */
+export const markersOf = (id: string): string[] => regionMarkers[id] ?? []
 
 export const formatNumber = (n?: number) => (n === undefined ? '—' : n.toLocaleString('en-US'))

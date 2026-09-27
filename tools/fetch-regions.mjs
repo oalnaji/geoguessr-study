@@ -11,8 +11,10 @@ import { readFile, writeFile } from 'node:fs/promises'
 const MAP = new URL('../src/content/generated/map-veg.topo.json', import.meta.url)
 const OUT = new URL('../src/content/generated/regions.json', import.meta.url)
 const OVERRIDES = new URL('./region-photos.json', import.meta.url)
-const COUNTRIES = ['BR', 'MX', 'US', 'CA', 'AU', 'ID', 'RU', 'AR']
+const COUNTRIES = ['BR', 'MX', 'US', 'CA', 'AU', 'ID', 'RU', 'AR', 'VN', 'PH']
 const UA = { 'User-Agent': 'geoguessr-study/0.1 (personal study app; https://github.com/oalnaji/geoguessr-study)' }
+// Regions whose ISO code is missing on Wikidata: looked up by English Wikipedia article instead.
+const BY_ARTICLE = { 'PH-14': 'Bangsamoro' }
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 async function get(url) {
@@ -29,10 +31,15 @@ const stripHtml = (s = '') => s.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').tri
 
 async function wikidata(codes) {
   const query = `
-    SELECT ?code ?item ?pop ?area ?capitalLabel ?image ?article WHERE {
-      VALUES ?code { ${codes.map((c) => `"${c}"`).join(' ')} }
-      ?item wdt:P300 ?code .
-      FILTER NOT EXISTS { ?item wdt:P576 ?dissolved }
+    SELECT ?code ?item ?dissolved ?pop ?area ?capitalLabel ?image ?article WHERE {
+      {
+        VALUES ?code { ${codes.map((c) => `"${c}"`).join(' ')} }
+        ?item wdt:P300 ?code .
+      } UNION {
+        VALUES (?code ?title) { ${Object.entries(BY_ARTICLE).map(([c, t]) => `("${c}" "${t}"@en)`).join(' ')} }
+        ?page schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .
+      }
+      OPTIONAL { ?item wdt:P576 ?dissolved }
       OPTIONAL { ?item p:P1082 ?ps . ?ps ps:P1082 ?pop ; a wikibase:BestRank . }
       OPTIONAL { ?item p:P2046/psn:P2046/wikibase:quantityAmount ?area . }
       OPTIONAL { ?item p:P36 ?cs . ?cs ps:P36 ?capital ; a wikibase:BestRank . FILTER NOT EXISTS { ?cs pq:P582 ?ended } }
@@ -42,8 +49,12 @@ async function wikidata(codes) {
     }`
   const res = await get('https://query.wikidata.org/sparql?format=json&query=' + encodeURIComponent(query))
   const out = {}
+  // Vietnam's provinces merged in 2025 are "dissolved" in Wikidata but still exist in the imagery. Where a
+  // code has both a current and a dissolved item (e.g. a historical predecessor), use the current one.
+  const current = new Set(res.results.bindings.filter((b) => !b.dissolved).map((b) => b.code.value))
   for (const b of res.results.bindings) {
     const code = b.code.value
+    if (b.dissolved && current.has(code)) continue
     const r = (out[code] ??= { capitals: new Set() })
     if (b.pop) r.population = Math.max(r.population ?? 0, Number(b.pop.value))
     if (b.area) r.areaKm2 = Math.max(r.areaKm2 ?? 0, Math.round(Number(b.area.value) / 1e6))

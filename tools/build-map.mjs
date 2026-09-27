@@ -90,6 +90,10 @@ const sources = {
   ZA: { iso3: 'ZAF', code: (p) => southAfrica[p.shapeISO] },
   TR: { iso3: 'TUR', code: (p) => p.shapeISO },
   MY: { iso3: 'MYS', code: (p) => p.shapeISO },
+  // Vietnam: the 63 provinces before the 2025 merger (what Street View imagery and plates show). Côn Đảo belongs to Bà Rịa–Vũng Tàu.
+  VN: { iso3: 'VNM', code: (p) => p.shapeISO, name: (p) => (p.shapeName.trim() === 'Côn Đảo' ? 'Bà Rịa–Vũng Tàu' : p.shapeName.trim()) },
+  // Philippines: the 17 administrative regions.
+  PH: { iso3: 'PHL', code: (p) => p.shapeISO, name: (p) => ({ ARMM: 'Bangsamoro (BARMM)', CAR: 'Cordillera (CAR)', NCR: 'Metro Manila (NCR)' })[p.shapeName] ?? p.shapeName },
   JP: { iso3: 'JPN', code: (p) => p.shapeISO, name: (p) => p.shapeName.replace(/ Prefecture$/, '') },
   NZ: { iso3: 'NZL', code: (p) => p.shapeISO, name: (p) => p.shapeName.replace(/ (Region|Territory)$/, '') },
 }
@@ -98,7 +102,7 @@ const maps = {
   // Countries with more than one official language on signs.
   'map.topo.json': ['IN', 'ES', 'BE', 'CH', 'CA', 'IT', 'CN', 'FI', 'RO', 'SK', 'RS', 'GB', 'IQ', 'BA', 'NO'],
   // Large countries whose vegetation differs a lot from region to region.
-  'map-veg.topo.json': ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB'],
+  'map-veg.topo.json': ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB', 'VN', 'PH'],
 }
 
 // Natural Earth units without an ISO code that we keep, and ones we drop.

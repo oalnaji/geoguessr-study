@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const mexico: CountryStudy = {
   country: 'MX',
   unit: 'states',
+  plonkit: 'mexico',
   intro: 'Mexico has 31 states and Mexico City. The big split is north vs south: the north is dry desert and scrub with ranches and maquiladora border cities; the centre is high plateau with colonial cities; the south and southeast are green, tropical and more Indigenous.',
   tips: [
     'Phone numbers on signs start with a two- or three-digit area code (lada): 55 Mexico City, 33 Guadalajara, 81 Monterrey, 999 Mérida, 998 Cancún. Most other cities have three digits.',

@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const australia: CountryStudy = {
   country: 'AU',
   unit: 'states and territories',
+  plonkit: 'australia',
   intro: 'Australia has six states and two mainland territories. Most people live on the east and southeast coasts; the interior is red desert. Vegetation and soil colour, plus a few state-specific road features, tell the states apart.',
   tips: [
     'Route markers: New South Wales, Victoria, South Australia and Tasmania use letter–number routes (M1, A32, B23, C…). Western Australia still uses numbered shields.',

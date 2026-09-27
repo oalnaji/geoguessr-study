@@ -50,6 +50,13 @@ export const modules: MetaModule[] = [
     status: 'planned',
   },
   {
+    id: 'poles',
+    title: 'Utility Poles',
+    description: 'How poles work, their parts, and why each region builds them differently.',
+    path: 'poles',
+    status: 'next',
+  },
+  {
     id: 'why',
     title: 'Why Is It Like This?',
     description: 'Explainers for roads, poles, roofs and more.',

@@ -4,13 +4,15 @@
 // and the "where does it grow?" quiz are precise.
 
 /** Countries split into regions on the vegetation map (see tools/build-map.mjs). */
-export const VEG_SPLIT = ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB'] as const
+export const VEG_SPLIT = ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB', 'VN', 'PH'] as const
 
 const r = (s: string) => s.split(/\s+/).filter(Boolean)
 
 export const plantRegions: Record<string, string[]> = {
   // ---- Trees ----
   'coconut-palm': r(`
+    PH
+    
     IN-KL IN-TN IN-KA IN-GA IN-AP IN-OR IN-LD IN-AN
     BR-CE BR-RN BR-PB BR-PE BR-AL BR-SE BR-BA BR-PA BR-MA BR-PI
     MX-COL MX-GRO MX-OAX MX-TAB MX-CAM MX-YUC MX-ROO MX-VER
@@ -51,11 +53,15 @@ export const plantRegions: Record<string, string[]> = {
   'baobab': r('ZA-LP'),
   'jacaranda': r('ZA-GP ZA-LP ZA-MP ZA-KZN AR-C AR-B AR-T AR-A AR-Y MX-CMX MX-MEX MX-MOR MX-JAL AU-QLD AU-NSW'),
   'mango': r(`
+    PH
+    
     IN
     BR-AM BR-PA BR-MA BR-PI BR-CE BR-RN BR-PB BR-PE BR-AL BR-SE BR-BA BR-TO BR-GO BR-MT BR-MS
     BR-MG BR-ES BR-RJ BR-SP BR-DF BR-RO BR-AC BR-AP BR-RR
     MX-SIN MX-NAY MX-GRO MX-OAX MX-CHP MX-VER MX-MIC MX-COL MX-JAL`),
   'bamboo': r(`
+    VN
+    
     JP-02 JP-03 JP-04 JP-05 JP-06 JP-07 JP-08 JP-09 JP-10 JP-11 JP-12 JP-13 JP-14 JP-15 JP-16 JP-17 JP-18 JP-19 JP-20 JP-21 JP-22 JP-23 JP-24 JP-25 JP-26 JP-27 JP-28 JP-29 JP-30 JP-31 JP-32 JP-33 JP-34 JP-35 JP-36 JP-37 JP-38 JP-39 JP-40 JP-41 JP-42 JP-43 JP-44 JP-45 JP-46 JP-47
     CN-GD CN-GX CN-FJ CN-ZJ CN-JX CN-HN CN-SC CN-YN CN-GZ CN-AH CN-CQ CN-HB
     IN-AS IN-MZ IN-TR IN-MN IN-NL IN-AR IN-ML IN-KL IN-KA
@@ -63,16 +69,22 @@ export const plantRegions: Record<string, string[]> = {
   'saguaro': r('US-AZ MX-SON'),
   'prickly-pear': r('MX ES-AN ES-MC ES-VC ES-IB ES-CN ZA-EC ZA-NC ZA-WC'),
   'mangrove': r(`
+    PH
+    
     BR-AP BR-PA BR-MA BR-PI BR-CE BR-RN BR-PB BR-PE BR-AL BR-SE BR-BA BR-ES BR-RJ BR-SP BR-PR BR-SC
     MX-NAY MX-SIN MX-SON MX-BCS MX-CAM MX-YUC MX-ROO MX-TAB MX-VER MX-CHP MX-OAX MX-GRO MX-COL MX-JAL MX-MIC MX-TAM
     ID MY`),
   // ---- Crops ----
   'sugarcane': r(`
+    PH-06 PH-07 PH-10
+    
     BR-SP BR-MG BR-GO BR-MS BR-PR BR-PE BR-AL BR-MT
     IN-UP IN-MH IN-KA IN-TN IN-GJ IN-BR IN-AP
     MX-VER MX-JAL MX-SLP MX-OAX MX-TAM MX-CHP
     AU-QLD AU-NSW CO-VAC CO-CAU CO-RIS ZA-KZN ZA-MP`),
   'coffee': r(`
+    VN-33 VN-30 VN-72 VN-35 VN-28
+    
     BR-MG BR-ES BR-SP BR-BA BR-PR BR-RO
     CO-ANT CO-CAL CO-RIS CO-QUI CO-HUI CO-TOL CO-CAU CO-NAR CO-VAC CO-SAN
     ID-AC ID-SU ID-LA ID-SS ID-JI ID-BA ID-SN ID-NT
@@ -80,11 +92,15 @@ export const plantRegions: Record<string, string[]> = {
     MX-CHP MX-VER MX-OAX MX-PUE MX-GRO
     PE-JUN PE-CAJ PE-SAM PE-AMA PE-CUS PE-PAS PE-PUN PE-HUC`),
   'rice': r(`
+    VN-HN VN-56 VN-61 VN-66 VN-67 VN-63 VN-18 VN-20 VN-70 VN-HP VN-44 VN-45 VN-47 VN-CT VN-73 VN-52 VN-55 VN-59 VN-50 VN-51 VN-49 VN-46 VN-41 PH-03 PH-02 PH-01 PH-06 PH-12
+    
     JP
     CN-HN CN-HB CN-JX CN-AH CN-JS CN-ZJ CN-GD CN-GX CN-SC CN-HL CN-JL CN-YN CN-GZ CN-CQ CN-FJ CN-LN
     IN-WB IN-UP IN-PB IN-OR IN-AP IN-TG IN-TN IN-BR IN-CT IN-AS IN-KA IN-KL
     ID MY-02 MY-09 MY-03 MY-08 MY-11 MY-12 MY-13`),
   'tea': r(`
+    VN-69 VN-68 VN-07 VN-03 VN-06 VN-35 VN-05 VN-01
+    
     JP-22 JP-46 JP-24 JP-26 JP-45 JP-40 JP-11 JP-29 JP-43 JP-41 JP-42
     CN-FJ CN-ZJ CN-YN CN-AH CN-HB CN-HN CN-GZ CN-SC CN-JX CN-GX CN-GD
     IN-AS IN-WB IN-KL IN-TN IN-KA IN-HP
@@ -92,6 +108,8 @@ export const plantRegions: Record<string, string[]> = {
     ID-JB ID-JT ID-SU MY-06 MY-12`),
   'cocoa': r('ID-SN ID-ST ID-SG ID-SR BR-BA BR-PA PE-SAM PE-UCA PE-HUC PE-JUN PE-CUS'),
   'banana': r(`
+    PH-11 PH-12 PH-10
+    
     IN-TN IN-MH IN-GJ IN-AP IN-KA IN-KL IN-UP IN-BR
     CN-GD CN-GX CN-YN CN-HI CN-FJ
     ID BR-SP BR-MG BR-BA BR-SC BR-PE BR-PA BR-CE
@@ -134,8 +152,10 @@ export const plantRegions: Record<string, string[]> = {
     AU-SA AU-VIC AU-NSW AU-WA AU-TAS
     US-CA US-WA US-OR US-NY
     TR-45 TR-20 TR-35 TR-44 TR-27 TR-50 TR-59 TR-17`),
-  'pineapple': r('BR-PA BR-PB BR-MG BR-TO BR-BA BR-RN ID-LA ID-SU ID-RI MX-VER MX-OAX MX-TAB'),
+  'pineapple': r('PH-10 PH-12 BR-PA BR-PB BR-MG BR-TO BR-BA BR-RN ID-LA ID-SU ID-RI MX-VER MX-OAX MX-TAB'),
   'rubber': r(`
+    VN-57 VN-58 VN-37 VN-39 VN-43 VN-30 VN-28 VN-33 VN-72
+    
     MY-01 MY-02 MY-03 MY-05 MY-06 MY-08 MY-11 MY-13 MY-12
     ID-SU ID-SS ID-JA ID-RI ID-SB ID-KB ID-KT ID-KS ID-AC ID-BE ID-LA
     IN-KL IN-TR IN-KA IN-TN`),

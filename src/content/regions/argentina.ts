@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const argentina: CountryStudy = {
   country: 'AR',
   unit: 'provinces',
+  plonkit: 'argentina',
   quizGroups: true,
   intro: 'Argentina has 23 provinces and the city of Buenos Aires. It runs from subtropical jungle in the north to glaciers in Tierra del Fuego, with the flat Pampas in the middle, where most people live.',
   tips: [

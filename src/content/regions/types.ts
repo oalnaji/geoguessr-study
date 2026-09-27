@@ -14,6 +14,8 @@ export interface StudyRegion {
   clues: string[]
   /** A memory hook (see SPEC §6.3) */
   remember: string
+  /** Extra context, e.g. an administrative change since the imagery was taken */
+  note?: string
   /** Lon/lat box to show, for regions the map cannot box automatically (they cross the date line) */
   view?: { lon: [number, number]; lat: [number, number] }
 }
@@ -32,6 +34,8 @@ export interface CountryStudy {
   tips: string[]
   groups: RegionGroup[]
   regions: StudyRegion[]
+  /** PlonkIt guide slug (https://www.plonkit.net/<slug>), the main reference for the markers */
+  plonkit?: string
   /** Quiz the groups too ("tap the Northeast"), where they are official or well-known regions */
   quizGroups?: boolean
   /** Lon/lat box the country map zooms to (keeps Russia and the US from spanning the world) */

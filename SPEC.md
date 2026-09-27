@@ -312,7 +312,12 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 
 ### 7.4 Content sourcing & accuracy
 - Letter inventories: **Unicode CLDR exemplar characters** (authoritative per-language character sets)
-- Reference: Wikipedia, Omniglot, and Plonkit (for GeoGuessr-specific tips)
+- Reference: Wikipedia, Omniglot, and **PlonkIt** for GeoGuessr-specific tips
+- **PlonkIt** (https://www.plonkit.net) is the main reference for region markers (poles, bollards, signs, road surfaces, architecture, shops). Guides are per country at `plonkit.net/<country>`. Rules for using it:
+  - Paraphrase, never copy: write each marker in our own words, keep it short, and do not reuse PlonkIt's images.
+  - Link back: every country page and every "Notable markers" section links to the full PlonkIt guide.
+  - Say "common" rather than "only" unless the guide says a marker is exclusive, and prefer markers that are visible at Street View distance.
+  - Re-check against PlonkIt when refreshing content, as guides are updated as coverage changes.
 - Drafted content (history, facts) must be spot-checked; each language records its sources
 
 ## 8. Design requirements
@@ -333,8 +338,9 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
 | **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands, 12 soil colours with a soil-colour map, 14 ferns & regional oddities; maps and quizzes down to state/province in 20 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
-| **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia and Argentina (272 regions, §12.7), three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
-| **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
+| **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia, Argentina, Vietnam and the Philippines (352 regions, §12.7) with PlonkIt-based notable markers, US highway shields and licence plates, three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
+| **8: Next** | Utility poles (§12.8); World Maps with topography, including mountain ranges and major rivers (§12.1) |
+| **9+: Other modules** | Remaining modules from §12, in an order to be decided: Landscapes, Places & History, Why Is It Like This?, other infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
 - If the site is hosted on GitHub Pages or Cloudflare Pages, the **website itself is public**: anyone with the URL can view it. It contains only study content, nothing personal.
@@ -362,6 +368,19 @@ All of these reuse the shared building blocks: map rendering, the "Why?" section
 - Layers can be toggled and overlaid on the language/region maps (e.g. show where Norway's landscape changes along with its climate zones)
 - Every zone has a "Why?" explanation: rain shadows, ocean currents, altitude, latitude, and so on
 - Data: free open datasets (e.g. Natural Earth relief, WorldClim / Köppen–Geiger rasters), pre-rendered as image tiles so the app stays static and free to host
+
+#### Mountain ranges (next, when Topography is built)
+A page for every major mountain range, in the same format as plant pages:
+- **Where**: the range drawn on the map (and the countries and regions it crosses), with its highest peaks
+- **How it looks from the road**: shape (jagged and snowy vs rounded and forested vs bare and layered), rock colour, snowline, vegetation by altitude, and look-alikes (e.g. Alps vs Rockies vs Southern Alps; Andes in Peru vs Patagonia; Appalachians vs Urals)
+- **Why it looks like that**: how it formed (young fold mountains, old eroded ranges, volcanic arcs, block-fault ranges), glaciation, climate and rain shadows
+- **History**: people, passes, borders and roads through it
+- **GeoGuessr tips**: what seeing it tells you, famous recognisable views, and a memory hook
+- Initial list: Alps, Pyrenees, Carpathians, Balkan ranges, Caucasus, Scandinavian mountains, Urals, Atlas, Andes, Rockies, Sierra Nevada, Cascades, Appalachians, Sierra Madre, Himalayas, Hindu Kush, Tian Shan, Altai, Zagros, Ethiopian Highlands, Drakensberg, Great Dividing Range, Southern Alps, Japanese Alps, Annamite Range
+- Quizzes: "which range is this?" from a photo, and "find the range" on the map
+
+#### Major rivers (next, same format as mountains)
+A page for every major river: its course on the map, the countries and regions it drains, what its valley and delta look like (floodplains, gorges, deltas, rice terraces, levees), why (climate, sediment, floods), history (trade, borders, dams, cities), and GeoGuessr tips (e.g. the flat, canal-cut Mekong Delta; the brown Amazon tributaries; the Nile's green strip in the desert). Initial list: Amazon, Paraná, São Francisco, Orinoco, Mississippi–Missouri, St Lawrence, Yukon, Rio Grande, Danube, Rhine, Volga, Dnieper, Nile, Congo, Niger, Zambezi, Ganges, Indus, Brahmaputra, Mekong, Yangtze, Yellow River, Red River, Irrawaddy, Ob, Yenisei, Lena, Amur, Murray–Darling.
 
 ### 12.2 Landscapes by region
 - Dedicated pages for **regions within countries** and how they differ visually, e.g. northern vs southern Norway, the Brazilian Northeast vs the South, the Australian coast vs the Outback, the Russian west vs Siberia, and the US Great Plains vs Appalachia vs the Southwest
@@ -436,13 +455,27 @@ Tree pages link to the climate map (§12.1) and to regions (§12.2), and share t
 - **History**: Wikipedia plus the sources it cites; each page records its sources (as in §7.4)
 
 ### 12.7 Regions of large countries ✅ built
-Where each state/province of a big GeoGuessr country is, and how to recognise it. Built for Brazil (27), Mexico (32), USA (51), Canada (13), Indonesia (34, grouped by island), Australia (8), Russia (83, grouped by federal district) and Argentina (24).
+Where each state/province of a big GeoGuessr country is, and how to recognise it. Built for Brazil (27), Mexico (32), USA (51), Canada (13), Indonesia (34, grouped by island), Australia (8), Russia (83, grouped by federal district), Argentina (24), Vietnam (63, grouped into 8 regions) and the Philippines (17 regions, grouped into Luzon, Visayas and Mindanao).
+- **Vietnam** uses the 63 provinces from before the July 2025 merger into 34, because that is what Street View imagery, addresses and plates show; each merged province says where it went. Plate codes are listed for every province.
+- **Philippines** uses the 17 administrative regions (each lists its provinces, since province names appear on signs). The 2024 Negros Island Region is not on the map yet.
+- **Notable markers** on every region page: poles, bollards, signs, road surfaces, architecture and regional shop chains that point to that region (e.g. Acre's concrete rubbish baskets, Oaxaca's three-line cobblestone pavement, Utah's square-over-rectangle bollards), paraphrased from PlonkIt with a link to the full guide (§7.4). Stored in `src/content/regions/markers.ts`.
+- **USA tabs**: *Highway shields* (every state's route marker, public-domain SVGs from Wikimedia Commons via Wikidata) and *Licence plates* (every state's standard plate as a drawn colour card, which states have no front plate), each with a "notable only" filter that highlights the ones recognisable at a glance. State pages show their own shield and plate.
 
 - **Region page**: a map zoomed to the country with the region highlighted (small regions get a ring), road-level photos, capital, population, area and density (Wikidata), "what it looks like", GeoGuessr clues (phone area codes, plate codes, route shields, languages on signs, crops, architecture), a memory hook (§6.3), and links to the Vegetation plants that are a clue there.
 - **Country page**: an intro, country-wide tips for telling regions apart, a map coloured by macro-region/island/federal district (tap a region to open it), and the regions listed by group.
 - **Quizzes**: *Name the highlighted region* (pick from a list); *Find it on the map* (tap it; also whole islands, macro-regions and federal districts where those are official or well-known); *Which region is this?* (a photo plus clues with the name hidden; tap the map). Place names are hidden on the map until the answer is checked. Filter by country.
 - **Data**: content in `src/content/regions/<country>.ts`; `npm run fetch-regions` (`tools/fetch-regions.mjs`) fetches Wikidata facts by ISO 3166-2 code and the credits of the photos listed in `tools/region-photos.json`. Photos were chosen by hand from Commons search results whose coordinates fall inside the region. The map is the vegetation map (§12.5), so region codes match everywhere.
 - The hand-written clues need a spot-check (§7.4), especially number-plate and route-shield details.
+
+### 12.8 Utility poles (next step)
+A module on the poles that carry power and phone lines, because pole type is one of the best country and region clues.
+- **How they work**: what each part does: the pole itself (wood, concrete, steel), crossarms, insulators (pin, suspension, post), transformers, fuses and cut-outs, guy wires, streetlight arms, earth wires, and the difference between high-voltage, distribution and telecom lines
+- **Why regions differ**: materials that are cheap locally (timber in North America and Scandinavia, concrete where wood rots or termites eat it, steel in South Australia's Stobie poles), climate (ice loads, typhoons, termites), voltage standards, colonial and national engineering standards, and the utility company that owns them
+- **Pole atlas**: pole shapes by country and region (e.g. Russian square concrete, Brazilian "ladder" poles, Mexican octagonal, Argentine alternating insulators, Vietnamese holey poles, Indonesian even/uneven tops), with photos, a map and look-alikes
+- **Markings**: pole IDs, stickers, paint bands and plates that pin down a region (e.g. California's three yellow stripes, Wisconsin's orange-and-white plates, Tasmania's green possum guards)
+- Quizzes: "which country or region is this pole?" and "name the part"
+- Sources: PlonkIt pole sections (§7.4), utility company engineering standards, Wikipedia. Links to the Regions module's "Notable markers".
+- The module is listed on the home page as coming next.
 
 ### 12.6 Images (all modules)
 

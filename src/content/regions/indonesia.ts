@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const indonesia: CountryStudy = {
   country: 'ID',
   unit: 'provinces',
+  plonkit: 'indonesia',
   quizGroups: true,
   intro: 'Indonesia is 17,000 islands. On the map it has 34 provinces (Papua has since been split further). Learn the big islands first (Sumatra, Java, Borneo/Kalimantan, Sulawesi, New Guinea/Papua) and then the provinces on each. Street View covers most of Java, Bali, Sumatra and Sulawesi well.',
   tips: [

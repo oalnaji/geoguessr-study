@@ -1,10 +1,13 @@
 import { Link, useParams } from 'react-router'
 import { PhotoGallery } from '../../../components/PhotoGallery'
 import { Bullets, cardClass, Chip, PageHeader, RememberBox, Section } from '../../../components/ui'
-import { countryName, formatNumber, plantsIn, regionById, regionFacts, studyByCountry } from '../../../content/regions'
+import { countryName, formatNumber, markersOf, plantsIn, regionById, regionFacts, studyByCountry } from '../../../content/regions'
+import { usPlates, usShields } from '../../../content/regions/usRoadside'
 import { plantData } from '../../../content/vegetation'
 import { NotFound } from '../../../pages/NotFound'
 import { RegionMap } from '../maps'
+import { PlonkItLink } from './CountryPage'
+import { PlateCard, ShieldImage } from '../UsRoadside'
 
 export function RegionPage() {
   const { country, region: id } = useParams()
@@ -19,6 +22,9 @@ export function RegionPage() {
   const i = study.regions.indexOf(region)
   const prev = study.regions[(i - 1 + study.regions.length) % study.regions.length]
   const next = study.regions[(i + 1) % study.regions.length]
+  const markers = markersOf(region.id)
+  const shield = usShields[region.id]
+  const plate = usPlates[region.id]
   const density = facts.population && facts.areaKm2 ? Math.round(facts.population / facts.areaKm2) : undefined
 
   return (
@@ -51,10 +57,38 @@ export function RegionPage() {
         <p className="leading-relaxed">{region.looks}</p>
       </Section>
 
+      {region.note && <p className={`${cardClass} text-sm`}>ℹ️ {region.note}</p>}
+
       <Section title="GeoGuessr clues">
         <Bullets items={region.clues} />
         <RememberBox items={[region.remember]} />
       </Section>
+
+      {markers.length > 0 && (
+        <Section title="Notable markers" note={<>Poles, bollards, signs, roads and buildings that point here. Based on PlonkIt; <PlonkItLink slug={study.plonkit}>see the full guide</PlonkItLink></>}>
+          <Bullets items={markers} />
+        </Section>
+      )}
+
+      {(shield || plate) && (
+        <Section title="Highway shield and licence plate">
+          <div className="flex flex-wrap items-center gap-4">
+            {shield && (
+              <div className="flex items-center gap-3">
+                <ShieldImage file={shield.file} size={56} />
+                <span className="max-w-xs text-sm text-slate-600 dark:text-slate-400">{shield.look}</span>
+              </div>
+            )}
+            {plate && (
+              <div className="flex items-center gap-3">
+                <PlateCard plate={plate} label={region.name} />
+                <span className="max-w-xs text-sm text-slate-600 dark:text-slate-400">{plate.look} {plate.front ? 'Front and rear plates.' : 'Rear plate only.'}</span>
+              </div>
+            )}
+          </div>
+          <Link to="/regions/US?tab=shields" className="text-sm text-teal-700 underline dark:text-teal-400">All state shields and plates →</Link>
+        </Section>
+      )}
 
       {soils.length > 0 && (
         <Section title="Soil colour" note="From the Vegetation module.">

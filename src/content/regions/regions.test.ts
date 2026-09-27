@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest'
 import { gradeFind, makeClueRound, makeFindRound, makeNameRound } from '../../modules/regions/quiz/questions'
 import vegMap from '../generated/map-veg.topo.json'
-import { allRegions, countryOf, countryStudies, maskName, plantsIn, regionById, regionFacts } from '.'
+import { allRegions, countryOf, countryStudies, maskName, markersOf, plantsIn, regionById, regionFacts } from '.'
+import { regionMarkers } from './markers'
+import { usPlates, usShields } from './usRoadside'
 
 type Topo = { objects: Record<string, { geometries: { properties: { id: string; country: string } }[] }> }
 const features = Object.values((vegMap as unknown as Topo).objects)[0].geometries.map((g) => g.properties)
@@ -56,6 +58,30 @@ describe('region content', () => {
     expect(maskName('Acre is far west; Rio Branco is its capital', acre)).toBe('▢▢▢ is far west; ▢▢▢ is its capital')
     const kaluga = regionById.get('RU-KLU')!
     expect(maskName('Kaluga is space-rocket town', kaluga)).not.toContain('Kaluga')
+  })
+})
+
+describe('markers, shields and plates', () => {
+  it('only lists markers for known regions, and every country links to its PlonkIt guide', () => {
+    for (const id of Object.keys(regionMarkers)) expect(regionById.has(id), id).toBe(true)
+    for (const s of countryStudies) expect(s.plonkit, s.country).toBeTruthy()
+    expect(markersOf('BR-AC').join(' ')).toMatch(/concrete/)
+    expect(markersOf('MX-OAX').join(' ')).toMatch(/three lines/)
+  })
+
+  it('has a shield and a plate for every US state', () => {
+    const states = allRegions.filter((r) => countryOf(r) === 'US' && r.id !== 'US-DC').map((r) => r.id)
+    expect(states).toHaveLength(50)
+    for (const id of states) {
+      expect(usShields[id]?.file, id).toMatch(/\.svg$/)
+      expect(usPlates[id]?.look, id).toBeTruthy()
+    }
+    expect(Object.values(usPlates).filter((p) => !p.front).length).toBeGreaterThan(15)
+  })
+
+  it('notes the 2025 merger for merged Vietnamese provinces', () => {
+    expect(regionById.get('VN-57')!.note).toMatch(/Hồ Chí Minh City/)
+    expect(regionById.get('VN-HN')!.note).toBeUndefined()
   })
 })
 

@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const russia: CountryStudy = {
   country: 'RU',
   unit: 'regions (federal subjects)',
+  plonkit: 'russia',
   quizGroups: true,
   intro: 'Russia has 83 federal subjects on this map (oblasts, krais, republics, autonomous okrugs and the cities of Moscow and St Petersburg), grouped into 8 federal districts. Most of European Russia looks alike (birch, fields, wooden villages), so the number-plate region code and the local language on signs do most of the work.',
   tips: [

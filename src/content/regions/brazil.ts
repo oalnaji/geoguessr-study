@@ -3,6 +3,7 @@ import type { CountryStudy } from './types'
 export const brazil: CountryStudy = {
   country: 'BR',
   unit: 'states',
+  plonkit: 'brazil',
   quizGroups: true,
   intro: 'Brazil has 26 states and the Federal District, grouped into five official macro-regions. Street View covers almost every paved road, so knowing the states matters: the landscape changes from rainforest to dry scrub to soy fields to European-looking hills.',
   tips: [

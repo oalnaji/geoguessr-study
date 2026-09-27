@@ -2,7 +2,8 @@ import type { CountryStudy } from './types'
 
 export const usa: CountryStudy = {
   country: 'US',
-  unit: 'states',
+  unit: 'states and DC',
+  plonkit: 'united-states',
   intro: 'The US has 50 states and Washington, DC. Road furniture is mostly the same everywhere (yellow centre lines, green guide signs), so the state comes from landscape, the shape of state-route shields, number plates and architecture.',
   tips: [
     'Front number plates: about 20 states only require a rear plate (mostly in the South, Southwest and Appalachia, plus Pennsylvania and Michigan). A car with no front plate rules out the others.',
@@ -24,7 +25,7 @@ export const usa: CountryStudy = {
   regions: [
     // New England
     { id: 'US-ME', name: 'Maine', group: 'New England', looks: 'Endless pine and spruce forest, a rocky coast with lighthouses and lobster boats, small white-clapboard towns.', clues: ['Front and rear plates', 'Billboards are banned', 'Almost all forest; very few roads in the north'], remember: 'Maine is the pine-tree state: trees, lobsters and rocks, nothing else.' },
-    { id: 'US-NH', name: 'New Hampshire', group: 'New England', looks: 'Forested granite hills and the White Mountains, small towns with white churches, lakes.', clues: ['Front and rear plates', 'State route shields show the "Old Man of the Mountain" profile'], remember: 'New Hampshire is the granite state: "Live free or die" (no sales tax, no seatbelt law for adults).' },
+    { id: 'US-NH', name: 'New Hampshire', group: 'New England', looks: 'Forested granite hills and the White Mountains, small towns with white churches, lakes.', clues: ['Front and rear plates', 'State route shields are the outline of the state; green characters on the plates'], remember: 'New Hampshire is the granite state: "Live free or die" (no sales tax, no seatbelt law for adults).' },
     { id: 'US-VT', name: 'Vermont', group: 'New England', looks: 'Green mountains, dairy farms, red barns, covered bridges and tiny villages with white steeples.', clues: ['Front and rear plates', 'Billboards are banned', 'Very rural, very green; no big cities'], remember: 'Vermont = "green mountain" (vert mont): cows, maple syrup and no billboards.' },
     { id: 'US-MA', name: 'Massachusetts', group: 'New England', looks: 'Dense old towns and Boston suburbs, stone walls in the woods, sandy Cape Cod with shingled grey houses.', clues: ['Front and rear plates', 'Rotaries (roundabouts) and narrow winding roads'], remember: 'Massachusetts is old New England: Pilgrims, Puritans and Harvard.' },
     { id: 'US-RI', name: 'Rhode Island', group: 'New England', looks: 'The smallest state: dense suburbs, bays and islands, old mill towns.', clues: ['Front and rear plates', 'Always water nearby (Narragansett Bay)'], remember: 'Rhode Island is small enough to drive across in 45 minutes (and it isn\'t an island).' },
