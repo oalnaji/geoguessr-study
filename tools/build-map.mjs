@@ -90,13 +90,15 @@ const sources = {
   ZA: { iso3: 'ZAF', code: (p) => southAfrica[p.shapeISO] },
   TR: { iso3: 'TUR', code: (p) => p.shapeISO },
   MY: { iso3: 'MYS', code: (p) => p.shapeISO },
+  JP: { iso3: 'JPN', code: (p) => p.shapeISO, name: (p) => p.shapeName.replace(/ Prefecture$/, '') },
+  NZ: { iso3: 'NZL', code: (p) => p.shapeISO, name: (p) => p.shapeName.replace(/ (Region|Territory)$/, '') },
 }
 
 const maps = {
   // Countries with more than one official language on signs.
   'map.topo.json': ['IN', 'ES', 'BE', 'CH', 'CA', 'IT', 'CN', 'FI', 'RO', 'SK', 'RS', 'GB', 'IQ', 'BA', 'NO'],
   // Large countries whose vegetation differs a lot from region to region.
-  'map-veg.topo.json': ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR'],
+  'map-veg.topo.json': ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB'],
 }
 
 // Natural Earth units without an ISO code that we keep, and ones we drop.

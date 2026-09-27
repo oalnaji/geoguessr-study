@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 import { linkCardClass } from '../../../components/ui'
-import { cropList, forestList, plantData, treeGroups, treeList, type Plant } from '../../../content/vegetation'
+import { cropList, forestList, plantData, soilList, treeGroups, treeList, type Plant } from '../../../content/vegetation'
 
 function PlantGrid({ plants }: { plants: Plant[] }) {
   return (
@@ -33,7 +33,7 @@ export function Overview() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold">Vegetation &amp; Crops</h1>
         <p className="text-slate-600 dark:text-slate-400">
-          Which trees, crops and forests grow where, and why: climate, latitude, soil and the history of how people spread them. In large countries the maps go down to states and provinces.
+          Which trees, crops and forests grow where, what colour the soil is, and why: climate, latitude, soil and the history of how people spread them. In large countries the maps go down to states and provinces.
         </p>
       </div>
       <Link to="quizzes" className={`${linkCardClass} block`}>
@@ -56,6 +56,19 @@ export function Overview() {
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">Forests &amp; biomes</h2>
         <PlantGrid plants={forestList} />
+      </section>
+      <section className="space-y-3">
+        <h2 className="text-xl font-semibold">Soil colours</h2>
+        <Link to="soils" className={`${linkCardClass} flex items-center gap-3`}>
+          <span className="flex shrink-0 overflow-hidden rounded-md ring-1 ring-black/10">
+            {soilList.map((s) => <span key={s.id} className="h-8 w-3" style={{ background: s.swatch }} />)}
+          </span>
+          <span>
+            <span className="block font-semibold">Soil colour map</span>
+            <span className="text-sm text-slate-600 dark:text-slate-400">Red, black, white or beige: which regions have which soil, and why.</span>
+          </span>
+        </Link>
+        <PlantGrid plants={soilList} />
       </section>
       <p className="text-xs text-slate-500">
         Photos from Wikimedia Commons and iNaturalist, under the licences shown with each photo.

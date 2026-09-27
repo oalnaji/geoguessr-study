@@ -2,7 +2,7 @@ import { Link } from 'react-router'
 import { linkCardClass, PageHeader } from '../../../components/ui'
 
 const quizzes = [
-  { to: 'photo', title: 'Name the plant or forest', blurb: 'A photo of a tree, crop, cactus or forest type: which is it?' },
+  { to: 'photo', title: 'Name the plant, forest or soil', blurb: 'A photo of a tree, crop, cactus, fern, forest type or soil: which is it?' },
   { to: 'where', title: 'Where does it grow?', blurb: 'Tap the map. Large countries are split into states and provinces, so you have to know exactly where.' },
 ]
 

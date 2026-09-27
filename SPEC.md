@@ -332,7 +332,7 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **4: Cyrillic** ✅ | Russian, Ukrainian, Belarusian, Bulgarian, Serbian, Macedonian, Kazakh, Kyrgyz, Mongolian |
 | **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
-| **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands; maps and quizzes down to state/province in 17 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
+| **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands, 12 soil colours with a soil-colour map, 14 ferns & regional oddities; maps and quizzes down to state/province in 20 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
 | **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia and Argentina (272 regions, §12.7), three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
 | **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
@@ -400,6 +400,15 @@ Cacti are strong regional clues, so they have their own group: saguaro (Arizona/
 
 #### Forests & biomes (as built)
 14 pages: taiga, birch forest, temperate broadleaf, Mediterranean woodland, tropical rainforest, Atlantic Forest, cerrado, caatinga, savanna, steppe, tundra, temperate rainforest, eucalyptus woodland, pampas. Each has a **latitude range** in words, **latitude bands** drawn as dashed lines on its map, the regions where it is found, why it grows there (climate, latitude, soil, fire), how it looks on Street View, and a memory hook.
+
+#### Soil colours (as built)
+Soil colour is one of the strongest region clues. 12 soil types, each with a colour swatch, **why it has that colour** (iron oxides → red/yellow; humus or basalt clay → black; leaching, quartz or lime → pale; no weathering → beige), where it shows, look-alikes and tips: red tropical soil (laterite/terra roxa), red desert sand, red clay of the US Southeast, red sandstone soils (red beds: Oklahoma, PEI, Devon), black earth (chernozem/prairie), black cotton soil (vertisol), terra rossa, pale limestone and chalk, podzol, white sand, volcanic soil, pale desert ground.
+- Region lists as for plants, so each soil's map shows exactly which states/provinces have it.
+- A **soil-colour map** (`/vegetation/soils`) paints every region in its typical soil colour (`soilMapOrder` decides overlaps; regions too mixed to call are left grey), plus a country-by-country summary of **how the colour changes between regions** (e.g. Brazil: red centre and south, white sand on the northeast coast, yellow Amazon).
+- Region pages in the Regions module (§12.7) show the region's soil.
+
+#### Ferns & regional oddities (as built)
+Unusual plants that pin down a region: tree ferns, bracken, giant butterbur ("Hokkaido cabbage", Hokkaido and northern Tohoku only), cabbage tree (New Zealand), kudzu, roadside lupins (NZ South Island, Iceland, Patagonia, Norway), gorse, pampas grass (northern Spain's motorways), grass trees (Australia), Spanish moss, frailejón (Colombian páramo), heather moorland and Norfolk Island pine. Japan, New Zealand and Great Britain are now split into prefectures/regions/nations on the vegetation map for these.
 
 #### Trees (built first)
 Each tree (or tree group, where species look alike from the road) gets a page with:

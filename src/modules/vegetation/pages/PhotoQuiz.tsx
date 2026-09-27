@@ -26,7 +26,7 @@ export function PhotoQuiz() {
 
   return (
     <QuizShell
-      title="Name the plant or forest"
+      title="Name the plant, forest or soil"
       crumbs={vegetationQuizCrumbs}
       quiz={quiz}
       filter={<ScopeFilter value={scope} onChange={changeScope} />}

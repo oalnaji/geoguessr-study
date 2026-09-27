@@ -4,7 +4,7 @@
 // and the "where does it grow?" quiz are precise.
 
 /** Countries split into regions on the vegetation map (see tools/build-map.mjs). */
-export const VEG_SPLIT = ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR'] as const
+export const VEG_SPLIT = ['BR', 'MX', 'US', 'CA', 'AR', 'CL', 'CO', 'PE', 'AU', 'CN', 'IN', 'RU', 'ID', 'MY', 'ZA', 'ES', 'TR', 'JP', 'NZ', 'GB'] as const
 
 const r = (s: string) => s.split(/\s+/).filter(Boolean)
 
@@ -34,8 +34,8 @@ export const plantRegions: Record<string, string[]> = {
     ZA-KZN ZA-MP ZA-LP ZA-EC
     CL-BI CL-ML CL-NB CL-AR
     IN-KL IN-TN IN-KA`),
-  'scots-pine': r('RU'),
-  'radiata-pine': r('AU-VIC AU-NSW AU-SA AU-TAS CL-ML CL-BI CL-NB CL-AR CL-LR ZA-WC ZA-EC ES-PV ES-CB'),
+  'scots-pine': r('RU GB-SCT'),
+  'radiata-pine': r('AU-VIC AU-NSW AU-SA AU-TAS CL-ML CL-BI CL-NB CL-AR CL-LR ZA-WC ZA-EC ES-PV ES-CB NZ'),
   'larch': r('RU-KYA RU-IRK RU-SA RU-ZAB RU-BU RU-AMU RU-KHA RU-MAG RU-TY'),
   'birch': r('RU'),
   'lombardy-poplar': r('ES-CL ES-AR ES-NC ES-RI TR'),
@@ -56,6 +56,7 @@ export const plantRegions: Record<string, string[]> = {
     BR-MG BR-ES BR-RJ BR-SP BR-DF BR-RO BR-AC BR-AP BR-RR
     MX-SIN MX-NAY MX-GRO MX-OAX MX-CHP MX-VER MX-MIC MX-COL MX-JAL`),
   'bamboo': r(`
+    JP-02 JP-03 JP-04 JP-05 JP-06 JP-07 JP-08 JP-09 JP-10 JP-11 JP-12 JP-13 JP-14 JP-15 JP-16 JP-17 JP-18 JP-19 JP-20 JP-21 JP-22 JP-23 JP-24 JP-25 JP-26 JP-27 JP-28 JP-29 JP-30 JP-31 JP-32 JP-33 JP-34 JP-35 JP-36 JP-37 JP-38 JP-39 JP-40 JP-41 JP-42 JP-43 JP-44 JP-45 JP-46 JP-47
     CN-GD CN-GX CN-FJ CN-ZJ CN-JX CN-HN CN-SC CN-YN CN-GZ CN-AH CN-CQ CN-HB
     IN-AS IN-MZ IN-TR IN-MN IN-NL IN-AR IN-ML IN-KL IN-KA
     ID CO-CAL CO-RIS CO-QUI CO-VAC CO-ANT CO-TOL`),
@@ -79,10 +80,12 @@ export const plantRegions: Record<string, string[]> = {
     MX-CHP MX-VER MX-OAX MX-PUE MX-GRO
     PE-JUN PE-CAJ PE-SAM PE-AMA PE-CUS PE-PAS PE-PUN PE-HUC`),
   'rice': r(`
+    JP
     CN-HN CN-HB CN-JX CN-AH CN-JS CN-ZJ CN-GD CN-GX CN-SC CN-HL CN-JL CN-YN CN-GZ CN-CQ CN-FJ CN-LN
     IN-WB IN-UP IN-PB IN-OR IN-AP IN-TG IN-TN IN-BR IN-CT IN-AS IN-KA IN-KL
     ID MY-02 MY-09 MY-03 MY-08 MY-11 MY-12 MY-13`),
   'tea': r(`
+    JP-22 JP-46 JP-24 JP-26 JP-45 JP-40 JP-11 JP-29 JP-43 JP-41 JP-42
     CN-FJ CN-ZJ CN-YN CN-AH CN-HB CN-HN CN-GZ CN-SC CN-JX CN-GX CN-GD
     IN-AS IN-WB IN-KL IN-TN IN-KA IN-HP
     TR-53 TR-61 TR-08 TR-28

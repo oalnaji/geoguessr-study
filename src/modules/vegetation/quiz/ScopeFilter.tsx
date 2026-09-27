@@ -1,6 +1,6 @@
 import type { PlantScope } from './questions'
 
-/** Trees / crops filter shown above a vegetation quiz. Changing it starts a new round. */
+/** Trees / crops / forests / soils filter shown above a vegetation quiz. Changing it starts a new round. */
 export function ScopeFilter({ value, onChange }: { value: PlantScope; onChange: (v: PlantScope) => void }) {
   return (
     <label className="flex flex-wrap items-center gap-2 text-sm">
@@ -14,6 +14,7 @@ export function ScopeFilter({ value, onChange }: { value: PlantScope; onChange: 
         <option value="tree">Trees &amp; plants only</option>
         <option value="crop">Crops only</option>
         <option value="forest">Forests &amp; biomes only</option>
+        <option value="soil">Soil colours only</option>
       </select>
     </label>
   )

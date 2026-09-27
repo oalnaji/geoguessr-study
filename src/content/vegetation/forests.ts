@@ -366,7 +366,7 @@ export const forests: Plant[] = [
 export const forestRegions: Record<string, string[]> = {
   'taiga': ['RU', 'CA-QC', 'CA-ON', 'CA-MB', 'CA-SK', 'CA-AB', 'CA-BC', 'CA-NL', 'CA-YT', 'CA-NT', 'US-AK'],
   'birch-forest': ['RU-KGN', 'RU-OMS', 'RU-NVS', 'RU-TYU', 'RU-CHE', 'RU-SVE', 'RU-TOM', 'RU-ALT', 'RU-KEM', 'RU-KYA', 'RU-PER', 'RU-KIR', 'RU-KOS', 'RU-YAR', 'RU-VLA', 'RU-MOS', 'RU-TVE', 'RU-NIZ', 'RU-BA', 'RU-TA'],
-  'temperate-broadleaf': ['US-PA', 'US-NY', 'US-OH', 'US-WV', 'US-VA', 'US-KY', 'US-TN', 'US-NC', 'US-MI', 'US-IN', 'US-VT', 'US-NH', 'US-MA', 'US-CT', 'US-MD'],
+  'temperate-broadleaf': ['US-PA', 'US-NY', 'US-OH', 'US-WV', 'US-VA', 'US-KY', 'US-TN', 'US-NC', 'US-MI', 'US-IN', 'US-VT', 'US-NH', 'US-MA', 'US-CT', 'US-MD', 'GB', 'JP-01', 'JP-02', 'JP-03', 'JP-04', 'JP-05', 'JP-06', 'JP-07', 'JP-08', 'JP-09', 'JP-10', 'JP-11', 'JP-12', 'JP-13', 'JP-14', 'JP-15', 'JP-16', 'JP-17', 'JP-18', 'JP-19', 'JP-20', 'JP-21', 'JP-22', 'JP-23', 'JP-24', 'JP-25', 'JP-26', 'JP-27', 'JP-28', 'JP-29', 'JP-30', 'JP-31', 'JP-32', 'JP-33', 'JP-34', 'JP-35', 'JP-36', 'JP-37', 'JP-38', 'JP-39', 'JP-40', 'JP-41', 'JP-42', 'JP-43', 'JP-44', 'JP-45', 'JP-46'],
   'mediterranean-woodland': ['ES-AN', 'ES-CM', 'ES-EX', 'ES-CT', 'ES-VC', 'ES-MC', 'ES-IB', 'ES-MD', 'TR-35', 'TR-09', 'TR-48', 'TR-07', 'TR-33', 'TR-31', 'TR-17', 'TR-10', 'TR-45', 'US-CA', 'CL-VS', 'CL-RM', 'CL-LI', 'CL-CO', 'ZA-WC', 'AU-SA', 'AU-WA'],
   'tropical-rainforest': ['BR-AM', 'BR-PA', 'BR-AC', 'BR-RO', 'BR-RR', 'BR-AP', 'BR-MT', 'CO-AMA', 'CO-CAQ', 'CO-PUT', 'CO-GUV', 'CO-VAU', 'CO-GUA', 'CO-CHO', 'PE-LOR', 'PE-UCA', 'PE-MDD', 'ID-KB', 'ID-KT', 'ID-KI', 'ID-KU', 'ID-PA', 'ID-PB', 'ID-RI', 'ID-JA', 'MY-12', 'MY-13'],
   'atlantic-forest': ['BR-BA', 'BR-ES', 'BR-RJ', 'BR-SP', 'BR-PR', 'BR-SC', 'BR-RS', 'BR-MG', 'BR-PE', 'BR-AL', 'AR-N'],
@@ -375,7 +375,7 @@ export const forestRegions: Record<string, string[]> = {
   'savanna': ['ZA-LP', 'ZA-MP', 'ZA-NW', 'ZA-KZN'],
   'steppe': ['RU-ORE', 'RU-ALT', 'RU-VGG', 'RU-SAR', 'RU-ROS', 'RU-KL', 'RU-AST', 'RU-TY', 'RU-ZAB', 'CN-NM', 'CN-XJ', 'CN-QH', 'CN-GS', 'TR-42', 'TR-06', 'TR-26', 'TR-68', 'TR-70', 'TR-51'],
   'tundra': ['RU-MUR', 'RU-NEN', 'RU-YAN', 'RU-CHU', 'RU-SA', 'RU-KYA', 'RU-MAG', 'CA-NU', 'CA-NT', 'CA-YT', 'CA-QC', 'CA-NL', 'US-AK'],
-  'temperate-rainforest': ['CL-LR', 'CL-LL', 'CL-AI', 'CL-AR', 'US-WA', 'US-OR', 'US-CA', 'US-AK', 'CA-BC', 'AU-TAS'],
+  'temperate-rainforest': ['CL-LR', 'CL-LL', 'CL-AI', 'CL-AR', 'US-WA', 'US-OR', 'US-CA', 'US-AK', 'CA-BC', 'AU-TAS', 'NZ'],
   'eucalyptus-woodland': ['AU'],
   'pampas': ['AR-B', 'AR-L', 'AR-S', 'AR-X', 'AR-E', 'BR-RS'],
 }

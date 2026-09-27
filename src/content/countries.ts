@@ -141,6 +141,7 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   MG: { name: 'Madagascar', coverage: 'yes' },
   NE: { name: 'Niger', coverage: 'none' },
   RW: { name: 'Rwanda', coverage: 'yes' },
+  RE: { name: 'Réunion (France)', coverage: 'yes' },
   SZ: { name: 'Eswatini', coverage: 'yes' },
   TN: { name: 'Tunisia', coverage: 'yes' },
   TZ: { name: 'Tanzania', coverage: 'partial' },

@@ -2,8 +2,10 @@ import plantsJson from '../generated/plants.json'
 import { crops } from './crops'
 import { desertPlants, desertRegions } from './desert'
 import { forestRegions, forests } from './forests'
+import { oddities, oddityRegions } from './oddities'
 import { plantRegions, VEG_SPLIT } from './regions'
 import { plantRemember } from './remember'
+import { soilCountryNotes, soilMapMixed, soilMapOrder, soilRegions, soils } from './soils'
 import { trees } from './trees'
 import type { Plant, PlantData } from './types'
 
@@ -11,22 +13,23 @@ const data = plantsJson as Record<string, PlantData>
 
 const withRemember = (p: Plant): Plant => ({ ...p, remember: p.remember ?? plantRemember[p.id] })
 
-export const treeList: Plant[] = [...trees, ...desertPlants].map(withRemember)
+export const treeList: Plant[] = [...trees, ...desertPlants, ...oddities].map(withRemember)
 const cropsOnly: Plant[] = crops.map(withRemember)
 export const forestList: Plant[] = forests
-export const plants: Plant[] = [...treeList, ...cropsOnly, ...forestList]
+export const soilList: Plant[] = soils
+export const plants: Plant[] = [...treeList, ...cropsOnly, ...forestList, ...soilList]
 export const plantById = new Map(plants.map((p) => [p.id, p]))
 /** Crops, including trees that are also crops (oil palm, olive, mango). */
 export const cropList = [...cropsOnly, ...treeList.filter((t) => t.alsoCrop)]
 
-export const treeGroups = ['Palms', 'Conifers', 'Broadleaf trees', 'Cacti & desert plants', 'Other'] as const
+export const treeGroups = ['Palms', 'Conifers', 'Broadleaf trees', 'Cacti & desert plants', 'Ferns', 'Regional oddities', 'Other'] as const
 
 export const plantData = (id: string): PlantData => data[id] ?? { photos: [] }
 
 // ---- Where: countries and regions --------------------------------------------------------------
 
 const splitSet = new Set<string>(VEG_SPLIT)
-const allRegions: Record<string, string[]> = { ...plantRegions, ...desertRegions, ...forestRegions }
+const allRegions: Record<string, string[]> = { ...plantRegions, ...desertRegions, ...forestRegions, ...oddityRegions, ...soilRegions }
 
 /** Raw region list for a plant (ISO 3166-2 codes, or bare country codes meaning the whole country). */
 export const regionsOf = (id: string): string[] => allRegions[id] ?? []
@@ -57,6 +60,22 @@ export const inTarget = (t: PlaceTarget, f: { id: string; country: string }) =>
 
 /** Where the plant is a useful GeoGuessr clue, down to region level in large countries. */
 export const clueTarget = (plant: Plant) => placeTarget(plant, plant.clueCountries)
+
+// ---- Soil colours ------------------------------------------------------------------------------
+
+const soilTargets = soilMapOrder.map((id) => {
+  const soil = plantById.get(id)!
+  return { soil, target: clueTarget(soil) }
+})
+
+/**
+ * The typical soil of a map region, for the soil-colour map. Where several soils are listed, the
+ * more distinctive one wins (see soilMapOrder); regions too mixed to call are left blank.
+ */
+export function soilOf(f: { id: string; country: string }): Plant | undefined {
+  if (soilMapMixed.includes(f.id)) return undefined
+  return soilTargets.find((s) => inTarget(s.target, f))?.soil
+}
 
 // ---- Data shading ------------------------------------------------------------------------------
 
@@ -96,5 +115,5 @@ export function topProducers(plant: Plant, n = 10): string[] {
   return []
 }
 
-export { VEG_SPLIT }
+export { soilCountryNotes, VEG_SPLIT }
 export type { Photo, Plant, PlantData } from './types'

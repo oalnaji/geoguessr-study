@@ -13,7 +13,9 @@ export function RegionPage() {
   if (!study || !region || !region.id.startsWith(`${study.country}-`)) return <NotFound />
 
   const facts = regionFacts(region)
-  const plants = plantsIn(region)
+  const inRegion = plantsIn(region)
+  const plants = inRegion.filter((p) => p.section !== 'soil')
+  const soils = inRegion.filter((p) => p.section === 'soil')
   const i = study.regions.indexOf(region)
   const prev = study.regions[(i - 1 + study.regions.length) % study.regions.length]
   const next = study.regions[(i + 1) % study.regions.length]
@@ -53,6 +55,21 @@ export function RegionPage() {
         <Bullets items={region.clues} />
         <RememberBox items={[region.remember]} />
       </Section>
+
+      {soils.length > 0 && (
+        <Section title="Soil colour" note="From the Vegetation module.">
+          <ul className="flex flex-wrap gap-2">
+            {soils.map((s) => (
+              <li key={s.id}>
+                <Link to={`/vegetation/${s.id}`} className={`${cardClass} flex items-center gap-2 !p-1.5 !pr-3 hover:border-teal-600`}>
+                  <span className="inline-block h-9 w-12 rounded ring-1 ring-black/10" style={{ background: s.swatch }} />
+                  <span className="text-sm font-medium">{s.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      )}
 
       {plants.length > 0 && (
         <Section title="Plants that are a clue here" note="From the Vegetation module.">

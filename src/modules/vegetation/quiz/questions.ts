@@ -1,13 +1,13 @@
 import {
-  clueTarget, cropList, forestList, inTarget, placeTarget, plantData, plants, topProducers, treeList, type Photo, type PlaceTarget, type Plant,
+  clueTarget, cropList, forestList, soilList, inTarget, placeTarget, plantData, plants, topProducers, treeList, type Photo, type PlaceTarget, type Plant,
 } from '../../../content/vegetation'
 import { pick, ROUND_LENGTH, shuffle, type Grade, type Rng } from '../../../quiz/engine'
 
 export const vegetationQuizCrumbs = [{ to: '/vegetation', label: 'Vegetation & Crops' }, { to: '/vegetation/quizzes', label: 'Quizzes' }]
 
-export type PlantScope = '' | 'tree' | 'crop' | 'forest'
+export type PlantScope = '' | 'tree' | 'crop' | 'forest' | 'soil'
 export const plantsInScope = (scope: PlantScope) =>
-  scope === 'tree' ? treeList : scope === 'crop' ? cropList : scope === 'forest' ? forestList : plants
+  scope === 'tree' ? treeList : scope === 'crop' ? cropList : scope === 'forest' ? forestList : scope === 'soil' ? soilList : plants
 
 export const plantOptions = (scope: PlantScope) =>
   [...plantsInScope(scope)].sort((a, b) => a.name.localeCompare(b.name)).map((p) => ({ value: p.id, label: p.name }))

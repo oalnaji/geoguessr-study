@@ -5,7 +5,8 @@ import vegMap from '../generated/map-veg.topo.json'
 import { groupRemember, languageRemember, scriptRemember } from '../mnemonics'
 import { groupById, languageById, scriptById } from '..'
 import {
-  clueTarget, cropList, forestList, inTarget, plantById, plantData, plants, regionsOf, shadingOf, topProducers, treeList, VEG_SPLIT,
+  clueTarget, cropList, forestList, inTarget, plantById, plantData, plants, regionsOf, shadingOf, soilCountryNotes, soilList, soilOf, topProducers,
+  treeList, VEG_SPLIT,
 } from '.'
 
 function seeded(seed: number) {
@@ -39,7 +40,7 @@ describe('plants', () => {
         expect(ph.source, p.id).toMatch(/^https:\/\//)
       }
     }
-    expect(plants.filter((p) => plantData(p.id).photos.length < 2).map((p) => p.id)).toEqual(['pampas'])
+    expect(plants.filter((p) => plantData(p.id).photos.length < 2).map((p) => p.id)).toEqual([])
   })
 
   it('lists trees, crops and forests', () => {
@@ -82,6 +83,36 @@ describe('regions inside large countries', () => {
     expect(inTarget(clueTarget(plantById.get('birch')!), at('RU-OMS'))).toBe(true)
     // Countries the map does not split count whole
     expect(inTarget(clueTarget(plantById.get('birch')!), { id: 'FI', country: 'FI' })).toBe(true)
+  })
+})
+
+describe('soils and regional oddities', () => {
+  it('gives every soil a colour, and notes only for known countries', () => {
+    expect(soilList.length).toBeGreaterThanOrEqual(10)
+    for (const s of soilList) expect(s.swatch, s.id).toMatch(/^#[0-9a-f]{6}$/)
+    for (const n of soilCountryNotes) expect(countries[n.country], n.country).toBeDefined()
+  })
+
+  it('colours the soil map region by region', () => {
+    expect(soilOf(at('BR-PR'))?.id).toBe('red-tropical-soil')
+    expect(soilOf(at('BR-CE'))?.id).toBe('white-sand')
+    expect(soilOf(at('AR-N'))?.id).toBe('red-tropical-soil')
+    expect(soilOf(at('AR-B'))?.id).toBe('black-earth')
+    expect(soilOf(at('RU-VOR'))?.id).toBe('black-earth')
+    expect(soilOf(at('RU-KR'))?.id).toBe('podzol')
+    expect(soilOf(at('AU-NT'))?.id).toBe('red-desert-soil')
+    expect(soilOf(at('AU-VIC'))).toBeUndefined()
+    expect(soilOf(at('GB-ENG'))).toBeUndefined()
+  })
+
+  it('places regional oddities precisely', () => {
+    const butterbur = clueTarget(plantById.get('giant-butterbur')!)
+    expect(inTarget(butterbur, at('JP-01'))).toBe(true)
+    expect(inTarget(butterbur, at('JP-13'))).toBe(false)
+    expect(inTarget(clueTarget(plantById.get('lupins')!), at('NZ-CAN'))).toBe(true)
+    expect(inTarget(clueTarget(plantById.get('lupins')!), at('NZ-AUK'))).toBe(false)
+    expect(inTarget(clueTarget(plantById.get('heather')!), at('GB-SCT'))).toBe(true)
+    expect(treeList.filter((t) => t.group === 'Ferns').map((t) => t.id)).toEqual(['tree-fern', 'bracken'])
   })
 })
 

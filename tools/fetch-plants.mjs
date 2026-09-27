@@ -14,6 +14,8 @@ import { readFile, writeFile } from 'node:fs/promises'
 import { crops } from '../src/content/vegetation/crops.ts'
 import { desertPlants } from '../src/content/vegetation/desert.ts'
 import { forests } from '../src/content/vegetation/forests.ts'
+import { oddities } from '../src/content/vegetation/oddities.ts'
+import { soils } from '../src/content/vegetation/soils.ts'
 import { trees } from '../src/content/vegetation/trees.ts'
 
 const OUT = new URL('../src/content/generated/plants.json', import.meta.url)
@@ -209,15 +211,23 @@ async function main() {
   const picks = JSON.parse(await readFile(PICKS, 'utf8').catch(() => '{}'))
   const regionMatcher = await makeRegionMatcher()
   const out = {}
-  for (const plant of [...trees, ...desertPlants, ...crops, ...forests]) {
+  for (const plant of [...trees, ...desertPlants, ...oddities, ...crops, ...forests, ...soils]) {
     const photos = []
     const lead = await wikipediaLead(plant.wikipedia).catch((e) => console.warn(`\n${plant.id} wikipedia: ${e.message}`))
     if (lead) photos.push(lead)
     if (plant.commonsCategory) photos.push(...(await commonsCategory(plant.commonsCategory).catch(() => [])))
     if (plant.scientific) photos.push(...(await inaturalist(plant.scientific).catch((e) => (console.warn(`\n${plant.id} inat: ${e.message}`), []))))
-    if (plant.photoSearch) photos.push(...(await commonsSearch(plant.photoSearch).catch(() => [])))
+    for (const q of [plant.photoSearch ?? []].flat()) {
+      photos.push(...(await commonsSearch(q, Array.isArray(plant.photoSearch) ? 6 : 4).catch(() => [])))
+    }
     const unique = photos.filter((p, i) => photos.findIndex((q) => q.source === p.source) === i)
     const chosen = picks[plant.id]
+    // Picks can also be any Commons file found by hand (not among the candidates above).
+    const extra = (chosen ?? []).filter((src) => !unique.some((p) => p.source === src) && src.includes('commons.wikimedia.org/wiki/File:'))
+    if (extra.length) {
+      const titles = extra.map((src) => decodeURIComponent(src.split('/wiki/')[1]).replace(/_/g, ' '))
+      unique.push(...(await commonsInfo(titles).catch(() => [])).map((x) => x.photo))
+    }
     const entry = { photos: chosen ? chosen.map((src) => unique.find((p) => p.source === src)).filter(Boolean) : unique }
     if (chosen && entry.photos.length < chosen.length) console.warn(`\n${plant.id}: ${chosen.length - entry.photos.length} picked photo(s) no longer available`)
     if (plant.section === 'tree' && plant.scientific) Object.assign(entry, await gbifRecorded(plant.scientific, regionMatcher).catch(() => ({})))

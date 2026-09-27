@@ -17,6 +17,7 @@ export function PlantPage() {
     ? `${target.regions.length} state${target.regions.length === 1 ? '' : 's'}/province${target.regions.length === 1 ? '' : 's'} highlighted on the map`
     : null
   const isForest = plant.section === 'forest'
+  const isSoil = plant.section === 'soil'
 
   return (
     <article className="space-y-8">
@@ -26,6 +27,7 @@ export function PlantPage() {
         subtitle={plant.scientific ? <em>{plant.scientific}</em> : plant.latitude}
       >
         <div className="flex flex-wrap gap-2">
+          {plant.swatch && <span className="inline-block h-6 w-10 rounded-md ring-1 ring-black/10" style={{ background: plant.swatch }} title="Typical colour" />}
           <Chip tone="teal">{plant.kind}</Chip>
           {plant.latitude && plant.scientific && <Chip>{plant.latitude}</Chip>}
           {plant.section === 'crop' || plant.alsoCrop ? <Chip>Crop</Chip> : null}
@@ -77,14 +79,14 @@ export function PlantPage() {
         </Section>
       )}
 
-      <Section id="where" title="Where it grows">
+      <Section id="where" title={isSoil ? 'Where you see it' : 'Where it grows'}>
         <dl className="space-y-2">
           <div>
-            <dt className="text-sm font-semibold text-slate-500">{isForest ? 'Where it is found' : 'Native range'}</dt>
+            <dt className="text-sm font-semibold text-slate-500">{isForest || isSoil ? 'Where it is found' : 'Native range'}</dt>
             <dd>{plant.nativeRange}</dd>
           </div>
           <div>
-            <dt className="text-sm font-semibold text-slate-500">{isForest ? 'Today' : plant.section === 'crop' || plant.alsoCrop ? 'Grown in' : 'Planted or naturalised in'}</dt>
+            <dt className="text-sm font-semibold text-slate-500">{isForest ? 'Today' : isSoil ? 'Where it shows' : plant.section === 'crop' || plant.alsoCrop ? 'Grown in' : 'Planted or naturalised in'}</dt>
             <dd>{plant.grownIn}</dd>
           </div>
           {plant.latitude && (
@@ -95,6 +97,7 @@ export function PlantPage() {
           )}
         </dl>
         <PlantMap plant={plant} />
+        {isSoil && <Link to="/vegetation/soils" className="text-sm text-teal-700 underline dark:text-teal-400">See all soil colours on one map →</Link>}
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-sm text-slate-500">A useful GeoGuessr clue in:</span>
           {plant.clueCountries.map((c) => <Chip key={c} tone="teal">{countries[c]?.name ?? c}</Chip>)}
@@ -102,11 +105,11 @@ export function PlantPage() {
         {regionNames && <p className="text-xs text-slate-500">In large countries only the right regions count: {regionNames}.</p>}
       </Section>
 
-      <Section id="why" title="Why there? The science">
+      <Section id="why" title={isSoil ? 'Why this colour? The science' : 'Why there? The science'}>
         <Prose paragraphs={plant.science} />
       </Section>
 
-      <Section title="Why there? The history">
+      <Section title={isSoil ? 'People and history' : 'Why there? The history'}>
         <Prose paragraphs={plant.history} />
       </Section>
 
