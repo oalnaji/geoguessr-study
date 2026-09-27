@@ -339,7 +339,8 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
 | **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands, 12 soil colours with a soil-colour map, 14 ferns & regional oddities; maps and quizzes down to state/province in 20 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
 | **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia, Argentina, Vietnam and the Philippines (352 regions, §12.7) with PlonkIt-based notable markers, US highway shields and licence plates, three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
-| **8: Next** | Utility poles (§12.8); World Maps with topography, including mountain ranges and major rivers (§12.1) |
+| **8: Utility poles** | ✅ §12.8 |
+| **8b: Next** | World Maps with topography, including mountain ranges and major rivers (§12.1) |
 | **9+: Other modules** | Remaining modules from §12, in an order to be decided: Landscapes, Places & History, Why Is It Like This?, other infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
@@ -468,7 +469,7 @@ Where each state/province of a big GeoGuessr country is, and how to recognise it
 - **Data**: content in `src/content/regions/<country>.ts`; `npm run fetch-regions` (`tools/fetch-regions.mjs`) fetches Wikidata facts by ISO 3166-2 code and the credits of the photos listed in `tools/region-photos.json`. Photos were chosen by hand from Commons search results whose coordinates fall inside the region. The map is the vegetation map (§12.5), so region codes match everywhere.
 - The hand-written clues need a spot-check (§7.4), especially number-plate and route-shield details.
 
-### 12.8 Utility poles (next step)
+### 12.8 Utility poles ✅ built
 A module on the poles that carry power and phone lines, because pole type is one of the best country and region clues.
 - **How they work**: what each part does: the pole itself (wood, concrete, steel), crossarms, insulators (pin, suspension, post), transformers, fuses and cut-outs, guy wires, streetlight arms, earth wires, and the difference between high-voltage, distribution and telecom lines
 - **Why regions differ**: materials that are cheap locally (timber in North America and Scandinavia, concrete where wood rots or termites eat it, steel in South Australia's Stobie poles), climate (ice loads, typhoons, termites), voltage standards, colonial and national engineering standards, and the utility company that owns them
@@ -476,7 +477,8 @@ A module on the poles that carry power and phone lines, because pole type is one
 - **Markings**: pole IDs, stickers, paint bands and plates that pin down a region (e.g. California's three yellow stripes, Wisconsin's orange-and-white plates, Tasmania's green possum guards)
 - Quizzes: "which country or region is this pole?" and "name the part"
 - Sources: PlonkIt pole sections (§7.4), utility company engineering standards, Wikipedia. Links to the Regions module's "Notable markers".
-- The module is listed on the home page as coming next.
+- **As built**: 82 notable pole types in about 60 countries (`src/content/poles/<continent>.ts`), only the ones that identify a country or region, paraphrased from PlonkIt. One entry where a country has one distinctive pole (e.g. Mexico's octagonal poles); several where the country has regional ones (Japan, Indonesia, India, Brazil, Australia, Vietnam). Each card: photos (hand-picked from Commons "Utility poles in <country>" categories and searches, listed in `tools/pole-photos.json`, credits via `npm run fetch-pole-photos`), how to recognise it, where in the country (linked to Regions pages), look-alikes and why. Overview with a clickable world map and continent tabs; "How a pole works" page with a labelled diagram, the parts and why countries differ; "Which country is this pole?" photo quiz.
+- 16 entries have no open-licence photo yet (e.g. Sri Lanka's holey poles, Indonesia's regional tops); they point to the PlonkIt guide.
 
 ### 12.6 Images (all modules)
 

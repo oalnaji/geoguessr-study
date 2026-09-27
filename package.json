@@ -14,7 +14,8 @@
     "build-map": "node tools/build-map.mjs",
     "fetch-plants": "node tools/fetch-plants.mjs",
     "fetch-regions": "node tools/fetch-regions.mjs",
-    "fetch-feature-photos": "node tools/fetch-feature-photos.mjs"
+    "fetch-feature-photos": "node tools/fetch-feature-photos.mjs",
+    "fetch-pole-photos": "node tools/fetch-pole-photos.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

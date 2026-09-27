@@ -6,6 +6,7 @@ const nav = [
   { to: '/languages', label: 'Languages', end: false },
   { to: '/vegetation', label: 'Plants', end: false },
   { to: '/regions', label: 'Regions', end: false },
+  { to: '/poles', label: 'Poles', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 

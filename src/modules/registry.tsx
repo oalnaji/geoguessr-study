@@ -1,4 +1,5 @@
 import { LanguagesModule } from './languages'
+import { PolesModule } from './poles'
 import { RegionsModule } from './regions'
 import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
@@ -54,7 +55,8 @@ export const modules: MetaModule[] = [
     title: 'Utility Poles',
     description: 'How poles work, their parts, and why each region builds them differently.',
     path: 'poles',
-    status: 'next',
+    status: 'active',
+    element: <PolesModule />,
   },
   {
     id: 'why',

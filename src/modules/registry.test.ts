@@ -8,6 +8,6 @@ describe('module registry', () => {
   })
 
   it('only routes modules that are active and have content', () => {
-    expect(activeModules.map((m) => m.id)).toEqual(['languages', 'vegetation', 'regions'])
+    expect(activeModules.map((m) => m.id)).toEqual(['languages', 'vegetation', 'regions', 'poles'])
   })
 })
