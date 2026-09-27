@@ -1,0 +1,82 @@
+import { Link, useParams } from 'react-router'
+import { PhotoGallery } from '../../../components/PhotoGallery'
+import { Bullets, cardClass, Chip, PageHeader, RememberBox, Section } from '../../../components/ui'
+import { countryName, formatNumber, plantsIn, regionById, regionFacts, studyByCountry } from '../../../content/regions'
+import { plantData } from '../../../content/vegetation'
+import { NotFound } from '../../../pages/NotFound'
+import { RegionMap } from '../maps'
+
+export function RegionPage() {
+  const { country, region: id } = useParams()
+  const study = studyByCountry.get(country ?? '')
+  const region = regionById.get(id ?? '')
+  if (!study || !region || !region.id.startsWith(`${study.country}-`)) return <NotFound />
+
+  const facts = regionFacts(region)
+  const plants = plantsIn(region)
+  const i = study.regions.indexOf(region)
+  const prev = study.regions[(i - 1 + study.regions.length) % study.regions.length]
+  const next = study.regions[(i + 1) % study.regions.length]
+  const density = facts.population && facts.areaKm2 ? Math.round(facts.population / facts.areaKm2) : undefined
+
+  return (
+    <article className="space-y-8">
+      <PageHeader
+        crumbs={[{ to: '/regions', label: 'Regions' }, { to: `/regions/${study.country}`, label: countryName(study.country) }]}
+        title={region.name}
+        subtitle={facts.capital ? `Capital: ${facts.capital}` : undefined}
+      >
+        <div className="flex flex-wrap gap-2">
+          <Chip tone="teal">{region.group}</Chip>
+          <Chip>{countryName(study.country)}</Chip>
+        </div>
+      </PageHeader>
+
+      <Section title="Where it is">
+        <RegionMap regions={[region]} />
+      </Section>
+
+      <PhotoGallery photos={facts.photos} alt={region.name} />
+
+      <dl className={`${cardClass} grid grid-cols-2 gap-3 sm:grid-cols-4`}>
+        <div><dt className="text-xs text-slate-500">Capital</dt><dd className="font-semibold">{facts.capital ?? '—'}</dd></div>
+        <div><dt className="text-xs text-slate-500">Population</dt><dd className="font-semibold">{formatNumber(facts.population)}</dd></div>
+        <div><dt className="text-xs text-slate-500">Area</dt><dd className="font-semibold">{facts.areaKm2 ? `${formatNumber(facts.areaKm2)} km²` : '—'}</dd></div>
+        <div><dt className="text-xs text-slate-500">People per km²</dt><dd className="font-semibold">{formatNumber(density)}</dd></div>
+      </dl>
+
+      <Section title="What it looks like">
+        <p className="leading-relaxed">{region.looks}</p>
+      </Section>
+
+      <Section title="GeoGuessr clues">
+        <Bullets items={region.clues} />
+        <RememberBox items={[region.remember]} />
+      </Section>
+
+      {plants.length > 0 && (
+        <Section title="Plants that are a clue here" note="From the Vegetation module.">
+          <ul className="flex flex-wrap gap-2">
+            {plants.map((p) => {
+              const photo = plantData(p.id).photos[0]
+              return (
+                <li key={p.id}>
+                  <Link to={`/vegetation/${p.id}`} className={`${cardClass} flex items-center gap-2 !p-1.5 !pr-3 hover:border-teal-600`}>
+                    {photo && <img src={photo.url} alt="" loading="lazy" className="h-9 w-12 rounded object-cover" />}
+                    <span className="text-sm font-medium">{p.name}</span>
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </Section>
+      )}
+
+      <nav className="flex flex-wrap items-center justify-between gap-2 text-sm">
+        <Link to={`/regions/${study.country}/${prev.id}`} className="text-teal-700 underline dark:text-teal-400">← {prev.name}</Link>
+        {facts.wikipedia && <a href={facts.wikipedia} target="_blank" rel="noreferrer" className="text-slate-500 underline">Wikipedia</a>}
+        <Link to={`/regions/${study.country}/${next.id}`} className="text-teal-700 underline dark:text-teal-400">{next.name} →</Link>
+      </nav>
+    </article>
+  )
+}

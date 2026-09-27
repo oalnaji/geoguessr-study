@@ -1,4 +1,5 @@
 import { LanguagesModule } from './languages'
+import { RegionsModule } from './regions'
 import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
 
@@ -18,6 +19,14 @@ export const modules: MetaModule[] = [
     path: 'vegetation',
     status: 'active',
     element: <VegetationModule />,
+  },
+  {
+    id: 'regions',
+    title: 'Regions',
+    description: 'States and provinces of big countries: where each is and what gives it away.',
+    path: 'regions',
+    status: 'active',
+    element: <RegionsModule />,
   },
   {
     id: 'world-maps',

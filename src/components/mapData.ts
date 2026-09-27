@@ -12,8 +12,11 @@ export interface MapFeature {
   /** "Catalonia, Spain" for regions, the country name for whole countries */
   label: string
   d: string
-  bounds: [[number, number], [number, number]]
+  bounds: MapBounds
 }
+
+/** [[left, top], [right, bottom]] in map coordinates */
+export type MapBounds = [[number, number], [number, number]]
 
 export const MAP_WIDTH = 960
 export const MAP_HEIGHT = 500
@@ -52,6 +55,24 @@ function loadMap(variant: MapVariant): Promise<MapFeature[]> {
     })
   }))
   return cache.get(variant)!
+}
+
+/** The box around several features. */
+export function boundsOf(features: { bounds: MapBounds }[]): MapBounds {
+  return [
+    [Math.min(...features.map((f) => f.bounds[0][0])), Math.min(...features.map((f) => f.bounds[0][1]))],
+    [Math.max(...features.map((f) => f.bounds[1][0])), Math.max(...features.map((f) => f.bounds[1][1]))],
+  ]
+}
+
+/** A longitude/latitude box on a loaded map, in map coordinates (sampled, since the projection curves). */
+export function projectBox(variant: MapVariant, lon: [number, number], lat: [number, number]): MapBounds | null {
+  const projection = projections.get(variant)
+  if (!projection) return null
+  const points = Array.from({ length: 9 }, (_, i) => Array.from({ length: 9 }, (_, j) =>
+    projection([lon[0] + ((lon[1] - lon[0]) * i) / 8, lat[0] + ((lat[1] - lat[0]) * j) / 8]))).flat()
+    .filter((p): p is [number, number] => p !== null)
+  return boundsOf(points.map((p) => ({ bounds: [p, p] })))
 }
 
 export interface MapLine {

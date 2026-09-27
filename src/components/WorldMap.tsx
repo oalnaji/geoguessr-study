@@ -1,8 +1,11 @@
 import { select } from 'd3-selection'
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { MAP_HEIGHT as H, MAP_WIDTH as W, type MapFeature, type MapLine } from './mapData'
+import { boundsOf, MAP_HEIGHT as H, MAP_WIDTH as W, type MapBounds, type MapFeature, type MapLine } from './mapData'
 import { PickList } from './PickList'
+
+/** Radius of marker rings, in screen pixels (of the 960-wide map) */
+const RING = 9
 
 const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shadow dark:bg-slate-800/90'
 
@@ -12,7 +15,7 @@ const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shado
  * zooms to the answer. Without `onSelect` it is a read-only map shaded by `colorOf`.
  */
 export function WorldMap({
-  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf, lines = [],
+  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf, lines = [], focus, markers = [], hideLabels = false,
 }: {
   features: MapFeature[]
   selected?: string | null
@@ -23,10 +26,17 @@ export function WorldMap({
   colorOf?: (f: MapFeature) => string | undefined
   /** Extra lines drawn over the map, e.g. parallels of latitude */
   lines?: MapLine[]
+  /** Area to zoom to at the start, e.g. one country */
+  focus?: MapBounds
+  /** Rings drawn around places too small to see, in map coordinates */
+  markers?: { x: number; y: number }[]
+  /** Hide place names (hover labels, tooltips, the list) until `reveal`, when the names are the answer */
+  hideLabels?: boolean
 }) {
   const svgRef = useRef<SVGSVGElement>(null)
   const gRef = useRef<SVGGElement>(null)
   const zoomRef = useRef<ZoomBehavior<SVGSVGElement, unknown> | null>(null)
+  const kRef = useRef(1)
   const [hover, setHover] = useState<string | null>(null)
   const [showList, setShowList] = useState(false)
   const byId = useMemo(() => new Map(features.map((f) => [f.id, f])), [features])
@@ -37,7 +47,12 @@ export function WorldMap({
       .scaleExtent([1, 60])
       .translateExtent([[0, 0], [W, H]])
       .clickDistance(6)
-      .on('zoom', (e) => gRef.current?.setAttribute('transform', e.transform.toString()))
+      .on('zoom', (e) => {
+        gRef.current?.setAttribute('transform', e.transform.toString())
+        // Keep marker rings the same size on screen at any zoom.
+        kRef.current = e.transform.k
+        gRef.current?.querySelectorAll('circle[data-marker]').forEach((c) => c.setAttribute('r', String(RING / e.transform.k)))
+      })
     select(svg).call(z)
     zoomRef.current = z
     return () => {
@@ -45,20 +60,32 @@ export function WorldMap({
     }
   }, [])
 
+  function zoomToBox([[x0, y0], [x1, y1]]: MapBounds, maxK: number) {
+    if (!zoomRef.current || !svgRef.current) return
+    const k = Math.max(1, Math.min(maxK, 0.85 / Math.max((x1 - x0) / W, (y1 - y0) / H)))
+    const t = zoomIdentity.translate(W / 2, H / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2)
+    select(svgRef.current).call(zoomRef.current.transform, t)
+  }
+
+  // New rings start at the default size: match them to the current zoom.
+  const markerKey = markers.map((m) => `${m.x},${m.y}`).join(';')
+  useEffect(() => {
+    gRef.current?.querySelectorAll('circle[data-marker]').forEach((c) => c.setAttribute('r', String(RING / kRef.current)))
+  }, [markerKey])
+
+  // Start zoomed to the focus area (compared by value, so it runs once per area).
+  const [[fx0, fy0], [fx1, fy1]] = focus ?? [[0, 0], [0, 0]]
+  useEffect(() => {
+    if (fx1 > fx0) zoomToBox([[fx0, fy0], [fx1, fy1]], 40)
+  }, [fx0, fy0, fx1, fy1])
+
   // The answer as a stable string, so the effect below runs once per reveal.
   const answerIds = reveal ? features.filter(isCorrect).map((f) => f.id).join(',') : ''
 
   // Zoom to the answer after checking, so small places are visible.
   useEffect(() => {
-    if (!answerIds || !zoomRef.current || !svgRef.current) return
-    const hits = answerIds.split(',').map((id) => byId.get(id)!)
-    const x0 = Math.min(...hits.map((f) => f.bounds[0][0]))
-    const y0 = Math.min(...hits.map((f) => f.bounds[0][1]))
-    const x1 = Math.max(...hits.map((f) => f.bounds[1][0]))
-    const y1 = Math.max(...hits.map((f) => f.bounds[1][1]))
-    const k = Math.max(1, Math.min(12, 0.8 / Math.max((x1 - x0) / W, (y1 - y0) / H)))
-    const t = zoomIdentity.translate(W / 2, H / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2)
-    select(svgRef.current).call(zoomRef.current.transform, t)
+    if (!answerIds) return
+    zoomToBox(boundsOf(answerIds.split(',').map((id) => byId.get(id)!)), 12)
   }, [answerIds, byId])
 
   function zoomBy(k: number) {
@@ -75,7 +102,15 @@ export function WorldMap({
     return 'fill-slate-300 dark:fill-slate-700'
   }
 
-  const label = hover ? byId.get(hover)?.label : selected ? byId.get(selected)?.label : null
+  // Custom colours give way to the pick, the hovered place and the revealed answer.
+  const fillOf = (f: MapFeature) => {
+    const custom = colorOf?.(f)
+    const emphasised = f.id === selected || (reveal && isCorrect(f)) || (onSelect && !reveal && f.id === hover)
+    return custom && !emphasised ? { fill: custom } : undefined
+  }
+
+  const namesHidden = hideLabels && !reveal
+  const label = namesHidden ? null : hover ? byId.get(hover)?.label : selected ? byId.get(selected)?.label : null
   const options = useMemo(
     () => [...features].sort((a, b) => a.label.localeCompare(b.label)).map((f) => ({ value: f.id, label: f.label })),
     [features],
@@ -93,13 +128,26 @@ export function WorldMap({
                 className={`${fillClass(f)} stroke-white dark:stroke-slate-900`}
                 strokeWidth={0.6}
                 vectorEffect="non-scaling-stroke"
-                style={colorOf?.(f) ? { fill: colorOf(f) } : undefined}
+                style={fillOf(f)}
                 onClick={() => !reveal && onSelect?.(f)}
                 onPointerEnter={() => setHover(f.id)}
                 onPointerLeave={() => setHover((h) => (h === f.id ? null : h))}
               >
-                <title>{f.label}</title>
+                {!namesHidden && <title>{f.label}</title>}
               </path>
+            ))}
+            {markers.map((m) => (
+              <circle
+                key={`${m.x},${m.y}`}
+                data-marker
+                cx={m.x}
+                cy={m.y}
+                r={RING}
+                fill="none"
+                className="pointer-events-none stroke-rose-600 dark:stroke-rose-400"
+                strokeWidth={2.5}
+                vectorEffect="non-scaling-stroke"
+              />
             ))}
             {lines.map((l) => (
               <g key={l.label} className="pointer-events-none">
@@ -119,13 +167,13 @@ export function WorldMap({
         <span className="text-slate-600 dark:text-slate-400">
           {label ?? (onSelect ? 'Tap a country or region. Pinch or scroll to zoom.' : 'Pinch or scroll to zoom.')}
         </span>
-        {!reveal && onSelect && (
+        {!reveal && onSelect && !hideLabels && (
           <button type="button" onClick={() => setShowList((s) => !s)} className="text-teal-700 underline dark:text-teal-400">
             {showList ? 'Hide list' : "Can't find it? Choose from a list"}
           </button>
         )}
       </div>
-      {showList && !reveal && onSelect && (
+      {showList && !reveal && onSelect && !hideLabels && (
         <PickList label="Place" options={options} value={selected} onChange={(id) => onSelect(byId.get(id)!)} />
       )}
       <p className="text-xs text-slate-400">

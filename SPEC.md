@@ -333,6 +333,7 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **5: Everything else** | ✅ All 112 languages in §5 with pages, groups (24) and word-finder vocabulary. *Still to do:* remaining quiz modes, map quizzes |
 | **6: Polish** | Progress stats and confusion tracking, timed mode, export/import, Gist sync (§7.3) |
 | **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands; maps and quizzes down to state/province in 17 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
+| **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia and Argentina (272 regions, §12.7), three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
 | **8+: Other modules** | Remaining modules from §12, in an order to be decided: World Maps, Landscapes, Places & History, Why Is It Like This?, infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
@@ -424,6 +425,15 @@ Tree pages link to the climate map (§12.1) and to regions (§12.2), and share t
 - **Species ranges**: GBIF (Global Biodiversity Information Facility) occurrence maps and POWO (Kew's Plants of the World Online) native/introduced ranges, both free
 - **Climate needs**: WorldClim data and published botanical references
 - **History**: Wikipedia plus the sources it cites; each page records its sources (as in §7.4)
+
+### 12.7 Regions of large countries ✅ built
+Where each state/province of a big GeoGuessr country is, and how to recognise it. Built for Brazil (27), Mexico (32), USA (51), Canada (13), Indonesia (34, grouped by island), Australia (8), Russia (83, grouped by federal district) and Argentina (24).
+
+- **Region page**: a map zoomed to the country with the region highlighted (small regions get a ring), road-level photos, capital, population, area and density (Wikidata), "what it looks like", GeoGuessr clues (phone area codes, plate codes, route shields, languages on signs, crops, architecture), a memory hook (§6.3), and links to the Vegetation plants that are a clue there.
+- **Country page**: an intro, country-wide tips for telling regions apart, a map coloured by macro-region/island/federal district (tap a region to open it), and the regions listed by group.
+- **Quizzes**: *Name the highlighted region* (pick from a list); *Find it on the map* (tap it; also whole islands, macro-regions and federal districts where those are official or well-known); *Which region is this?* (a photo plus clues with the name hidden; tap the map). Place names are hidden on the map until the answer is checked. Filter by country.
+- **Data**: content in `src/content/regions/<country>.ts`; `npm run fetch-regions` (`tools/fetch-regions.mjs`) fetches Wikidata facts by ISO 3166-2 code and the credits of the photos listed in `tools/region-photos.json`. Photos were chosen by hand from Commons search results whose coordinates fall inside the region. The map is the vegetation map (§12.5), so region codes match everywhere.
+- The hand-written clues need a spot-check (§7.4), especially number-plate and route-shield details.
 
 ### 12.6 Images (all modules)
 

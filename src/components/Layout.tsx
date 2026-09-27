@@ -5,6 +5,7 @@ const nav = [
   { to: '/', label: 'Home', end: true },
   { to: '/languages', label: 'Languages', end: false },
   { to: '/vegetation', label: 'Plants', end: false },
+  { to: '/regions', label: 'Regions', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 
