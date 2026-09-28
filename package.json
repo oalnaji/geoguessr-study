@@ -12,10 +12,12 @@
     "icons": "pwa-assets-generator",
     "fetch-content": "node tools/fetch-content.mjs",
     "build-map": "node tools/build-map.mjs",
+    "build-physical": "node tools/build-physical.mjs",
     "fetch-plants": "node tools/fetch-plants.mjs",
     "fetch-regions": "node tools/fetch-regions.mjs",
     "fetch-feature-photos": "node tools/fetch-feature-photos.mjs",
-    "fetch-pole-photos": "node tools/fetch-pole-photos.mjs"
+    "fetch-pole-photos": "node tools/fetch-pole-photos.mjs",
+    "fetch-topo-photos": "node tools/fetch-topo-photos.mjs"
   },
   "dependencies": {
     "d3-geo": "^3.1.1",

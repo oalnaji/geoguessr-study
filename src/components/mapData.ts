@@ -92,6 +92,46 @@ export function latitudeLine(variant: MapVariant, lat: number): MapLine | null {
   return { d, label: `${Math.abs(lat)}°${lat > 0 ? 'N' : lat < 0 ? 'S' : ''}`, x, y }
 }
 
+/** A mountain range (area) or river (line) drawn over a map, in map coordinates. */
+export interface MapOverlay {
+  id: string
+  kind: 'area' | 'line'
+  d: string
+  bounds: MapBounds
+  /** Shown on hover */
+  label?: string
+}
+
+const physicalCache = new Map<MapVariant, Promise<MapOverlay[]>>()
+
+/** Mountain ranges and rivers (Natural Earth, see tools/build-physical.mjs), projected like the given map. */
+function loadPhysical(variant: MapVariant): Promise<MapOverlay[]> {
+  if (!physicalCache.has(variant)) {
+    physicalCache.set(variant, Promise.all([loadMap(variant), import('../content/generated/physical.topo.json')]).then(([, m]) => {
+      const topo = m.default as unknown as Topology
+      const path = geoPath(projections.get(variant)!)
+      return Object.entries(topo.objects).flatMap(([layer, obj]) => {
+        const fc = feature(topo, obj) as FeatureCollection<Geometry, { id: string }>
+        return fc.features.map((f) => ({
+          id: f.properties.id,
+          kind: layer === 'rivers' ? 'line' as const : 'area' as const,
+          d: path(f) ?? '',
+          bounds: path.bounds(f) as MapBounds,
+        }))
+      })
+    }))
+  }
+  return physicalCache.get(variant)!
+}
+
+export function usePhysical(variant: MapVariant = 'languages') {
+  const [overlays, setOverlays] = useState<MapOverlay[] | null>(null)
+  useEffect(() => {
+    loadPhysical(variant).then(setOverlays, () => setOverlays([]))
+  }, [variant])
+  return overlays
+}
+
 export function useMapFeatures(variant: MapVariant = 'languages') {
   const [features, setFeatures] = useState<MapFeature[] | null>(null)
   const [error, setError] = useState(false)

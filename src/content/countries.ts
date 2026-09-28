@@ -158,4 +158,13 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   WS: { name: 'Samoa', coverage: 'partial' },
   TO: { name: 'Tonga', coverage: 'partial' },
   AS: { name: 'American Samoa', coverage: 'yes' },
+  VE: { name: 'Venezuela', coverage: 'partial' },
+  SD: { name: 'Sudan', coverage: 'none' },
+  SS: { name: 'South Sudan', coverage: 'none' },
+  CG: { name: 'Republic of the Congo', coverage: 'none' },
+  CF: { name: 'Central African Republic', coverage: 'none' },
+  GN: { name: 'Guinea', coverage: 'none' },
+  ML: { name: 'Mali', coverage: 'partial' },
+  BJ: { name: 'Benin', coverage: 'none' },
+  ZM: { name: 'Zambia', coverage: 'partial' },
 }

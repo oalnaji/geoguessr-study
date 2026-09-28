@@ -7,6 +7,7 @@ const nav = [
   { to: '/vegetation', label: 'Plants', end: false },
   { to: '/regions', label: 'Regions', end: false },
   { to: '/poles', label: 'Poles', end: false },
+  { to: '/topography', label: 'Mountains', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 

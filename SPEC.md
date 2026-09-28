@@ -340,7 +340,7 @@ Alternative if more than one person ever uses it: Supabase free tier with login 
 | **7: Vegetation** | ✅ 27 trees & plants, 8 more cacti & desert plants, 13 crops, 14 forests & biomes with latitude bands, 12 soil colours with a soil-colour map, 14 ferns & regional oddities; maps and quizzes down to state/province in 20 large countries; memory hooks everywhere (§6.3). *Still to do:* flashcards |
 | **7b: Regions** | ✅ States and provinces of Brazil, Mexico, USA, Canada, Indonesia, Australia, Russia, Argentina, Vietnam and the Philippines (352 regions, §12.7) with PlonkIt-based notable markers, US highway shields and licence plates, three quizzes. *Still to do:* more countries (Chile, Colombia, Peru, China, India, South Africa, Spain, Turkey are already split on the map), flashcards |
 | **8: Utility poles** | ✅ §12.8 |
-| **8b: Next** | World Maps with topography, including mountain ranges and major rivers (§12.1) |
+| **8b: Mountains & Rivers** | ✅ 26 ranges and 30 rivers with history, facts, maps and quizzes (§12.1). *Still to do:* climate and elevation maps |
 | **9+: Other modules** | Remaining modules from §12, in an order to be decided: Landscapes, Places & History, Why Is It Like This?, other infrastructure metas. All use the module interface and the shared map, flashcard and quiz engines |
 
 ## 10. Privacy
@@ -370,7 +370,7 @@ All of these reuse the shared building blocks: map rendering, the "Why?" section
 - Every zone has a "Why?" explanation: rain shadows, ocean currents, altitude, latitude, and so on
 - Data: free open datasets (e.g. Natural Earth relief, WorldClim / Köppen–Geiger rasters), pre-rendered as image tiles so the app stays static and free to host
 
-#### Mountain ranges (next, when Topography is built)
+#### Mountain ranges ✅ built (Mountains & Rivers module)
 A page for every major mountain range, in the same format as plant pages:
 - **Where**: the range drawn on the map (and the countries and regions it crosses), with its highest peaks
 - **How it looks from the road**: shape (jagged and snowy vs rounded and forested vs bare and layered), rock colour, snowline, vegetation by altitude, and look-alikes (e.g. Alps vs Rockies vs Southern Alps; Andes in Peru vs Patagonia; Appalachians vs Urals)
@@ -380,8 +380,10 @@ A page for every major mountain range, in the same format as plant pages:
 - Initial list: Alps, Pyrenees, Carpathians, Balkan ranges, Caucasus, Scandinavian mountains, Urals, Atlas, Andes, Rockies, Sierra Nevada, Cascades, Appalachians, Sierra Madre, Himalayas, Hindu Kush, Tian Shan, Altai, Zagros, Ethiopian Highlands, Drakensberg, Great Dividing Range, Southern Alps, Japanese Alps, Annamite Range
 - Quizzes: "which range is this?" from a photo, and "find the range" on the map
 
-#### Major rivers (next, same format as mountains)
+#### Major rivers ✅ built
 A page for every major river: its course on the map, the countries and regions it drains, what its valley and delta look like (floodplains, gorges, deltas, rice terraces, levees), why (climate, sediment, floods), history (trade, borders, dams, cities), and GeoGuessr tips (e.g. the flat, canal-cut Mekong Delta; the brown Amazon tributaries; the Nile's green strip in the desert). Initial list: Amazon, Paraná, São Francisco, Orinoco, Mississippi–Missouri, St Lawrence, Yukon, Rio Grande, Danube, Rhine, Volga, Dnieper, Nile, Congo, Niger, Zambezi, Ganges, Indus, Brahmaputra, Mekong, Yangtze, Yellow River, Red River, Irrawaddy, Ob, Yenisei, Lena, Amur, Murray–Darling.
+
+**As built** (`/topography`): 26 ranges and 30 rivers (`src/content/topography/`), each with photos (hand-picked, `tools/topo-photos.json`, `npm run fetch-topo-photos`), key numbers, a map with the range or river drawn and zoomed to (Natural Earth 10m range polygons and river centre-lines, `npm run build-physical` → `physical.topo.json`, 43 KB), what it looks like from the road, how it formed / where the water comes from, **history**, **interesting facts**, GeoGuessr tips and a memory hook. The overview map is tappable. Quizzes: find the range or river on the map; name it from a photo. The climate and elevation maps (World Maps) remain to do.
 
 ### 12.2 Landscapes by region
 - Dedicated pages for **regions within countries** and how they differ visually, e.g. northern vs southern Norway, the Brazilian Northeast vs the South, the Australian coast vs the Outback, the Russian west vs Siberia, and the US Great Plains vs Appalachia vs the Southwest

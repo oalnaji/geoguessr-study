@@ -1,6 +1,7 @@
 import { LanguagesModule } from './languages'
 import { PolesModule } from './poles'
 import { RegionsModule } from './regions'
+import { TopographyModule } from './topography'
 import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
 
@@ -30,9 +31,17 @@ export const modules: MetaModule[] = [
     element: <RegionsModule />,
   },
   {
+    id: 'topography',
+    title: 'Mountains & Rivers',
+    description: 'The great mountain ranges and rivers: where they are, how they formed, and their history.',
+    path: 'topography',
+    status: 'active',
+    element: <TopographyModule />,
+  },
+  {
     id: 'world-maps',
     title: 'World Maps',
-    description: 'Topography and climate zones.',
+    description: 'Elevation and climate zones.',
     path: 'world-maps',
     status: 'planned',
   },

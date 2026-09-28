@@ -1,7 +1,7 @@
 import { select } from 'd3-selection'
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { boundsOf, MAP_HEIGHT as H, MAP_WIDTH as W, type MapBounds, type MapFeature, type MapLine } from './mapData'
+import { boundsOf, MAP_HEIGHT as H, MAP_WIDTH as W, type MapBounds, type MapFeature, type MapLine, type MapOverlay } from './mapData'
 import { PickList } from './PickList'
 
 /** Radius of marker rings, in screen pixels (of the 960-wide map) */
@@ -15,7 +15,7 @@ const controlClass = 'h-9 w-9 rounded-md bg-white/90 text-lg font-semibold shado
  * zooms to the answer. Without `onSelect` it is a read-only map shaded by `colorOf`.
  */
 export function WorldMap({
-  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf, lines = [], focus, markers = [], hideLabels = false,
+  features, selected = null, onSelect, reveal = false, isCorrect = () => false, colorOf, lines = [], focus, markers = [], hideLabels = false, overlays = [], activeOverlay = null, onOverlay,
 }: {
   features: MapFeature[]
   selected?: string | null
@@ -30,6 +30,12 @@ export function WorldMap({
   focus?: MapBounds
   /** Rings drawn around places too small to see, in map coordinates */
   markers?: { x: number; y: number }[]
+  /** Mountain ranges and rivers drawn over the countries */
+  overlays?: MapOverlay[]
+  /** The overlay to emphasise; the others are drawn faintly */
+  activeOverlay?: string | null
+  /** Makes overlays tappable */
+  onOverlay?: (id: string) => void
   /** Hide place names (hover labels, tooltips, the list) until `reveal`, when the names are the answer */
   hideLabels?: boolean
 }) {
@@ -136,6 +142,32 @@ export function WorldMap({
                 {!namesHidden && <title>{f.label}</title>}
               </path>
             ))}
+            {overlays.map((o) => {
+              const on = activeOverlay === o.id
+              const faint = activeOverlay !== null && !on
+              return o.kind === 'area' ? (
+                <path
+                  key={`a-${o.id}`}
+                  d={o.d}
+                  className={`${on ? 'fill-amber-700/80 stroke-amber-900' : faint ? 'fill-amber-700/15 stroke-transparent' : 'fill-amber-700/45 stroke-amber-800/60'} ${onOverlay ? 'cursor-pointer hover:fill-amber-600/80' : 'pointer-events-none'}`}
+                  strokeWidth={0.6}
+                  vectorEffect="non-scaling-stroke"
+                  onClick={() => onOverlay?.(o.id)}
+                ><title>{o.label ?? o.id}</title></path>
+              ) : (
+                <g key={`l-${o.id}`} className={onOverlay ? 'cursor-pointer' : 'pointer-events-none'} onClick={() => onOverlay?.(o.id)}>
+                  {onOverlay && <path d={o.d} fill="none" stroke="transparent" strokeWidth={10} vectorEffect="non-scaling-stroke" />}
+                  <path
+                    d={o.d}
+                    fill="none"
+                    className={on ? 'stroke-blue-700 dark:stroke-sky-300' : faint ? 'stroke-sky-500/30' : 'stroke-sky-600 dark:stroke-sky-400'}
+                    strokeWidth={on ? 3 : 1.4}
+                    strokeLinecap="round"
+                    vectorEffect="non-scaling-stroke"
+                  />
+                </g>
+              )
+            })}
             {markers.map((m) => (
               <circle
                 key={`${m.x},${m.y}`}
