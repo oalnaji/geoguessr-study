@@ -1,317 +1,203 @@
 {
+ "ru-square": [
+  "Bezhitskiy rayon, Bryansk, Bryanskaya oblast', Russia - panoramio (105).jpg",
+  "Gumbinė2.JPG",
+  "Пинега3.jpg"
+ ],
+ "pl-holey": [
+  "Rakowiska-transformer-180415-1.jpg",
+  "Stary-Pawłów-trafo-180408-01.jpg",
+  "Bieczyno-bocianie gniazdo 5.jpg"
+ ],
+ "hu-holey": [
+  "Zalabaksa 03.jpg",
+  "HU-VE-Köveskál29.jpg",
+  "Nagykőrös.Kassai utca. - panoramio.jpg"
+ ],
+ "ro-holey": [
+  "20140627 Braşov 138.jpg",
+  "Ramnicu Valcea - wires.jpg",
+  "Odei 25apr2008 - panoramio.jpg"
+ ],
+ "bg-hooks": [
+  "Street-in-Malo-konare.jpg",
+  "Central-street-in-Blatnitsa.jpg",
+  "Medovo - panoramio (7).jpg"
+ ],
+ "cz-pairs": [
+  "Elektrický sloup Pod Bohdalcem.jpg",
+  "Chrastava-Andělská Hora, čp. 63, most do Chrastavy.jpg",
+  "Broumy, Luh, V Luhu.jpg"
+ ],
+ "lv-hooks": [
+  "Ganību iela in Jelgava 03.jpg",
+  "Jēču vējdzirnavas - windmill - panoramio.jpg",
+  "Bruņene, Skrudalienas pagasts, LV-5470, Latvia - panoramio.jpg"
+ ],
+ "fi-wood": [
+  "Utility poles in Finland 04.jpg",
+  "Utility poles in Finland 06.jpg",
+  "Granary or grain elevator by Lampurintie in Koivumäki, Seutula, Vantaa, Finland, 2022 June - 2.jpg"
+ ],
+ "fr-ladder": [
+  "Montbazin, Hérault 23.jpg",
+  "Boinville-le-Gaillard - Pylône électrique 1.jpg",
+  "Fort-joual - panoramio.jpg"
+ ],
+ "gb-steps": [
+  "Wraxall 2010 MMB 28 Buzzard.jpg",
+  "Hellman's Cross, Great Canfield, Essex, England - electricity pole 01.JPG",
+  "Tregony - guide post at grid SW911456.jpg"
+ ],
+ "gr-harp": [
+  "Electric composition Eretria Euboea Greece.jpg",
+  "Athens electricity pole old style.jpg"
+ ],
+ "be-holes": [
+  "20170402 anthisnes163.jpg",
+  "20120701 tourdefrance009.JPG",
+  "20170326 tavier097.jpg"
+ ],
+ "nl-none": [
+  "Vlaketunnel A58.jpg",
+  "Sechzehn (35504437020).jpg"
+ ],
  "jp-concrete": [
-  "Werbung (1912022940).jpg",
-  "赤い自販機 遠景 (7020533399).jpg",
-  "食堂くぼた (8675463531).jpg"
+  "空き缶 再利用 (30236210903).jpg",
+  "カタカナ一行のマクドナルド 2010 (4550015631).jpg",
+  "銀閣寺交番 (26042969385).jpg"
  ],
  "jp-kanto": [
-  "Higashiasakawamachi, Hachioji, Tokyo 193-0834, Japan - panoramio (221).jpg",
-  "2 Chome Kitazawa, Setagaya-ku, Tōkyō-to 155-0031, Japan - panoramio (138).jpg",
-  "6 Chome Daita, Setagaya-ku, Tōkyō-to 155-0033, Japan - panoramio (18).jpg"
+  "6 Chome Daita, Setagaya-ku, Tōkyō-to 155-0033, Japan - panoramio (18).jpg",
+  "Goi, Ichihara, Chiba Prefecture 290-0056, Japan - panoramio.jpg",
+  "神保町 松沢商店 日用雑貨 (34151154661).jpg"
  ],
  "jp-hokkaido": [
   "Hokkaido Prefectural Road142.JPG",
-  "札幌市路面電車（Sapporo streetcar） - panoramio.jpg",
-  "Hokkaido Prefectural road Route 302 (Onobunai Station line) in Yuko, Horonobe.jpg"
+  "HokkaidoPrefectural Road No.233.JPG",
+  "北海道道812号館町福島線・北海道道29号上磯厚沢部線交点-1（北海道道29号上磯厚沢部線・起点側から、2018年8月撮影）.jpg"
  ],
  "jp-okinawa": [
-  "Interior Aguni Island.JPG",
+  "西（北） Nishi (North) (3518136042).jpg",
   "Michinoeki Kyoda - Parking - panoramio.jpg",
-  "Sugarcane field(MIyakojima Is.) - panoramio.jpg"
- ],
- "kr-spike": [
-  "Chiba prefectural road 172 at Ichihara city 20151129.jpg",
-  "Chiba prefectural road 5 near Kogasaki 2chome 3245 Matsudo city 20210430 173641.jpg",
-  "Chiba prefectural road 19 near Nakanodai 737 Noda city 20211026 155505.jpg"
+  "JP 日本 Japan 沖繩 OKINAWA 那霸 Naha city walk afternoon January 2025 R12S 231.jpg"
  ],
  "tw-stripes": [
-  "Utility poles in Hsinchu near the cemetery of military personnel.jpg",
-  "Taiwan Power utility pole plate.jpg",
-  "2010 07 15370 5471 Donghe Township, Taiwan, Highway 11 (Taiwan).JPG"
+  "End of Taiwan County Highway 185a 20190901.jpg",
+  "嘉義縣大林鎮 162縣道 - panoramio (7).jpg",
+  "Views of Chiayi county-2125.jpg"
  ],
  "th-square": [
-  "Ho Rattanachai, Ayutthaya, 13000, Thái Lan - panoramio.jpg",
-  "VIEW CHIANGMAI By HS3CMI - panoramio - CHAMRAT CHAROENKHET (20).jpg",
-  "Hua Khwang, Kosum Phisai District, Maha Sarakham 44140, Thailand - panoramio.jpg"
+  "Samui 2013 May - panoramio (61).jpg",
+  "Khao Phang, Ban Ta Khun District, Surat Thani 84230, Thailand - panoramio (9).jpg",
+  "- panoramio (2566).jpg"
  ],
  "vn-holey": [
+  "Tran quoc Thao va Vo Thi sau ,q3 hcmvn - panoramio.jpg",
   "Tl 952, Long Chau, Tx Tan chau, angiang,12-10-13-dyt - panoramio.jpg",
-  "Tl 952- tanchau angiang - panoramio.jpg",
-  "Vĩnh Trinh, Vĩnh Thạnh, Cần Thơ, Vietnam - panoramio.jpg"
+  "142 Bui Cong Minh, kp LongBinh, huyen Longdien,tinh Baria Vungtau, Vn - panoramio.jpg"
+ ],
+ "my-stickers": [
+  "Utility pole PBG B 13 along Jalan Marang-Wakaf Tapai (Terengganu State Highway T2) in Kampung Pengkalan Berangan 20240228 112031.jpg",
+  "Utility pole PBG B 14 and street lamp along Jalan Marang-Wakaf Tapai (Terengganu State Highway T2) in Kampung Pengkalan Berangan 20240228 110653.jpg",
+  "Utility pole JC 6-28B 1-2 and street lamp along Jalan Cecawi 6-28 in Seksyen 6, Kota Damansara 20231208 141729.jpg"
  ],
  "vn-north": [
   "Đường tỉnh 301, Hà Nội - Đường Võ Nguyên Giáp, Hà Nội 26.jpg",
   "National Route 3 in Hanoi 77.jpg",
   "Lê Hữu Tựu Road, Hanoi 09.jpg"
  ],
- "my-stickers": [
-  "Hang Tuah Jaya.JPG",
-  "Labu.JPG",
-  "Telok Gong.JPG"
- ],
  "id-flag": [
-  "Utility poles in Monchegorsk.jpg",
-  "Manusia Listrik 2.Jpg",
-  "Rawlinna (AU), Utility Pole -- 2019 -- 0621.jpg",
-  "Telegraph pole (35651128942).jpg"
+  "Ubud (16871819959).jpg",
+  "Utility pole front of SMPN 9 Samarinda.jpg",
+  "A utility pole in a street in Klaten.jpg"
+ ],
+ "id-nusa": [
+  "Ungasan, South Kuta, Badung Regency, Bali, Indonesia - panoramio.jpg",
+  "Ubud (16871819959).jpg"
+ ],
+ "id-java": [
+  "TIANG LISTRIK KUNO DI ADIWERNA TEGAL.jpg",
+  "Desa Peusing, Jalaksana (14).jpg",
+  "Jaringan Listrik PLN Tegangan Menengah Dan Rendah DiKrakal Alian Kebumen.jpg"
  ],
  "ph-octagonal": [
-  "Lagunajf8737 01.JPG",
-  "0416jfWelcome Poblacion Norte Market Somaligue Paniqui Tarlacfvf 20.JPG",
-  "05748jfCity San Fernando Bulacan Lands Highways Pampangafvf 18.JPG"
+  "00202jfBarangays Tambubong Batia Bocaue Bulacan Fields Roadsfvf 19.jpg",
+  "0815jfCamias Poblacion Supermarket San Jose San Miguel Bulacan Bulacanfvf 10.jpg",
+  "0795jfBarangays West Kamias Road Creeks Bridges Landmarksfvf 13.jpg"
  ],
  "in-trident": [
-  "Fearless Bird Anand Manaswin.jpg",
-  "Monsoon clouds chennai.jpg",
+  "Fld - panoramio.jpg",
+  "Trans - panoramio (1).jpg",
   "An old dangerous wooden Electric post in Odupara - Photo by Habeebu Rahman PP - panoramio.jpg"
  ],
- "au-stobie": [
-  "Stobie Pole in Norwood September 2025.jpg",
-  "Original 1924 stobie pole next to modern pole - wide angle.JPG",
-  "OIC adelaide stobie pole kensington.jpg",
-  "Example of stobie pole art 1.jpg"
- ],
- "au-wood": [
-  "Bending power pole Belmont western australia .jpg",
-  "Bathurst 66kv Transmission Line.JPG",
-  "Looking northeast on Willans Hill.jpg"
- ],
- "us-wood": [
-  "SSF utility pole 1 front.JPG",
-  "SSF utility pole 1 side.JPG",
-  "Utility pole at Noah Odell House Site near Nodaway - NRHP00000917- Adams County - Iowa -10-23-2016--5498.jpg"
- ],
- "mx-octagonal": [
-  "Manioso-rionuevo.jpg",
-  "Basurerotultitlan.JPG"
- ],
- "co-octagonal": [
-  "ANILLO VIAL ^ CRA 34 MACROMEDIDOR - panoramio.jpg",
-  "Cables en Medellín.jpg",
-  "Currulao, Turbo, Antioquia, Colombia - panoramio.jpg"
- ],
- "br-ladder": [
-  "Utility pole in Curitiba.JPG",
-  "Bento Ribeiro 2.jpg",
-  "Setor M Norte QNM 36 Conjunto Y - panoramio.jpg"
- ],
- "au-nt": [
-  "Power-pole-base.jpg"
- ],
- "ca-alternating": [
-  "SaskPower 4.16kV - Maple Creek, SK (31984386085).jpg",
-  "SaskPower 4.16kV - Maple Creek, SK (31611056690).jpg"
- ],
- "kh-ladder": [
-  "02-Utilities Cabling Phnom Penh-nX-5.jpg",
-  "2016 Phnom Penh, Kable elektryczne na słupie energetycznym na ulicy.jpg"
- ],
- "la-pinhole": [
-  "Kasi2011.jpg",
-  "Road through the towns. - panoramio.jpg",
-  "Champasak main street.jpg"
- ],
- "mn-wood-block": [
-  "Festiwal Naadam na stepie na obrzeżach Ułan Bator 27.JPG",
-  "Widok na miasto Karakorum 10.jpg",
-  "Khövsgöl Aimag18.JPG"
- ],
- "kz-paint": [
-  "Enbekshikazakh District, Kazakhstan - panoramio (10).jpg",
-  "Ile District, Kazakhstan - panoramio (29).jpg",
-  "Kostanay 110000, Kazakhstan - panoramio.jpg"
- ],
- "kg-white": [
-  "Gymnasium, Taylan Secondary School.JPG",
-  "General view, Ak-Bulak.JPG",
-  "E8002-Milyanfan-Lenin-St.jpg"
- ],
  "tr-metal": [
-  "Utility poles turkish style 11.jpg",
-  "Utility poles turkish style 14.jpg",
+  "Kozan street view 3269.jpg",
+  "Estrada em Suruç 02.jpg",
   "Utility poles turkish style 08.jpg"
  ],
- "jo-concrete": [
-  "Low9th7June07JourdanandBigWhite.jpg",
-  "Low97June07BackEmptyJordanFromRoman.jpg"
+ "us-wood": [
+  "WirelessPowerlineSensors.jpg",
+  "Power-Pole-7926.jpg",
+  "2015-08-24 15 45 21 View northeast along an abandoned section of Lee Road in Chantilly, Virginia.jpg"
  ],
- "ru-square": [
-  "Utility poles in Monchegorsk.jpg",
-  "Syktyvkar, Komi Republic, Russia - panoramio (21).jpg",
-  "Akatyevo, Moskovskaya oblast', Russia, 140478 - panoramio (16).jpg",
-  "Dzerzhinskiy rayon, Volgograd, Volgogradskaya oblast', Russia - panoramio (42).jpg"
+ "mx-octagonal": [
+  "Pixyá, Yucatán (01).JPG",
+  "15-07-15-Campeche-Straßenszene-RalfR-WMA 0890.jpg"
  ],
- "pl-holey": [
-  "69-108 Cybinka, Polen - panoramio (1).jpg",
-  "Old pole in Maszewo.jpg",
-  "Powerline Slubice - Gorzow.jpg"
+ "co-stripes": [
+  "ANILLO VIAL ^ CRA 34 MACROMEDIDOR - panoramio.jpg",
+  "Rooftop poles Bogota.jpg",
+  "Cables en Medellín.jpg"
  ],
- "hu-holey": [
-  "Zalavár, Dózsa György utca - panoramio.jpg",
-  "Szokolya.jpg",
-  "Petőfi Sándor utca - panoramio.jpg"
+ "br-ladder": [
+  "Estação do Quilombo Ago 2010. - panoramio.jpg",
+  "At Paranapiacaba 2018 117.jpg",
+  "Poles-brazil.jpg"
  ],
- "ro-holey": [
-  "20140627 Braşov 138.jpg",
-  "Ramnicu Valcea - wires.jpg",
-  "Busteni - wires.jpg",
-  "RO SJ Santa Maria (3).JPG"
- ],
- "bg-hooks": [
-  "Turia E1.JPG",
-  "Street-in-Malo-konare.jpg",
-  "Sofia-Varna-Road-in-Sokolovo.jpg"
- ],
- "cz-pairs": [
-  "Metylovice, Čupovice 05.jpg",
-  "Frýdlant, Hřbitovní, cesta 01.jpg",
-  "Smolotely-Draha, silnice 11818, název.jpg"
- ],
- "lv-hooks": [
-  "Baltā stārķa ligzda Nr.1162, Valdgales pagasts, Talsu novads, Latvia - panoramio.jpg",
-  "Dzērves, Īves pagasts, Talsu novads, Latvia - panoramio (1).jpg",
-  "Трехэтажка - panoramio (2).jpg"
- ],
- "lt-square": [
-  "Nirtaičiai, trobos.jpg",
-  "Gelgaudiškis, Taikos g.JPG",
-  "Berniūnai, 2020.JPG"
- ],
- "fi-wood": [
-  "Utility poles in Finland 04.jpg",
-  "Utility poles in Finland 05.jpg",
-  "Kolmisopen ryhmäpuutarhan mökkejä - Kolmisoppi - Kuopio - m.jpg"
- ],
- "se-wood": [
-  "Elledning12.jpg",
-  "Electrical lines in north Brodalen.jpg",
-  "Elledning13.jpg"
- ],
- "no-wood": [
-  "Three-phase distribution transformator IMG 8089 Hurum Norway 23kV 240V.JPG",
-  "Three-phase distribution transformer IMG 8097 Hurum Norway.JPG"
- ],
- "de-sticker": [
-  "Rawlinna (AU), Utility Pole -- 2019 -- 0621.jpg",
-  "Pole mounted transformer.jpg",
-  "Road pole poland1.jpg"
- ],
- "fr-ladder": [
-  "Support de ligne HTA Garczynski Traploir..jpg",
-  "Roquessels, Hérault.jpg",
-  "Fire-fighting-facility node-6249618277 01.jpg"
- ],
- "es-ladder": [
-  "Pau da luz.jpg",
-  "Wood pylon in Spain.jpg",
-  "Maques de Arriba Curtis A Coruña.jpg"
- ],
- "pt-ladder": [
-  "Bot-DSCF1047.jpg"
- ],
- "it-round": [
-  "MV pole transformer.jpg",
-  "Medium voltage disconnecting switch on utility pole (2) (Rovigo).jpg",
-  "Medium voltage disconnecting switch on utility pole (Rovigo).jpg"
- ],
- "gb-steps": [
-  "Utility pole, Saul Road, January 2010.JPG",
-  "Easole Street, Nonington, Kent, England - utility pole and low-voltage power lines.jpg",
-  "Electricity utility pole at Greenhill, Hatfield Broad Oak, Essex England.jpg"
- ],
- "ie-steps": [
-  "Sign-1050269, Dingle Peninsula, Co. Kerry, Ireland.jpg",
-  "Utility pole, Saul Road, January 2010.JPG",
-  "Disused Utility Pole, Botany Marsh - geograph.org.uk - 3748337.jpg"
+ "ar-alternating": [
+  "Power poles Tres Cruces 2.jpg",
+  "Tucuman Alderetes Av Rivadavia.JPG",
+  "Pirané - Formosa - Argentina 008.jpg"
  ],
  "cl-indent": [
+  "Casas humberstone 4.jpg",
   "Casas-Humberstone.jpg",
-  "Chile Earthquake 2010 - Maipú 3.JPG",
-  "Oficinas salitreras de Humberstone y Santa Laura, Chile, 2016-02-11, DD 58.jpg",
-  "Santiago de Chile-CTJ-IMG 5337.jpg"
+  "Santiago de Chile-CTJ-IMG 5338.jpg"
  ],
  "pe-paint": [
   "Old utility pole detail.jpg",
-  "Improved utility pole3.jpg",
-  "Improved utility pole2.jpg"
- ],
- "bo-curvy": [
-  "Power poles Incachaca4.jpg",
-  "Power pole Pulacayo 5.jpg"
+  "Improved utility pole4.jpg",
+  "Pole-mounted transformer2.jpg"
  ],
  "uy-trident": [
-  "Calle 7 Mamboretá esquina Carabelas M14 S23 - panoramio.jpg",
-  "Calle Nutria M9 S6 - panoramio.jpg",
-  "J34 650 WÜ Avenida General Eugenio Garzon.jpg"
+  "Power lines Rosario1.jpg"
  ],
  "gt-pink-green": [
-  "Xela Utility Pole 5.jpg",
-  "Pole Puerto Barrios 5.jpg",
-  "Utility poles Ciudad Vieja.jpg"
+  "Xela Utility Pole 4.jpg",
+  "Rooftop utility poles.jpg",
+  "Pole Puerto Barrios 3.jpg"
  ],
  "cr-silver": [
   "Abandoned Telephone pole.jpg",
-  "Triangle pole2.jpg",
-  "Utility pole made of Railroad Rail in costa Rica.jpg"
- ],
- "nz-indent": [
-  "Pole with three tensions.jpg",
-  "Power nz7.jpg",
-  "Power Pole (33226755570).jpg"
+  "Poles in San José.jpg",
+  "Pole San José2.jpg"
  ],
  "za-bird": [
   "Drakenstein (ZA), Val Du Charron Wine and Leisure Estate, Stromleitung -- 2024 -- 2733.jpg"
  ],
  "ke-l": [
   "A104 in Nairobi 2017.jpg",
-  "Mombasa, Kenya 2013. - panoramio (13).jpg",
-  "Wikimania Photowalk 2025, Nairobi (20250808-P1048960).jpg"
+  "2011-11-11 Old Town Mombasa.jpg"
  ],
- "gh-wood": [
-  "Rural Dirt Road Through Greenery.jpg",
-  "Battor township ahead road sign (PXL 20241108 094106308).jpg"
+ "nz-indent": [
+  "Power Lines-1310893, Wainuiomata, Wellington, New Zealand.jpg",
+  "Power Lines-1310918, Wainuiomata, Wellington, New Zealand.jpg",
+  "Power Lines-1320152, Wainuiomata, Wellington, New Zealand.jpg"
  ],
- "ng-indent": [
-  "Electric pole in unilorin.jpg",
-  "Ido Osun center round about.jpg",
-  "A broken electricity pillar.jpg"
- ],
- "sn-french": [
-  "Dakar Electric Wires.jpg"
- ],
- "np-trident": [
-  "Electricity Pole with Transformer and wire-Nepal 02.jpg",
-  "Electricity Pole with Transformer and wire-Nepal 03.jpg"
- ],
- "nl-none": [
-  "Cow parsley along the cart-track.jpg",
-  "Netherlands, Texel, Midden-Eierland (04).jpg"
- ],
- "be-holes": [
-  "20151205 aux houx46.JPG",
-  "20170402 anthisnes164.jpg",
-  "AaigemLandries2.JPG"
- ],
- "gr-harp": [
-  "Electric composition Eretria Euboea Greece.jpg",
-  "Kavala Greece 02.jpg",
-  "Alikes, Greece - panoramio (20).jpg"
- ],
- "hr-hooks": [
-  "Valpovačka ul. - panoramio.jpg",
-  "Grude-07-2008-01249.JPG",
-  "Power line Velebit 01.jpg"
- ],
- "at-tape": [
-  "Stromleitung bei Grossarl.JPG",
-  "Endmast-Mittelspannung 8727.JPG",
-  "Mast für Stromversorgung 0221.JPG"
- ],
- "ar-alternating": [
-  "Calle lisandro de la torre - panoramio.jpg",
-  "Estación Chorrillos • Ramal C14 • Salta, Argentina • punto kilométrico.jpg"
- ],
- "us-california": [
-  "SSF utility pole 1 front.JPG"
+ "au-stobie": [
+  "Stobie Pole in Norwood September 2025.jpg",
+  "Original 1924 stobie pole next to modern pole - wide angle.JPG",
+  "OIC adelaide stobie pole kensington.jpg"
  ]
 }

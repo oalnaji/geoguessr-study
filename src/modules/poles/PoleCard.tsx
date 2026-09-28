@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import { PhotoGallery } from '../../components/PhotoGallery'
 import { cardClass } from '../../components/ui'
-import { polePhotos, type PoleType } from '../../content/poles'
+import { countryLabel, polePhotos, type PoleType } from '../../content/poles'
 import { regionById } from '../../content/regions'
 
 export function PoleCard({ pole }: { pole: PoleType }) {
@@ -10,6 +10,7 @@ export function PoleCard({ pole }: { pole: PoleType }) {
   return (
     <article className={`${cardClass} space-y-3`}>
       <h3 className="text-lg font-semibold leading-tight">{pole.title}</h3>
+      {pole.alsoCountries && <p className="text-sm text-slate-500">Also the norm in: {pole.alsoCountries.map(countryLabel).join(', ')}</p>}
       {photos.length > 0 ? (
         <PhotoGallery photos={photos} alt={pole.title} />
       ) : (

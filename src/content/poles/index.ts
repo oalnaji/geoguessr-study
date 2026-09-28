@@ -5,7 +5,7 @@ import { poles } from './poles'
 import type { Continent } from './types'
 
 export type { Continent, PoleType } from './types'
-export { poleParts, whyTheyDiffer } from './anatomy'
+export { deepDives, poleParts, whyTheyDiffer } from './anatomy'
 export { poles }
 
 export const continents: Continent[] = ['Europe', 'Asia', 'Americas', 'Africa', 'Oceania']
@@ -27,6 +27,8 @@ export const continentOf: Record<string, Continent> = {
 
 export const poleById = new Map(poles.map((p) => [p.id, p]))
 export const poleCountries = [...new Set(poles.map((p) => p.country))]
+/** Every country covered, including those on a trend card → the card's main country */
+export const cardCountryOf = new Map<string, string>(poles.flatMap((p) => [[p.country, p.country], ...(p.alsoCountries ?? []).map((c) => [c, p.country] as [string, string])]))
 export const polesOf = (country: string) => poles.filter((p) => p.country === country)
 export const countryLabel = (code: string) => countries[code]?.name ?? code
 

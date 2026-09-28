@@ -6,6 +6,8 @@ export interface PoleType {
   /** ISO2 */
   country: string
   title: string
+  /** Other countries where the same pole is the norm (a trend card, e.g. wooden poles in North America) */
+  alsoCountries?: string[]
   /** How to recognise it */
   look: string[]
   /** Where in the country (omitted when it is found everywhere) */

@@ -14,26 +14,4 @@ export const africaPoles: PoleType[] = [
     lookalikes: 'Ghana has a similar pole.',
     photoCategory: 'Utility poles in Kenya',
   },
-  {
-    id: 'gh-wood', country: 'GH', title: 'Wooden poles with three insulators on a metal crossbar',
-    look: ['Wooden poles carrying three insulators on a metal crossbar.'],
-    lookalikes: 'Kenya.',
-    photoCategory: 'Utility poles in Ghana',
-  },
-  {
-    id: 'ng-indent', country: 'NG', title: 'Brazil-like indented concrete poles without holes',
-    look: ['Concrete poles with indents and a few horizontal supports, like Brazil\'s ladder poles, but with no see-through holes.'],
-    photoCategory: 'Utility poles in Nigeria',
-  },
-  {
-    id: 'sz-brown', country: 'SZ', title: 'Dark brown wooden poles with side insulators',
-    look: ['Simple dark brown wooden poles with the insulators mounted on the side; three insulators is more common here than elsewhere in southern Africa.'],
-    photoSearch: 'Eswatini road pole',
-  },
-  {
-    id: 'sn-french', country: 'SN', title: 'French-style poles',
-    look: ['French infrastructure from colonial times: concrete ladder poles, French bollards and road lines.'],
-    lookalikes: 'France (but with Sahel landscape and baobabs).',
-    photoSearch: 'Senegal poteau électrique',
-  },
 ]

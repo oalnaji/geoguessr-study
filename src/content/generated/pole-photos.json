@@ -1,53 +1,375 @@
 {
+ "ru-square": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bezhitskiy_rayon%2C_Bryansk%2C_Bryanskaya_oblast%27%2C_Russia_-_panoramio_%28105%29.jpg/960px-Bezhitskiy_rayon%2C_Bryansk%2C_Bryanskaya_oblast%27%2C_Russia_-_panoramio_%28105%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/67/Bezhitskiy_rayon%2C_Bryansk%2C_Bryanskaya_oblast%27%2C_Russia_-_panoramio_%28105%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Анатолий Таранцов",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bezhitskiy_rayon,_Bryansk,_Bryanskaya_oblast%27,_Russia_-_panoramio_(105).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Gumbin%C4%972.JPG/960px-Gumbin%C4%972.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Gumbin%C4%972.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Rimantas Lazdynas",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Gumbin%C4%972.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/%D0%9F%D0%B8%D0%BD%D0%B5%D0%B3%D0%B03.jpg/960px-%D0%9F%D0%B8%D0%BD%D0%B5%D0%B3%D0%B03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%D0%9F%D0%B8%D0%BD%D0%B5%D0%B3%D0%B03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Юрочкин Роман",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B8%D0%BD%D0%B5%D0%B3%D0%B03.jpg",
+   "from": "commons"
+  }
+ ],
+ "pl-holey": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Rakowiska-transformer-180415-1.jpg/960px-Rakowiska-transformer-180415-1.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/32/Rakowiska-transformer-180415-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Grzegorz W. Tężycki",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rakowiska-transformer-180415-1.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Stary-Paw%C5%82%C3%B3w-trafo-180408-01.jpg/960px-Stary-Paw%C5%82%C3%B3w-trafo-180408-01.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/14/Stary-Paw%C5%82%C3%B3w-trafo-180408-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Grzegorz W. Tężycki",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Stary-Paw%C5%82%C3%B3w-trafo-180408-01.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bieczyno-bocianie_gniazdo_5.jpg/960px-Bieczyno-bocianie_gniazdo_5.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bieczyno-bocianie_gniazdo_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Mdzidek",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bieczyno-bocianie_gniazdo_5.jpg",
+   "from": "commons"
+  }
+ ],
+ "hu-holey": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Zalabaksa_03.jpg/960px-Zalabaksa_03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Zalabaksa_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Андрей Романенко",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Zalabaksa_03.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/HU-VE-K%C3%B6vesk%C3%A1l29.jpg/960px-HU-VE-K%C3%B6vesk%C3%A1l29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0f/HU-VE-K%C3%B6vesk%C3%A1l29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Szeder László",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:HU-VE-K%C3%B6vesk%C3%A1l29.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Nagyk%C5%91r%C3%B6s.Kassai_utca._-_panoramio.jpg/960px-Nagyk%C5%91r%C3%B6s.Kassai_utca._-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/69/Nagyk%C5%91r%C3%B6s.Kassai_utca._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Bocskai László",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Nagyk%C5%91r%C3%B6s.Kassai_utca._-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "ro-holey": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/20140627_Bra%C5%9Fov_138.jpg/960px-20140627_Bra%C5%9Fov_138.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/20140627_Bra%C5%9Fov_138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Mark Ahsmann",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:20140627_Bra%C5%9Fov_138.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ramnicu_Valcea_-_wires.jpg/960px-Ramnicu_Valcea_-_wires.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Ramnicu_Valcea_-_wires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Tiia Monto",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ramnicu_Valcea_-_wires.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Odei_25apr2008_-_panoramio.jpg/960px-Odei_25apr2008_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/37/Odei_25apr2008_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "eug.sim",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Odei_25apr2008_-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "bg-hooks": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Street-in-Malo-konare.jpg/960px-Street-in-Malo-konare.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Street-in-Malo-konare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Edal Anton Lefterov",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Street-in-Malo-konare.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Central-street-in-Blatnitsa.jpg/960px-Central-street-in-Blatnitsa.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/90/Central-street-in-Blatnitsa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Edal Anton Lefterov",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Central-street-in-Blatnitsa.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Medovo_-_panoramio_%287%29.jpg/960px-Medovo_-_panoramio_%287%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Medovo_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Kerry Ferguson",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Medovo_-_panoramio_(7).jpg",
+   "from": "commons"
+  }
+ ],
+ "cz-pairs": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg/960px-Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/01/Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "cs:ŠJů",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Elektrick%C3%BD_sloup_Pod_Bohdalcem.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Chrastava-And%C4%9Blsk%C3%A1_Hora%2C_%C4%8Dp._63%2C_most_do_Chrastavy.jpg/960px-Chrastava-And%C4%9Blsk%C3%A1_Hora%2C_%C4%8Dp._63%2C_most_do_Chrastavy.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Chrastava-And%C4%9Blsk%C3%A1_Hora%2C_%C4%8Dp._63%2C_most_do_Chrastavy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "ŠJů",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Chrastava-And%C4%9Blsk%C3%A1_Hora,_%C4%8Dp._63,_most_do_Chrastavy.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Broumy%2C_Luh%2C_V_Luhu.jpg/960px-Broumy%2C_Luh%2C_V_Luhu.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Broumy%2C_Luh%2C_V_Luhu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "cs:ŠJů",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Broumy,_Luh,_V_Luhu.jpg",
+   "from": "commons"
+  }
+ ],
+ "lv-hooks": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Gan%C4%ABbu_iela_in_Jelgava_03.jpg/960px-Gan%C4%ABbu_iela_in_Jelgava_03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/43/Gan%C4%ABbu_iela_in_Jelgava_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Андрей Романенко",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Gan%C4%ABbu_iela_in_Jelgava_03.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/J%C4%93%C4%8Du_v%C4%93jdzirnavas_-_windmill_-_panoramio.jpg/960px-J%C4%93%C4%8Du_v%C4%93jdzirnavas_-_windmill_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4b/J%C4%93%C4%8Du_v%C4%93jdzirnavas_-_windmill_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Laima Gūtmane (simka…",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:J%C4%93%C4%8Du_v%C4%93jdzirnavas_-_windmill_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bru%C5%86ene%2C_Skrudalienas_pagasts%2C_LV-5470%2C_Latvia_-_panoramio.jpg/960px-Bru%C5%86ene%2C_Skrudalienas_pagasts%2C_LV-5470%2C_Latvia_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bru%C5%86ene%2C_Skrudalienas_pagasts%2C_LV-5470%2C_Latvia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "alinco_fan",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Bru%C5%86ene,_Skrudalienas_pagasts,_LV-5470,_Latvia_-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "fi-wood": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Utility_poles_in_Finland_04.jpg/960px-Utility_poles_in_Finland_04.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Utility_poles_in_Finland_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Paasikivi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Finland_04.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Utility_poles_in_Finland_06.jpg/960px-Utility_poles_in_Finland_06.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/25/Utility_poles_in_Finland_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Paasikivi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Finland_06.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Granary_or_grain_elevator_by_Lampurintie_in_Koivum%C3%A4ki%2C_Seutula%2C_Vantaa%2C_Finland%2C_2022_June_-_2.jpg/960px-Granary_or_grain_elevator_by_Lampurintie_in_Koivum%C3%A4ki%2C_Seutula%2C_Vantaa%2C_Finland%2C_2022_June_-_2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/35/Granary_or_grain_elevator_by_Lampurintie_in_Koivum%C3%A4ki%2C_Seutula%2C_Vantaa%2C_Finland%2C_2022_June_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Ximonic (Simo Räsänen)",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Granary_or_grain_elevator_by_Lampurintie_in_Koivum%C3%A4ki,_Seutula,_Vantaa,_Finland,_2022_June_-_2.jpg",
+   "from": "commons"
+  }
+ ],
+ "fr-ladder": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Montbazin%2C_H%C3%A9rault_23.jpg/960px-Montbazin%2C_H%C3%A9rault_23.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Montbazin%2C_H%C3%A9rault_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Christian Ferrer",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Montbazin,_H%C3%A9rault_23.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_1.jpg/960px-Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_1.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Lionel Allorge",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Boinville-le-Gaillard_-_Pyl%C3%B4ne_%C3%A9lectrique_1.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fort-joual_-_panoramio.jpg/960px-Fort-joual_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/19/Fort-joual_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "chisloup",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fort-joual_-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "gb-steps": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Wraxall_2010_MMB_28_Buzzard.jpg/960px-Wraxall_2010_MMB_28_Buzzard.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Wraxall_2010_MMB_28_Buzzard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "mattbuck (category)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wraxall_2010_MMB_28_Buzzard.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Hellman%27s_Cross%2C_Great_Canfield%2C_Essex%2C_England_-_electricity_pole_01.JPG/960px-Hellman%27s_Cross%2C_Great_Canfield%2C_Essex%2C_England_-_electricity_pole_01.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/94/Hellman%27s_Cross%2C_Great_Canfield%2C_Essex%2C_England_-_electricity_pole_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Acabashi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Hellman%27s_Cross,_Great_Canfield,_Essex,_England_-_electricity_pole_01.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Tregony_-_guide_post_at_grid_SW911456.jpg/960px-Tregony_-_guide_post_at_grid_SW911456.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Tregony_-_guide_post_at_grid_SW911456.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jowaninpensans",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tregony_-_guide_post_at_grid_SW911456.jpg",
+   "from": "commons"
+  }
+ ],
+ "gr-harp": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg/960px-Electric_composition_Eretria_Euboea_Greece.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jebulon",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Electric_composition_Eretria_Euboea_Greece.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Athens_electricity_pole_old_style.jpg/960px-Athens_electricity_pole_old_style.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/af/Athens_electricity_pole_old_style.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Badseed",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Athens_electricity_pole_old_style.jpg",
+   "from": "commons"
+  }
+ ],
+ "be-holes": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/20170402_anthisnes163.jpg/960px-20170402_anthisnes163.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0e/20170402_anthisnes163.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jean Housen",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:20170402_anthisnes163.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/20120701_tourdefrance009.JPG/960px-20120701_tourdefrance009.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e8/20120701_tourdefrance009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jean Housen",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:20120701_tourdefrance009.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/20170326_tavier097.jpg/960px-20170326_tavier097.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/24/20170326_tavier097.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jean Housen",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:20170326_tavier097.jpg",
+   "from": "commons"
+  }
+ ],
+ "nl-none": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Vlaketunnel_A58.jpg/960px-Vlaketunnel_A58.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Vlaketunnel_A58.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Michiel1972",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vlaketunnel_A58.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Sechzehn_%2835504437020%29.jpg/960px-Sechzehn_%2835504437020%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sechzehn_%2835504437020%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Norbert Reimer from Mettlach-Orscholz, Saarland",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Sechzehn_(35504437020).jpg",
+   "from": "commons"
+  }
+ ],
  "jp-concrete": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Werbung_%281912022940%29.jpg/960px-Werbung_%281912022940%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/24/Werbung_%281912022940%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Max Braun",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/%E7%A9%BA%E3%81%8D%E7%BC%B6_%E5%86%8D%E5%88%A9%E7%94%A8_%2830236210903%29.jpg/960px-%E7%A9%BA%E3%81%8D%E7%BC%B6_%E5%86%8D%E5%88%A9%E7%94%A8_%2830236210903%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e7/%E7%A9%BA%E3%81%8D%E7%BC%B6_%E5%86%8D%E5%88%A9%E7%94%A8_%2830236210903%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Leo Rodman",
    "license": "CC BY-SA 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Werbung_(1912022940).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:%E7%A9%BA%E3%81%8D%E7%BC%B6_%E5%86%8D%E5%88%A9%E7%94%A8_(30236210903).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/%E8%B5%A4%E3%81%84%E8%87%AA%E8%B2%A9%E6%A9%9F_%E9%81%A0%E6%99%AF_%287020533399%29.jpg/960px-%E8%B5%A4%E3%81%84%E8%87%AA%E8%B2%A9%E6%A9%9F_%E9%81%A0%E6%99%AF_%287020533399%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%E8%B5%A4%E3%81%84%E8%87%AA%E8%B2%A9%E6%A9%9F_%E9%81%A0%E6%99%AF_%287020533399%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Takuma Kimura",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E4%B8%80%E8%A1%8C%E3%81%AE%E3%83%9E%E3%82%AF%E3%83%89%E3%83%8A%E3%83%AB%E3%83%89_2010_%284550015631%29.jpg/960px-%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E4%B8%80%E8%A1%8C%E3%81%AE%E3%83%9E%E3%82%AF%E3%83%89%E3%83%8A%E3%83%AB%E3%83%89_2010_%284550015631%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E4%B8%80%E8%A1%8C%E3%81%AE%E3%83%9E%E3%82%AF%E3%83%89%E3%83%8A%E3%83%AB%E3%83%89_2010_%284550015631%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Simon Desmarais",
    "license": "CC BY-SA 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:%E8%B5%A4%E3%81%84%E8%87%AA%E8%B2%A9%E6%A9%9F_%E9%81%A0%E6%99%AF_(7020533399).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A%E4%B8%80%E8%A1%8C%E3%81%AE%E3%83%9E%E3%82%AF%E3%83%89%E3%83%8A%E3%83%AB%E3%83%89_2010_(4550015631).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/%E9%A3%9F%E5%A0%82%E3%81%8F%E3%81%BC%E3%81%9F_%288675463531%29.jpg/960px-%E9%A3%9F%E5%A0%82%E3%81%8F%E3%81%BC%E3%81%9F_%288675463531%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/77/%E9%A3%9F%E5%A0%82%E3%81%8F%E3%81%BC%E3%81%9F_%288675463531%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "k n",
-   "license": "CC BY-SA 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:%E9%A3%9F%E5%A0%82%E3%81%8F%E3%81%BC%E3%81%9F_(8675463531).jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/%E9%8A%80%E9%96%A3%E5%AF%BA%E4%BA%A4%E7%95%AA_%2826042969385%29.jpg/960px-%E9%8A%80%E9%96%A3%E5%AF%BA%E4%BA%A4%E7%95%AA_%2826042969385%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/dd/%E9%8A%80%E9%96%A3%E5%AF%BA%E4%BA%A4%E7%95%AA_%2826042969385%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Nori Norisa",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%E9%8A%80%E9%96%A3%E5%AF%BA%E4%BA%A4%E7%95%AA_(26042969385).jpg",
    "from": "commons"
   }
  ],
  "jp-kanto": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Higashiasakawamachi%2C_Hachioji%2C_Tokyo_193-0834%2C_Japan_-_panoramio_%28221%29.jpg/960px-Higashiasakawamachi%2C_Hachioji%2C_Tokyo_193-0834%2C_Japan_-_panoramio_%28221%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Higashiasakawamachi%2C_Hachioji%2C_Tokyo_193-0834%2C_Japan_-_panoramio_%28221%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "運転太郎",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Higashiasakawamachi,_Hachioji,_Tokyo_193-0834,_Japan_-_panoramio_(221).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/2_Chome_Kitazawa%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0031%2C_Japan_-_panoramio_%28138%29.jpg/960px-2_Chome_Kitazawa%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0031%2C_Japan_-_panoramio_%28138%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c8/2_Chome_Kitazawa%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0031%2C_Japan_-_panoramio_%28138%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "運転太郎",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:2_Chome_Kitazawa,_Setagaya-ku,_T%C5%8Dky%C5%8D-to_155-0031,_Japan_-_panoramio_(138).jpg",
-   "from": "commons"
-  },
   {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/6_Chome_Daita%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0033%2C_Japan_-_panoramio_%2818%29.jpg/960px-6_Chome_Daita%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0033%2C_Japan_-_panoramio_%2818%29.jpg",
    "large": "https://upload.wikimedia.org/wikipedia/commons/3/36/6_Chome_Daita%2C_Setagaya-ku%2C_T%C5%8Dky%C5%8D-to_155-0033%2C_Japan_-_panoramio_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "author": "運転太郎",
    "license": "CC BY 3.0",
    "source": "https://commons.wikimedia.org/wiki/File:6_Chome_Daita,_Setagaya-ku,_T%C5%8Dky%C5%8D-to_155-0033,_Japan_-_panoramio_(18).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Goi%2C_Ichihara%2C_Chiba_Prefecture_290-0056%2C_Japan_-_panoramio.jpg/960px-Goi%2C_Ichihara%2C_Chiba_Prefecture_290-0056%2C_Japan_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/23/Goi%2C_Ichihara%2C_Chiba_Prefecture_290-0056%2C_Japan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "ESU",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Goi,_Ichihara,_Chiba_Prefecture_290-0056,_Japan_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%E7%A5%9E%E4%BF%9D%E7%94%BA_%E6%9D%BE%E6%B2%A2%E5%95%86%E5%BA%97_%E6%97%A5%E7%94%A8%E9%9B%91%E8%B2%A8_%2834151154661%29.jpg/960px-%E7%A5%9E%E4%BF%9D%E7%94%BA_%E6%9D%BE%E6%B2%A2%E5%95%86%E5%BA%97_%E6%97%A5%E7%94%A8%E9%9B%91%E8%B2%A8_%2834151154661%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2c/%E7%A5%9E%E4%BF%9D%E7%94%BA_%E6%9D%BE%E6%B2%A2%E5%95%86%E5%BA%97_%E6%97%A5%E7%94%A8%E9%9B%91%E8%B2%A8_%2834151154661%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Ken OHYAMA from FUNABASHI, Japan",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%E7%A5%9E%E4%BF%9D%E7%94%BA_%E6%9D%BE%E6%B2%A2%E5%95%86%E5%BA%97_%E6%97%A5%E7%94%A8%E9%9B%91%E8%B2%A8_(34151154661).jpg",
    "from": "commons"
   }
  ],
@@ -61,29 +383,29 @@
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/%E6%9C%AD%E5%B9%8C%E5%B8%82%E8%B7%AF%E9%9D%A2%E9%9B%BB%E8%BB%8A%EF%BC%88Sapporo_streetcar%EF%BC%89_-_panoramio.jpg/960px-%E6%9C%AD%E5%B9%8C%E5%B8%82%E8%B7%AF%E9%9D%A2%E9%9B%BB%E8%BB%8A%EF%BC%88Sapporo_streetcar%EF%BC%89_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/44/%E6%9C%AD%E5%B9%8C%E5%B8%82%E8%B7%AF%E9%9D%A2%E9%9B%BB%E8%BB%8A%EF%BC%88Sapporo_streetcar%EF%BC%89_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "t-konno",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:%E6%9C%AD%E5%B9%8C%E5%B8%82%E8%B7%AF%E9%9D%A2%E9%9B%BB%E8%BB%8A%EF%BC%88Sapporo_streetcar%EF%BC%89_-_panoramio.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/HokkaidoPrefectural_Road_No.233.JPG/960px-HokkaidoPrefectural_Road_No.233.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/35/HokkaidoPrefectural_Road_No.233.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Asasa198",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:HokkaidoPrefectural_Road_No.233.JPG",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Hokkaido_Prefectural_road_Route_302_%28Onobunai_Station_line%29_in_Yuko%2C_Horonobe.jpg/960px-Hokkaido_Prefectural_road_Route_302_%28Onobunai_Station_line%29_in_Yuko%2C_Horonobe.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/3/36/Hokkaido_Prefectural_road_Route_302_%28Onobunai_Station_line%29_in_Yuko%2C_Horonobe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "IRishikawa521",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%93812%E5%8F%B7%E9%A4%A8%E7%94%BA%E7%A6%8F%E5%B3%B6%E7%B7%9A%E3%83%BB%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E4%BA%A4%E7%82%B9-1%EF%BC%88%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E3%83%BB%E8%B5%B7%E7%82%B9%E5%81%B4%E3%81%8B%E3%82%89%E3%80%812018%E5%B9%B48%E6%9C%88%E6%92%AE%E5%BD%B1%EF%BC%89.jpg/960px-thumbnail.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%93812%E5%8F%B7%E9%A4%A8%E7%94%BA%E7%A6%8F%E5%B3%B6%E7%B7%9A%E3%83%BB%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E4%BA%A4%E7%82%B9-1%EF%BC%88%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E3%83%BB%E8%B5%B7%E7%82%B9%E5%81%B4%E3%81%8B%E3%82%89%E3%80%812018%E5%B9%B48%E6%9C%88%E6%92%AE%E5%BD%B1%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "BATACHAN",
    "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Hokkaido_Prefectural_road_Route_302_(Onobunai_Station_line)_in_Yuko,_Horonobe.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%93812%E5%8F%B7%E9%A4%A8%E7%94%BA%E7%A6%8F%E5%B3%B6%E7%B7%9A%E3%83%BB%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E4%BA%A4%E7%82%B9-1%EF%BC%88%E5%8C%97%E6%B5%B7%E9%81%93%E9%81%9329%E5%8F%B7%E4%B8%8A%E7%A3%AF%E5%8E%9A%E6%B2%A2%E9%83%A8%E7%B7%9A%E3%83%BB%E8%B5%B7%E7%82%B9%E5%81%B4%E3%81%8B%E3%82%89%E3%80%812018%E5%B9%B48%E6%9C%88%E6%92%AE%E5%BD%B1%EF%BC%89.jpg",
    "from": "commons"
   }
  ],
  "jp-okinawa": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Interior_Aguni_Island.JPG/960px-Interior_Aguni_Island.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/62/Interior_Aguni_Island.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "衛兵隊衛士 at Japanese Wikipedia",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Interior_Aguni_Island.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/%E8%A5%BF%EF%BC%88%E5%8C%97%EF%BC%89_Nishi_%28North%29_%283518136042%29.jpg/960px-%E8%A5%BF%EF%BC%88%E5%8C%97%EF%BC%89_Nishi_%28North%29_%283518136042%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2e/%E8%A5%BF%EF%BC%88%E5%8C%97%EF%BC%89_Nishi_%28North%29_%283518136042%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Takashi Kiso",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%EF%BC%88%E5%8C%97%EF%BC%89_Nishi_(North)_(3518136042).jpg",
    "from": "commons"
   },
   {
@@ -95,93 +417,75 @@
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Sugarcane_field%28MIyakojima_Is.%29_-_panoramio.jpg/960px-Sugarcane_field%28MIyakojima_Is.%29_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/03/Sugarcane_field%28MIyakojima_Is.%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Kaz Ish",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Sugarcane_field(MIyakojima_Is.)_-_panoramio.jpg",
-   "from": "commons"
-  }
- ],
- "kr-spike": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Chiba_prefectural_road_172_at_Ichihara_city_20151129.jpg/960px-Chiba_prefectural_road_172_at_Ichihara_city_20151129.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/10/Chiba_prefectural_road_172_at_Ichihara_city_20151129.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "LERK",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Chiba_prefectural_road_172_at_Ichihara_city_20151129.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Chiba_prefectural_road_5_near_Kogasaki_2chome_3245_Matsudo_city_20210430_173641.jpg/960px-Chiba_prefectural_road_5_near_Kogasaki_2chome_3245_Matsudo_city_20210430_173641.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Chiba_prefectural_road_5_near_Kogasaki_2chome_3245_Matsudo_city_20210430_173641.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "LERK",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Chiba_prefectural_road_5_near_Kogasaki_2chome_3245_Matsudo_city_20210430_173641.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Chiba_prefectural_road_19_near_Nakanodai_737_Noda_city_20211026_155505.jpg/960px-Chiba_prefectural_road_19_near_Nakanodai_737_Noda_city_20211026_155505.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Chiba_prefectural_road_19_near_Nakanodai_737_Noda_city_20211026_155505.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "LERK",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Chiba_prefectural_road_19_near_Nakanodai_737_Noda_city_20211026_155505.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_city_walk_afternoon_January_2025_R12S_231.jpg/960px-JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_city_walk_afternoon_January_2025_R12S_231.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/29/JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_city_walk_afternoon_January_2025_R12S_231.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Naha Mama Pavilionz",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_city_walk_afternoon_January_2025_R12S_231.jpg",
    "from": "commons"
   }
  ],
  "tw-stripes": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Utility_poles_in_Hsinchu_near_the_cemetery_of_military_personnel.jpg/960px-Utility_poles_in_Hsinchu_near_the_cemetery_of_military_personnel.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/95/Utility_poles_in_Hsinchu_near_the_cemetery_of_military_personnel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Dquai",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/End_of_Taiwan_County_Highway_185a_20190901.jpg/960px-End_of_Taiwan_County_Highway_185a_20190901.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4b/End_of_Taiwan_County_Highway_185a_20190901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "StevenK234",
    "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Hsinchu_near_the_cemetery_of_military_personnel.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:End_of_Taiwan_County_Highway_185a_20190901.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Taiwan_Power_utility_pole_plate.jpg/960px-Taiwan_Power_utility_pole_plate.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Taiwan_Power_utility_pole_plate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Solomon203",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/%E5%98%89%E7%BE%A9%E7%B8%A3%E5%A4%A7%E6%9E%97%E9%8E%AE_162%E7%B8%A3%E9%81%93_-_panoramio_%287%29.jpg/960px-%E5%98%89%E7%BE%A9%E7%B8%A3%E5%A4%A7%E6%9E%97%E9%8E%AE_162%E7%B8%A3%E9%81%93_-_panoramio_%287%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c8/%E5%98%89%E7%BE%A9%E7%B8%A3%E5%A4%A7%E6%9E%97%E9%8E%AE_162%E7%B8%A3%E9%81%93_-_panoramio_%287%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Chi-Hung Lin",
    "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Taiwan_Power_utility_pole_plate.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:%E5%98%89%E7%BE%A9%E7%B8%A3%E5%A4%A7%E6%9E%97%E9%8E%AE_162%E7%B8%A3%E9%81%93_-_panoramio_(7).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2010_07_15370_5471_Donghe_Township%2C_Taiwan%2C_Highway_11_%28Taiwan%29.JPG/960px-2010_07_15370_5471_Donghe_Township%2C_Taiwan%2C_Highway_11_%28Taiwan%29.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9d/2010_07_15370_5471_Donghe_Township%2C_Taiwan%2C_Highway_11_%28Taiwan%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Lord Koxinga",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:2010_07_15370_5471_Donghe_Township,_Taiwan,_Highway_11_(Taiwan).JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Views_of_Chiayi_county-2125.jpg/960px-Views_of_Chiayi_county-2125.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Views_of_Chiayi_county-2125.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HuKi001",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Views_of_Chiayi_county-2125.jpg",
    "from": "commons"
   }
  ],
  "th-square": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Ho_Rattanachai%2C_Ayutthaya%2C_13000%2C_Th%C3%A1i_Lan_-_panoramio.jpg/960px-Ho_Rattanachai%2C_Ayutthaya%2C_13000%2C_Th%C3%A1i_Lan_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Ho_Rattanachai%2C_Ayutthaya%2C_13000%2C_Th%C3%A1i_Lan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "trungydang",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Samui_2013_May_-_panoramio_%2861%29.jpg/960px-Samui_2013_May_-_panoramio_%2861%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Samui_2013_May_-_panoramio_%2861%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Roma Neus",
    "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Ho_Rattanachai,_Ayutthaya,_13000,_Th%C3%A1i_Lan_-_panoramio.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Samui_2013_May_-_panoramio_(61).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/VIEW_CHIANGMAI_By_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_%2820%29.jpg/960px-VIEW_CHIANGMAI_By_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_%2820%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/17/VIEW_CHIANGMAI_By_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "CHAMRAT CHAROENKHET",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Khao_Phang%2C_Ban_Ta_Khun_District%2C_Surat_Thani_84230%2C_Thailand_-_panoramio_%289%29.jpg/960px-Khao_Phang%2C_Ban_Ta_Khun_District%2C_Surat_Thani_84230%2C_Thailand_-_panoramio_%289%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/27/Khao_Phang%2C_Ban_Ta_Khun_District%2C_Surat_Thani_84230%2C_Thailand_-_panoramio_%289%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "กิตติ เลขะกุล",
    "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:VIEW_CHIANGMAI_By_HS3CMI_-_panoramio_-_CHAMRAT_CHAROENKHET_(20).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Khao_Phang,_Ban_Ta_Khun_District,_Surat_Thani_84230,_Thailand_-_panoramio_(9).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Hua_Khwang%2C_Kosum_Phisai_District%2C_Maha_Sarakham_44140%2C_Thailand_-_panoramio.jpg/960px-Hua_Khwang%2C_Kosum_Phisai_District%2C_Maha_Sarakham_44140%2C_Thailand_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/16/Hua_Khwang%2C_Kosum_Phisai_District%2C_Maha_Sarakham_44140%2C_Thailand_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "NaruponOat",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/-_panoramio_%282566%29.jpg/960px--_panoramio_%282566%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/50/-_panoramio_%282566%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Fruity08",
    "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Hua_Khwang,_Kosum_Phisai_District,_Maha_Sarakham_44140,_Thailand_-_panoramio.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:-_panoramio_(2566).jpg",
    "from": "commons"
   }
  ],
  "vn-holey": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Tran_quoc_Thao_va_Vo_Thi_sau_%2Cq3_hcmvn_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/89/Tran_quoc_Thao_va_Vo_Thi_sau_%2Cq3_hcmvn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "trungydang",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tran_quoc_Thao_va_Vo_Thi_sau_,q3_hcmvn_-_panoramio.jpg",
+   "from": "commons"
+  },
   {
    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Tl_952%2C_Long_Chau%2C_Tx_Tan_chau%2C_angiang%2C12-10-13-dyt_-_panoramio.jpg/960px-Tl_952%2C_Long_Chau%2C_Tx_Tan_chau%2C_angiang%2C12-10-13-dyt_-_panoramio.jpg",
    "large": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Tl_952%2C_Long_Chau%2C_Tx_Tan_chau%2C_angiang%2C12-10-13-dyt_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
@@ -191,19 +495,37 @@
    "from": "commons"
   },
   {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Tl_952-_tanchau_angiang_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Tl_952-_tanchau_angiang_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/142_Bui_Cong_Minh%2C_kp_LongBinh%2C_huyen_Longdien%2Ctinh_Baria_Vungtau%2C_Vn_-_panoramio.jpg/960px-142_Bui_Cong_Minh%2C_kp_LongBinh%2C_huyen_Longdien%2Ctinh_Baria_Vungtau%2C_Vn_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c6/142_Bui_Cong_Minh%2C_kp_LongBinh%2C_huyen_Longdien%2Ctinh_Baria_Vungtau%2C_Vn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "author": "trungydang",
    "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Tl_952-_tanchau_angiang_-_panoramio.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:142_Bui_Cong_Minh,_kp_LongBinh,_huyen_Longdien,tinh_Baria_Vungtau,_Vn_-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "my-stickers": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Utility_pole_PBG_B_13_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_112031.jpg/960px-Utility_pole_PBG_B_13_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_112031.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/90/Utility_pole_PBG_B_13_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_112031.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wiki Farazi",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_PBG_B_13_along_Jalan_Marang-Wakaf_Tapai_(Terengganu_State_Highway_T2)_in_Kampung_Pengkalan_Berangan_20240228_112031.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/V%C4%A9nh_Trinh%2C_V%C4%A9nh_Th%E1%BA%A1nh%2C_C%E1%BA%A7n_Th%C6%A1%2C_Vietnam_-_panoramio.jpg/960px-V%C4%A9nh_Trinh%2C_V%C4%A9nh_Th%E1%BA%A1nh%2C_C%E1%BA%A7n_Th%C6%A1%2C_Vietnam_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6a/V%C4%A9nh_Trinh%2C_V%C4%A9nh_Th%E1%BA%A1nh%2C_C%E1%BA%A7n_Th%C6%A1%2C_Vietnam_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "trungydang",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:V%C4%A9nh_Trinh,_V%C4%A9nh_Th%E1%BA%A1nh,_C%E1%BA%A7n_Th%C6%A1,_Vietnam_-_panoramio.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Utility_pole_PBG_B_14_and_street_lamp_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_110653.jpg/960px-Utility_pole_PBG_B_14_and_street_lamp_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_110653.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Utility_pole_PBG_B_14_and_street_lamp_along_Jalan_Marang-Wakaf_Tapai_%28Terengganu_State_Highway_T2%29_in_Kampung_Pengkalan_Berangan_20240228_110653.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wiki Farazi",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_PBG_B_14_and_street_lamp_along_Jalan_Marang-Wakaf_Tapai_(Terengganu_State_Highway_T2)_in_Kampung_Pengkalan_Berangan_20240228_110653.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Utility_pole_JC_6-28B_1-2_and_street_lamp_along_Jalan_Cecawi_6-28_in_Seksyen_6%2C_Kota_Damansara_20231208_141729.jpg/960px-Utility_pole_JC_6-28B_1-2_and_street_lamp_along_Jalan_Cecawi_6-28_in_Seksyen_6%2C_Kota_Damansara_20231208_141729.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Utility_pole_JC_6-28B_1-2_and_street_lamp_along_Jalan_Cecawi_6-28_in_Seksyen_6%2C_Kota_Damansara_20231208_141729.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wiki Farazi",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_JC_6-28B_1-2_and_street_lamp_along_Jalan_Cecawi_6-28_in_Seksyen_6,_Kota_Damansara_20231208_141729.jpg",
    "from": "commons"
   }
  ],
@@ -233,107 +555,117 @@
    "from": "commons"
   }
  ],
- "my-stickers": [
+ "id-flag": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Hang_Tuah_Jaya.JPG/960px-Hang_Tuah_Jaya.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/55/Hang_Tuah_Jaya.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Chongkian",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Hang_Tuah_Jaya.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubud_%2816871819959%29.jpg/960px-Ubud_%2816871819959%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ubud_%2816871819959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jorge Láscar from Melbourne, Australia",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ubud_(16871819959).jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Labu.JPG/960px-Labu.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/76/Labu.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Chongkian",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Utility_pole_front_of_SMPN_9_Samarinda.jpg/960px-Utility_pole_front_of_SMPN_9_Samarinda.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Utility_pole_front_of_SMPN_9_Samarinda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "DDG9912",
    "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Labu.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_front_of_SMPN_9_Samarinda.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Telok_Gong.JPG/960px-Telok_Gong.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Telok_Gong.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Chongkian",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Telok_Gong.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/A_utility_pole_in_a_street_in_Klaten.jpg/960px-A_utility_pole_in_a_street_in_Klaten.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bd/A_utility_pole_in_a_street_in_Klaten.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "NawanP",
+   "license": "CC BY 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:A_utility_pole_in_a_street_in_Klaten.jpg",
    "from": "commons"
   }
  ],
- "id-flag": [
+ "id-nusa": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Utility_poles_in_Monchegorsk.jpg/960px-Utility_poles_in_Monchegorsk.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/10/Utility_poles_in_Monchegorsk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "kallerna",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Ungasan%2C_South_Kuta%2C_Badung_Regency%2C_Bali%2C_Indonesia_-_panoramio.jpg/960px-Ungasan%2C_South_Kuta%2C_Badung_Regency%2C_Bali%2C_Indonesia_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/12/Ungasan%2C_South_Kuta%2C_Badung_Regency%2C_Bali%2C_Indonesia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "肖红军",
    "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Monchegorsk.jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ungasan,_South_Kuta,_Badung_Regency,_Bali,_Indonesia_-_panoramio.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Manusia_Listrik_2.Jpg/960px-Manusia_Listrik_2.Jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Manusia_Listrik_2.Jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Yopee saturdae",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Manusia_Listrik_2.Jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg/960px-Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/06/Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Dietmar Rabich",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Rawlinna_(AU),_Utility_Pole_--_2019_--_0621.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Telegraph_pole_%2835651128942%29.jpg/960px-Telegraph_pole_%2835651128942%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/10/Telegraph_pole_%2835651128942%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tyler Silvest",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Ubud_%2816871819959%29.jpg/960px-Ubud_%2816871819959%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ubud_%2816871819959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jorge Láscar from Melbourne, Australia",
    "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Telegraph_pole_(35651128942).jpg",
+   "source": "https://commons.wikimedia.org/wiki/File:Ubud_(16871819959).jpg",
+   "from": "commons"
+  }
+ ],
+ "id-java": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/TIANG_LISTRIK_KUNO_DI_ADIWERNA_TEGAL.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bf/TIANG_LISTRIK_KUNO_DI_ADIWERNA_TEGAL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Zul muhaimin hmn",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:TIANG_LISTRIK_KUNO_DI_ADIWERNA_TEGAL.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Desa_Peusing%2C_Jalaksana_%2814%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Desa_Peusing%2C_Jalaksana_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "KPDFoto",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Desa_Peusing,_Jalaksana_(14).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Jaringan_Listrik_PLN_Tegangan_Menengah_Dan_Rendah_DiKrakal_Alian_Kebumen.jpg/960px-Jaringan_Listrik_PLN_Tegangan_Menengah_Dan_Rendah_DiKrakal_Alian_Kebumen.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Jaringan_Listrik_PLN_Tegangan_Menengah_Dan_Rendah_DiKrakal_Alian_Kebumen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "DARMAS BS",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Jaringan_Listrik_PLN_Tegangan_Menengah_Dan_Rendah_DiKrakal_Alian_Kebumen.jpg",
    "from": "commons"
   }
  ],
  "ph-octagonal": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Lagunajf8737_01.JPG/960px-Lagunajf8737_01.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Lagunajf8737_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Ramon FVelasquez",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Lagunajf8737_01.JPG",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/00202jfBarangays_Tambubong_Batia_Bocaue_Bulacan_Fields_Roadsfvf_19.jpg/960px-00202jfBarangays_Tambubong_Batia_Bocaue_Bulacan_Fields_Roadsfvf_19.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/89/00202jfBarangays_Tambubong_Batia_Bocaue_Bulacan_Fields_Roadsfvf_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:00202jfBarangays_Tambubong_Batia_Bocaue_Bulacan_Fields_Roadsfvf_19.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/0416jfWelcome_Poblacion_Norte_Market_Somaligue_Paniqui_Tarlacfvf_20.JPG/960px-0416jfWelcome_Poblacion_Norte_Market_Somaligue_Paniqui_Tarlacfvf_20.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/02/0416jfWelcome_Poblacion_Norte_Market_Somaligue_Paniqui_Tarlacfvf_20.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/0815jfCamias_Poblacion_Supermarket_San_Jose_San_Miguel_Bulacan_Bulacanfvf_10.jpg/960px-0815jfCamias_Poblacion_Supermarket_San_Jose_San_Miguel_Bulacan_Bulacanfvf_10.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2e/0815jfCamias_Poblacion_Supermarket_San_Jose_San_Miguel_Bulacan_Bulacanfvf_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Judgefloro",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:0815jfCamias_Poblacion_Supermarket_San_Jose_San_Miguel_Bulacan_Bulacanfvf_10.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/0795jfBarangays_West_Kamias_Road_Creeks_Bridges_Landmarksfvf_13.jpg/960px-0795jfBarangays_West_Kamias_Road_Creeks_Bridges_Landmarksfvf_13.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/60/0795jfBarangays_West_Kamias_Road_Creeks_Bridges_Landmarksfvf_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
    "author": "Judgefloro",
    "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:0416jfWelcome_Poblacion_Norte_Market_Somaligue_Paniqui_Tarlacfvf_20.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/05748jfCity_San_Fernando_Bulacan_Lands_Highways_Pampangafvf_18.JPG/960px-05748jfCity_San_Fernando_Bulacan_Lands_Highways_Pampangafvf_18.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/07/05748jfCity_San_Fernando_Bulacan_Lands_Highways_Pampangafvf_18.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Judgefloro",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:05748jfCity_San_Fernando_Bulacan_Lands_Highways_Pampangafvf_18.JPG",
+   "source": "https://commons.wikimedia.org/wiki/File:0795jfBarangays_West_Kamias_Road_Creeks_Bridges_Landmarksfvf_13.jpg",
    "from": "commons"
   }
  ],
  "in-trident": [
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Fearless_Bird_Anand_Manaswin.jpg/960px-Fearless_Bird_Anand_Manaswin.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Fearless_Bird_Anand_Manaswin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "A.manaswin",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Fearless_Bird_Anand_Manaswin.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Fld_-_panoramio.jpg/960px-Fld_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Fld_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "js sidhu",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Fld_-_panoramio.jpg",
    "from": "commons"
   },
   {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Monsoon_clouds_chennai.jpg/960px-Monsoon_clouds_chennai.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Monsoon_clouds_chennai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Mani IMadras",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Monsoon_clouds_chennai.jpg",
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Trans_-_panoramio_%281%29.jpg/960px-Trans_-_panoramio_%281%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trans_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "js sidhu",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Trans_-_panoramio_(1).jpg",
    "from": "commons"
   },
   {
@@ -342,6 +674,322 @@
    "author": "Habeebu Rahman PP Od…",
    "license": "CC BY-SA 3.0",
    "source": "https://commons.wikimedia.org/wiki/File:An_old_dangerous_wooden_Electric_post_in_Odupara_-_Photo_by_Habeebu_Rahman_PP_-_panoramio.jpg",
+   "from": "commons"
+  }
+ ],
+ "tr-metal": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Kozan_street_view_3269.jpg/960px-Kozan_street_view_3269.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Kozan_street_view_3269.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Dosseman",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Kozan_street_view_3269.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Estrada_em_Suru%C3%A7_02.jpg/960px-Estrada_em_Suru%C3%A7_02.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/39/Estrada_em_Suru%C3%A7_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Vladimir Platonow/Agência Brasil",
+   "license": "CC BY 3.0 br",
+   "source": "https://commons.wikimedia.org/wiki/File:Estrada_em_Suru%C3%A7_02.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Utility_poles_turkish_style_08.jpg/960px-Utility_poles_turkish_style_08.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/58/Utility_poles_turkish_style_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "gunduzhan",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_turkish_style_08.jpg",
+   "from": "commons"
+  }
+ ],
+ "us-wood": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/WirelessPowerlineSensors.jpg/960px-WirelessPowerlineSensors.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/3d/WirelessPowerlineSensors.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Comfr",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:WirelessPowerlineSensors.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Power-Pole-7926.jpg/960px-Power-Pole-7926.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/05/Power-Pole-7926.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Loadmaster (David R. Tribble) This image was made by Loadmaster (David R. Tribble). Email the author: David R. Tribble Also see my personal gallery at Google Photos",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power-Pole-7926.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/2015-08-24_15_45_21_View_northeast_along_an_abandoned_section_of_Lee_Road_in_Chantilly%2C_Virginia.jpg/960px-2015-08-24_15_45_21_View_northeast_along_an_abandoned_section_of_Lee_Road_in_Chantilly%2C_Virginia.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/93/2015-08-24_15_45_21_View_northeast_along_an_abandoned_section_of_Lee_Road_in_Chantilly%2C_Virginia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Famartin",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2015-08-24_15_45_21_View_northeast_along_an_abandoned_section_of_Lee_Road_in_Chantilly,_Virginia.jpg",
+   "from": "commons"
+  }
+ ],
+ "mx-octagonal": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Pixy%C3%A1%2C_Yucat%C3%A1n_%2801%29.JPG/960px-Pixy%C3%A1%2C_Yucat%C3%A1n_%2801%29.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Pixy%C3%A1%2C_Yucat%C3%A1n_%2801%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Inri",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pixy%C3%A1,_Yucat%C3%A1n_(01).JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/15-07-15-Campeche-Stra%C3%9Fenszene-RalfR-WMA_0890.jpg/960px-15-07-15-Campeche-Stra%C3%9Fenszene-RalfR-WMA_0890.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c3/15-07-15-Campeche-Stra%C3%9Fenszene-RalfR-WMA_0890.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Ralf Roletschek",
+   "license": "GFDL 1.2",
+   "source": "https://commons.wikimedia.org/wiki/File:15-07-15-Campeche-Stra%C3%9Fenszene-RalfR-WMA_0890.jpg",
+   "from": "commons"
+  }
+ ],
+ "co-stripes": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg/960px-ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7e/ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "julianvillamil",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Rooftop_poles_Bogota.jpg/960px-Rooftop_poles_Bogota.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Rooftop_poles_Bogota.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rooftop_poles_Bogota.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Cables_en_Medell%C3%ADn.jpg/960px-Cables_en_Medell%C3%ADn.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Cables_en_Medell%C3%ADn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Xemenendura",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cables_en_Medell%C3%ADn.jpg",
+   "from": "commons"
+  }
+ ],
+ "br-ladder": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Esta%C3%A7%C3%A3o_do_Quilombo_Ago_2010._-_panoramio.jpg/960px-Esta%C3%A7%C3%A3o_do_Quilombo_Ago_2010._-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/88/Esta%C3%A7%C3%A3o_do_Quilombo_Ago_2010._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "joao batista Shimoto",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_do_Quilombo_Ago_2010._-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/At_Paranapiacaba_2018_117.jpg/960px-At_Paranapiacaba_2018_117.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d3/At_Paranapiacaba_2018_117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Photograph by Mike Peel (www.mikepeel.net).",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:At_Paranapiacaba_2018_117.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Poles-brazil.jpg/960px-Poles-brazil.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Poles-brazil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Poles-brazil.jpg",
+   "from": "commons"
+  }
+ ],
+ "ar-alternating": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Power_poles_Tres_Cruces_2.jpg/960px-Power_poles_Tres_Cruces_2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Power_poles_Tres_Cruces_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power_poles_Tres_Cruces_2.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Tucuman_Alderetes_Av_Rivadavia.JPG/960px-Tucuman_Alderetes_Av_Rivadavia.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Tucuman_Alderetes_Av_Rivadavia.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jlazarte",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Tucuman_Alderetes_Av_Rivadavia.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Piran%C3%A9_-_Formosa_-_Argentina_008.jpg/960px-Piran%C3%A9_-_Formosa_-_Argentina_008.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/80/Piran%C3%A9_-_Formosa_-_Argentina_008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Scheihinges",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Piran%C3%A9_-_Formosa_-_Argentina_008.jpg",
+   "from": "commons"
+  }
+ ],
+ "cl-indent": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Casas_humberstone_4.jpg/960px-Casas_humberstone_4.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Casas_humberstone_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Sznegra",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Casas_humberstone_4.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Casas-Humberstone.jpg/960px-Casas-Humberstone.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/43/Casas-Humberstone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Cristian Barahona Miranda",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Casas-Humberstone.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Santiago_de_Chile-CTJ-IMG_5338.jpg/960px-Santiago_de_Chile-CTJ-IMG_5338.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Santiago_de_Chile-CTJ-IMG_5338.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Christer T Johansson",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Santiago_de_Chile-CTJ-IMG_5338.jpg",
+   "from": "commons"
+  }
+ ],
+ "pe-paint": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Old_utility_pole_detail.jpg/960px-Old_utility_pole_detail.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Old_utility_pole_detail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Old_utility_pole_detail.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Improved_utility_pole4.jpg/960px-Improved_utility_pole4.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Improved_utility_pole4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Improved_utility_pole4.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Pole-mounted_transformer2.jpg/960px-Pole-mounted_transformer2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Pole-mounted_transformer2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pole-mounted_transformer2.jpg",
+   "from": "commons"
+  }
+ ],
+ "uy-trident": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Power_lines_Rosario1.jpg/960px-Power_lines_Rosario1.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/df/Power_lines_Rosario1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power_lines_Rosario1.jpg",
+   "from": "commons"
+  }
+ ],
+ "gt-pink-green": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Xela_Utility_Pole_4.jpg/960px-Xela_Utility_Pole_4.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Xela_Utility_Pole_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Xela_Utility_Pole_4.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Rooftop_utility_poles.jpg/960px-Rooftop_utility_poles.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/75/Rooftop_utility_poles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Rooftop_utility_poles.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Pole_Puerto_Barrios_3.jpg/960px-Pole_Puerto_Barrios_3.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Pole_Puerto_Barrios_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pole_Puerto_Barrios_3.jpg",
+   "from": "commons"
+  }
+ ],
+ "cr-silver": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Abandoned_Telephone_pole.jpg/960px-Abandoned_Telephone_pole.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/Abandoned_Telephone_pole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Abandoned_Telephone_pole.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Poles_in_San_Jos%C3%A9.jpg/960px-Poles_in_San_Jos%C3%A9.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Poles_in_San_Jos%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Poles_in_San_Jos%C3%A9.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Pole_San_Jos%C3%A92.jpg/960px-Pole_San_Jos%C3%A92.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Pole_San_Jos%C3%A92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Pole_San_Jos%C3%A92.jpg",
+   "from": "commons"
+  }
+ ],
+ "za-bird": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg/960px-Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/29/Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Dietmar Rabich",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Drakenstein_(ZA),_Val_Du_Charron_Wine_and_Leisure_Estate,_Stromleitung_--_2024_--_2733.jpg",
+   "from": "commons"
+  }
+ ],
+ "ke-l": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A104_in_Nairobi_2017.jpg/960px-A104_in_Nairobi_2017.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/39/A104_in_Nairobi_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "flightlog",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:A104_in_Nairobi_2017.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/2011-11-11_Old_Town_Mombasa.jpg/960px-2011-11-11_Old_Town_Mombasa.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d9/2011-11-11_Old_Town_Mombasa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "François Terrier",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2011-11-11_Old_Town_Mombasa.jpg",
+   "from": "commons"
+  }
+ ],
+ "nz-indent": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Power_Lines-1310893%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg/960px-Power_Lines-1310893%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/92/Power_Lines-1310893%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wainuio",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power_Lines-1310893,_Wainuiomata,_Wellington,_New_Zealand.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Power_Lines-1310918%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg/960px-Power_Lines-1310918%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Power_Lines-1310918%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wainuio",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power_Lines-1310918,_Wainuiomata,_Wellington,_New_Zealand.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Power_Lines-1320152%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg/960px-Power_Lines-1320152%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Power_Lines-1320152%2C_Wainuiomata%2C_Wellington%2C_New_Zealand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Wainuio",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Power_Lines-1320152,_Wainuiomata,_Wellington,_New_Zealand.jpg",
    "from": "commons"
   }
  ],
@@ -368,1230 +1016,6 @@
    "author": "User:Orderinchaos",
    "license": "CC BY 3.0",
    "source": "https://commons.wikimedia.org/wiki/File:OIC_adelaide_stobie_pole_kensington.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Example_of_stobie_pole_art_1.jpg/960px-Example_of_stobie_pole_art_1.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Example_of_stobie_pole_art_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Kgouws",
-   "license": "CC0",
-   "source": "https://commons.wikimedia.org/wiki/File:Example_of_stobie_pole_art_1.jpg",
-   "from": "commons"
-  }
- ],
- "au-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Bending_power_pole_Belmont_western_australia_.jpg/960px-Bending_power_pole_Belmont_western_australia_.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/51/Bending_power_pole_Belmont_western_australia_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "User:JarrahTree",
-   "license": "CC BY 2.5 au",
-   "source": "https://commons.wikimedia.org/wiki/File:Bending_power_pole_Belmont_western_australia_.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Bathurst_66kv_Transmission_Line.JPG/960px-Bathurst_66kv_Transmission_Line.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bathurst_66kv_Transmission_Line.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Geez-oz",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Bathurst_66kv_Transmission_Line.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Looking_northeast_on_Willans_Hill.jpg/960px-Looking_northeast_on_Willans_Hill.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/53/Looking_northeast_on_Willans_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bidgee",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Looking_northeast_on_Willans_Hill.jpg",
-   "from": "commons"
-  }
- ],
- "us-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/SSF_utility_pole_1_front.JPG/960px-SSF_utility_pole_1_front.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1c/SSF_utility_pole_1_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "BrokenSphere",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:SSF_utility_pole_1_front.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/SSF_utility_pole_1_side.JPG/960px-SSF_utility_pole_1_side.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/8/87/SSF_utility_pole_1_side.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "BrokenSphere",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:SSF_utility_pole_1_side.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Utility_pole_at_Noah_Odell_House_Site_near_Nodaway_-_NRHP00000917-_Adams_County_-_Iowa_-10-23-2016--5498.jpg/960px-Utility_pole_at_Noah_Odell_House_Site_near_Nodaway_-_NRHP00000917-_Adams_County_-_Iowa_-10-23-2016--5498.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/79/Utility_pole_at_Noah_Odell_House_Site_near_Nodaway_-_NRHP00000917-_Adams_County_-_Iowa_-10-23-2016--5498.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jason McLaren",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_at_Noah_Odell_House_Site_near_Nodaway_-_NRHP00000917-_Adams_County_-_Iowa_-10-23-2016--5498.jpg",
-   "from": "commons"
-  }
- ],
- "mx-octagonal": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Manioso-rionuevo.jpg/960px-Manioso-rionuevo.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Manioso-rionuevo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Manioso",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Manioso-rionuevo.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Basurerotultitlan.JPG/960px-Basurerotultitlan.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Basurerotultitlan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "No machine-readable author provided. Pithertsu assumed (based on copyright claims).",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Basurerotultitlan.JPG",
-   "from": "commons"
-  }
- ],
- "co-octagonal": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg/960px-ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7e/ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "julianvillamil",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:ANILLO_VIAL_%5E_CRA_34_MACROMEDIDOR_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Cables_en_Medell%C3%ADn.jpg/960px-Cables_en_Medell%C3%ADn.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Cables_en_Medell%C3%ADn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Xemenendura",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Cables_en_Medell%C3%ADn.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Currulao%2C_Turbo%2C_Antioquia%2C_Colombia_-_panoramio.jpg/960px-Currulao%2C_Turbo%2C_Antioquia%2C_Colombia_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Currulao%2C_Turbo%2C_Antioquia%2C_Colombia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "JOSE DAVID ROMAN RAM…",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Currulao,_Turbo,_Antioquia,_Colombia_-_panoramio.jpg",
-   "from": "commons"
-  }
- ],
- "br-ladder": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Utility_pole_in_Curitiba.JPG/960px-Utility_pole_in_Curitiba.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Utility_pole_in_Curitiba.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Leonardo.stabile",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_in_Curitiba.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Bento_Ribeiro_2.jpg/960px-Bento_Ribeiro_2.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bento_Ribeiro_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Junius",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Bento_Ribeiro_2.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Setor_M_Norte_QNM_36_Conjunto_Y_-_panoramio.jpg/960px-Setor_M_Norte_QNM_36_Conjunto_Y_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/df/Setor_M_Norte_QNM_36_Conjunto_Y_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Giul Viera",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Setor_M_Norte_QNM_36_Conjunto_Y_-_panoramio.jpg",
-   "from": "commons"
-  }
- ],
- "au-nt": [
-  {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Power-pole-base.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/29/Power-pole-base.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Billbeee at English Wikipedia",
-   "license": "CC BY 2.5",
-   "source": "https://commons.wikimedia.org/wiki/File:Power-pole-base.jpg",
-   "from": "commons"
-  }
- ],
- "ca-alternating": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831984386085%29.jpg/960px-SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831984386085%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bf/SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831984386085%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tonyglen14 from Lethbridge, Alberta, Canada",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:SaskPower_4.16kV_-_Maple_Creek,_SK_(31984386085).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831611056690%29.jpg/960px-SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831611056690%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/af/SaskPower_4.16kV_-_Maple_Creek%2C_SK_%2831611056690%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tonyglen14 from Lethbridge, Alberta, Canada",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:SaskPower_4.16kV_-_Maple_Creek,_SK_(31611056690).jpg",
-   "from": "commons"
-  }
- ],
- "kh-ladder": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/02-Utilities_Cabling_Phnom_Penh-nX-5.jpg/960px-02-Utilities_Cabling_Phnom_Penh-nX-5.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0e/02-Utilities_Cabling_Phnom_Penh-nX-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "PsamatheM",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:02-Utilities_Cabling_Phnom_Penh-nX-5.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/2016_Phnom_Penh%2C_Kable_elektryczne_na_s%C5%82upie_energetycznym_na_ulicy.jpg/960px-2016_Phnom_Penh%2C_Kable_elektryczne_na_s%C5%82upie_energetycznym_na_ulicy.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a9/2016_Phnom_Penh%2C_Kable_elektryczne_na_s%C5%82upie_energetycznym_na_ulicy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Marcin Konsek",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:2016_Phnom_Penh,_Kable_elektryczne_na_s%C5%82upie_energetycznym_na_ulicy.jpg",
-   "from": "commons"
-  }
- ],
- "la-pinhole": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Kasi2011.jpg/960px-Kasi2011.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Kasi2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Chaoborus",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Kasi2011.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Road_through_the_towns._-_panoramio.jpg/960px-Road_through_the_towns._-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/57/Road_through_the_towns._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "samuel0073",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Road_through_the_towns._-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Champasak_main_street.jpg/960px-Champasak_main_street.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Champasak_main_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Christophe95",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Champasak_main_street.jpg",
-   "from": "commons"
-  }
- ],
- "mn-wood-block": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG/960px-Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Marcin Konsek",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Festiwal_Naadam_na_stepie_na_obrze%C5%BCach_U%C5%82an_Bator_27.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Widok_na_miasto_Karakorum_10.jpg/960px-Widok_na_miasto_Karakorum_10.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Widok_na_miasto_Karakorum_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Marcin Konsek",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Widok_na_miasto_Karakorum_10.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Kh%C3%B6vsg%C3%B6l_Aimag18.JPG/960px-Kh%C3%B6vsg%C3%B6l_Aimag18.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Kh%C3%B6vsg%C3%B6l_Aimag18.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Arabsalam",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Kh%C3%B6vsg%C3%B6l_Aimag18.JPG",
-   "from": "commons"
-  }
- ],
- "kz-paint": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Enbekshikazakh_District%2C_Kazakhstan_-_panoramio_%2810%29.jpg/960px-Enbekshikazakh_District%2C_Kazakhstan_-_panoramio_%2810%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/20/Enbekshikazakh_District%2C_Kazakhstan_-_panoramio_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Anton Yefimov",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Enbekshikazakh_District,_Kazakhstan_-_panoramio_(10).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Ile_District%2C_Kazakhstan_-_panoramio_%2829%29.jpg/960px-Ile_District%2C_Kazakhstan_-_panoramio_%2829%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Ile_District%2C_Kazakhstan_-_panoramio_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Anton Yefimov",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Ile_District,_Kazakhstan_-_panoramio_(29).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Kostanay_110000%2C_Kazakhstan_-_panoramio.jpg/960px-Kostanay_110000%2C_Kazakhstan_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/25/Kostanay_110000%2C_Kazakhstan_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Сергей Наруков",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Kostanay_110000,_Kazakhstan_-_panoramio.jpg",
-   "from": "commons"
-  }
- ],
- "kg-white": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Gymnasium%2C_Taylan_Secondary_School.JPG/960px-Gymnasium%2C_Taylan_Secondary_School.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Gymnasium%2C_Taylan_Secondary_School.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Nataev",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Gymnasium,_Taylan_Secondary_School.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/General_view%2C_Ak-Bulak.JPG/960px-General_view%2C_Ak-Bulak.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b3/General_view%2C_Ak-Bulak.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Nataev",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:General_view,_Ak-Bulak.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/E8002-Milyanfan-Lenin-St.jpg/960px-E8002-Milyanfan-Lenin-St.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e9/E8002-Milyanfan-Lenin-St.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Vmenkov",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:E8002-Milyanfan-Lenin-St.jpg",
-   "from": "commons"
-  }
- ],
- "tr-metal": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Utility_poles_turkish_style_11.jpg/960px-Utility_poles_turkish_style_11.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/56/Utility_poles_turkish_style_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "gunduzhan",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_turkish_style_11.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Utility_poles_turkish_style_14.jpg/960px-Utility_poles_turkish_style_14.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Utility_poles_turkish_style_14.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "gunduzhan",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_turkish_style_14.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Utility_poles_turkish_style_08.jpg/960px-Utility_poles_turkish_style_08.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/58/Utility_poles_turkish_style_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "gunduzhan",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_turkish_style_08.jpg",
-   "from": "commons"
-  }
- ],
- "jo-concrete": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Low9th7June07JourdanandBigWhite.jpg/960px-Low9th7June07JourdanandBigWhite.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Low9th7June07JourdanandBigWhite.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Infrogmation of New Orleans",
-   "license": "CC BY 2.5",
-   "source": "https://commons.wikimedia.org/wiki/File:Low9th7June07JourdanandBigWhite.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Low97June07BackEmptyJordanFromRoman.jpg/960px-Low97June07BackEmptyJordanFromRoman.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/07/Low97June07BackEmptyJordanFromRoman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Infrogmation of New Orleans",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Low97June07BackEmptyJordanFromRoman.jpg",
-   "from": "commons"
-  }
- ],
- "ru-square": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Utility_poles_in_Monchegorsk.jpg/960px-Utility_poles_in_Monchegorsk.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/10/Utility_poles_in_Monchegorsk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "kallerna",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Monchegorsk.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Syktyvkar%2C_Komi_Republic%2C_Russia_-_panoramio_%2821%29.jpg/960px-Syktyvkar%2C_Komi_Republic%2C_Russia_-_panoramio_%2821%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Syktyvkar%2C_Komi_Republic%2C_Russia_-_panoramio_%2821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "msdte",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Syktyvkar,_Komi_Republic,_Russia_-_panoramio_(21).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Akatyevo%2C_Moskovskaya_oblast%27%2C_Russia%2C_140478_-_panoramio_%2816%29.jpg/960px-Akatyevo%2C_Moskovskaya_oblast%27%2C_Russia%2C_140478_-_panoramio_%2816%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/da/Akatyevo%2C_Moskovskaya_oblast%27%2C_Russia%2C_140478_-_panoramio_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "dom24a",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Akatyevo,_Moskovskaya_oblast%27,_Russia,_140478_-_panoramio_(16).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Dzerzhinskiy_rayon%2C_Volgograd%2C_Volgogradskaya_oblast%27%2C_Russia_-_panoramio_%2842%29.jpg/960px-Dzerzhinskiy_rayon%2C_Volgograd%2C_Volgogradskaya_oblast%27%2C_Russia_-_panoramio_%2842%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/16/Dzerzhinskiy_rayon%2C_Volgograd%2C_Volgogradskaya_oblast%27%2C_Russia_-_panoramio_%2842%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Victor Belousov",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Dzerzhinskiy_rayon,_Volgograd,_Volgogradskaya_oblast%27,_Russia_-_panoramio_(42).jpg",
-   "from": "commons"
-  }
- ],
- "pl-holey": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/69-108_Cybinka%2C_Polen_-_panoramio_%281%29.jpg/960px-69-108_Cybinka%2C_Polen_-_panoramio_%281%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a7/69-108_Cybinka%2C_Polen_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Dirk Kobow",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:69-108_Cybinka,_Polen_-_panoramio_(1).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Old_pole_in_Maszewo.jpg/960px-Old_pole_in_Maszewo.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Old_pole_in_Maszewo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Old_pole_in_Maszewo.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Powerline_Slubice_-_Gorzow.jpg/960px-Powerline_Slubice_-_Gorzow.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/52/Powerline_Slubice_-_Gorzow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Powerline_Slubice_-_Gorzow.jpg",
-   "from": "commons"
-  }
- ],
- "hu-holey": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Zalav%C3%A1r%2C_D%C3%B3zsa_Gy%C3%B6rgy_utca_-_panoramio.jpg/960px-Zalav%C3%A1r%2C_D%C3%B3zsa_Gy%C3%B6rgy_utca_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/28/Zalav%C3%A1r%2C_D%C3%B3zsa_Gy%C3%B6rgy_utca_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Vámos Sándor",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Zalav%C3%A1r,_D%C3%B3zsa_Gy%C3%B6rgy_utca_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Szokolya.jpg/960px-Szokolya.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Szokolya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Christo",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Szokolya.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Pet%C5%91fi_S%C3%A1ndor_utca_-_panoramio.jpg/960px-Pet%C5%91fi_S%C3%A1ndor_utca_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Pet%C5%91fi_S%C3%A1ndor_utca_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Attilawap",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Pet%C5%91fi_S%C3%A1ndor_utca_-_panoramio.jpg",
-   "from": "commons"
-  }
- ],
- "ro-holey": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/20140627_Bra%C5%9Fov_138.jpg/960px-20140627_Bra%C5%9Fov_138.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/20140627_Bra%C5%9Fov_138.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Mark Ahsmann",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:20140627_Bra%C5%9Fov_138.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ramnicu_Valcea_-_wires.jpg/960px-Ramnicu_Valcea_-_wires.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Ramnicu_Valcea_-_wires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tiia Monto",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Ramnicu_Valcea_-_wires.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Busteni_-_wires.jpg/960px-Busteni_-_wires.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Busteni_-_wires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tiia Monto",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Busteni_-_wires.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/RO_SJ_Santa_Maria_%283%29.JPG/960px-RO_SJ_Santa_Maria_%283%29.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/41/RO_SJ_Santa_Maria_%283%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Țetcu Mircea Rareș",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:RO_SJ_Santa_Maria_(3).JPG",
-   "from": "commons"
-  }
- ],
- "bg-hooks": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Turia_E1.JPG/960px-Turia_E1.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Turia_E1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Eola",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Turia_E1.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Street-in-Malo-konare.jpg/960px-Street-in-Malo-konare.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Street-in-Malo-konare.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Edal Anton Lefterov",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Street-in-Malo-konare.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Sofia-Varna-Road-in-Sokolovo.jpg/960px-Sofia-Varna-Road-in-Sokolovo.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/49/Sofia-Varna-Road-in-Sokolovo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Edal Anton Lefterov",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Sofia-Varna-Road-in-Sokolovo.jpg",
-   "from": "commons"
-  }
- ],
- "cz-pairs": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Metylovice%2C_%C4%8Cupovice_05.jpg/960px-Metylovice%2C_%C4%8Cupovice_05.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Metylovice%2C_%C4%8Cupovice_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Daniel Baránek",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Metylovice,_%C4%8Cupovice_05.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Fr%C3%BDdlant%2C_H%C5%99bitovn%C3%AD%2C_cesta_01.jpg/960px-Fr%C3%BDdlant%2C_H%C5%99bitovn%C3%AD%2C_cesta_01.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/60/Fr%C3%BDdlant%2C_H%C5%99bitovn%C3%AD%2C_cesta_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Daniel Baránek",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Fr%C3%BDdlant,_H%C5%99bitovn%C3%AD,_cesta_01.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Smolotely-Draha%2C_silnice_11818%2C_n%C3%A1zev.jpg/960px-Smolotely-Draha%2C_silnice_11818%2C_n%C3%A1zev.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/01/Smolotely-Draha%2C_silnice_11818%2C_n%C3%A1zev.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "ŠJů (cs:ŠJů)",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Smolotely-Draha,_silnice_11818,_n%C3%A1zev.jpg",
-   "from": "commons"
-  }
- ],
- "lv-hooks": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Balt%C4%81_st%C4%81r%C4%B7a_ligzda_Nr.1162%2C_Valdgales_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio.jpg/960px-Balt%C4%81_st%C4%81r%C4%B7a_ligzda_Nr.1162%2C_Valdgales_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Balt%C4%81_st%C4%81r%C4%B7a_ligzda_Nr.1162%2C_Valdgales_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "M.Strīķis",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Balt%C4%81_st%C4%81r%C4%B7a_ligzda_Nr.1162,_Valdgales_pagasts,_Talsu_novads,_Latvia_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Dz%C4%93rves%2C_%C4%AAves_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio_%281%29.jpg/960px-Dz%C4%93rves%2C_%C4%AAves_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio_%281%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Dz%C4%93rves%2C_%C4%AAves_pagasts%2C_Talsu_novads%2C_Latvia_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "M.Strīķis",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Dz%C4%93rves,_%C4%AAves_pagasts,_Talsu_novads,_Latvia_-_panoramio_(1).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%A2%D1%80%D0%B5%D1%85%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B0_-_panoramio_%282%29.jpg/960px-%D0%A2%D1%80%D0%B5%D1%85%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B0_-_panoramio_%282%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/50/%D0%A2%D1%80%D0%B5%D1%85%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B0_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "alinco_fan",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:%D0%A2%D1%80%D0%B5%D1%85%D1%8D%D1%82%D0%B0%D0%B6%D0%BA%D0%B0_-_panoramio_(2).jpg",
-   "from": "commons"
-  }
- ],
- "lt-square": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Nirtai%C4%8Diai%2C_trobos.jpg/960px-Nirtai%C4%8Diai%2C_trobos.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/65/Nirtai%C4%8Diai%2C_trobos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Vilensija",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Nirtai%C4%8Diai,_trobos.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Gelgaudi%C5%A1kis%2C_Taikos_g.JPG/960px-Gelgaudi%C5%A1kis%2C_Taikos_g.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/42/Gelgaudi%C5%A1kis%2C_Taikos_g.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Hugo.arg",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Gelgaudi%C5%A1kis,_Taikos_g.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Berni%C5%ABnai%2C_2020.JPG/960px-Berni%C5%ABnai%2C_2020.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Berni%C5%ABnai%2C_2020.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Hugo.arg",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Berni%C5%ABnai,_2020.JPG",
-   "from": "commons"
-  }
- ],
- "fi-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Utility_poles_in_Finland_04.jpg/960px-Utility_poles_in_Finland_04.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Utility_poles_in_Finland_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Paasikivi",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Finland_04.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Utility_poles_in_Finland_05.jpg/960px-Utility_poles_in_Finland_05.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Utility_poles_in_Finland_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Paasikivi",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_in_Finland_05.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Kolmisopen_ryhm%C3%A4puutarhan_m%C3%B6kkej%C3%A4_-_Kolmisoppi_-_Kuopio_-_m.jpg/960px-Kolmisopen_ryhm%C3%A4puutarhan_m%C3%B6kkej%C3%A4_-_Kolmisoppi_-_Kuopio_-_m.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Kolmisopen_ryhm%C3%A4puutarhan_m%C3%B6kkej%C3%A4_-_Kolmisoppi_-_Kuopio_-_m.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Paju~commonswiki",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Kolmisopen_ryhm%C3%A4puutarhan_m%C3%B6kkej%C3%A4_-_Kolmisoppi_-_Kuopio_-_m.jpg",
-   "from": "commons"
-  }
- ],
- "se-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Elledning12.jpg/960px-Elledning12.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/55/Elledning12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tanzania",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Elledning12.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Electrical_lines_in_north_Brodalen.jpg/960px-Electrical_lines_in_north_Brodalen.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/25/Electrical_lines_in_north_Brodalen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "W.carter",
-   "license": "CC0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electrical_lines_in_north_Brodalen.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Elledning13.jpg/960px-Elledning13.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/48/Elledning13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tanzania",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Elledning13.jpg",
-   "from": "commons"
-  }
- ],
- "no-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Three-phase_distribution_transformator_IMG_8089_Hurum_Norway_23kV_240V.JPG/960px-Three-phase_distribution_transformator_IMG_8089_Hurum_Norway_23kV_240V.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Three-phase_distribution_transformator_IMG_8089_Hurum_Norway_23kV_240V.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bjoertvedt",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Three-phase_distribution_transformator_IMG_8089_Hurum_Norway_23kV_240V.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Three-phase_distribution_transformer_IMG_8097_Hurum_Norway.JPG/960px-Three-phase_distribution_transformer_IMG_8097_Hurum_Norway.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Three-phase_distribution_transformer_IMG_8097_Hurum_Norway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bjoertvedt",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Three-phase_distribution_transformer_IMG_8097_Hurum_Norway.JPG",
-   "from": "commons"
-  }
- ],
- "de-sticker": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg/960px-Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/06/Rawlinna_%28AU%29%2C_Utility_Pole_--_2019_--_0621.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Dietmar Rabich",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Rawlinna_(AU),_Utility_Pole_--_2019_--_0621.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Pole_mounted_transformer.jpg/960px-Pole_mounted_transformer.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Pole_mounted_transformer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Pole_mounted_transformer.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Road_pole_poland1.jpg/960px-Road_pole_poland1.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Road_pole_poland1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Road_pole_poland1.jpg",
-   "from": "commons"
-  }
- ],
- "fr-ladder": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Support_de_ligne_HTA_Garczynski_Traploir..jpg/960px-Support_de_ligne_HTA_Garczynski_Traploir..jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Support_de_ligne_HTA_Garczynski_Traploir..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tirand",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Support_de_ligne_HTA_Garczynski_Traploir..jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Roquessels%2C_H%C3%A9rault.jpg/960px-Roquessels%2C_H%C3%A9rault.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/af/Roquessels%2C_H%C3%A9rault.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Christian Ferrer",
-   "license": "CC BY 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Roquessels,_H%C3%A9rault.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Fire-fighting-facility_node-6249618277_01.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/61/Fire-fighting-facility_node-6249618277_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Pyrog",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Fire-fighting-facility_node-6249618277_01.jpg",
-   "from": "commons"
-  }
- ],
- "es-ladder": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pau_da_luz.jpg/960px-Pau_da_luz.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Pau_da_luz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bene Riobó",
-   "license": "CC BY 2.5",
-   "source": "https://commons.wikimedia.org/wiki/File:Pau_da_luz.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Wood_pylon_in_Spain.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/72/Wood_pylon_in_Spain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "User:Nineleven",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Wood_pylon_in_Spain.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Maques_de_Arriba_Curtis_A_Coru%C3%B1a.jpg/960px-Maques_de_Arriba_Curtis_A_Coru%C3%B1a.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Maques_de_Arriba_Curtis_A_Coru%C3%B1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Nemigo",
-   "license": "CC0",
-   "source": "https://commons.wikimedia.org/wiki/File:Maques_de_Arriba_Curtis_A_Coru%C3%B1a.jpg",
-   "from": "commons"
-  }
- ],
- "pt-ladder": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Bot-DSCF1047.jpg/960px-Bot-DSCF1047.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/00/Bot-DSCF1047.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "myself",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Bot-DSCF1047.jpg",
-   "from": "commons"
-  }
- ],
- "it-round": [
-  {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/MV_pole_transformer.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a6/MV_pole_transformer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "User:Guam~commonswiki",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:MV_pole_transformer.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Medium_voltage_disconnecting_switch_on_utility_pole_%282%29_%28Rovigo%29.jpg/960px-Medium_voltage_disconnecting_switch_on_utility_pole_%282%29_%28Rovigo%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/08/Medium_voltage_disconnecting_switch_on_utility_pole_%282%29_%28Rovigo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Threecharlie",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Medium_voltage_disconnecting_switch_on_utility_pole_(2)_(Rovigo).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Medium_voltage_disconnecting_switch_on_utility_pole_%28Rovigo%29.jpg/960px-Medium_voltage_disconnecting_switch_on_utility_pole_%28Rovigo%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Medium_voltage_disconnecting_switch_on_utility_pole_%28Rovigo%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Threecharlie",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Medium_voltage_disconnecting_switch_on_utility_pole_(Rovigo).jpg",
-   "from": "commons"
-  }
- ],
- "gb-steps": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG/960px-Utility_pole%2C_Saul_Road%2C_January_2010.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Ardfern",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole,_Saul_Road,_January_2010.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Easole_Street%2C_Nonington%2C_Kent%2C_England_-_utility_pole_and_low-voltage_power_lines.jpg/960px-Easole_Street%2C_Nonington%2C_Kent%2C_England_-_utility_pole_and_low-voltage_power_lines.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/da/Easole_Street%2C_Nonington%2C_Kent%2C_England_-_utility_pole_and_low-voltage_power_lines.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Acabashi",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Easole_Street,_Nonington,_Kent,_England_-_utility_pole_and_low-voltage_power_lines.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Electricity_utility_pole_at_Greenhill%2C_Hatfield_Broad_Oak%2C_Essex_England.jpg/960px-Electricity_utility_pole_at_Greenhill%2C_Hatfield_Broad_Oak%2C_Essex_England.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/04/Electricity_utility_pole_at_Greenhill%2C_Hatfield_Broad_Oak%2C_Essex_England.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Acabashi",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electricity_utility_pole_at_Greenhill,_Hatfield_Broad_Oak,_Essex_England.jpg",
-   "from": "commons"
-  }
- ],
- "ie-steps": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sign-1050269%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg/960px-Sign-1050269%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/96/Sign-1050269%2C_Dingle_Peninsula%2C_Co._Kerry%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Mucklagh",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Sign-1050269,_Dingle_Peninsula,_Co._Kerry,_Ireland.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG/960px-Utility_pole%2C_Saul_Road%2C_January_2010.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Utility_pole%2C_Saul_Road%2C_January_2010.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Ardfern",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole,_Saul_Road,_January_2010.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Disused_Utility_Pole%2C_Botany_Marsh_-_geograph.org.uk_-_3748337.jpg/960px-Disused_Utility_Pole%2C_Botany_Marsh_-_geograph.org.uk_-_3748337.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Disused_Utility_Pole%2C_Botany_Marsh_-_geograph.org.uk_-_3748337.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Chris Whippet",
-   "license": "CC BY-SA 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Disused_Utility_Pole,_Botany_Marsh_-_geograph.org.uk_-_3748337.jpg",
-   "from": "commons"
-  }
- ],
- "cl-indent": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Casas-Humberstone.jpg/960px-Casas-Humberstone.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/43/Casas-Humberstone.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Cristian Barahona Miranda",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Casas-Humberstone.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Chile_Earthquake_2010_-_Maip%C3%BA_3.JPG/960px-Chile_Earthquake_2010_-_Maip%C3%BA_3.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Chile_Earthquake_2010_-_Maip%C3%BA_3.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jorge Barrios",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Chile_Earthquake_2010_-_Maip%C3%BA_3.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Oficinas_salitreras_de_Humberstone_y_Santa_Laura%2C_Chile%2C_2016-02-11%2C_DD_58.jpg/960px-Oficinas_salitreras_de_Humberstone_y_Santa_Laura%2C_Chile%2C_2016-02-11%2C_DD_58.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Oficinas_salitreras_de_Humberstone_y_Santa_Laura%2C_Chile%2C_2016-02-11%2C_DD_58.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Diego Delso",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Oficinas_salitreras_de_Humberstone_y_Santa_Laura,_Chile,_2016-02-11,_DD_58.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Santiago_de_Chile-CTJ-IMG_5337.jpg/960px-Santiago_de_Chile-CTJ-IMG_5337.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/41/Santiago_de_Chile-CTJ-IMG_5337.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Christer T Johansson",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Santiago_de_Chile-CTJ-IMG_5337.jpg",
-   "from": "commons"
-  }
- ],
- "pe-paint": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Old_utility_pole_detail.jpg/960px-Old_utility_pole_detail.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Old_utility_pole_detail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Old_utility_pole_detail.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Improved_utility_pole3.jpg/960px-Improved_utility_pole3.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/3/34/Improved_utility_pole3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Improved_utility_pole3.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Improved_utility_pole2.jpg/960px-Improved_utility_pole2.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Improved_utility_pole2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Improved_utility_pole2.jpg",
-   "from": "commons"
-  }
- ],
- "bo-curvy": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Power_poles_Incachaca4.jpg/960px-Power_poles_Incachaca4.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Power_poles_Incachaca4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Power_poles_Incachaca4.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Power_pole_Pulacayo_5.jpg/960px-Power_pole_Pulacayo_5.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Power_pole_Pulacayo_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Power_pole_Pulacayo_5.jpg",
-   "from": "commons"
-  }
- ],
- "uy-trident": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Calle_7_Mamboret%C3%A1_esquina_Carabelas_M14_S23_-_panoramio.jpg/960px-Calle_7_Mamboret%C3%A1_esquina_Carabelas_M14_S23_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/a/af/Calle_7_Mamboret%C3%A1_esquina_Carabelas_M14_S23_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Andrés Franchi Ugart…",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Calle_7_Mamboret%C3%A1_esquina_Carabelas_M14_S23_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Calle_Nutria_M9_S6_-_panoramio.jpg/960px-Calle_Nutria_M9_S6_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/de/Calle_Nutria_M9_S6_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Andrés Franchi Ugart…",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Calle_Nutria_M9_S6_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/J34_650_W%C3%9C_Avenida_General_Eugenio_Garzon.jpg/960px-J34_650_W%C3%9C_Avenida_General_Eugenio_Garzon.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c6/J34_650_W%C3%9C_Avenida_General_Eugenio_Garzon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Falk2",
-   "license": "CC BY-SA 3.0 de",
-   "source": "https://commons.wikimedia.org/wiki/File:J34_650_W%C3%9C_Avenida_General_Eugenio_Garzon.jpg",
-   "from": "commons"
-  }
- ],
- "gt-pink-green": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Xela_Utility_Pole_5.jpg/960px-Xela_Utility_Pole_5.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Xela_Utility_Pole_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Xela_Utility_Pole_5.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Pole_Puerto_Barrios_5.jpg/960px-Pole_Puerto_Barrios_5.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pole_Puerto_Barrios_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Pole_Puerto_Barrios_5.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Utility_poles_Ciudad_Vieja.jpg/960px-Utility_poles_Ciudad_Vieja.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/61/Utility_poles_Ciudad_Vieja.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_poles_Ciudad_Vieja.jpg",
-   "from": "commons"
-  }
- ],
- "cr-silver": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Abandoned_Telephone_pole.jpg/960px-Abandoned_Telephone_pole.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/Abandoned_Telephone_pole.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Abandoned_Telephone_pole.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Triangle_pole2.jpg/960px-Triangle_pole2.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/8/84/Triangle_pole2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Triangle_pole2.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Utility_pole_made_of_Railroad_Rail_in_costa_Rica.jpg/960px-Utility_pole_made_of_Railroad_Rail_in_costa_Rica.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/3/33/Utility_pole_made_of_Railroad_Rail_in_costa_Rica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Ll1324",
-   "license": "CC0",
-   "source": "https://commons.wikimedia.org/wiki/File:Utility_pole_made_of_Railroad_Rail_in_costa_Rica.jpg",
-   "from": "commons"
-  }
- ],
- "nz-indent": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Pole_with_three_tensions.jpg/960px-Pole_with_three_tensions.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Pole_with_three_tensions.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Sarang",
-   "license": "Public domain",
-   "source": "https://commons.wikimedia.org/wiki/File:Pole_with_three_tensions.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Power_nz7.jpg/960px-Power_nz7.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/17/Power_nz7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "HighVoltage 5576",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Power_nz7.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Power_Pole_%2833226755570%29.jpg/960px-Power_Pole_%2833226755570%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Power_Pole_%2833226755570%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "GPS 56 from New Zealand",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Power_Pole_(33226755570).jpg",
-   "from": "commons"
-  }
- ],
- "za-bird": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg/960px-Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/29/Drakenstein_%28ZA%29%2C_Val_Du_Charron_Wine_and_Leisure_Estate%2C_Stromleitung_--_2024_--_2733.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Dietmar Rabich",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Drakenstein_(ZA),_Val_Du_Charron_Wine_and_Leisure_Estate,_Stromleitung_--_2024_--_2733.jpg",
-   "from": "commons"
-  }
- ],
- "ke-l": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A104_in_Nairobi_2017.jpg/960px-A104_in_Nairobi_2017.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/3/39/A104_in_Nairobi_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "flightlog",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:A104_in_Nairobi_2017.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Mombasa%2C_Kenya_2013._-_panoramio_%2813%29.jpg/960px-Mombasa%2C_Kenya_2013._-_panoramio_%2813%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/43/Mombasa%2C_Kenya_2013._-_panoramio_%2813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Roma Neus",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Mombasa,_Kenya_2013._-_panoramio_(13).jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg/960px-Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Wikimania_Photowalk_2025%2C_Nairobi_%2820250808-P1048960%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Matti Blume",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Wikimania_Photowalk_2025,_Nairobi_(20250808-P1048960).jpg",
-   "from": "commons"
-  }
- ],
- "gh-wood": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Rural_Dirt_Road_Through_Greenery.jpg/960px-Rural_Dirt_Road_Through_Greenery.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/df/Rural_Dirt_Road_Through_Greenery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Tiisu Sharif",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Rural_Dirt_Road_Through_Greenery.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Battor_township_ahead_road_sign_%28PXL_20241108_094106308%29.jpg/960px-Battor_township_ahead_road_sign_%28PXL_20241108_094106308%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Battor_township_ahead_road_sign_%28PXL_20241108_094106308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Efo Komla",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Battor_township_ahead_road_sign_(PXL_20241108_094106308).jpg",
-   "from": "commons"
-  }
- ],
- "ng-indent": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Electric_pole_in_unilorin.jpg/960px-Electric_pole_in_unilorin.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Electric_pole_in_unilorin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Fatimah Bello",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electric_pole_in_unilorin.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Ido_Osun_center_round_about.jpg/960px-Ido_Osun_center_round_about.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Ido_Osun_center_round_about.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "ABORISADEADETONA",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Ido_Osun_center_round_about.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/A_broken_electricity_pillar.jpg/960px-A_broken_electricity_pillar.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6c/A_broken_electricity_pillar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Alexander achie004",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:A_broken_electricity_pillar.jpg",
-   "from": "commons"
-  }
- ],
- "sn-french": [
-  {
-   "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Dakar_Electric_Wires.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/03/Dakar_Electric_Wires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jeff Attaway from Dakar, Senegal",
-   "license": "CC BY 2.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Dakar_Electric_Wires.jpg",
-   "from": "commons"
-  }
- ],
- "np-trident": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Electricity_Pole_with_Transformer_and_wire-Nepal_02.jpg/960px-Electricity_Pole_with_Transformer_and_wire-Nepal_02.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Electricity_Pole_with_Transformer_and_wire-Nepal_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bijay Chaurasia",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electricity_Pole_with_Transformer_and_wire-Nepal_02.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Electricity_Pole_with_Transformer_and_wire-Nepal_03.jpg/960px-Electricity_Pole_with_Transformer_and_wire-Nepal_03.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/0/01/Electricity_Pole_with_Transformer_and_wire-Nepal_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Bijay Chaurasia",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electricity_Pole_with_Transformer_and_wire-Nepal_03.jpg",
-   "from": "commons"
-  }
- ],
- "nl-none": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cow_parsley_along_the_cart-track.jpg/960px-Cow_parsley_along_the_cart-track.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/2/28/Cow_parsley_along_the_cart-track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Fons Heijnsbroek",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Cow_parsley_along_the_cart-track.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Netherlands%2C_Texel%2C_Midden-Eierland_%2804%29.jpg/960px-Netherlands%2C_Texel%2C_Midden-Eierland_%2804%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Netherlands%2C_Texel%2C_Midden-Eierland_%2804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Vincent van Zeijst",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Netherlands,_Texel,_Midden-Eierland_(04).jpg",
-   "from": "commons"
-  }
- ],
- "be-holes": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/20151205_aux_houx46.JPG/960px-20151205_aux_houx46.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f5/20151205_aux_houx46.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jean Housen",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:20151205_aux_houx46.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/20170402_anthisnes164.jpg/960px-20170402_anthisnes164.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/48/20170402_anthisnes164.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jean Housen",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:20170402_anthisnes164.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/AaigemLandries2.JPG/960px-AaigemLandries2.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ef/AaigemLandries2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "No machine-readable author provided. Friedrich Tellberg assumed (based on copyright claims).",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:AaigemLandries2.JPG",
-   "from": "commons"
-  }
- ],
- "gr-harp": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg/960px-Electric_composition_Eretria_Euboea_Greece.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Electric_composition_Eretria_Euboea_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Jebulon",
-   "license": "CC0",
-   "source": "https://commons.wikimedia.org/wiki/File:Electric_composition_Eretria_Euboea_Greece.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Kavala_Greece_02.jpg/960px-Kavala_Greece_02.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Kavala_Greece_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Nikodem Nijaki",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Kavala_Greece_02.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Alikes%2C_Greece_-_panoramio_%2820%29.jpg/960px-Alikes%2C_Greece_-_panoramio_%2820%29.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Alikes%2C_Greece_-_panoramio_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "ARKADIUSZ MARKIEWICZ",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Alikes,_Greece_-_panoramio_(20).jpg",
-   "from": "commons"
-  }
- ],
- "hr-hooks": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Valpova%C4%8Dka_ul._-_panoramio.jpg/960px-Valpova%C4%8Dka_ul._-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/53/Valpova%C4%8Dka_ul._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Alen Ištoković",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Valpova%C4%8Dka_ul._-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Grude-07-2008-01249.JPG/960px-Grude-07-2008-01249.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/79/Grude-07-2008-01249.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Anto (talk) 12:38, 19 July 2009 (UTC)",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Grude-07-2008-01249.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Power_line_Velebit_01.jpg/960px-Power_line_Velebit_01.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/7/72/Power_line_Velebit_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Joadl",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Power_line_Velebit_01.jpg",
-   "from": "commons"
-  }
- ],
- "at-tape": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Stromleitung_bei_Grossarl.JPG/960px-Stromleitung_bei_Grossarl.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Stromleitung_bei_Grossarl.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Usien",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Stromleitung_bei_Grossarl.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Endmast-Mittelspannung_8727.JPG/960px-Endmast-Mittelspannung_8727.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/4/47/Endmast-Mittelspannung_8727.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "User:Karl Gruber",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Endmast-Mittelspannung_8727.JPG",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Mast_f%C3%BCr_Stromversorgung_0221.JPG/960px-Mast_f%C3%BCr_Stromversorgung_0221.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/5/54/Mast_f%C3%BCr_Stromversorgung_0221.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Karl Gruber",
-   "license": "CC BY-SA 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Mast_f%C3%BCr_Stromversorgung_0221.JPG",
-   "from": "commons"
-  }
- ],
- "ar-alternating": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Calle_lisandro_de_la_torre_-_panoramio.jpg/960px-Calle_lisandro_de_la_torre_-_panoramio.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Calle_lisandro_de_la_torre_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Gervacio Rosales",
-   "license": "CC BY 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Calle_lisandro_de_la_torre_-_panoramio.jpg",
-   "from": "commons"
-  },
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Estaci%C3%B3n_Chorrillos_%E2%80%A2_Ramal_C14_%E2%80%A2_Salta%2C_Argentina_%E2%80%A2_punto_kilom%C3%A9trico.jpg/960px-Estaci%C3%B3n_Chorrillos_%E2%80%A2_Ramal_C14_%E2%80%A2_Salta%2C_Argentina_%E2%80%A2_punto_kilom%C3%A9trico.jpg",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Estaci%C3%B3n_Chorrillos_%E2%80%A2_Ramal_C14_%E2%80%A2_Salta%2C_Argentina_%E2%80%A2_punto_kilom%C3%A9trico.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "Geogast",
-   "license": "CC BY 4.0",
-   "source": "https://commons.wikimedia.org/wiki/File:Estaci%C3%B3n_Chorrillos_%E2%80%A2_Ramal_C14_%E2%80%A2_Salta,_Argentina_%E2%80%A2_punto_kilom%C3%A9trico.jpg",
-   "from": "commons"
-  }
- ],
- "us-california": [
-  {
-   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/SSF_utility_pole_1_front.JPG/960px-SSF_utility_pole_1_front.JPG",
-   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1c/SSF_utility_pole_1_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-   "author": "BrokenSphere",
-   "license": "CC BY-SA 3.0",
-   "source": "https://commons.wikimedia.org/wiki/File:SSF_utility_pole_1_front.JPG",
    "from": "commons"
   }
  ]

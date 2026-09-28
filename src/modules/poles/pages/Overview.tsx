@@ -3,7 +3,7 @@ import { Link, useNavigate, useSearchParams } from 'react-router'
 import { useMapFeatures } from '../../../components/mapData'
 import { cardClass, linkCardClass } from '../../../components/ui'
 import { WorldMap } from '../../../components/WorldMap'
-import { continentOf, continents, countryLabel, poleCountries, polesOf, type Continent } from '../../../content/poles'
+import { cardCountryOf, continentOf, continents, countryLabel, poleCountries, polesOf, type Continent } from '../../../content/poles'
 import { PoleCard } from '../PoleCard'
 
 export function Overview() {
@@ -13,7 +13,7 @@ export function Overview() {
   const continent = (continents.find((c) => c === params.get('c')) ?? 'Europe') as Continent
   const focus = params.get('country')
   const list = poleCountries.filter((c) => continentOf[c] === continent).sort((a, b) => countryLabel(a).localeCompare(countryLabel(b)))
-  const withPoles = new Set(poleCountries)
+  const withPoles = cardCountryOf
 
   // Scroll to a country picked on the map.
   useEffect(() => {
@@ -25,7 +25,7 @@ export function Overview() {
       <div className="space-y-2">
         <h1 className="text-3xl font-bold">Utility Poles</h1>
         <p className="text-slate-600 dark:text-slate-400">
-          Poles are one of the most reliable clues in GeoGuessr: every country (and often every electricity company) builds them differently. Only the notable ones are here, the poles that actually tell you where you are. Mostly from the PlonkIt guides, in our own words.
+          Poles are one of the most reliable clues in GeoGuessr. This is the short list: the one pole each country is known for (or a trend shared by a group of countries), plus the regional poles of Japan, Vietnam and Indonesia, where the pole tells you the region. Mostly from the PlonkIt guides, in our own words.
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -44,8 +44,9 @@ export function Overview() {
           features={features}
           colorOf={(f) => (withPoles.has(f.country) ? '#0f766e' : undefined)}
           onSelect={(f) => {
-            if (!withPoles.has(f.country)) return
-            setParams({ c: continentOf[f.country], country: f.country }, { replace: true })
+            const card = withPoles.get(f.country)
+            if (!card) return
+            setParams({ c: continentOf[card], country: card }, { replace: true })
           }}
         />
       )}

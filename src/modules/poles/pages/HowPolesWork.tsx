@@ -1,5 +1,5 @@
 import { cardClass, PageHeader, RememberBox, Section } from '../../../components/ui'
-import { poleParts, whyTheyDiffer } from '../../../content/poles'
+import { deepDives, poleParts, whyTheyDiffer } from '../../../content/poles'
 
 /** A simple labelled drawing of a distribution pole. */
 function PoleDiagram() {
@@ -61,6 +61,20 @@ export function HowPolesWork() {
           ))}
         </ul>
       </Section>
+      <Section title="Going deeper">
+        <div className="space-y-4">
+          {deepDives.map((d, i) => (
+            <details key={d.title} className={cardClass} open={i === 0}>
+              <summary className="cursor-pointer font-semibold">{d.title}</summary>
+              <div className="mt-2 space-y-2 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+                {d.paragraphs.map((p) => <p key={p}>{p}</p>)}
+                <p className="rounded-lg bg-teal-50 p-2 text-teal-900 dark:bg-teal-950 dark:text-teal-200"><span className="font-semibold">In GeoGuessr: </span>{d.takeaway}</p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </Section>
+
       <Section title="Why poles differ between countries">
         <ul className="space-y-3">
           {whyTheyDiffer.map((w) => (
