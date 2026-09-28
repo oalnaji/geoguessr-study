@@ -28,6 +28,7 @@ export function GuidePage() {
       <Section title="Roads, buildings and infrastructure"><Bullets items={g.infrastructure} /></Section>
       <Section title="Crops and economy"><Bullets items={g.crops} /></Section>
       <Section title="People, language and history"><Bullets items={g.people} /></Section>
+      <Section title="Did you know?"><Bullets items={g.facts} /></Section>
       <Section title="Covered look-alikes">
         <p className="leading-relaxed">{g.lookalikes}</p>
         <RememberBox items={[g.remember]} />
