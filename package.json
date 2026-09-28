@@ -18,6 +18,7 @@
     "fetch-feature-photos": "node tools/fetch-feature-photos.mjs",
     "fetch-pole-photos": "node tools/fetch-pole-photos.mjs",
     "fetch-why-photos": "node tools/fetch-why-photos.mjs",
+    "fetch-uncovered-photos": "node tools/fetch-uncovered-photos.mjs",
     "fetch-topo-photos": "node tools/fetch-topo-photos.mjs"
   },
   "dependencies": {

@@ -9,6 +9,7 @@ const nav = [
   { to: '/poles', label: 'Poles', end: false },
   { to: '/topography', label: 'Mountains', end: false },
   { to: '/why', label: 'Why?', end: false },
+  { to: '/uncovered', label: 'Uncovered', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 

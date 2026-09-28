@@ -2,6 +2,7 @@ import { LanguagesModule } from './languages'
 import { PolesModule } from './poles'
 import { RegionsModule } from './regions'
 import { TopographyModule } from './topography'
+import { UncoveredModule } from './uncovered'
 import { WhyModule } from './why'
 import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
@@ -38,6 +39,14 @@ export const modules: MetaModule[] = [
     path: 'topography',
     status: 'active',
     element: <TopographyModule />,
+  },
+  {
+    id: 'uncovered',
+    title: 'Uncovered Countries',
+    description: 'Landscapes, roads, crops and culture of countries with little or no Street View.',
+    path: 'uncovered',
+    status: 'active',
+    element: <UncoveredModule />,
   },
   {
     id: 'world-maps',

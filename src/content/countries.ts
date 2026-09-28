@@ -171,4 +171,9 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   SV: { name: 'El Salvador', coverage: 'none' },
   HN: { name: 'Honduras', coverage: 'none' },
   NI: { name: 'Nicaragua', coverage: 'none' },
+  LY: { name: 'Libya', coverage: 'none' },
+  PG: { name: 'Papua New Guinea', coverage: 'partial' },
+  FJ: { name: 'Fiji', coverage: 'partial' },
+  SB: { name: 'Solomon Islands', coverage: 'none' },
+  VU: { name: 'Vanuatu', coverage: 'partial' },
 }
