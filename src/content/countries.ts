@@ -167,4 +167,8 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   ML: { name: 'Mali', coverage: 'partial' },
   BJ: { name: 'Benin', coverage: 'none' },
   ZM: { name: 'Zambia', coverage: 'partial' },
+  PA: { name: 'Panama', coverage: 'yes' },
+  SV: { name: 'El Salvador', coverage: 'none' },
+  HN: { name: 'Honduras', coverage: 'none' },
+  NI: { name: 'Nicaragua', coverage: 'none' },
 }

@@ -8,6 +8,7 @@ const nav = [
   { to: '/regions', label: 'Regions', end: false },
   { to: '/poles', label: 'Poles', end: false },
   { to: '/topography', label: 'Mountains', end: false },
+  { to: '/why', label: 'Why?', end: false },
   { to: '/settings', label: 'Settings', end: false },
 ]
 

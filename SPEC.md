@@ -397,7 +397,9 @@ A page for every major river: its course on the map, the countries and regions i
 - Linked in both directions to languages (§5.4 "Language & place"), landscapes and regions
 - Can be browsed on a map or as a timeline
 
-### 12.4 Why Is It Like This? (infrastructure & culture explainers)
+### 12.4 Why Is It Like This? (infrastructure & culture explainers) ✅ built
+
+**As built** (`/why`): 30 explainers in six groups (roads; pavements & kerbs; houses & roofs; water & utilities; signs & markers; landscape & layout), e.g. frost heave and frost lines, concrete vs asphalt vs chip seal, asphalt colour, cobbles, Portuguese pavement, painted kerbs, white tree trunks, rebar on roofs, water tanks, solar heaters, above-ground gas pipes, the Netherlands' missing poles, stop-sign words, the US mile grid. Each: what you see, why (engineering, climate, economics, history), a map of where it is typical, look-alikes, tips, a memory hook, and photos drawn only from matching Commons categories (`tools/why-photos.json`, `npm run fetch-why-photos`). Quiz: an observation with place names hidden, tap a country where it is typical.
 A collection of explainers about **why** a country looks the way it does from the road, each with history and science. The answers must be researched and sourced, not assumed. Example questions:
 - Why are so many roads in the Philippines made of concrete rather than asphalt?
 - Why are mesh/see-through satellite dishes common in Brazil?

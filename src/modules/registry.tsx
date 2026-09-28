@@ -2,6 +2,7 @@ import { LanguagesModule } from './languages'
 import { PolesModule } from './poles'
 import { RegionsModule } from './regions'
 import { TopographyModule } from './topography'
+import { WhyModule } from './why'
 import { VegetationModule } from './vegetation'
 import type { MetaModule } from './types'
 
@@ -70,9 +71,10 @@ export const modules: MetaModule[] = [
   {
     id: 'why',
     title: 'Why Is It Like This?',
-    description: 'Explainers for roads, poles, roofs and more.',
+    description: 'Explainers for road lines, frost heaves, water tanks, missing poles and more.',
     path: 'why',
-    status: 'planned',
+    status: 'active',
+    element: <WhyModule />,
   },
 ]
 
