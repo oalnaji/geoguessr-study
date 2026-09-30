@@ -1,3 +1,4 @@
+import { GeologyModule } from './geology'
 import { LanguagesModule } from './languages'
 import { PolesModule } from './poles'
 import { RegionsModule } from './regions'
@@ -47,6 +48,14 @@ export const modules: MetaModule[] = [
     path: 'uncovered',
     status: 'active',
     element: <UncoveredModule />,
+  },
+  {
+    id: 'geology',
+    title: 'Geology',
+    description: 'Why soil and hills look the way they do, the chemistry and history behind them, and what is mined where.',
+    path: 'geology',
+    status: 'active',
+    element: <GeologyModule />,
   },
   {
     id: 'world-maps',

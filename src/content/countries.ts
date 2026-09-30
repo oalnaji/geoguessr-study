@@ -176,4 +176,9 @@ export const countries: Record<string, { name: string; coverage: Coverage }> = {
   FJ: { name: 'Fiji', coverage: 'partial' },
   SB: { name: 'Solomon Islands', coverage: 'none' },
   VU: { name: 'Vanuatu', coverage: 'partial' },
+  MW: { name: 'Malawi', coverage: 'partial' },
+  JM: { name: 'Jamaica', coverage: 'partial' },
+  SL: { name: 'Sierra Leone', coverage: 'none' },
+  KW: { name: 'Kuwait', coverage: 'partial' },
+  NC: { name: 'New Caledonia', coverage: 'partial' },
 }

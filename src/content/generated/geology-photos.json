@@ -1,0 +1,746 @@
+{
+ "rock-types": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Estratos_coloridos_en_Calingasta%2C_prov._de_San_Juan.jpg/960px-Estratos_coloridos_en_Calingasta%2C_prov._de_San_Juan.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Estratos_coloridos_en_Calingasta%2C_prov._de_San_Juan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "José Ignacio Cuitiño",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Estratos_coloridos_en_Calingasta,_prov._de_San_Juan.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Quebrada_de_Cafayate_o_quebrada_de_las_conchas%2C_Argentina.jpg/960px-Quebrada_de_Cafayate_o_quebrada_de_las_conchas%2C_Argentina.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Quebrada_de_Cafayate_o_quebrada_de_las_conchas%2C_Argentina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "travelwayoflife",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Quebrada_de_Cafayate_o_quebrada_de_las_conchas,_Argentina.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Cerro_Pico_Truncado.jpg/960px-Cerro_Pico_Truncado.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Cerro_Pico_Truncado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Eliasexequiel",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Cerro_Pico_Truncado.jpg",
+   "from": "commons"
+  }
+ ],
+ "soil-colour-chemistry": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Man_with_a_bicycle_-_Basankusu_by_Francis_Hannaway.jpg/960px-Man_with_a_bicycle_-_Basankusu_by_Francis_Hannaway.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Man_with_a_bicycle_-_Basankusu_by_Francis_Hannaway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Francish7",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Man_with_a_bicycle_-_Basankusu_by_Francis_Hannaway.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Red_earth.JPG/960px-Red_earth.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Red_earth.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Fanghong",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Red_earth.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/%E7%9F%B3%E6%9E%97%E5%8E%BF%E5%86%9C%E7%94%B007.jpg/960px-%E7%9F%B3%E6%9E%97%E5%8E%BF%E5%86%9C%E7%94%B007.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fe/%E7%9F%B3%E6%9E%97%E5%8E%BF%E5%86%9C%E7%94%B007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "瑞丽江的河水",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E6%9E%97%E5%8E%BF%E5%86%9C%E7%94%B007.jpg",
+   "from": "commons"
+  }
+ ],
+ "desert-varnish": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Desert_Varnish_-_Horseshoe_Canyon.jpg/960px-Desert_Varnish_-_Horseshoe_Canyon.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/00/Desert_Varnish_-_Horseshoe_Canyon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Surfsupusa at en.wikipedia",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Desert_Varnish_-_Horseshoe_Canyon.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Wingate_Sandstone_%28Upper_Triassic%29_with_desert_varnish%2C_Fremont_Petroglyphs_Cliff%2C_Capitol_Reef_National_Park%2C_southern_Utah_3_%288445593568%29.jpg/960px-Wingate_Sandstone_%28Upper_Triassic%29_with_desert_varnish%2C_Fremont_Petroglyphs_Cliff%2C_Capitol_Reef_National_Park%2C_southern_Utah_3_%288445593568%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Wingate_Sandstone_%28Upper_Triassic%29_with_desert_varnish%2C_Fremont_Petroglyphs_Cliff%2C_Capitol_Reef_National_Park%2C_southern_Utah_3_%288445593568%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "James St. John",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wingate_Sandstone_(Upper_Triassic)_with_desert_varnish,_Fremont_Petroglyphs_Cliff,_Capitol_Reef_National_Park,_southern_Utah_3_(8445593568).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Harris_Wash%2C_Escalante_Canyon%2C_05-1972._%287065556727%29.jpg/960px-Harris_Wash%2C_Escalante_Canyon%2C_05-1972._%287065556727%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Harris_Wash%2C_Escalante_Canyon%2C_05-1972._%287065556727%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "The U.S. National Archives",
+   "license": "No restrictions",
+   "source": "https://commons.wikimedia.org/wiki/File:Harris_Wash,_Escalante_Canyon,_05-1972._(7065556727).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Colorado_River_Scenic_Byway_%283767946786%29.jpg/960px-Colorado_River_Scenic_Byway_%283767946786%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Colorado_River_Scenic_Byway_%283767946786%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "KimonBerlin",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Colorado_River_Scenic_Byway_(3767946786).jpg",
+   "from": "commons"
+  }
+ ],
+ "karst": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Lijiang_river%2C_Guangxi%2C_China.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/da/Lijiang_river%2C_Guangxi%2C_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "No machine-readable author provided. Asteiner assumed (based on copyright claims).",
+   "license": "CC BY 2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:Lijiang_river,_Guangxi,_China.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Lijiang.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Lijiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jerzy Bereszko",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Lijiang.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Halong_Bay%2C_view_from_Titop_Island_%286225961712%29.jpg/960px-Halong_Bay%2C_view_from_Titop_Island_%286225961712%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/63/Halong_Bay%2C_view_from_Titop_Island_%286225961712%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Arian Zwegers",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Halong_Bay,_view_from_Titop_Island_(6225961712).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Li_River_and_mountains_in_Yangshuo_County%2C_Guilin20.jpg/960px-Li_River_and_mountains_in_Yangshuo_County%2C_Guilin20.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Li_River_and_mountains_in_Yangshuo_County%2C_Guilin20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Huangdan2060",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Li_River_and_mountains_in_Yangshuo_County,_Guilin20.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Ha_Long_Bay_%E4%B8%8B%E9%BE%8D%E7%81%A3_-_panoramio_%281%29.jpg/960px-Ha_Long_Bay_%E4%B8%8B%E9%BE%8D%E7%81%A3_-_panoramio_%281%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ha_Long_Bay_%E4%B8%8B%E9%BE%8D%E7%81%A3_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "lienyuan lee",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Ha_Long_Bay_%E4%B8%8B%E9%BE%8D%E7%81%A3_-_panoramio_(1).jpg",
+   "from": "commons"
+  }
+ ],
+ "mesas": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Monument_Valley_%28jmenard48%29.jpg/960px-Monument_Valley_%28jmenard48%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/02/Monument_Valley_%28jmenard48%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "John Menard from Phoenix, USA",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Monument_Valley_(jmenard48).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Butte_in_Monument_Valley.jpg/960px-Butte_in_Monument_Valley.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Butte_in_Monument_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "katsrcool",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Butte_in_Monument_Valley.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hunts_Mesa-Arizona-March_2010.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Hunts_Mesa-Arizona-March_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Gleb Tarro",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Hunts_Mesa-Arizona-March_2010.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Monument_Valley_-_Arizona%2C_USA_-_panoramio.jpg/960px-Monument_Valley_-_Arizona%2C_USA_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Monument_Valley_-_Arizona%2C_USA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "MARELBU",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Monument_Valley_-_Arizona,_USA_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Glow_on_the_rocks_-_Monument_Valley_Utah_%2832941328070%29.jpg/960px-Glow_on_the_rocks_-_Monument_Valley_Utah_%2832941328070%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Glow_on_the_rocks_-_Monument_Valley_Utah_%2832941328070%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "m01229 from USA",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Glow_on_the_rocks_-_Monument_Valley_Utah_(32941328070).jpg",
+   "from": "commons"
+  }
+ ],
+ "volcanoes": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Tungurahua_desde_patate.JPG/960px-Tungurahua_desde_patate.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/22/Tungurahua_desde_patate.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HenrikKarhu",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tungurahua_desde_patate.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Licancabur_LagunaVerde.jpg/960px-Licancabur_LagunaVerde.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/92/Licancabur_LagunaVerde.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Albert Backer",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Licancabur_LagunaVerde.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Isla_del_Tigre_vista_desde_Coyolito.jpg/960px-Isla_del_Tigre_vista_desde_Coyolito.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Isla_del_Tigre_vista_desde_Coyolito.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Alfredobi",
+   "license": "Public domain",
+   "source": "https://commons.wikimedia.org/wiki/File:Isla_del_Tigre_vista_desde_Coyolito.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Atacama_highplain_volcanoes_seen_from_the_vado_de_putana.jpg/960px-Atacama_highplain_volcanoes_seen_from_the_vado_de_putana.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/50/Atacama_highplain_volcanoes_seen_from_the_vado_de_putana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Gerard Prins",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Atacama_highplain_volcanoes_seen_from_the_vado_de_putana.jpg",
+   "from": "commons"
+  }
+ ],
+ "granite-domes": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Kit_Mikayi-2.jpg/960px-Kit_Mikayi-2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kit_Mikayi-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Omondi",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Kit_Mikayi-2.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Tanzania_2714_Nevit.jpg/960px-Tanzania_2714_Nevit.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/25/Tanzania_2714_Nevit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Nevit Dilmen (talk)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Tanzania_2714_Nevit.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Mulanje_Mountain_-_Kara_O%27Mula_-_084_%283901338648%29.jpg/960px-Mulanje_Mountain_-_Kara_O%27Mula_-_084_%283901338648%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/91/Mulanje_Mountain_-_Kara_O%27Mula_-_084_%283901338648%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "fiverlocker from Brighton, UK",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mulanje_Mountain_-_Kara_O%27Mula_-_084_(3901338648).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Wanderung_Brandberg.JPG/960px-Wanderung_Brandberg.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Wanderung_Brandberg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Harald Süpfle",
+   "license": "CC BY-SA 2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:Wanderung_Brandberg.JPG",
+   "from": "commons"
+  }
+ ],
+ "young-old-mountains": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Blue_Ridge_Mountains_Aerial_2_-_Near_Asheville_NC_%2842348113252%29.jpg/960px-Blue_Ridge_Mountains_Aerial_2_-_Near_Asheville_NC_%2842348113252%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Blue_Ridge_Mountains_Aerial_2_-_Near_Asheville_NC_%2842348113252%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "formulanone from Huntsville, United States",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Blue_Ridge_Mountains_Aerial_2_-_Near_Asheville_NC_(42348113252).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/North_Carolina_Cherohala03.jpg/960px-North_Carolina_Cherohala03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/65/North_Carolina_Cherohala03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Ebyabe",
+   "license": "CC BY 2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:North_Carolina_Cherohala03.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Matterhorn_2018-07-14_102920.jpg/960px-Matterhorn_2018-07-14_102920.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Matterhorn_2018-07-14_102920.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Xonqnopp",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_2018-07-14_102920.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Matterhorn20190330160053.jpg/960px-Matterhorn20190330160053.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/24/Matterhorn20190330160053.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Xonqnopp",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Matterhorn20190330160053.jpg",
+   "from": "commons"
+  }
+ ],
+ "glacial": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Z%C3%AAzere_glacial_valley_01_HDR_%283006234674%29.jpg/960px-Z%C3%AAzere_glacial_valley_01_HDR_%283006234674%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Z%C3%AAzere_glacial_valley_01_HDR_%283006234674%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "michael clarke stuff",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Z%C3%AAzere_glacial_valley_01_HDR_(3006234674).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Hrafnkelsdalur.jpg/960px-Hrafnkelsdalur.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/15/Hrafnkelsdalur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Christian Bickel fingalo",
+   "license": "CC BY-SA 2.0 de",
+   "source": "https://commons.wikimedia.org/wiki/File:Hrafnkelsdalur.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Hovg%C3%A5rdsstenen_September_2013_01.jpg/960px-Hovg%C3%A5rdsstenen_September_2013_01.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/33/Hovg%C3%A5rdsstenen_September_2013_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Arild Vågen",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Hovg%C3%A5rdsstenen_September_2013_01.jpg",
+   "from": "commons"
+  }
+ ],
+ "basalt": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Garni_Gorge4.jpg/960px-Garni_Gorge4.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Garni_Gorge4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "uncredited",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Garni_Gorge4.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Garni_Gorge_Armenia_%2831%29.JPG/960px-Garni_Gorge_Armenia_%2831%29.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/90/Garni_Gorge_Armenia_%2831%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Hanay",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Garni_Gorge_Armenia_(31).JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Basalt_Columns_at_Rochester_Falls_in_Mauritius.jpg/960px-Basalt_Columns_at_Rochester_Falls_in_Mauritius.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Basalt_Columns_at_Rochester_Falls_in_Mauritius.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "laurence comte http://www.geodiversite.net/auteur131",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Basalt_Columns_at_Rochester_Falls_in_Mauritius.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/2014-04-27_10-37-05_Iceland_-_Keflav%C3%ADkurflugvelli_Hafnir.jpg/960px-2014-04-27_10-37-05_Iceland_-_Keflav%C3%ADkurflugvelli_Hafnir.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1f/2014-04-27_10-37-05_Iceland_-_Keflav%C3%ADkurflugvelli_Hafnir.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Hansueli Krapf This file was uploaded with Commonist.",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2014-04-27_10-37-05_Iceland_-_Keflav%C3%ADkurflugvelli_Hafnir.jpg",
+   "from": "commons"
+  }
+ ],
+ "badlands": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Castildeetierra%28bardenas%29_Navarra.JPG/960px-Castildeetierra%28bardenas%29_Navarra.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/24/Castildeetierra%28bardenas%29_Navarra.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Machulin",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Castildeetierra(bardenas)_Navarra.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/BARDENAS_REALES_085.jpg/960px-BARDENAS_REALES_085.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/bc/BARDENAS_REALES_085.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Grabat",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:BARDENAS_REALES_085.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Bardenas_reales_2.jpg/960px-Bardenas_reales_2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Bardenas_reales_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Mikipons",
+   "license": "CC BY-SA 3.0 es",
+   "source": "https://commons.wikimedia.org/wiki/File:Bardenas_reales_2.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/White_River_Badlands_of_South_Dakota_panorama.jpg/960px-White_River_Badlands_of_South_Dakota_panorama.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/9/97/White_River_Badlands_of_South_Dakota_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "James St. John",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:White_River_Badlands_of_South_Dakota_panorama.jpg",
+   "from": "commons"
+  }
+ ],
+ "loess": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Loess_landscape_china.jpg/960px-Loess_landscape_china.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/39/Loess_landscape_china.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Till Niermann (User:Till.niermann)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Loess_landscape_china.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Shaanxi_landscape_IGP4864.jpg/960px-Shaanxi_landscape_IGP4864.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Shaanxi_landscape_IGP4864.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "w0zny",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Shaanxi_landscape_IGP4864.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Somewhere_in_Songjiachuan%2C_Wubu_%2820151229131908%29.jpg/960px-Somewhere_in_Songjiachuan%2C_Wubu_%2820151229131908%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Somewhere_in_Songjiachuan%2C_Wubu_%2820151229131908%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "N509FZ",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Somewhere_in_Songjiachuan,_Wubu_(20151229131908).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Doline%2C_kanji%C5%BEa_%28talasast_predeo%2C_Tele%C4%8Dka_lesna_visoravan%29.jpg/960px-Doline%2C_kanji%C5%BEa_%28talasast_predeo%2C_Tele%C4%8Dka_lesna_visoravan%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Doline%2C_kanji%C5%BEa_%28talasast_predeo%2C_Tele%C4%8Dka_lesna_visoravan%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Jozefsu",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Doline,_kanji%C5%BEa_(talasast_predeo,_Tele%C4%8Dka_lesna_visoravan).jpg",
+   "from": "commons"
+  }
+ ],
+ "rift-valleys": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Mount_Longonot_Highway_View.jpg/960px-Mount_Longonot_Highway_View.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/47/Mount_Longonot_Highway_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Kenenock",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mount_Longonot_Highway_View.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Longolot.jpg/960px-Longolot.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Longolot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Original uploader was Jatcriswell at en.wikipedia (Jared Criswell)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Longolot.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/2013-01-23_07-02-16_Kenya_Central_-_Lari_5h.JPG/960px-2013-01-23_07-02-16_Kenya_Central_-_Lari_5h.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/dc/2013-01-23_07-02-16_Kenya_Central_-_Lari_5h.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Hansueli Krapf This file was uploaded with Commonist.",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2013-01-23_07-02-16_Kenya_Central_-_Lari_5h.JPG",
+   "from": "commons"
+  }
+ ],
+ "copper": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Chuquicamata_Mine_Panorama.jpg/960px-Chuquicamata_Mine_Panorama.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Chuquicamata_Mine_Panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Berg2",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Chuquicamata_Mine_Panorama.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Chuqui001.jpg/960px-Chuqui001.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Chuqui001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Unknown author",
+   "license": "CC BY-SA 2.0 de",
+   "source": "https://commons.wikimedia.org/wiki/File:Chuqui001.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Chuquicamata-003.jpg/960px-Chuquicamata-003.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/04/Chuquicamata-003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Reinhard Jahn, Mannheim",
+   "license": "CC BY-SA 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Chuquicamata-003.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/2019_Bingham_Canyon_Mine_03.jpg/960px-2019_Bingham_Canyon_Mine_03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/2019_Bingham_Canyon_Mine_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Farragutful",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2019_Bingham_Canyon_Mine_03.jpg",
+   "from": "commons"
+  }
+ ],
+ "iron-ore": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Brockman_4_open_pit.JPG/960px-Brockman_4_open_pit.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/68/Brockman_4_open_pit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Calistemon",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Brockman_4_open_pit.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Brockman_4_open_pit_after_blast%2C_September_2018.jpg/960px-Brockman_4_open_pit_after_blast%2C_September_2018.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Brockman_4_open_pit_after_blast%2C_September_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Calistemon",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Brockman_4_open_pit_after_blast,_September_2018.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Brockman_4_train_1.JPG/960px-Brockman_4_train_1.JPG",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/09/Brockman_4_train_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Calistemon",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Brockman_4_train_1.JPG",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Isa_Carajas.jpg/960px-Isa_Carajas.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Isa_Carajas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "IsabeleC",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Isa_Carajas.jpg",
+   "from": "commons"
+  }
+ ],
+ "gold": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Super_Pit%2C_2016_%2801%29.jpg/960px-Super_Pit%2C_2016_%2801%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/19/Super_Pit%2C_2016_%2801%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Bahnfrend",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Super_Pit,_2016_(01).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Super_Pit%2C_Kalgoorlie_-_panoramio.jpg/960px-The_Super_Pit%2C_Kalgoorlie_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Super_Pit%2C_Kalgoorlie_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Raki_Man",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:The_Super_Pit,_Kalgoorlie_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_6.jpg/960px-Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_6.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/84/Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Rr2000",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Super_Pit_Gold_Mine,_Kalgoorlie-Boulder_6.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_7.jpg/960px-Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_7.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Super_Pit_Gold_Mine%2C_Kalgoorlie-Boulder_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Rr2000",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Super_Pit_Gold_Mine,_Kalgoorlie-Boulder_7.jpg",
+   "from": "commons"
+  }
+ ],
+ "coal": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Coal_seam.jpg/960px-Coal_seam.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/89/Coal_seam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Arnoldius",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Coal_seam.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Nachtigall-fl%C3%B6z.jpg/960px-Nachtigall-fl%C3%B6z.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Nachtigall-fl%C3%B6z.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Morty",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Nachtigall-fl%C3%B6z.jpg",
+   "from": "commons"
+  }
+ ],
+ "lithium": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Salar_de_Atacama%2C_Chile_-_NASA_Earth_Observatory.jpg/960px-Salar_de_Atacama%2C_Chile_-_NASA_Earth_Observatory.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/d/da/Salar_de_Atacama%2C_Chile_-_NASA_Earth_Observatory.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "NASA's Earth Observatory",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Salar_de_Atacama,_Chile_-_NASA_Earth_Observatory.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Salar_de_Atacama_2005.jpg/960px-Salar_de_Atacama_2005.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Salar_de_Atacama_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Arvid Puschnig Hosteria Outsider (Hosteria Outsider at de.wikipedia)",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Salar_de_Atacama_2005.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Laguna_Tebinquinche_-_Atacama_-_Chile_-_panoramio_%286%29.jpg/960px-Laguna_Tebinquinche_-_Atacama_-_Chile_-_panoramio_%286%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Laguna_Tebinquinche_-_Atacama_-_Chile_-_panoramio_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Paulo JC Nogueira",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Laguna_Tebinquinche_-_Atacama_-_Chile_-_panoramio_(6).jpg",
+   "from": "commons"
+  }
+ ],
+ "bauxite": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Queensland%2C_Australia_%2827637559994%29.jpg/960px-Queensland%2C_Australia_%2827637559994%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Queensland%2C_Australia_%2827637559994%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Urbain J. Kinet",
+   "license": "No restrictions",
+   "source": "https://commons.wikimedia.org/wiki/File:Queensland,_Australia_(27637559994).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Queensland%2C_Australia_%2827637559824%29.jpg/960px-Queensland%2C_Australia_%2827637559824%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Queensland%2C_Australia_%2827637559824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Urbain J. Kinet",
+   "license": "No restrictions",
+   "source": "https://commons.wikimedia.org/wiki/File:Queensland,_Australia_(27637559824).jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Mining_equipment_at_the_Comalco_bauxite_mine%3B_Weipa.jpg/960px-Mining_equipment_at_the_Comalco_bauxite_mine%3B_Weipa.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mining_equipment_at_the_Comalco_bauxite_mine%3B_Weipa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Urbain J. Kinet",
+   "license": "No restrictions",
+   "source": "https://commons.wikimedia.org/wiki/File:Mining_equipment_at_the_Comalco_bauxite_mine;_Weipa.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Bauxite_section_on_kaolinitic_sandstone_C_007.jpg/960px-Bauxite_section_on_kaolinitic_sandstone_C_007.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Bauxite_section_on_kaolinitic_sandstone_C_007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Werner Schellmann",
+   "license": "CC BY-SA 2.5",
+   "source": "https://commons.wikimedia.org/wiki/File:Bauxite_section_on_kaolinitic_sandstone_C_007.jpg",
+   "from": "commons"
+  }
+ ],
+ "diamonds": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/The_mine_with_Mirny_in_the_background.jpg/960px-The_mine_with_Mirny_in_the_background.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/0/0e/The_mine_with_Mirny_in_the_background.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Vladimir",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:The_mine_with_Mirny_in_the_background.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Mirny_in_Yakutia.jpg/960px-Mirny_in_Yakutia.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/21/Mirny_in_Yakutia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Staselnik",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mirny_in_Yakutia.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Mirny_in_Yakutia_03.jpg/960px-Mirny_in_Yakutia_03.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Mirny_in_Yakutia_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Staselnik",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Mirny_in_Yakutia_03.jpg",
+   "from": "commons"
+  }
+ ],
+ "oil-gas": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Qian%27an%2C_Songyuan%2C_Jilin%2C_China_-_panoramio.jpg/960px-Qian%27an%2C_Songyuan%2C_Jilin%2C_China_-_panoramio.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Qian%27an%2C_Songyuan%2C_Jilin%2C_China_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Kobe Bryn",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Qian%27an,_Songyuan,_Jilin,_China_-_panoramio.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Campo_Petrol%C3%ADfero_de_Ayoluengo_%28Burgos%29_07.jpg/960px-Campo_Petrol%C3%ADfero_de_Ayoluengo_%28Burgos%29_07.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/3/32/Campo_Petrol%C3%ADfero_de_Ayoluengo_%28Burgos%29_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Zarateman",
+   "license": "CC0",
+   "source": "https://commons.wikimedia.org/wiki/File:Campo_Petrol%C3%ADfero_de_Ayoluengo_(Burgos)_07.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/2011_Vacation_Asia_Middle_East_%28Bahrain%29_%285932943317%29.jpg/960px-2011_Vacation_Asia_Middle_East_%28Bahrain%29_%285932943317%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/4/48/2011_Vacation_Asia_Middle_East_%28Bahrain%29_%285932943317%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "ShashiBellamkonda from Potomac, USA",
+   "license": "CC BY 2.0",
+   "source": "https://commons.wikimedia.org/wiki/File:2011_Vacation_Asia_Middle_East_(Bahrain)_(5932943317).jpg",
+   "from": "commons"
+  }
+ ],
+ "nickel": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Big_Yellow.jpg/960px-Big_Yellow.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Big_Yellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Kolong",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Big_Yellow.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Russia%2C_Krasnojarsk%2C_Norilsk_-_Nickel_Plant_WMID4954537.jpg/960px-Russia%2C_Krasnojarsk%2C_Norilsk_-_Nickel_Plant_WMID4954537.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Russia%2C_Krasnojarsk%2C_Norilsk_-_Nickel_Plant_WMID4954537.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Bestito",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Russia,_Krasnojarsk,_Norilsk_-_Nickel_Plant_WMID4954537.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Russia%2C_Krasnojarsk%2C_Norilsk_-_Basins_for_technological_needs_WMID4317497.jpg/960px-Russia%2C_Krasnojarsk%2C_Norilsk_-_Basins_for_technological_needs_WMID4317497.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/15/Russia%2C_Krasnojarsk%2C_Norilsk_-_Basins_for_technological_needs_WMID4317497.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "rafpopov",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Russia,_Krasnojarsk,_Norilsk_-_Basins_for_technological_needs_WMID4317497.jpg",
+   "from": "commons"
+  }
+ ],
+ "silver-tin": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Potosi_D%C3%A9cembre_2007_-_Panorama_1.jpg/960px-Potosi_D%C3%A9cembre_2007_-_Panorama_1.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Potosi_D%C3%A9cembre_2007_-_Panorama_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Martin St-Amant (S23678)",
+   "license": "CC BY 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Potosi_D%C3%A9cembre_2007_-_Panorama_1.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Potosi1.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Potosi1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "User:Gerd Breitenbach",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Potosi1.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Vista_panor%C3%A1mica_de_Potos%C3%AD.jpg/960px-Vista_panor%C3%A1mica_de_Potos%C3%AD.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Vista_panor%C3%A1mica_de_Potos%C3%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "EEJCC",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Vista_panor%C3%A1mica_de_Potos%C3%AD.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Damaged_Ropeway_tower.jpg/960px-Damaged_Ropeway_tower.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/1/18/Damaged_Ropeway_tower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "HighVoltage 5576",
+   "license": "CC BY-SA 4.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Damaged_Ropeway_tower.jpg",
+   "from": "commons"
+  }
+ ],
+ "potash-phosphate-salt": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Wieliczka2.jpg/960px-Wieliczka2.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/5/50/Wieliczka2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Unknown author",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wieliczka2.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Groty_Kryszta%C5%82owe.jpg/960px-Groty_Kryszta%C5%82owe.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/2/29/Groty_Kryszta%C5%82owe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Rocker1984",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Groty_Kryszta%C5%82owe.jpg",
+   "from": "commons"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Wieliczka%2C_Szyb_Dani%C5%82owicza_-_fotopolska.eu_%28338431%29.jpg",
+   "large": "https://upload.wikimedia.org/wikipedia/commons/8/81/Wieliczka%2C_Szyb_Dani%C5%82owicza_-_fotopolska.eu_%28338431%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "author": "Andrzej G",
+   "license": "CC BY-SA 3.0",
+   "source": "https://commons.wikimedia.org/wiki/File:Wieliczka,_Szyb_Dani%C5%82owicza_-_fotopolska.eu_(338431).jpg",
+   "from": "commons"
+  }
+ ]
+}

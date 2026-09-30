@@ -488,6 +488,14 @@ A module on the poles that carry power and phone lines, because pole type is one
 ### 12.9 Uncovered Countries ✅ built
 Guides (`/uncovered`) to countries with little or no Street View: DR Congo, Central African Republic, North Africa (Morocco, Algeria, Libya, Egypt), Angola, Tanzania, Mozambique, Uzbekistan, Turkmenistan, Tajikistan, Armenia, Azerbaijan, Myanmar, Venezuela, and the Pacific islands (PNG, Fiji, Solomons, Vanuatu, Samoa, Tonga). Each: coverage status, a zoomed map, landscape, roads/buildings/infrastructure (driving side, scripts, plates), crops and economy, people and history, covered look-alikes, a memory hook, and photos from each country's Commons categories (`tools/uncovered-photos.json`, `npm run fetch-uncovered-photos`). Coverage changes: re-check against a current coverage map.
 
+### 12.10 Geology ✅ built
+`/geology`, with three tabs:
+- **Rocks & soil chemistry:** the three rock families, the chemistry of soil colour (hematite and goethite, reduced gley, humus, lime and salt), and desert varnish. Links to the soil pages in Plants.
+- **Landforms:** karst, mesas and tepuis, volcano shapes, granite domes and inselbergs, young vs old mountains, glacial landscapes, basalt, badlands, loess, rift valleys.
+- **Mining:** copper, iron ore, gold, coal, lithium, cobalt, bauxite, diamonds, oil and gas, nickel, silver and tin, potash/phosphate/salt. Each has uses, top producers (largest first; the top 3 are dark on the map) and a mineral picker map on the overview.
+
+Every topic has the science, what it looks like, where (with a map), history, facts, GeoGuessr tips and a memory hook. A "where is it found?" map quiz is included. Photos come from topic Commons categories and are checked by eye (`tools/geology-photos.json`, `npm run fetch-geology-photos`). Production rankings change year to year, so re-check against USGS Mineral Commodity Summaries.
+
 ### 12.6 Images (all modules)
 
 **As built:** `npm run fetch-plants` (`tools/fetch-plants.mjs`) collects candidate photos (Wikipedia lead image via Commons, a Commons category or search, iNaturalist taxon photos with open licences). Photos were reviewed by hand; `tools/photo-picks.json` lists the chosen photos per plant, in order, best road-view photo first. Only URLs and credits are stored; the service worker caches viewed photos (`plant-photos`, 300 entries). Where it grows: GBIF human observations per country (trees) and FAO production via Our World in Data charts (crops); tea, cotton, pineapple, rubber and olive use a hand-written producer ranking.

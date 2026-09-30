@@ -10,6 +10,7 @@ const nav = [
   { to: '/topography', label: 'Mountains', icon: '⛰️', end: false },
   { to: '/why', label: 'Why?', icon: '❓', end: false },
   { to: '/uncovered', label: 'Uncovered', icon: '🌍', end: false },
+  { to: '/geology', label: 'Geology', icon: '🪨', end: false },
   { to: '/settings', label: 'Settings', icon: '⚙️', end: false },
 ]
 /** Tabs always shown in the phone bar; the rest go in "More". */
